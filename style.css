@@ -1,0 +1,36 @@
+.playpen-sans-regular {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    /* Standard weight */
+    font-style: normal;
+}
+
+.playpen-sans-bold {
+    font-family: "Playpen Sans", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    /* Bold weight */
+    font-style: normal;
+}
+
+/* ==================================================
+   ROOT VARIABLES
+================================================== */
+:root {
+    --font-main: 'Playpen Sans', sans-serif;
+
+    --bg: #f9f9f9;
+    --text: #333;
+
+    --primary: #0077cc;
+    --primary-dark: #005fa3;
+
+    --accent: #28a745;
+    --accent-hover: #218838;
+
+    --card-bg: #ffffff;
+    --border: #ddd;
+
+    --radius: 10px;
+}
