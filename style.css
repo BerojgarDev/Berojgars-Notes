@@ -34,3 +34,9 @@
 
     --radius: 10px;
 }
+
+@import url('https://fonts.googleapis.com');
+
+body {
+    font-family: 'Playpen Sans', cursive;
+}
