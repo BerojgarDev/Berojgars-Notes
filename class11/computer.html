@@ -14,11 +14,13 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="icon">
-            <h1>Berojgar's Notes</h1>
+            <a href="/index.html">
+                <img src="/images/icon.png" alt="icon">
+                <h1>Berojgar's Notes</h1>
+            </a>
         </div>
         <div class="navigation">
-            <nav aria-label="Main Navigation">
+            <nav>
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/about.html">About Us</a></li>
@@ -30,18 +32,2103 @@
     </header>
     <main>
         <section class="hero">
-            <div>
-                <h2>Computer Science - I</h2>
+            <div class="heroContainer">
+                <h2>Class 11 : Computer Science</h2>
+                <p>This note is written in simple language.</p>
+                <p>This is for NEB Class 11 students (2082/83) and may change with the latest syllabus.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div class="unitList">
                 <h2>Unit List</h2>
-                <ol type="1">
-                    <li><a href="#computerSystem">Computer System</a></li>
-                    <li><a href="#operatingSystem">Operating System</a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ol>
+                <div class="list">
+                    <div class="unit">
+                        <h2>Unit 1 : Computer System</h2>
+                        <button onclick="toggle('unit1', this)">View Notes</button>
+                    </div>
+                    <div id="unit1" class="noteContent">
+                        <h3>Computer System</h3>
+                        <ul class="hyphen-list">
+                            <li>A computer is an electronic device which takes input from the user
+                                through different input devices, processes it & finally gives output to the
+                                user through different output devices.
+                            </li>
+                            <li>
+                                <p>The term Computer is derived from the Greek word
+                                    <strong>“Computare”</strong> which means to calculate.
+                                </p>
+                                <figure>
+                                    <img src="images/" alt="Computer System">
+                                    <figcaption>Block Diagram of Computer</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <h3>Characteristics of Computer</h3>
+                        <ul class="hyphen-list">
+                            <li>
+                                <p>The major characteristics of computer are below:</p>
+                                <ol type="1">
+                                    <li>
+                                        <h4>Speed</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                <p>The computer is a very high speed electronic device. It can
+                                                    perform several
+                                                    calculations much faster than humans. It can perform
+                                                    millions, billions of
+                                                    operations in data within a second. The time used by
+                                                    computers to perform
+                                                    an operation is called processing speed.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Accuracy</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                In addition to being very fast, a computer is a very
+                                                accurate device. The
+                                                term accuracy simply refers to the out of providing measure
+                                                without any
+                                                error. The output of a computer totally depends on the given
+                                                instruction &
+                                                input data.
+                                            </li>
+                                            <li>
+                                                If input data is incorrect then resultant output will be
+                                                incorrect. In
+                                                computer terminology <strong>GIGO (Garbage-In
+                                                    Garbage-Out)</strong>
+                                                condition.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Automation</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers can automatically perform operations without
+                                                intervention of the
+                                                user during the operation. It automatically controls
+                                                different devices
+                                                attached with the computer & executes the program
+                                                instruction one by one.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Versatility</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                A computer is a versatile machine due to its ability to
+                                                perform a wide range
+                                                of tasks across various domains. The same computer can be
+                                                used for various
+                                                things such as accounting, generating bills, playing games,
+                                                and listening.
+                                                music, etc.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Storage</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                A computer can store large amounts of data in its memory.
+                                                The stored data
+                                                can be retrieved and processed whenever required.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Diligence</h4>
+                                        <ul class="hyphen-list">
+                                            <li>Unlike human beings, a computer never feels tired or bored to do
+                                                a task repeating for a long time. The computer can perform the
+                                                same speed task with same speed & accuracy even for hours & days
+                                                so long as it is provided with a suitable environment & correct
+                                                program.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Non-Intelligence</h4>
+                                        <ul class="hyphen-list">
+                                            <li>Although computers are incredibly, more powerful & accurate than
+                                                humans, they don't have common sense. It can't think of deciding
+                                                itself to do any task.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h3>Application of Computer</h3>
+                        <ul class="hyphen-list">
+                            <li>
+                                <p>Computer can be used in various fields some of them are explained below:-</p>
+                                <ol type="1">
+                                    <li>
+                                        <h4>Education</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                <p>Different education sectors like schools, college, and
+                                                    universities use computers as information resources, teaching
+                                                    tools, library systems and different research projects.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Business</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers are used in several business operations like data
+                                                management, financial analysis and communication using software
+                                                like spreadsheets, accounting programmes and email platforms.
+                                            </li>
+                                            <li>
+                                                They enable e-commerce, digital marketing and customer
+                                                relationship management (CRM) systems, improving efficiency and
+                                                customer engagement.
+                                            </li>
+                                            <li>
+                                                Additionally, computers support remote work and collaboration
+                                                through tools like video conferencing and cloud storage.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Healthcare</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers in health care facilitate patient record management,
+                                                diagnostics imaging, and treatment Stunning using electronic
+                                                health records (EHRs) and advanced imaging Software
+                                                Additionally, computers support medical research and data
+                                                analysis leading to improvements and outcomes of innovations.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Entertainment</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers also play a very important role in entertainment.
+                                                Computers are essential in entertainment for creating and
+                                                editing films, producing music & developing video games with
+                                                advanced software and technology. Additionally, artificial
+                                                intelligence and machine learning enable innovative content
+                                                creation and personalized recommendation.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Communication</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers are used for the efficient use of calls, email or
+                                                other proper distribution of internet traffic. The router
+                                                receives "data packets" of electronic data and sends them in the
+                                                direction of contact with the target person.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Science and engineering</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers are used in all branches of science and engineering to
+                                                collect and to process and interpret vast amounts of information
+                                                quickly and accurately. They also facilitate complex simulation
+                                                outcomes in various scenarios.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Financial institution</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers in financial institutions automate core banking
+                                                operations, including transaction processing, record-keeping,
+                                                and customer account management with high accuracy. They also
+                                                enable 24/7 digital services such as online banking, mobile
+                                                apps, ATMs, and algorithmic trading to improve efficiency and
+                                                customer experience.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Government and E-governance</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                Computers in government streamline administrative tasks, such as
+                                                record-keeping, data management, and tax processing.
+                                                E-governance leverages these digital tools to provide 24/7
+                                                online access to services like license renewals, voter
+                                                registration, and e-voting, enhancing efficiency and citizen
+                                                participation.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>History of Computer</h2>
+                        <ul class="hyphen-list">
+                            <li>
+                                The development of computers was not spontaneous. Many scientists and many
+                                activities contributed to the history of computers.
+                            </li>
+                            <li>
+                                <p>The historical time period can be divided into different eras:</p>
+                                <ol type="1">
+                                    <li>
+                                        <h3>Pre-mechanical Era</h3>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                <p>This was the time period between 500BC to 1642 AD. The details of
+                                                    the different devices invented during this era are given below:
+                                                </p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <h4>Abacus</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>The Abacus is the earliest and the simplest
+                                                                calculating
+                                                                device which is also known as
+                                                                <strong>"Soroban"</strong>. It
+                                                                was developed and used in China about 500BC(Before
+                                                                Christ).
+                                                            </li>
+                                                            <li>It consists of a rectangular wooden frame having
+                                                                parallel
+                                                                wires(string) and each wire contains a number of
+                                                                beads.
+                                                            </li>
+                                                            <li>It was used for simple addition and subtraction.
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Calculating device of John Napier</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>In the early 17th century, the famous logarithm idea
+                                                                was
+                                                                developed by <strong>John Napier</strong> (Scottish
+                                                                Mathematician).</li>
+                                                            <li>He created a logarithm table for arithmetic
+                                                                calculations. He also developed a new manual
+                                                                calculating
+                                                                device known as <strong>Napier's Bone</strong>.</li>
+                                                            <li>It is used for Multiplication and Division.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Slide Rule</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>The commonly used calculating device known as
+                                                                <strong>"Slide Rules"</strong> was also developed
+                                                                using the concept of Napier's idea of logarithms.
+                                                            </li>
+                                                            <li>Slide rule was first built in England in 1632. With
+                                                                the
+                                                                modern slide rule we can perform simple arithmetic
+                                                                calculations as well as calculate square roots,
+                                                                logs,
+                                                                sine, cosine and tangents, etc.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>Mechanical Era</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>The mechanical era started from 1642 AD to 1843 AD. The details of the
+                                            different devices invented during this era are given below:</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Calculating Device of Blaise Pascal (1642-1662)</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In 1642 famous mathematician <strong>Blaise Pascal</strong>
+                                                        of
+                                                        France invented the mechanical calculating device or machine
+                                                        called <strong>Pascaline</strong>.</li>
+                                                    <li>It is used to perform arithmetic calculations like addition,
+                                                        subtraction, multiplication and division and display the
+                                                        numbers
+                                                        by rotation of different wheels.</li>
+                                                    <li>Pascal's calculating machine could perform the addition and
+                                                        subtraction operations directly but multiplication and
+                                                        division
+                                                        operations were performed by repeated addition and
+                                                        subtraction.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Calculating Device of Gottfried Wilhelm Leibniz</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In 1671 German mathematician <strong>Gottfried</strong>
+                                                        developed first calculating for multiplication as well as
+                                                        for
+                                                        other simple arithmetic calculations.</li>
+                                                    <li>It was the modified form of Pascal's Calculating ing machine
+                                                        and
+                                                        it was more reliable and accurate.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Jacquard Loom</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>Joseph Marie, an engineer of French, invented the machine
+                                                        called
+                                                        Jacquard loom (1801) used in weaving.</li>
+                                                    <li>It was a programmable manufacturing device. It was a machine
+                                                        that used punched cards to store information.</li>
+                                                    <li>This machine can store information which helps in computer
+                                                        evolution and the textile industry.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Era of Charles Babbage</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In 1822, the English mathematician Charles Babbage at
+                                                        Cambridge
+                                                        University, UK, proposed a steam-driven calculating machine
+                                                        called the Difference Engine, which was the size of a room.
+                                                    </li>
+                                                    <li>The Difference Engine was designed
+                                                        to compute and print mathematical tables, such as
+                                                        logarithmic
+                                                        and trigonometric tables, which were essential for
+                                                        navigation,
+                                                        engineering, and science.</li>
+                                                    <li>In 1833, after about 10 years, Babbage designed another
+                                                        machine
+                                                        called the Analytical Engine. This device was very large and
+                                                        powered by steam.</li>
+                                                    <li>The Analytical Engine had several key features, including
+                                                        the
+                                                        ability to accept input data, store information, and perform
+                                                        arithmetic calculations.</li>
+                                                    <li>Although Babbage never completed the Analytical Engine, his
+                                                        design laid the foundation for modern computers,
+                                                        incorporating
+                                                        essential concepts such as input, output, storage, and
+                                                        processing. For this reason, Babbage is often called the
+                                                        “Father
+                                                        of the Computer.”</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Lady Augusta Ada(First Lady Programmer)
+                                                </h4>
+                                                <ul class="hyphen-list">
+                                                    <li>A Lady student Augusta Ada Byron, When she was 19, heard a
+                                                        lecture about the difference and Analytical engine designed
+                                                        by
+                                                        Babbage and was fascinated by Babbage's idea.</li>
+                                                    <li>Through several meetings and letters with the babbage, she
+                                                        learned about the design of Babbage's engine and started to
+                                                        write programs for the still incomplete machine.</li>
+                                                    <li>Ada wrote a series of “Notes” and subroutines(set of
+                                                        instructions) for the Analytical Engine.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>George Boole</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>George Boole is a 19th century mathematician who created
+                                                        Boolean
+                                                        algebra, which uses true(1) or false(0) values to solve
+                                                        problems.</li>
+                                                    <li>His work is crucial for modern computers and digital
+                                                        technology.
+                                                        Boole's ideas help make computers work the way they do
+                                                        today.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Electromechanical Era</h3>
+                                <ul class="hyphen-list">
+                                    <li>The end of the mechanical era occurred when physics paved the way for
+                                        electrical
+                                        innovation. The beads of the Abacus were replaced by bits in the modern
+                                        computer. The creation of bit marked a transition from the decimal binary
+                                        system
+                                        for systems for humans to a binary computer.</li>
+                                    <li>
+                                        <p>The different devices invented during this era are given below.</p>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>Punched Card Tabulating Machine</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In 1890, an American scientist Herman Hollerith used the
+                                                        idea of
+                                                        a punched board system and introduced the punched cards as
+                                                        input
+                                                        metal in computers.</li>
+                                                    <li>They developed the first electro mechanical punched card
+                                                        tabulator. This machine could read information that had been
+                                                        punched into cards.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Atanasoff-Berry Computer (ABC)</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In 1937-1942, Dr. John Atanasoff, a professor of law at
+                                                        state
+                                                        university and his assistant Clifford Berry designed an
+                                                        electronic machine which was called Atarasaff-Berry
+                                                        Computer.
+                                                    </li>
+                                                    <li>It was the first to use binary representation of data and
+                                                        electronic Switching elements.</li>
+                                                    <li>The ABC was designed to solve linear algebra problems and
+                                                        helps
+                                                        to derive principles for modern computing, such as binary
+                                                        arithmetic and electronic logic circuits.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Mark-I or ASCC</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In 1944 an American professor of Harvard University Dr.
+                                                        Howard
+                                                        Aiken designed the first fully automatic calculating machine
+                                                        which was named Mark-1.</li>
+                                                    <li>It is also known as ASCC (Automatic Sequence Controlled
+                                                        Calculator).</li>
+                                                    <li>This machine operated under the control of instructions
+                                                        which
+                                                        were given through the punched paper tape.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Electronic Era</h3>
+                                <ul class="hyphen-list">
+                                    <li>The electronic Era, marked by rapid advancement in technology, computer
+                                        communication, entertainment, and information access.</li>
+                                    <li>Innovations like the internet, smartphones, and digital media have to
+                                        transform
+                                        daily life, business operations and social interactions.</li>
+                                    <li>
+                                        <p>The different devices invented during this era are:</p>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>ENIAC (1943-1946)</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>ENIAC stands for “Electronic Numerical Integrator and
+                                                        Computer”.
+                                                    </li>
+                                                    <li>It was the first electronic computer.</li>
+                                                    <li>It was developed in 1943 by J.P. Eckert and John Mauchly at
+                                                        Moore School of Electrical Engineering in the U.S.A.</li>
+                                                    <li>It contained about 1800 vacuum tubes and occupied more than
+                                                        1500
+                                                        sq. feet with a weight of 30 tons.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>EDVAC (1946-1952)</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The EDVAC (Electronic Discrete Variable Automatic Computer)
+                                                        was
+                                                        one of the earliest electronic computers and marked a
+                                                        significant advancement in the field of computing.</li>
+                                                    <li>It was programmed by physically connecting wires in proper
+                                                        order
+                                                        which was very difficult.</li>
+                                                    <li>This problem was overcome by a new concept of stored program
+                                                        (store both instruction and data in the binary form)
+                                                        presented
+                                                        by John Von Neumann.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>EDSAC (1947-1949)</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>EDSAC stands for "Electronic Delayed Storage Automatic
+                                                        Computer".</li>
+                                                    <li>It was developed in 1948 at Cambridge University by
+                                                        scientists
+                                                        headed by groups of Professor Maurice Wilkes.</li>
+                                                    <li>This device was used for computational biology, mathematics,
+                                                        physics and engineering.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>UNIVAC (1951)</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>UNIVAC stands for Universal Automatic Computer. It was also
+                                                        developed by J.P Eckert and John Mauchly (designer of ENIAC)
+                                                        in
+                                                        1951.</li>
+                                                    <li>It was the first digital computer and the input was fed into
+                                                        this computer through magnetic tape.</li>
+                                                    <li>The was one of the first commercially produced computers in
+                                                        the
+                                                        United States.</li>
+                                                    <li>It was notable for its uses in business and government app
+                                                        applications, such as the US census, and predicting the
+                                                        outcomes
+                                                        of the 1952 presidential election.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h2>Generation of Computer</h2>
+                        <ul class="hyphen-list">
+                            <li>
+                                <p>The term “Generation of Computers” refers to the evolution of computer technology
+                                    over distinct time periods, each marked by significant changes in hardware,
+                                    software, system architecture, and programming languages.</p>
+                                <ol class="1">
+                                    <li>
+                                        <h3>First Generation (1940-1950)</h3>
+                                        <ul class="hyphen-list">
+                                            <li>These Computers were the earliest electronic computers and
+                                                represented significant advancement in technology. Here are some
+                                                Characteristics of first-generation of Computers: </li>
+                                            <li><strong>Technology:</strong> Vacuum tubes.</li>
+                                            <li><strong>Input/Output:</strong> Punch cards for input; printed paper
+                                                for output.</li>
+                                            <li><strong>Storage:</strong> Magnetic drum memory.</li>
+                                            <li><strong>Programming:</strong> Machine language (0 & 1), no operating
+                                                system.</li>
+                                            <li>
+                                                <p><strong>Examples:</strong> ENIAC, UNIVAC-I.</p>
+                                                <h4>Disadvantages</h4>
+                                                <ol type="i">
+                                                    <li>Very large in size, consuming high power.</li>
+                                                    <li>Limited storage (few KB).</li>
+                                                    <li>High cost and low reliability.</li>
+                                                    <li>Generated excessive heat.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Second Generation Computer (1950-1960)</h3>
+                                        <ul class="hyphen-list">
+                                            <li>The key features of this generation are following:</li>
+                                            <li><strong>Technology:</strong> Transistors replaced vacuum tubes,
+                                                smaller and more efficient.</li>
+                                            <li><strong>Input/Output:</strong> Punch cards, magnetic tape; printers
+                                                for output.</li>
+                                            <li><strong>Storage:</strong> Magnetic core memory (primary), magnetic
+                                                tape (secondary).</li>
+                                            <li><strong>Programming:</strong> High-level languages introduced
+                                                (FORTRAN, COBOL).</li>
+                                            <li>
+                                                <p><strong>Examples:</strong>IBM 1401, IBM 7030, IBM 7090, etc.</p>
+                                                <h4>Disadvantages</h4>
+                                                <ol type="i">
+                                                    <li>Still large and relatively expensive.</li>
+                                                    <li>Limited graphics capability.</li>
+                                                    <li>Transistors generated heat, requiring cooling systems.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Third Generation Computer (1960-1970)</h3>
+                                        <ul class="hyphen-list">
+                                            <li>The key features of this generation are as follows.</li>
+                                            <li><strong>Technology:</strong> Integrated Circuits (ICs) replaced
+                                                individual transistors.</li>
+                                            <li><strong>Input/Output:</strong> Keyboards, punch cards; monitors
+                                                (VDUs) and printers.</li>
+                                            <li><strong>Storage:</strong> Magnetic tapes, disk drives, early
+                                                removable media (floppy disks).</li>
+                                            <li><strong>Advantages:</strong> Faster and smaller than
+                                                second-generation computers.</li>
+                                            <li>
+                                                <p><strong>Examples:</strong> IBM 360 Series, PDP-8, Honeywell 600
+                                                    series, etc.</p>
+                                                <h4>Disadvantages</h4>
+                                                <ol type="i">
+                                                    <li>High cost and complex design.</li>
+                                                    <li>Overheating is possible due to compact arrangement of
+                                                        components.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Fourth generation (1970- present)</h3>
+                                        <ul class="hyphen-list">
+                                            <li><strong>Technology:</strong> Microprocessors with LSI (Large-Scale
+                                                Integration) technology.</li>
+                                            <li><strong>Input/Output:</strong> Keyboard, mouse, joystick; monitors,
+                                                printers, speakers.</li>
+                                            <li><strong>Storage:</strong> Floppy disks, hard disk drives, CD-ROMs.
+                                            </li>
+                                            <li><strong>Advantages:</strong> Smaller, faster, more affordable, and
+                                                widely accessible.</li>
+                                            <li>
+                                                <p><strong>Examples:</strong> IBM PCs, Intel PCs, Macintosh Plus.
+                                                </p>
+                                                <h4>Disadvantages</h4>
+                                                <ol type="i">
+                                                    <li>Manufacturing microprocessor chips requires sophisticated
+                                                        technology.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Fifth Generation (Present - Beyond)</h3>
+                                        <ul class="hyphen-list">
+                                            <li>The generation is characterized by advancements in artificial
+                                                intelligence (AI), parallel processing. Key features of
+                                                fifth-Generation computers are.</li>
+                                            <li><strong>Artificial Intelligence (AI):</strong> Machine learning,
+                                                neural networks, expert systems.</li>
+                                            <li><strong>Parallel Processing:</strong>Multiple computations performed
+                                                simultaneously.</li>
+                                            <li><strong>Multi-Core Processors:</strong>Multiple processing units on
+                                                a single chip.</li>
+                                            <li><strong>Natural Language Processing (NLP): </strong>Machines
+                                                understand and interact with human language.</li>
+                                            <li><strong>Emerging Technologies:</strong>5G, IoT, bio-chips, virtual
+                                                reality.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>Measurement units in computer</h2>
+                        <ol type="a">
+                            <li>
+                                <h3>Processing Speed</h3>
+                                <ul class="hyphen-list">
+                                    <li>Processing speed refers to how fast a computer's CPU (Central Processing
+                                        Unit) can process instructions and perform tasks.</li>
+                                    <li>The speed of a computer is very high, so it is often described using very
+                                        small units of time.</li>
+                                    <li>
+                                        <p>Some common units are:</p>
+                                        <pre>
+Millisecond (10-3 sec)  = 1/1,000
+Microsecond (10-6 sec)  = 1/1,000,000
+Nanosecond (10-9 sec)   = 1/1,000,000,000
+Picosecond (10-12 sec)  = 1/1,000,000,000,000
+Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
+</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Storage Unit</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>The measurement units for digital storage.</p>
+                                        <pre>
+1 Bit		= 	Binary Digit
+8 Bits		= 	1 Byte
+1024 Byte	= 	1KB [Kilo Byte]
+1024 KB		= 	1MB [Mega Byte]
+1024 MB		= 	1GB [Giga Byte]
+1024 GB		= 	1TB [Terra Byte]
+1024 TB		= 	1PB [Peta Byte]
+</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h2>Classification of Computer on the basis of size and Speed</h2>
+                        <ul class="hyphen-list">
+                            <li>The classification of computers based on speed and size refers to grouping computers
+                                according to their physical dimensions (size) and their processing capabilities
+                                (speed).</li>
+                            <li>
+                                <p>On the basis of size and processing speed; computer can be classified into
+                                    following types:</p>
+                                <ol type="1">
+                                    <li>
+                                        <h3>SuperComputer</h3>
+                                        <ul class="hyphen-list">
+                                            <li>A supercomputer is a highly advanced computing Machine designed to
+                                                perform complex & large-scale computations at exceptionally high
+                                                speed.</li>
+                                            <li><strong>Processing Speed:-</strong> Capable of performing trillions
+                                                to quadrillions of calculations per Second and speed is measured in
+                                                FLOPS (Floating Point Operations Per Second).</li>
+                                            <li><strong>Parallel Processing:-</strong> Uses a technique called
+                                                Parallel processing, where multiple work on different parts of a
+                                                problem simultaneously. It contains tens of thousands of processors.
+                                            </li>
+                                            <li><strong>Massive storage and Memory:-</strong> Require enormous
+                                                amounts of memory to handle the vast amounts of data involved in
+                                                their calculations. The memory can be in the range of terabytes(TB)
+                                                or even petabytes(PB).</li>
+                                            <li><strong>Applications:-</strong> Scientific Research, Engineering,
+                                                Medicine, AI etc.</li>
+                                            <li><strong>Examples:-</strong> Fugaku, Summit, PARAM etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Mainframe Computer</h3>
+                                        <ul class="hyphen-list">
+                                            <li>A mainframe computer is a large, powerful, and highly reliable
+                                                computing system designed to handle and process vast amounts of data
+                                                quickly. It is primarily used by large organizations for bulk data
+                                                processing such as static, census data processing, transaction
+                                                processing etc.</li>
+                                            <li><strong>High Processing Power:</strong> Capable of processing
+                                                billions of instructions per second (BIPS).</li>
+                                            <li><strong>Reliability:</strong> Built with redundancy and failover
+                                                features for continuous operation.</li>
+                                            <li><strong>Security:</strong> Advanced encryption and access control
+                                                for sensitive data.</li>
+                                            <li><strong>Multi-user Capability:</strong> Supports thousands of users
+                                                simultaneously without performance degradation.</li>
+                                            <li><strong>Applications:</strong> Banking, finance, healthcare,
+                                                government data processing.</li>
+                                            <li><strong>Examples:</strong> IBM z series, System z9, System z10.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Mini ComputerMinicomputers are mid-range computers that emerged in the
+                                            1980s. They are smaller and less expensive than mainframes but more
+                                            powerful than microcomputers.</h3>
+                                        <ul class="hyphen-list">
+                                            <li><strong>Size and Cost:</strong> Smaller than mainframes, often
+                                                fitting in a single cabinet, and more affordable.</li>
+                                            <li><strong>Multi-user Capability:</strong> Supports multiple users via
+                                                terminals.</li>
+                                            <li><strong>Customizable:</strong> Can connect to various peripherals
+                                                like disk drives, tape drives, printers, and networks.</li>
+                                            <li><strong>Examples:-</strong> PDP-8, PDP-11, IBM system 3, etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Microcomputer</h3>
+                                        <ul class="hyphen-list">
+                                            <li>A microcomputer is a small, relatively inexpensive computer that
+                                                uses a microprocessor as its CPU. Designed for individual users, it
+                                                forms the foundation of personal computing, including modern PCs,
+                                                laptops, tablets, and smartphones.</li>
+                                            <li><strong>Microprocessor-Based:</strong> The CPU is integrated into a
+                                                single chip.</li>
+                                            <li><strong>Compact Size:</strong> Small enough to fit on a desk
+                                                (desktop) or be portable (laptops).</li>
+                                            <li><strong>User-Friendly:</strong> Designed for operation without
+                                                specialized knowledge.</li>
+                                            <li><strong>Storage and Peripherals:</strong> Early microcomputers used
+                                                floppy disks or cassettes; modern ones use hard drives, CDs, DVDs,
+                                                or SSDs.</li>
+                                            <li><strong>Single-User Operation:</strong> Primarily intended for one
+                                                user at a time.</li>
+                                            <li><strong>Examples:-</strong> IBM PC, Apple Macintosh, Deller.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>Mobile Computing</h2>
+                        <ul class="hyphen-list">
+                            <li>Mobile computing refers to the technology that allows users to transmit and receive
+                                data—such as voice, audio, video, text, and images—via computers or mobile devices
+                                without the need for a physical connection.</li>
+                            <li>It involves the use of small, portable computing devices, commonly called mobile
+                                devices, and wireless-enabled networks that provide connectivity. Examples of mobile
+                                devices include laptops, notebook PCs, palmtops, PDAs, and other portable gadgets.
+                            </li>
+                            <li>A radio signaling device within these mobile devices is used to send and receive
+                                electronic signals, and all devices typically connect via Wi-Fi or cellular
+                                networks.</li>
+                        </ul>
+                        <h3>Applications of Mobile Computing</h3>
+                        <ol type="1">
+                            <li>
+                                <h4>Mobile Commerce (Business)</h4>
+                                <ul class="hyphen-list">
+                                    <li>Users can browse, purchase, and sell products or services via mobile
+                                        devices. Mobile banking apps and digital wallets enable account management,
+                                        money transfers, and bill payments.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Health Sector</h4>
+                                <ul class="hyphen-list">
+                                    <li>Mobile devices and wearable technology track health metrics, support
+                                        telemedicine, medication management, and provide remote consultations and
+                                        health monitoring.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Location-Based Services (LBS)</h4>
+                                <ul class="hyphen-list">
+                                    <li>GPS enabled devices provide navigation, geotagging, and asset tracking.
+                                        Businesses use geofencing to target customers with location-specific offers.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Mobile Learning (Education)</h4>
+                                <ul class="hyphen-list">
+                                    <li>Educational apps like Coursera, Khan Academy, Unacademy, and LinkedIn
+                                        Learning offer on-the-go learning. Remote collaboration tools like Microsoft
+                                        Teams and Zoom enable virtual classrooms and group projects.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Social Networking and Communication</h4>
+                                <ul class="hyphen-list">
+                                    <li>Messaging apps and social media platforms like Facebook, Instagram, and
+                                        Twitter keep users connected. Mobile access enables instant communication
+                                        and content sharing.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Entertainment and Multimedia</h4>
+                                <ul class="hyphen-list">
+                                    <li>Streaming services and mobile gaming allow entertainment anywhere. Apps can
+                                        also provide virtual reality experiences via mobile devices.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Remote Work and Productivity</h4>
+                                <ul class="hyphen-list">
+                                    <li>Office apps, task management tools, and cloud services enhance productivity.
+                                        Users can work, collaborate, and manage tasks from anywhere.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Smart Homes and IoT Integration</h4>
+                                <ul class="hyphen-list">
+                                    <li>Mobile apps control smart home devices and IoT gadgets, allowing users to
+                                        manage home security, lighting, and appliances remotely.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h2>Computer architecture</h2>
+                        <ul class="hyphen-list">
+                            <li>Computer architecture refers to those attributes of a system visible to a programmer
+                                or those attributes that have a direct impact on the logical execution of a program.
+                            </li>
+                            <li>It includes a series of instructions, addressing modes, data types and registers.
+                            </li>
+                        </ul>
+                        <h2>Computer organization</h2>
+                        <ul class="hyphen-list">
+                            <li>Computer organization concerns the operational units and their interconnections. It
+                                consists of physical units like circuit design and peripherals.</li>
+                        </ul>
+                        <h3>Difference between computer architecture and organization.</h3>
+                        <table>
+                            <caption>Difference between computer architecture and organization.</caption>
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Computer Architecture</th>
+                                    <th>Computer Organization</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Primary Goal</td>
+                                    <td>Defines what the computer does.</td>
+                                    <td>Defines how the computer does it.</td>
+                                </tr>
+                                <tr>
+                                    <td>Level of View</td>
+                                    <td>Logical/High-level design.</td>
+                                    <td>Physical/Low-level implementation.</td>
+                                </tr>
+                                <tr>
+                                    <td>Key Examples</td>
+                                    <td>Instruction Set Architecture (ISA), addressing modes, registers.</td>
+                                    <td>Control signals, interfaces between computers and peripherals, memory
+                                        technology.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2>Components of computer system</h2>
+                        <ul class="hyphen-list">
+                            <li>A computer system is an integrated set of hardware and software designed to perform
+                                computational tasks.</li>
+                            <li>
+                                <p>It includes the central processing units (CPU), memory storage, input/output,
+                                    devices and the operating system, which work together to execute programs and
+                                    process data.</p>
+                                <figure>
+                                    <img src="images/" alt="Components of computer system">
+                                    <figcaption>Fig:- Block diagram of Computer system</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ol type="1">
+                            <li>
+                                <h3>Input unit</h3>
+                                <ul class="hyphen-list">
+                                    <li>Input units are those units that are used for providing data and instruction
+                                        to the computer. The input can be provided either by clicking on the mouse
+                                        or by typing on the keyboard.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>CPU</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>It is the major component of the computer system. It acts as the heart
+                                            and brain of a computer and performs all the processing related tasks.
+                                            The CPU is the combination of three components ALU, CU and Register.</p>
+                                        <ol type="a">
+                                            <li><strong>ALU:-</strong> All the arithmetic and logical calculations
+                                                are performed by ALU. Arithmetic operations include addition,
+                                                subtraction, division and multiplication. Whereas logical units
+                                                perform logical operations like AND, OR, NOT, etc.</li>
+                                            <li><strong>CU:-</strong> It controls all the other units in the
+                                                computer by providing the control signal. The control unit fetches
+                                                the instruction from memory, decodes it and finally executes the
+                                                instructions.</li>
+                                            <li><strong>Register:-</strong>Register is a special temporary storage
+                                                location within the CPU. To execute an instruction the control of
+                                                the CPU retrieves it from main memory and places it onto a register.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Memory</h3>
+                                <ul class="hyphen-list">
+                                    <li>Memory in a computer system refers to the hand ware component where data and
+                                        programs entered through the input unit are stored. Its main function is to
+                                        store data, information or final results before display or sent to output
+                                        devices.</li>
+                                    <li>
+                                        <p>Memory can be divided into two types:</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Primary memory</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The primary memory is also called the main memory of the
+                                                        computer. It stores and provides information very quickly.
+                                                        This memory is generally used to hold the program being
+                                                        currently executed in the computer.</li>
+                                                    <li>RAM and ROM are examples of the main memory.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Secondary memory</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The secondary memory is also called Auxiliary memory and has
+                                                        very large storage capacity. This memory is used as a backup
+                                                        memory for future reference. It stores several programs,
+                                                        documents, databases, etc.</li>
+                                                    <li>The programs that you run on a computer are first
+                                                        transferred to the primary memory before it runs. Whenever
+                                                        the results are saved again they get a Hard disk, stored in
+                                                        the secondary memory. Floppy disk, SSD, etc. are the
+                                                        examples.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Output Units</h3>
+                                <ul class="hyphen-list">
+                                    <li>The unit in a computer system refers to the different hardware components
+                                        that provide information and results of computation to the outside world in
+                                        the form that con perceive, such as text, images, sounds, etc.</li>
+                                    <li>Examples: Monitor, Printers, Speakers, etc.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h2>Concept of Microprocessor</h2>
+                        <ul class="hyphen-list">
+                            <li>The CPU contains three components ALU, CU and Register. When all these three
+                                components are integrated into a single chip then it is called Microprocessor.</li>
+                        </ul>
+                        <figure>
+                            <img src="/images/" alt="Microprocessor">
+                            <figcaption>Fig: Block diagram of microprocessor.</figcaption>
+                        </figure>
+                        <h3>Functions of Microprocessor</h3>
+                        <ol type="i">
+                            <li>It controls the input and output devices of the computer.</li>
+                            <li>It controls the storage of data inside a computer.</li>
+                            <li>It performs arithmetical and logical operations.</li>
+                            <li>It handles every other part of the computer.</li>
+                        </ol>
+                        <h3>Characteristics of Microprocessor</h3>
+                        <ol type="i">
+                            <li><strong>Instruction set:-</strong> The set of instructions that the microprocessor
+                                can execute.</li>
+                            <li><strong>Bandwidth:-</strong> The number of bits processed in a single instruction.
+                            </li>
+                            <li><strong>Clock speed:-</strong> The clock speed determines how many instructions per
+                                second the processor can execute. It measures in Megahertz (MHz) or Gigahertz (GHz).
+                            </li>
+                            <li><strong>Word Length:-</strong> It refers to the number of internal structures. The
+                                word length ranges from 4 bits to 64 bits depending upon the type of microprocessor.
+                            </li>
+                        </ol>
+                        <h3>Type of Microprocessor</h3>
+                        <ol type="1">
+                            <li>
+                                <h4>CISC (Complex instruction Set Computer)</h4>
+                                <ul class="hyphen-list">
+                                    <li>It is an architecture that uses a large and complex set of instructions to
+                                        perform a task. It has a large instruction set that leads to slower
+                                        execution times. CISC processors were used in early personal computers and
+                                        mainframes.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>RISC (Reduced instruction Set Computer)</h4>
+                                <ul class="hyphen-list">
+                                    <li>It is a type of microprocessor architecture that uses a smaller, simpler set
+                                        of processing sp instructions compared to complex instruction set computers
+                                        (CISC). This simplicity leads to faster processing speeds, lower power
+                                        consumption, and smaller chip size. RISC processors are widely used in
+                                        modern devices like smartphones, tablets, and embedded systems.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <h2>Bus Structure</h2>
+                        <ul class="hyphen-list">
+                            <li>Bus structure simply refers to the pathway through which data and information can be
+                                exchanged between the different components of the computer System.</li>
+                            <li>It consists of the data bus, address bus and control bus, each serving different
+                                roles. </li>
+                            <li>
+                                <p>The diagrammatic representation as shown in figure below.</p>
+                                <figure>
+                                    <img src="/images/" alt="Bus Structure">
+                                    <figcaption>Fig:- Block diagram of bus structure.</figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <h3>Type of Computer Bus</h3>
+                        <ol type="1">
+                            <li><strong>Data Bus:-</strong> This bus is bidirectional. It allows data to be
+                                transferred both to and from the CPU, memory, and I/O devices.</li>
+                            <li><strong>Address Bus:-</strong> This bus is unidirectional. The address bus carries
+                                information about the location of data in memory.</li>
+                            <li><strong>Control Bus:-</strong> The control bus carries the control signals that
+                                makes sure everything is flowing smoothly from place to place. It is also
+                                bidirectional.</li>
+                        </ol>
+                        <h3>Major function of System Bus</h3>
+                        <ol type="i">
+                            <li><strong>Data transfer:-</strong> Carry data between different components of a
+                                computer system.</li>
+                            <li><strong>Addressing:-</strong> Determine the location in memory or device where data
+                                should be read from or written to.</li>
+                            <li><strong>Control signal transmission:-</strong> Carry control signals from the
+                                processor to other components to manage operation.</li>
+                            <li><strong>Power Distribution:-</strong> Distribute electrical power to various
+                                components within a System.</li>
+                        </ol>
+                        <h2>Memory</h2>
+                        <ul class="hyphen-list">
+                            <li>In computers, memory is a device that stores data and instructions for a computer
+                                system. It's crucial for the computer to function, as it holds everything from the
+                                operating system to the data being processed.</li>
+                            <li>
+                                <p>On the basis of levels it's divided into following categories:-</p>
+                                <ol type="1">
+                                    <li>
+                                        <h3>Register</h3>
+                                        <ul class="hyphen-list">
+                                            <li>Registers are small, fast storage locations within the CPU that
+                                                temporarily hold data and instructions being wed by the processor.
+                                            </li>
+                                            <li>They facilitate rapid data access and manipulation, enabling
+                                                efficient execution of operations.</li>
+                                            <li>Examples include the accumulator, instruction register, and program
+                                                counter.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Cache Memory</h3>
+                                        <ul class="hyphen-list">
+                                            <li>Cache memory is high-speed memory used to speed up CPU execution.
+                                            </li>
+                                            <li>It is more expensive than RAM but cheaper than registers and acts as
+                                                a buffer between the CPU and RAM.</li>
+                                            <li>It stores frequently used data and instructions so the CPU can
+                                                access them immediately.</li>
+                                            <li>
+                                                <p>Types of cache:</p>
+                                                <ol type="a">
+                                                    <li><strong>L1 cache:-</strong> faster, smaller Cache directly
+                                                        on the CPU for immediate data access.</li>
+                                                    <li><strong>L2 cache:-</strong> Larger, slightly slower cache
+                                                        near the CPU for frequently accessed data.</li>
+                                                    <li><strong>L3 cache:-</strong> Largest, slowest cache Shared
+                                                        across CPU cores for less frequently owned data.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Primary Memory</h3>
+                                        <ul class="hyphen-list">
+                                            <li>Primary memory, also called main memory, stores and provides
+                                                information very quickly.</li>
+                                            <li>
+                                                <p>It is used to hold programs and data that are currently being
+                                                    executed by the computer.</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <h4>RAM (RANDOM ACCESS MEMORY)</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>RAM is a type of volatile memory used by computers
+                                                                to store data that is actively being accessed or
+                                                                processed.</li>
+                                                            <li>It allows the CPU to quickly read and write data,
+                                                                enabling efficient multitasking and smooth
+                                                                application performance.</li>
+                                                            <li>Unlike permanent storage, RAM loses all stored
+                                                                information when the computer is powered off.</li>
+                                                            <li>Increasing RAM can improve system performance by
+                                                                allowing more applications to run simultaneously
+                                                                without slowing down.</li>
+                                                            <li>
+                                                                <p>It is simply divided into two types:</p>
+                                                                <ol type="i">
+                                                                    <li>
+                                                                        <h5>SRAM (Static Random Access Memory)</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>SRAM is a type of memory that uses
+                                                                                latching circuitry (flip-flops) to
+                                                                                store each bit, making it faster and
+                                                                                more reliable than DRAM.</li>
+                                                                            <li>SRAM is commonly used in cache
+                                                                                memory and other applications where
+                                                                                high speed is critical.</li>
+                                                                            <li>However, SRAM is more expensive and
+                                                                                occupies more space than DRAM,
+                                                                                limiting its use to specific
+                                                                                high-performance areas.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>DRAM (Dynamic Random Access Memory)</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>DRAM stores each bit of data using a
+                                                                                capacitor-transistor pair, making it
+                                                                                more space-efficient and
+                                                                                cost-effective than SRAM.</li>
+                                                                            <li>Because the capacitor leaks charge,
+                                                                                the data must be refreshed
+                                                                                periodically.</li>
+                                                                            <li>DRAM is slower than SRAM but is
+                                                                                widely used as the main memory in
+                                                                                computers due to its high density
+                                                                                and lower cost.</li>
+                                                                            <li>Its simple design allows large
+                                                                                amounts of memory to be packed into
+                                                                                a small space.</li>
+                                                                        </ul>
+                                                                        <table>
+                                                                            <caption>Differences Between SRAM and
+                                                                                DRAM</caption>
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>SRAM</th>
+                                                                                    <th>DRAM</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1. Mostly it is formed by a
+                                                                                        wing transistor.</td>
+                                                                                    <td>1. Mostly it is formed by
+                                                                                        using capacitors.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>2. It is expensive.</td>
+                                                                                    <td>2. It is less expensive.
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>3. It has a low density of
+                                                                                        data.</td>
+                                                                                    <td>3. It has a high density of
+                                                                                        data.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>4. It is faster than DRAM.
+                                                                                    </td>
+                                                                                    <td>4. It is slower than SRAM.
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>5. It does not need periodic
+                                                                                        refreshing.</td>
+                                                                                    <td>5. It needs periodic
+                                                                                        refreshing.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>6. It is mainly used as
+                                                                                        cache memory.</td>
+                                                                                    <td>6. It is used as the main
+                                                                                        memory.</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>7. It consumes less
+                                                                                        electrical power.</td>
+                                                                                    <td>7. It consumes high
+                                                                                        electrical power.</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>ROM</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>ROM is a type of non-volatile memory, meaning it
+                                                                retains data even when the power is turned off. This
+                                                                makes it essential for storing firmware and other
+                                                                critical software.</li>
+                                                            <li>ROM is usually programmed during the manufacturing
+                                                                process and contains data that does not need to be
+                                                                modified, such as the BIOS in computers.</li>
+                                                            <li>Unlike RAM, traditional ROM can only be written
+                                                                once, though variations like EEPROM allow limited
+                                                                rewriting.</li>
+                                                            <li>It is commonly used in devices such as computers,
+                                                                smartphones, and gaming consoles to store software
+                                                                that must not change, like boot-loaders.</li>
+                                                            <li>
+                                                                <p>Types of ROM:-</p>
+                                                                <ol type="a">
+                                                                    <li>
+                                                                        <h5>Mask ROM:-</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>In Mask ROM, Data is written during
+                                                                                the manufacturing process and cannot
+                                                                                be altered or reprogrammed. Used in
+                                                                                devices where firmware is fixed and
+                                                                                does not require updates.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>PROM</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>PROM stands for Programmable ROM.
+                                                                            </li>
+                                                                            <li>Manufactured as blank and can be
+                                                                                programmed only once using a special
+                                                                                device called a programmer. Suitable
+                                                                                for applications where data is
+                                                                                written after manufacturing and does
+                                                                                not need changes.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>EPROM</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>EPROM stands for Erasable
+                                                                                Programmable ROM.</li>
+                                                                            <li>Data can be erased by exposing the
+                                                                                chip to ultraviolet light and then
+                                                                                reprogrammed. Used when firmware
+                                                                                updates are required occasionally.
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>EEPROM</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>EEPROM stands for Electrically
+                                                                                Erasable Programmable ROM.</li>
+                                                                            <li>Data can be erased and reprogrammed
+                                                                                electrically multiple times.
+                                                                                Commonly used in microcontrollers
+                                                                                and BIOS where periodic updates are
+                                                                                needed.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Secondary Memory</h3>
+                                        <ul class="hyphen-list">
+                                            <li>Secondary memory, also known as auxiliary or external memory, is a
+                                                type of computer memory used for long-term storage of data and
+                                                programs.</li>
+                                            <li>Unlike primary memory (RAM), which is volatile and used for
+                                                temporary storage, secondary memory is non-volatile, meaning it
+                                                remains data even when the computer is turned off.</li>
+                                            <li>
+                                                <p>Some examples are:</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <h4>Hard Disk Drives (HDDs)</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li><strong>Technology:</strong> HDDs use magnetic
+                                                                storage to read and write data on spinning disks
+                                                                called platters. A read/write head moves across the
+                                                                platter to access data.</li>
+                                                            <li><strong>Capacity:</strong> Offer large storage
+                                                                capacities, ranging from hundreds of GB to several
+                                                                TB.</li>
+                                                            <li><strong>Speed:</strong> Slower read/write speeds
+                                                                compared to SSDs.</li>
+                                                            <li><strong>Durability:</strong> Prone to mechanical
+                                                                failure due to moving parts.</li>
+                                                            <li><strong>Usage:</strong> Desktop computers, laptops,
+                                                                and servers.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Solid-State Drives (SSDs)</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li><strong>Technology:</strong> SSDs use NAND flash
+                                                                memory, a non-volatile memory that retains data
+                                                                without power.</li>
+                                                            <li><strong>Capacity:</strong> Typically range from 128
+                                                                GB to several terabytes.</li>
+                                                            <li><strong>Speed:</strong> Much faster than HDDs, with
+                                                                speeds from about 500 MB/s to over 3,000 MB/s.</li>
+                                                            <li><strong>Durability:</strong> More durable than HDDs
+                                                                as they have no moving parts.</li>
+                                                            <li><strong>Usage:</strong> Modern laptops and desktops.
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Optical Disks</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li><strong>Technology:</strong> Use laser
+                                                                technology to read and write data by creating
+                                                                tiny pits on the disc surface.</li>
+                                                            <li><strong>Types:</strong> CDs, DVDs, and Blu-rays.
+                                                            </li>
+                                                            <li><strong>Capacity:</strong> CDs hold ~700 MB,
+                                                                DVDs up to 4.7 GB (single-layer) or 8.5 GB
+                                                                (dual-layer), and Blu-rays up to 25 GB or 50 GB.
+                                                            </li>
+                                                            <li><strong>Durability:</strong> Scratches on the
+                                                                data surface can cause data loss.</li>
+                                                            <li><strong>Usage:</strong> Media storage, software
+                                                                distribution, and backups.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Flash Memory</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li><strong>Technology:</strong> Uses NAND flash
+                                                                memory similar to SSDs.</li>
+                                                            <li><strong>Types:</strong> USB flash drives and
+                                                                memory cards (SD, microSD).</li>
+                                                            <li><strong>Capacity:</strong> Ranges from a few
+                                                                gigabytes to several terabytes.</li>
+                                                            <li><strong>Durability:</strong> Portable and
+                                                                durable with no moving parts.</li>
+                                                            <li><strong>Usage:</strong> Smartphones, cameras,
+                                                                tablets, etc.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Magnetic Tapes</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li><strong>Technology:</strong> Uses magnetic tape with
+                                                                sequential data access, resulting in slower access
+                                                                times.</li>
+                                                            <li><strong>Capacity:</strong> Stores very large amounts
+                                                                of data, often several terabytes.</li>
+                                                            <li><strong>Durability:</strong> Reliable for long-term
+                                                                storage.</li>
+                                                            <li><strong>Usage:</strong> Backups and archival
+                                                                storage.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>Input Devices</h2>
+                        <ul class="hyphen-list">
+                            <li>An input device is hardware that allows users to enter data and control signals into
+                                a computer. For eg: keyboards, mouse, scanners, cameras, joysticks, and microphones.
+                            </li>
+                            <li>These devices enable interaction with the computer, facilitating various tasks and
+                                operations. Input devices are essential for user-computer communication. They
+                                convert user actions into data the computer can process.</li>
+                            <li>
+                                <p>The different input devices are following:</p>
+                                <ol type="1">
+                                    <li>
+                                        <h3>Keyboard</h3>
+                                        <ul class="hyphen-list">
+                                            <li>A keyboard is an input device used to enter text, numbers, and other
+                                                commands into a computer.</li>
+                                            <li>It consists of a set of keys, each of which corresponds to a
+                                                specific character, symbol, function. Keyboards are essential for
+                                                typing documents, coding, gaming, and general tasks.</li>
+                                            <li>A normal keyboard contains 104 keys while a laptop contains 78-84
+                                                keys depending upon model.</li>
+                                            <li>QWERTY, Mechanical, Gaming, etc. are the examples of keyboards.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Mouse</h3>
+                                        <ul class="hyphen-list">
+                                            <li>A mouse is a pointing device used to interact with the graphical
+                                                user interface (GUI) of a computer by moving a pointer or cursor on
+                                                the screen.</li>
+                                            <li>The mouse has two or three buttons on top of it.</li>
+                                            <li>For eg: Optical mouse, Mechanical mouse.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Touch Screen</h3>
+                                        <ul class="hyphen-list">
+                                            <li>A Touch Screen is a display that also serves as an input device,
+                                                allowing users to interact with the computer by touching the screen
+                                                directly.</li>
+                                            <li>Examples: Smart phones, tablets, and touchscreen laptops. Users can
+                                                tap, swipe or pinch the screen to navigate through menus, enter
+                                                information or interact with applications.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Microphone</h3>
+                                        <ul class="hyphen-list">
+                                            <li>An input device that captures sound and converts it into electrical
+                                                signals that the computer can process.</li>
+                                            <li>A microphone used for voice commands, recording or video
+                                                conferencing.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>Output Devices</h2>
+                        <ul class="hyphen-list">
+                            <li>The output unit in a computer system refers to different hardware components that
+                                provide information and results of computation to the outside world in the form that
+                                can perceive such as text, images, audios, videos etc.</li>
+                            <li>
+                                <p>Types of output devices are:</p>
+                                <ol type="1">
+                                    <li>
+                                        <h3>Soft-copy Output devices</h3>
+                                        <ul class="hyphen-list">
+                                            <li>Soft-copy devices refer to devices that display or prevent data
+                                                electronically, rather than producing a physical copy.</li>
+                                            <li>
+                                                <p>Common examples include: Monitors, Projectors, Speakers.</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <h4>Monitor</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>A monitor is the soft copy output device which
+                                                                presents data and information to the user in the
+                                                                form of text, images, and videos.</li>
+                                                            <li>It is one of the most common output devices. It is
+                                                                also called a display screen.</li>
+                                                            <li>It displays everything from the operating system's
+                                                                graphical user interface (GUI) to videos and games.
+                                                            </li>
+                                                            <li>
+                                                                <p>CRT, LCD and LED are the types of monitor.</p>
+                                                                <ol type="i">
+                                                                    <li>
+                                                                        <h5>CRT (Cathode Ray Tube) monitors</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>CRT monitors were the earliest type
+                                                                                of computer monitors, using election
+                                                                                beams to illuminate phosphor dots on
+                                                                                the screen, which creates the
+                                                                                images.</li>
+                                                                            <li>Bulk and heavy.</li>
+                                                                            <li>Good colour reproduction and viewing
+                                                                                angles.</li>
+                                                                            <li>High power consumption.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>LCD (Liquid Crystal Display) monitors
+                                                                        </h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>LCD monitors are flat-panes displays
+                                                                                that use liquid crystal to form
+                                                                                images. The crystals are illuminated
+                                                                                by a backlight.</li>
+                                                                            <li>Thin and lightweight.</li>
+                                                                            <li>Low power consumption.</li>
+                                                                            <li>Better display resolution and
+                                                                                sharpness compared to CRTs.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>LED (Light Emitting Diode) monitors</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>LED monitors are a sub-type of LCD
+                                                                                monitors where the back light is
+                                                                                provided by LEDs (Light Emitting
+                                                                                Diode) instead of traditional
+                                                                                fluorescent light.</li>
+                                                                            <li>Thinner and more energy-efficient
+                                                                                than standard LCDs.</li>
+                                                                            <li>Enhanced contrast and colour
+                                                                                accuracy.</li>
+                                                                            <li>Longer Life span and lower power
+                                                                                consumption compared to LCDs.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Speaker</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>Speakers are also soft copy output devices that
+                                                                convert audio signals from the computer. It allows
+                                                                users to hear music and other sounds.</li>
+                                                            <li>In most of the computer devices speakers are
+                                                                built-in like laptops, mobile devices, etc.</li>
+                                                            <li>They are used to play music, movie audio or system
+                                                                sound.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>Projector</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>Projector is a soft copy output device that projects
+                                                                Images or videos from a computer onto a Large
+                                                                screen, making it ideal for presentations or media
+                                                                playback.</li>
+                                                            <li>It is used in classrooms, conference rooms, or home
+                                                                theaters.</li>
+                                                            <li>These projectors are connected to a computer to
+                                                                display slides, videos, or other content on a wall
+                                                                or screen.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Hard-copy Output devices</h3>
+                                        <ul class="hyphen-list">
+                                            <li>Hardcopy output devices produce a physical, permanent copy of data.
+                                            </li>
+                                            <li>
+                                                <p>Examples include printers, plotters, fax machines.</p>
+                                                <ol type="a">
+                                                    <li>
+                                                        <h4>Printer</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>A printer produces a hard copy of digital documents
+                                                                by converting electronic data such as text, images
+                                                                into a printed form.</li>
+                                                            <li>
+                                                                <p>Printers are usually divided into two types:</p>
+                                                                <ol type="a">
+                                                                    <li>
+                                                                        <h5>Impact Printers</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>An impact printer has mechanisms
+                                                                                resembling those of a typewriter. It
+                                                                                forms the characters or image by
+                                                                                striking a mechanism such as a print
+                                                                                hammer or wheel agate on a linked
+                                                                                ribbon, leaving an image on paper.
+                                                                            </li>
+                                                                            <li>
+                                                                                <p>Types of Impact Printers are:</p>
+                                                                                <ol type="i">
+                                                                                    <li>
+                                                                                        <h6>Dot matrix printer</h6>
+                                                                                        <ul class="hyphen-list">
+                                                                                            <li>It is an impact
+                                                                                                printer that
+                                                                                                produces text and
+                                                                                                graphics when tiny
+                                                                                                wires put on the
+                                                                                                print bread strike
+                                                                                                the ink ribbon. The
+                                                                                                print head runs back
+                                                                                                and forth on the
+                                                                                                paper like a type
+                                                                                                writer.</li>
+                                                                                            <li>It has low printing
+                                                                                                speed.</li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <h6>Daisy wheel printer</h6>
+                                                                                        <ul class="hyphen-list">
+                                                                                            <li>A daisy wheel
+                                                                                                printer is a type of
+                                                                                                impact printer that
+                                                                                                uses a rotating disk
+                                                                                                with characters to
+                                                                                                produce high-quality
+                                                                                                text and graphics.
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <h6>Line printer</h6>
+                                                                                        <ul class="hyphen-list">
+                                                                                            <li>A line printer is a
+                                                                                                type of printer that
+                                                                                                prints an Entire
+                                                                                                line of text at
+                                                                                                once, rather than a
+                                                                                                single character,
+                                                                                                lines of ten
+                                                                                                associated with
+                                                                                                printers Early
+                                                                                                digital computing
+                                                                                                and units record
+                                                                                                Equipment, but are
+                                                                                                still in use today.
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ol>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                    <li>
+                                                                        <h5>Non-Impact Printers</h5>
+                                                                        <ul class="hyphen-list">
+                                                                            <li>Non impact printers used almost
+                                                                                everywhere now, are faster and
+                                                                                quality than impact printers because
+                                                                                they have fewer moving parts.</li>
+                                                                            <li>It forms characters and images
+                                                                                without direct physical contact
+                                                                                between the printing mechanism and
+                                                                                the paper.</li>
+                                                                            <li>
+                                                                                <p>Type of non-impact printer are:
+                                                                                </p>
+                                                                                <ol type="i">
+                                                                                    <li>
+                                                                                        <h6>Inkjet printer</h6>
+                                                                                        <ul class="hyphen-list">
+                                                                                            <li>Inkjet printers are
+                                                                                                non-impact pointers
+                                                                                                which print text and
+                                                                                                images by spraying
+                                                                                                tiny droplets of
+                                                                                                liquid ink onto the
+                                                                                                paper; most inkjet
+                                                                                                manufactures use
+                                                                                                this technology in
+                                                                                                consumer inkjet
+                                                                                                printers.</li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <h6>Laser printers</h6>
+                                                                                        <ul class="hyphen-list">
+                                                                                            <li>Laser printers
+                                                                                                non-impact printers
+                                                                                                are non which can
+                                                                                                print text and
+                                                                                                images in high speed
+                                                                                                and high quality
+                                                                                                resolution, ranging
+                                                                                                from 600 to 1200
+                                                                                                dip.</li>
+                                                                                            <li>They are of high
+                                                                                                resolution.</li>
+                                                                                            <li>They do not smear.
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                </ol>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>Hardware Interfaces</h2>
+                        <ul class="hyphen-list">
+                            <li>It is the part through which data is transferred between a computer and other
+                                devices connected to the computer.</li>
+                            <li>In simple words, we can say that hardware interfaces are ports, plugs or sockets
+                                through which information flows between the computer and peripherals.</li>
+                            <li>
+                                <p>The different type of hardware interfaces are as follows:-</p>
+                                <ol type="1">
+                                    <li>
+                                        <h3>Serial Port</h3>
+                                        <ul class="hyphen-list">
+                                            <li>It is also called RS-232 port. It is an interface that is used to
+                                                connect devices that are capable of transferring data serially i.e.
+                                                One bit at a time.</li>
+                                            <li>It has normally nine pu and are leveled with COM which means these
+                                                ports are for communication purposes.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Parallel Port</h3>
+                                        <ul class="hyphen-list">
+                                            <li>It is an interface that is used to connect the devices that are
+                                                capable of transferring multiple bits at a time. It allows us to
+                                                transfer & bit of time.</li>
+                                            <li>This port normally contains 25 pins and is used for faster speed
+                                                devices such as printers, scanners, etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>USB port</h3>
+                                        <ul class="hyphen-list">
+                                            <li>The term USB stands for Universal Serial Bus and this bus is used to
+                                                connect up to 127 peripherals to a micro computer through a single
+                                                general port.</li>
+                                            <li>It doesn't need any type of adapter card and installation. It was
+                                                designed to allow many peripherals to be connected using a single
+                                                Standardized socket and improve the plug capability without
+                                                rebooting the computer.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>Slots</h3>
+                                        <ul class="hyphen-list">
+                                            <li>It refers to the physical connectors or expansion port on a
+                                                computer's motherboard.</li>
+                                            <li>It allows you to expand or enhance the capability of your computer
+                                                by inserting various hardware components like RAM slots (for
+                                                inserting RAM), PCI slot (Peripheral Component Interconnect) for
+                                                Network card, AGP (Accelerated Graphic Port) slot for inserting
+                                                Graphics cards etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h3>IDE (Integrated Drive Electronic) port</h3>
+                                        <ul class="hyphen-list">
+                                            <li>It is an electronic interface standard that defines the connection
+                                                between a bus on a computer's motherboard and computers disk storage
+                                                devices.</li>
+                                            <li>
+                                                <p>There are types of IDE:-</p>
+                                                <ol class="a">
+                                                    <li>
+                                                        <h4>PATA</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>It refers to Parallel Advanced Technology
+                                                                Attachment. Slower and older type of IDE port. These
+                                                                cables are long flat with a 40-pin connector on
+                                                                either side of the cables.</li>
+                                                            <li>It supports data transfer rate up to 133 mbps.</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h4>SATA</h4>
+                                                        <ul class="hyphen-list">
+                                                            <li>It refers to serial Advanced Technology Attachment.
+                                                                It is the newer and faster standard for connecting
+                                                                storage devices like hard drives to the computer
+                                                                motherboard.</li>
+                                                            <li>SATA cables are long, thin and 7pin cables. It can
+                                                                transmit data twice faster than PATA.</li>
+                                                            <li>SATA versions include SATA-I (1.5 GB/s), SATA-II
+                                                                (3GB/s), SATA-III (6GB/s).</li>
+                                                            <li>It replaces PATA because it connects the storage
+                                                                device with more advanced technology like high to
+                                                                clock frequency, better error handling, hot swap
+                                                                ability etc.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h2>The End</h2>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 2 : Number System and Conversion Boolean Logic</h2>
+                            <button onclick="toggle('unit2', this)">View Notes</button>
+                        </div>
+                        <div id="unit2" class="noteContent">
+                            <h2>Number System</h2>
+                            <ul class="hyphen-list">
+                                <li>The number system, which is also known as the numeric system; is the way of
+                                    expressing the number by using the specific symbols or digits.</li>
+                                <li>
+                                    <p>Number system can be categorized into two types:-</p>
+                                    <ol type="1">
+                                        <li>
+                                            <h3>Non-Positional Number system</h3>
+                                            <ul class="hyphen-list">
+                                                <li>A non-positional number system is a number system where the value of
+                                                    a symbol is independent of its position in the number.</li>
+                                                <li>Example : Roman Number System.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h3>Positional Number system</h3>
+                                            <ul class="hyphen-list">
+                                                <li>Positional number system is the one in which there is specific value
+                                                    or
+                                                    weight for each digit.</li>
+                                                <li>
+                                                    <p>It can be further divided into four types.</p>
+                                                    <ol type="a">
+                                                        <li>
+                                                            <h4>Binary Number </h4>
+                                                            <ul class="hyphen-list">
+                                                                <li>These numbers are represented by using two digits (0
+                                                                    and 1) only and the base of the binary number is 2.
+                                                                </li>
+                                                                <li>Example: (101011)<sub>2</sub></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Decimal Number</h4>
+                                                            <ul class="hyphen-list">
+                                                                <li>It is the most common and widely used number system.
+                                                                    It uses the digits from 0.9 to represent the number.
+                                                                </li>
+                                                                <li>The base of the decimal number is 10.</li>
+                                                                <li>Example: (150)<sub>10</sub></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Octal Number</h4>
+                                                            <ul class="hyphen-list">
+                                                                <li>The number system in which base 8 is used is called
+                                                                    octal number. The Value of octal number ranges. from
+                                                                    0-7. </li>
+                                                                <li>Example : (175)<sub>8</sub></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <h4>Hexa-Decimal Number</h4>
+                                                            <ul class="hyphen-list">
+                                                                <li>The number system in which base is 16. It ranges
+                                                                    from 0-15.and represented by 0, 1, 2, 3, 4, 5, 6, 7,
+                                                                    8, 9 & 10=A, 11=B, 12=C, 13=D, 14=E, 15=F.</li>
+                                                                <li>Example: (A3B5)<sub>16</sub></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ol>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                            <h2>Conversion</h2>
+                            <ul class="hyphen-list">
+                                <li>
+                                    <p>There are many conversion from one base system to another.</p>
+                                    <ol type="1">
+                                        <li>
+                                            <h3>From binary to decimal.</h3>
+                                            <ol type="a">
+                                                <li>(11110)<sub>2</sub> = (?)<sub>10</sub>
+                                                    <pre>
+soln: 1&times;2<sup>4</sup> + 1&times;2<sup>3</sup> + 1&times;2<sup>2</sup> + 1&times;2<sup>1</sup> + 0&times;2<sup>0</sup>
+        = 16 + 8 + 4 + 2 +0
+        = 30
+    ∴ (11110)<sub>2</sub> = (30)<sub>10</sub>
+</pre>
+                                                </li>
+                                                <li>(111011.110)<sub>2</sub> = (?)<sub>10</sub>>
+                                                    <pre>
+Soln : 1&times;2<sup>5</sup> + 1&times;2<sup>4</sup> + 1&times;2<sup>3</sup> + 0&times;2<sup>2</sup> + 1&times;2<sup>1</sup> + 1&times;2<sup>0</sup> . 1&times;2<sup>-1</sup> + 1&times;2<sup>-2</sup> + 1&times;2<sup>-3</sup> + 0&times;2<sup>-4</sup>
+        = 32 + 16 + 8 + 0 + 2 + 1 . ½ + ¼ + ⅛ + 0
+        = 59.875
+    ∴ (111011.1110)<sub>2</sub> = (59.875)<sub>10</sub>
+</pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3>From octal to decimal</h3>
+                                            <ol type="a">
+                                                <li>(472)<sub>8</sub> = (?)<sub>10</sub>
+                                                    <pre>Soln: 4&times;8<sup>2</sup> + 7&times;8<sup>1</sup> + 7&times;8<sup>0</sup>
+= 256 + 56 + 2
+= 314
+∴ (472)<sub>8</sub> = (314)<sub>10</sub></pre>
+                                                </li>
+                                                <li>(541.71)<sub>8</sub> =(?)<sub>10</sub>
+                                                    <pre>
+soln: 5&times;8<sup>2</sup> + 4&times;8<sup>1</sup> + 1&times;8<sup>0</sup> . 7&times;8<sup>-1</sup>+ 1&times;8<sup>-2</sup>
+=320 + 32 + 1 . 7/8 + 1/16
+= 353.890625 
+∴ (541.71)<sub>8</sub> = (353.890625)<sub>10</sub>
+</pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3>Hexa-decimal to decimal</h3>
+                                            <ol type="a">
+                                                <li>(9BAC)<sub>16</sub> = (?)<sub>10</sub>
+                                                    <pre>Soln: 9&times;16<sup>3</sup> + 11&times;16<sup>2</sup> + 10&times;16<sup>1</sup> + 12&times;16<sup>0</sup>
+= 36864 + 2816 + 160 + 12
+= 39852
+ ∴ (9BAC)<sub>16</sub> = (39852)<sub>10</sub></pre>
+                                                </li>
+                                                <li>(AC9E.B43)<sub>16</sub> = (?)<sub>10</sub>
+                                                    <pre>soln: 10&times;16<sup>3</sup> + 12&times;16<sup>2</sup> + 9&times;16<sup>1</sup> + 14&times;16<sup>0</sup> . 11&times;16<sup>-1</sup> + 4&times;16<sup>-2</sup> + 3&times;16<sup>-3</sup> 
+= 10x4096 + 12x256 + 9x16 + 14x1 . 11/16 + 4/256 + 3/4096 
+= 40960+3072+144+14 . 2816+64+3/4096 
+= 44190.704
+∴ (AC9E.B43)<sub>16</sub> = (44190.704)<sub>10</sub></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3>Decimal to binary</h3>
+                                            <ol type="a">
+                                                <li>(435)<sub>10</sub> = (?)<sub>2</sub>
+                                                    <pre></pre>
+                                                </li>
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3></h3>
+                                            <ol type="a">
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3></h3>
+                                            <ol type="a">
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3></h3>
+                                            <ol type="a">
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3></h3>
+                                            <ol type="a">
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <h3></h3>
+                                            <ol type="a">
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                                <li>
+                                                    <pre></pre>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 3 :Computer Software and Operating System</h2>
+                            <button onclick="toggle('unit3', this)">View Notes</button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 4 : Programming Concepts and Logic</h2>
+                            <button onclick="toggle('unit4', this)">View Notes</button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 5 : Web Technology-I</h2>
+                            <button onclick="toggle('unit5', this)">View Notes</button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 6 : MultiMedia</h2>
+                            <button onclick="toggle('unit6', this)">View Notes</button>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 7 : ICT and Cyber Law</h2>
+                            <button onclick="toggle('unit7', this)">View Notes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
