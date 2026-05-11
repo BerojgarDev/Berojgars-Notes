@@ -1,42 +1,552 @@
-.playpen-sans-regular {
-    font-family: "Playpen Sans", cursive;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    /* Standard weight */
-    font-style: normal;
+/* ================= RESET & BASE ================= */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.playpen-sans-bold {
-    font-family: "Playpen Sans", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    /* Bold weight */
-    font-style: normal;
-}
-
-/* ==================================================
-   ROOT VARIABLES
-================================================== */
 :root {
     --font-main: 'Playpen Sans', sans-serif;
-
     --bg: #f9f9f9;
     --text: #333;
-
     --primary: #0077cc;
     --primary-dark: #005fa3;
-
     --accent: #28a745;
     --accent-hover: #218838;
-
     --card-bg: #ffffff;
     --border: #ddd;
-
+    --shadow: rgba(0, 0, 0, 0.05);
     --radius: 10px;
+    --transition: 0.3s ease;
+    --hero-bg: #FFFFF0;
 }
 
-@import url('https://fonts.googleapis.com');
+body.dark-mode {
+    --bg: #121212;
+    --text: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --border: #333;
+    --primary: #4dabf7;
+    --accent: #51cf66;
+    --shadow: rgba(0, 0, 0, 0.4);
+    --hero-bg: #36454F;
+}
+
+/* ================= GLOBAL TYPOGRAPHY ================= */
+html {
+    font-size: 16px;
+}
 
 body {
-    font-family: 'Playpen Sans', cursive;
+    font-family: var(--font-main);
+    background: linear-gradient(to bottom, var(--bg), #f0f0f0);
+    color: var(--text);
+    line-height: 1.7;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 0.6em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: clamp(2.1rem, 5vw, 3rem);
+}
+
+h2 {
+    font-size: clamp(1.7rem, 4vw, 2.4rem);
+}
+
+h3 {
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
+}
+
+p,
+li {
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    line-height: 1.75;
+    margin-bottom: 0.85em;
+}
+
+/* ================= HEADER ================= */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #585858;
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 0.8rem 5%;
+    transition: var(--transition);
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled {
+    padding: 0.65rem 5%;
+    background: rgba(0, 80, 160, 0.98);
+}
+
+/* ================= LOGO ================= */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    gap: 2px;
+}
+
+.logo img {
+    max-width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ================= NAV ================= */
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: var(--radius);
+    font-weight: 500;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ================= DARK MODE TOGGLE ================= */
+.dark-mode-toggle {
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 0.6rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition);
+}
+
+.dark-mode-toggle:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border: none;
+    background: transparent;
+    color: white;
+    border-radius: 8px;
+}
+
+/* ================= UNIT LIST ================= */
+.unitList {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5rem 5%;
+}
+
+.unitList h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text);
+}
+
+/* ================= UNIT LIST ================= */
+.unit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card-bg);
+    padding: 14px 18px;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    margin-bottom: 0.8rem;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: var(--transition);
+}
+
+.unit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px var(--shadow);
+}
+
+.unit a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    white-space: nowrap;
+    width: 128px;
+    text-align: center;
+    background-color: var(--accent);
+    color: var(--text);
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: var(--transition);
+}
+
+.unit a:hover {
+    background-color: #008CBA;
+    transform: translateY(-2px);
+}
+
+/* ================= HERO ================= */
+.hero {
+    text-align: center;
+    background: var(--hero-bg);
+    color: var(--text);
+    padding: 3.5rem 5% 4rem;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+}
+
+.hero .coverpage .sub-class h2,
+.hero .coverpage .reference p,
+.hero .coverpage .author p {
+    line-height: 0.69;
+}
+
+.hero .coverpage p {
+    line-height: 1;
+}
+
+.disclaimer p {
+    line-height: 1.5;
+}
+
+.toc {}
+
+.content {
+    color: var(--text);
+}
+
+/* ================= NOTE BLOCK ================= */
+.noteContent {
+    display: block;
+    max-height: 100%;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    background: var(--card-bg);
+    border-left: 2px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 0 15px;
+    margin-top: 0.5rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.noteContent p {
+    line-height: 1.5;
+}
+
+/* ================= LISTS ================= */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul>li {
+    padding-left: 1.2em;
+    position: relative;
+    line-height: 1.5;
+}
+
+ul>li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+/* ================ TABLE ================ */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.table th,
+.table td {
+    border: 1px solid var(--border);
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background: var(--primary);
+    color: white;
+}
+
+.table caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* ================= SPECIAL TABLES ================= */
+.math-ladder,
+.math-multi {
+    border-collapse: collapse;
+    font-family: "Playpen Sans", sans-serif;
+    margin: 20px 60px 20px 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.math-ladder td,
+.math-multi td {
+    font-size: 20px;
+    padding: 8px 15px;
+    text-align: center;
+}
+
+.math-multi td {
+    padding: 5px 8px;
+    text-align: left;
+}
+
+.math-ladder td:first-child {
+    border-right: 2px solid var(--text);
+}
+
+.math-ladder tr:not(:last-child) td:nth-child(2) {
+    border-bottom: 2px solid var(--text);
+}
+
+.math-ladder::after,
+.math-multi::after {
+    content: '';
+    position: absolute;
+    right: -40px;
+    width: 2px;
+    background: var(--text);
+}
+
+.math-ladder::after {
+    top: 20px;
+    bottom: 40px;
+}
+
+.math-multi::after {
+    top: 10px;
+    bottom: 20px;
+}
+
+.math-ladder::before,
+.math-multi::before {
+    content: '';
+    position: absolute;
+    right: -46px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+}
+
+.math-ladder::before {
+    top: 10px;
+    border-bottom: 12px solid var(--text);
+}
+
+.math-multi::before {
+    bottom: 10px;
+    border-top: 12px solid var(--text);
+}
+
+/* ================= FOOTER ================= */
+footer {
+    text-align: center;
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 1.8rem;
+    margin-top: 4rem;
+}
+
+footer a {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+#scrollToTop {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    font-size: 32px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTop:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+    color: #4da3ff;
+}
+
+a:hover {
+    transform: translateY(-1px);
+}
+
+/* ================= MEDIA QUERIES ================= */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: min(320px, 90vw);
+        flex-direction: column;
+        align-items: stretch;
+        background: #1a1a1a;
+        padding: 16px 0;
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 1200;
+    }
+
+    body.dark-mode .nav {
+        background: rgba(15, 23, 42, 0.98);
+    }
+
+    .nav.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .nav a {
+        width: 85%;
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.15rem;
+    }
+
+    .logo img {
+        width: 75px;
+    }
+
+    .logo h1 {
+        font-size: larger;
+    }
+
+    .unitList {
+        padding: 2px;
+    }
+
+    .unit {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-content: flex-start;
+        gap: 8px;
+        padding: 1rem 0.1rem;
+    }
+
+    li,
+    p {
+        font-size: large;
+        padding: 0;
+    }
+
+    .math-multi td,
+    .math-ladder td {
+        padding: 0;
+        margin: 0;
+        font-size: large;
+    }
+
+    table {
+        padding: 0;
+        margin: 0;
+        font-size: large;
+    }
+
+    pre {
+        font-size: medium;
+        padding: 0;
+        margin: 0;
+    }
+
+    .note-image {
+        width: 500px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 50px;
+    }
+
+    .note-image {
+        width: 250px;
+        height: auto;
+    }
 }
