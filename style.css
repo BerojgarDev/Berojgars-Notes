@@ -113,7 +113,7 @@ header.scrolled {
 
 .logo img {
     max-width: 100px;
-    border-radius: 50%;
+    border-radius: 25%;
     object-fit: cover;
 }
 
