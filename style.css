@@ -748,7 +748,7 @@ a:hover {
     }
 
     .hero {
-        height: 65vh;
+        height: 85vh;
     }
 
     .content {
@@ -801,11 +801,6 @@ a:hover {
         width: 500px;
         height: auto;
     }
-
-    /* .go-back-btn {
-        top: max(20px, env(safe-area-inset-top));
-        left: max(20px, env(safe-area-inset-left));
-    } */
 
 }
 
