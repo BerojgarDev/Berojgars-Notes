@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science | Class11</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/icon.png" alt="icon">
+                <h1>Berojgar's Notes</h1>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <nav class="nav" id="navMenu">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h2>Computer Notes</h2>
+                    <h2>Class 11 </h2><br>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p><br>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p><br>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p><br>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="toc">
+            <div>
+                <h2>Unit 5: Web Technology - I</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#terminology">Terminology in Web Technology</a></li>
+                    <li><a href="#web-technology">Web Technology</a></li>
+                    <li><a href="#content-management-system">Content Management System</a></li>
+                    <li><a href="#introduction-to-html">Introduction to HTML</a></li>
+                    <li><a href="#introduction-to-css">Introduction to CSS</a></li>
+                </ol>
+            </div>
+        </section>
+        <section class="content">
+            <div id="unit5" class="noteContent">
+                <h2 id="terminology">Some Terminology in Web Technology</h2>
+                <h3>Web Browser</h3>
+                <ul class="hyphen-list">
+                    <li>It is an application software for accessing the information on the world wide web
+                        (WWW). It helps to insert, update and retrieve information such as text, images,
+                        animations, audio, etc. from the client side to the server side and vice-versa.</li>
+                    <li>A client side device might be a PC, workstation, tablet or smartphone and server
+                        side devices areweb server, mail server, data centers, etc.</li>
+                    <li>A user can request information from the website and the web browser retrieves the
+                        information from the respective web server and presents it in the web browser.</li>
+                    <li>Most popular web browsers are Google’s Chrome, Microsoft’s Edge, Apple’s Safari,
+                        Opera-mini, fireFox, etc.</li>
+                </ul>
+                <h3>Search Engines</h3>
+                <ul class="hyphen-list">
+                    <li>A search engine is a web application or website which helps to search the
+                        information from the world wide web. The searched information contains webpages,
+                        links, articles, etc.</li>
+                    <li>Mainly a search engine contains three components. They are: web crawler, indexing,
+                        and Searching.</li>
+                    <li>The search engines retrieve the information by crawling from one page to another.
+                        The crawler is also known as spider. The indexing system makes an index of a file
+                        according to the information provided by the spider, searching algorithm helps to
+                        get the best result by using indexing files.</li>
+                    <li>The most common examples of search engines are Google, Yahoo, Bing, Duck Duck Go,
+                        etc.</li>
+                </ul>
+                <h3>Internet</h3>
+                <ul class="hyphen-list">
+                    <li>It is defined as the network of networks that consists of millions of inuliduals
+                        computers, mobile phones, academic, government and non-government organisations to
+                        communicate and share information between them.</li>
+                    <li>It consists of two major components: protocol and hardware.</li>
+                    <li>The term protocol simply refers to the set of rules. The Internet uses the
+                        Transmission Control Protocol or Internet Protocol(TCP/IP).</li>
+                    <li>The internet was originally developed by DoD(Development of Defence) USA in 1969 by
+                        scientist Robert</li>
+                    <li>Taylor and Lawrence Robert for the communication between different government
+                        agencies, military, etc.</li>
+                </ul>
+
+                <h3>WebPage</h3>
+                <ul class="hyphen-list">
+                    <li>Webpage is the collection of electronic documents provided by the website to the
+                        users on the internet. We can post our information in the form of text, pictures,
+                        audio, videos, etc. as webpages.</li>
+                    <li>A webpage is developed by using HTML and we can traverse from one page to another
+                        page using special links which are called hyper links.</li>
+                </ul>
+                <h3>Website</h3>
+                <ul class="hyphen-list">
+                    <li>A collection of different webpages is called a website.</li>
+                </ul>
+
+                <h3>Types of Website</h3>
+                <h4>Static Website</h4>
+                <ul class="hyphen-list">
+                    <li>The website that has simple design and has no interactive features is called a
+                        static website. These websites are used to deliver the information to the users
+                        exactly as stored and are developed by using HTML and CSS only.</li>
+                    <li>These websites contain text, graphic, audio, video, etc. such websites periodically
+                        updated by manually editing.</li>
+                    <li>
+                        <p>Example:</p> portfolio websites, resume website, documentation sites.
+                    </li>
+                </ul>
+                <h4>Dynamic website</h4>
+                <ul class="hyphen-list">
+                    <li>Dynamic website is the interactive website with capability to change the content
+                        each time they are accessed.</li>
+                    <li>The dynamic website is controlled by the server where it is stored, it can be easily
+                        updated and developed by using the programming language like JavaScript, PHP, Java,
+                        ASP, etc.</li>
+                    <li>
+                        <p>Example:</p> YouTube, Netflix, Facebook, etc.
+                    </li>
+                </ul>
+                <h3>Web-Development</h3>
+                <ul class="hyphen-list">
+                    <li>Web development refers to the process of creating and maintaining such websites or
+                        web applications.</li>
+                    <li>It involves various tasks such as designing, coding, testing, deploying, etc.</li>
+                </ul><br><br>
+                <h2 id="web-technology">Web-Technology</h2>
+                <ul class="hyphen-list">
+                    <li>The term web technology refers to the collection of tools, protocol, programming
+                        language and different frameworks that are used in the development and maintenance
+                        of websites and web applications.</li>
+                    <li>
+                        <p>The key components of it are as follows.</p>
+                        <ol>
+                            <li><b>HTML</b>:- Hypertext MarkUp Language is the backbone of web content HTML
+                                structure the element on a webpage.</li>
+                            <li><b>CSS</b>:- Cascading Style Sheet is used for styling the HTML elements. It
+                                controls the presentation, layout and design of the website.</li>
+                            <li><b>JavaScript</b>:- A dynamic scripting language that enables client side
+                                interactively and manipulation of the webpage content.</li>
+                            <li><b>HTTP/HTTPS</b>:- Protocols that are used for transferring data between a web
+                                server and user’s browser.</li>
+                            <li><b>WebServer</b>:- The different software like Apache, NGINX, Microsoft Information
+                                Service, etc. that host and save the web content.</li>
+                            <li><b>Backend Development</b>:- It involves server side programming by using a
+                                different language like PHP, Python, NodeJS, etc. which handles data processing the
+                                database interaction.</li>
+                            <li><b>Database</b>:- The different database management systems like MySQL, MongoDB,
+                                PostgreSQL, etc. are used to store & manage data for web applications for websites.
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="content-management-system">Content Management System (CMS)</h2>
+                <ul class="hyphen-list">
+                    <li>A content management system often called CMS is a software application that helps
+                        the user to create, manage and modify the content on a website without requiring
+                        technical expertise. </li>
+                    <li>It is a tool that is helpful to develop the website without writing all the code
+                        from scratch. It provides different templates to create and manage different digital
+                        contents on a website. </li>
+                    <li>
+                        <p>It consists of two parts:-</p>
+                        <ol>
+                            <li><b>Content Management Application (CMA)</b>:- It is a frontend part of software i.e.
+                                helpful to users to add or modify the content of a website.</li>
+                            <li><b>Content Delivery Application (CDA)</b>:- It is a backend part of software i.e.
+                                helpful to store the content visible on the website.</li>
+                        </ol>
+                    </li>
+                </ul><br><br>
+                <h2 id="introduction-to-html">Introduction to HTML</h2>
+                <ul class="hyphen-list">
+                    <li>HTML stands for HyperText Markup Language. It is the standard language used to
+                        create and design web pages.</li>
+                    <li>Unlike programming languages that are used to write instructions for the computer to
+                        follow and perform tasks, HTML is markup language that defines the structure &
+                        layout of a webpage using various tags and series of elements.</li>
+                    <li><b>Father of HTML</b>:- Tim Bemer Lee in 1990 (European lab Switzerland).</li>
+                    <li>Different versions have been released and the current version is HTML-5.</li>
+                </ul>
+                <h3>Basic HTML page</h3>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt; Hello World!!&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+                <h3>Case Sensitivity of HTML</h3>
+                <ul class="hyphen-list">
+                    <li>HTML is not case sensitive, this means you can write your HTML tags and attributes
+                        using uppercase, lowercase, or a mixture of both and the browser will interpret them
+                        the same way. </li>
+                    <li>For eg: &lt;ul&gt; and &lt;ul&gt; are treated as the same tag.</li>
+                </ul>
+                <pre>
+    &lt;html&gt;    =   &lt;HTML&gt;
+    &lt;p&gt;       =   &lt;P&gt;
+    &lt;head&gt;    =   &lt;Head&gt;
+    &lt;body&gt;    =   &lt;BODY&gt;</pre>
+                <h3>Comments in HTML</h3>
+                <ul class="hyphen-list">
+                    <li>The comments are a meaningful way to deliver messages or add information about the
+                        code. </li>
+                    <li>
+                        <p>Comments are always ignored while executing the codes. </p>
+                        <p style="color: green; margin-left: 45px;">&lt;!-- This is an HTML comments --&gt;
+                        </p>
+                    </li>
+                </ul>
+                <h3>Different Tags used in HTML</h3>
+                <ul class="hyphen-list">
+                    <li>Tags are the instructions to the browser, guiding it on how to format and display
+                        the content. </li>
+                    <li>Tags allow us to create structured and interactive web pages.</li>
+                </ul>
+                <h4>HTML tag:</h4>
+                <ul class="hyphen-list">
+                    <li>The &lt;html&gt;&lt;/html&gt; tag defines the root of an HTML document.</li>
+                    <li>It acts as a container for some content or other HTML tags.</li>
+                </ul>
+                <h4>Heading tag:</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to display heading on the webpage.</li>
+                    <li>Search engines use the heading to index the content of your web page.</li>
+                </ul>
+                <pre>
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;h5&gt;&lt;/h5&gt;
+&lt;h6&gt;&lt;/h6&gt;</pre>
+                <h4>Body tag:</h4>
+                <ul class="hyphen-list">
+                    <li>The &lt;body&gt;tag is used to define the document's body. Inside the body tag we
+                        can define other tags.</li>
+                </ul>
+                <pre>
+&lt;body&gt;
+    &lt;h1&gt;&lt;/h1&gt;
+    &lt;p&gt;&lt;/p&gt;
+&lt;/body&gt;</pre>
+                <h4>Paragraph tag:</h4>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>It is used to add paragraphs in HTML documents.</p>
+                        <p>&lt;p&gt; This is a simple paragraph &lt;/p&gt;</p>
+                    </li>
+                </ul>
+                <h4>Anchor tag:</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to add links to your web page or HTML documents.</li>
+                    <li><b>Examples: </b> &lt;a href="https://google.com">Google&lt;/a&gt;</li>
+                    <li>Similarly we can use this tag to link different pages in our main page as &lt;a
+                        href="/news.html">NEWS&lt;/a&gt;</li>
+                </ul>
+                <h4>Image tag:</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to add images to your page.</li>
+                    <li>&lt;img scr="/image.png"&gt;, if you want to add image from online them &lt;img
+                        scr="link of an image"&gt;</li>
+                    <li>Sometimes images can't be loaded, so we can add an alt attribute in &lt;img&gt; to
+                        give extra info. &lt;img scr = "link of an image" alt = "description of image"&gt;
+                    </li>
+                </ul>
+                <h4>Br tag:</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to add the next line (line breaks ) to your page. It does not contain a
+                        closing tag. &lt;br&gt;</li>
+                </ul>
+                <h4>Hr tag:</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to display a horizontal line and used to separate the container.
+                        &lt;hr&gt;</li>
+                </ul>
+                <h4>Bold, Italic & Underline tags:</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to highlight text in your page.</li>
+                </ul>
+                <pre>
+&lt;b&gt; bold &lt;/b&gt;
+&lt;i&gt;italic&lt;/i&gt;
+&lt;u&gt;underline&lt;/u&gt;</pre>
+                <h4>Big & Small tags:</h4>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>It is used to display big and small text on your page.</p>
+                        <pre>
+&lt;big&gt;Big&lt;/big&gt;
+&lt;small&gt;Small&lt;/small&gt;</pre>
+                    </li>
+                </ul>
+                <h4>Subscript & Superscript tags:</h4>
+                <pre>
+&lt;sub&gt;subscript&lt;/sub&gt;
+&lt;sup&gt;superscript&lt;/sup&gt;</pre>
+                <ul class="hyphen-list">
+                    <li>Eg: H&lt;sub>2&lt;/sub&gt;O</li>
+                    <li>Eg: a&lt;sup>2&lt;/sup&gt;+b&lt;sup&gt;2&lt;/sup&gt;</li>
+                    <li>&rArr; Eg: H<sub>2</sub>O a<sup>2</sup>+b<sup>2</sup></li>
+                </ul><br>
+                <h3>HTML Attributes </h3>
+                <ul class="hyphen-list">
+                    <li>Attributes are used to add more information to the tag and it is applied within the
+                        start tag.</li>
+                    <li>It contains two fields ; name and value like href="url" , src="path".</li>
+                    <li><b>Examples</b>:</li>
+                </ul>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang= "en"&gt;
+
+&lt;body&gt;
+    &lt;p style= "color: red ;"&gt; hi, how are you? &lt;/p&gt;
+    &lt;img src = "myimage.png" width= “500 px” height = "400 px"&gt;
+    &lt;p style = "font-size: 60 px;">hi, there, what's up?&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+                <h4>Background color </h4>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>The CSS background-color property defines the background color for an HTML
+                            element.</p>
+                        <pre>
+&lt;body style = "background-color: blue;"&gt;
+    &lt;h1&gt;hello class &lt;/h1&gt;
+    &lt;p&gt;hello world &lt;/p&gt;
+&lt;/body&gt;</pre>
+                    </li>
+                    <li>
+                        <p>Set background color for different elements.</p>
+                        <pre>
+&lt;body&gt;
+    &lt;h1 style = "background-color: blue;"&gt; Hello class &lt;/h1&gt;
+    &lt;p style = "background-color: red;"&gt; Hello world &lt;/p&gt;
+&lt;/body&gt;</pre>
+                    </li>
+                </ul>
+                <h4>Text color </h4>
+                <ul class="hyphen-list">
+                    <li>The CSS color property defines the text color for an HTML element.
+                        <pre>
+&lt;h1 style = "color: red;"&gt; Hello Class &lt;/h1&gt;
+&lt;p style = "color: blue;"&gt; Hello World &lt;/p&gt;</pre>
+                    </li>
+                </ul>
+                <h4>Font</h4>
+                <ul class="hyphen-list">
+                    <li>The CSS font-family property defines the font to be used for an HTML element.</li>
+                    <li>
+                        <p>Example:</p>
+                        <pre>
+&lt;h1 style = "font-family: Verdana;"&gt; Hello World &lt;/h1&gt;
+&lt;p style = "font-family: courier;"&gt;Hello World &lt;/p&gt;
+&lt;h3>Text size &lt;/h3&gt;</pre>
+                    </li>
+                    <li>The CSS font-size property defines the text size for an HTML element.
+                        <pre>
+&lt;p style = "font-size: 60 px ;"&gt; Hello class &lt;/p&gt;
+&lt;p style = "font-size: 120&;"&gt; Hello world&lt;/p&gt;</pre>
+                    </li>
+                </ul>
+                <h4>Text Alignment</h4>
+                <ul class="hyphen-list">
+                    <li>The CSS text-align property defines the horizontal text alignment for an HTML
+                        element. By using this property, we can place our text or content at center, start,
+                        end, left, right, etc.</li>
+                    <li>
+                        <p>Example:</p>
+                        <pre>
+&lt;h1 style = "text-align: center;"&gt; INTRODUCATION &lt;/h1&gt;
+&lt;h2 style = "text-align: end;"&gt; THE END &lt;/h2&gt;</pre>
+                    </li>
+                </ul>
+                <h4>Video Tag</h4>
+                <ul class="hyphen-list">
+                    <li>The &lt;video&gt; tag in HTML is used to add the video content into a webpage.</li>
+                    <li>
+                        <p>Example:</p>
+                        <pre>
+&lt;video width= "value" height= "value" controls&gt;
+&lt;source src= "path"&gt;&lt;/video&gt;</pre>
+                    </li>
+                    <li>The width and height attributes define the dimension of the video player. Control
+                        attributes add playback controls like pause, play, volume, etc. The source tag
+                        specifies the video files. </li>
+                </ul>
+                <h4>Audio Tag </h4>
+                <ul class="hyphen-list">
+                    <li>The &lt;audio&gt; tag in HTML is used to embed sound content in a document such as
+                        music or other audio files.</li>
+                    <li>
+                        <p>Example:</p>
+                        <pre>
+&lt;audio controls &gt;
+    &lt;source src= “audiofile.mp3” type= “audio/mp3”&gt;
+&lt;/audio&gt;</pre>
+                    </li>
+                </ul>
+                <h4>Marquee Tag</h4>
+                <ul class="hyphen-list">
+                    <li>To create moving text directly in HTML without using CSS animation, we can use the
+                        marquee tag.</li>
+                    <li><strong>Example:</strong>
+                        <pre>
+&lt;marquee behaviour= “scroll” direction= “right”&gt;hello class &lt;/marquee&gt;</pre>
+                    </li>
+                </ul>
+                <h3>List in HTML </h3>
+                <ul class="hyphen-list">
+                    <li>In HTML we can create lists by using the &lt;ul&gt; tag for unorder list and
+                        &lt;ol&gt; tag for order list.</li>
+                    <li>Lists are used to represent list of data <b>order</b>
+                        <pre>
+&lt;ol&gt;
+    &lt;li&gt; apple &lt;/li&gt;
+    &lt;li&gt; mango &lt;/li&gt;
+&lt;/ol&gt;</pre>
+                    </li>
+                    <li><b>Unorder </b>
+                        <pre>
+&lt;ul&gt;
+    &lt;li&gt; apple &lt;/li&gt;
+    &lt;li&gt; mango &lt;/li&gt;
+&lt;/ul&gt;</pre>
+                    </li>
+                </ul>
+                <h3>Table in HTML</h3>
+                <ul class="hyphen-list">
+                    <li>Tables are the elements used to organize data into rows and columns.They are created
+                        by using &lt;table&gt;&lt;/table&gt; tag. It consist of two or more rows define by
+                        following element:</li>
+                    <li>&lt;tr&gt;&lt;/tr&gt; displays row of table &lt;th&gt;&lt;/th&gt; displays header of
+                        table &lt;td&gt;&lt;/td&gt; displays data on table Table in html be like:</li>
+                </ul>
+                <table>
+                    <tr>
+                        <th> Name </th>
+                        <th> Roll no. </th>
+                    </tr>
+                    <tr>
+                        <td> Ram </td>
+                        <td> 69 </td>
+                    </tr>
+                </table>
+                <pre>
+&lt;table&gt;    
+    &lt;tr&gt;       
+        &lt;th&gt; Name &lt;/th&gt;
+        &lt;th&gt; Roll no. &lt;/th&gt;
+    &lt;/tr&gt;    
+    &lt;tr&gt;        
+        &lt;td&gt; Ram &lt;/td&gt;        
+        &lt;td&gt; 69 &lt;/td&gt;    
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                <h4>Caption in table</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to add a caption to a table and should be placed after the &lt;table&gt;
+                        opening tag. </li>
+                    <li><strong>Example</strong>:</li>
+                </ul>
+                <table>
+                    <caption>Student data </caption>
+                    <tr>
+                        <th> Name </th>
+                        <th> Roll no. </th>
+                    </tr>
+                    <tr>
+                        <td> Ram </td>
+                        <td> 69 </td>
+                    </tr>
+                </table>
+                <pre>
+&lt;table&gt;    
+    &lt;caption&gt;Student data &lt;/caption&gt;
+        &lt;tr&gt;
+            &lt;th&gt; Name &lt;/th&gt;
+            &lt;th&gt; Roll no. &lt;/th&gt;    
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt; Ram &lt;/td&gt;
+            &lt;td&gt; 69 &lt;/td&gt;
+        &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                <h4>Colspan attribute</h4>
+                <ul class="hyphen-list">
+                    <li>Used to create cells which span over multiple columns. &lt;colspan= "n"&gt; where, n
+                        is the number of columns.</li>
+                </ul>
+                <div class="table-wrapper">
+                    <table>
+                        <tr>
+                            <th colspan="2"> Data </th>
+                        </tr>
+                        <tr>
+                            <td> Ram </td>
+                            <td> 69 </td>
+                        </tr>
+                        <tr>
+                            <td> Sita </td>
+                            <td> 96 </td>
+                        </tr>
+                    </table>
+                </div>
+                <pre>
+&lt;table border="1" &gt;    
+    &lt;tr&gt;        
+        &lt;th colspan="2"&gt; Data &lt;/th&gt;   
+    &lt;/tr&gt;  
+    &lt;tr&gt;        
+        &lt;td&gt; Ram &lt;/td&gt;      
+        &lt;td&gt; 69 &lt;/td&gt;   
+    &lt;/tr&gt;  
+    &lt;tr&gt;     
+        &lt;td> Sita &lt;/td&gt;    
+        &lt;td> 96 &lt;/td&gt;  
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                <h4>Rowspan attribute</h4>
+                <ul class="hyphen-list">
+                    <li>Used to create cells which span over multiple columns. &lt;colspan= “n”&gt; where, n
+                        is the number of columns.</li>
+                </ul>
+                <div class="tabel-wrapper">
+                    <table>
+                        <tr>
+                            <th colspan="2"> Data </th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2"> Ram </td>
+                            <td> 69 </td>
+                        </tr>
+                        <tr>
+                            <td> 96 </td>
+                        </tr>
+                    </table>
+                </div>
+                <pre>
+&lt;table border="1" &gt;    
+    &lt;tr&gt;        
+        &lt;th colspan="2"&gt; Data &lt;/th&gt;    
+    &lt;/tr&gt;    &lt;tr&gt;        
+        &lt;td rowspan="2"&gt; Ram &lt;/td&gt;        
+        &lt;td> 69 &lt;/td&gt;    
+    &lt;/tr&gt;    
+    &lt;tr&gt;        
+        &lt;td&gt; 96 &lt;/td&gt;    
+    &lt;/tr&gt;
+&lt;/table&gt;</pre>
+                <h3>Form in HTML</h3>
+                <ul class="hyphen-list">
+                    <li>HTML forms are used to collect data from users and send it to the server for
+                        processing. Forms are created by using the &lt;form&gt;&lt;/form&gt; tag. </li>
+                </ul>
+                <pre>
+&lt;form&gt;    
+    Form content  &lt;!-- Like text fields, radio button, etc --&gt;
+&lt;/form&gt;
+</pre>
+                <h4>Sample of form</h4>
+                <pre>
+&lt;h2&gt;Sample of html form&lt;/h2&gt;
+&lt;form action=""&gt;
+    &lt;div&gt;
+        &lt;label for="username"&gt;Username&lt;/label&gt;
+        &lt;input type="text" name="Username" id="username" required&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;label for="password"&gt;Password&lt;/label&gt;
+        &lt;input type="password" name="Password" id="password" required&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;button>Login&lt;/button&gt;
+        &lt;a href="/signup.html"&gt;Create a New Account?&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+                <h4>Label </h4>
+                <ul class="hyphen-list">
+                    <li>Associates a label with a form element, more accessible and user-friendly. Clicking
+                        on the label focuses or selects the associated from element:</li>
+                </ul>
+                <pre>
+&lt;label&gt;
+    &lt;!-- Content --&gt;
+&lt;/label&gt;</pre>
+                <h4>Input</h4>
+                <ul class="hyphen-list">
+                    <li>The most common form elements, used to create various types of input fields such as
+                        text fields, checkboxes, radio-button, etc.</li>
+                </ul>
+                <pre>
+&lt;input type="text" name="name" id="name"&gt;
+&lt;input type="password"&gt;</pre>
+                <h4>Password</h4>
+                <ul class="hyphen-list">
+                    <li>Creates a text field where the input is masked(usually with asterisks) to hide
+                        sensitive information like passwords. Example:</li>
+                </ul>
+                <pre>&lt;input type="password" name="pswrd" id="pass"&gt;</pre>
+                <h4>Button</h4>
+                <ul class="hyphen-list">
+                    <li>Creates a clickable button which can be used to submit the form or trigger
+                        JavaScript function.</li>
+                </ul>
+                <pre>&lt;button type="submit"&gt;Button&lt;/button&gt;</pre>
+                <h4>Checkbox</h4>
+                <ul class="hyphen-list">
+                    <li>Checkboxes are simply used to select multiple options from the list.</li>
+                </ul>
+                <pre>
+&lt;label&gt;Interests:&lt;/label&gt;
+&lt;br&gt;&lt;input type="checkbox" name="Interests" id="music" value="music"&gt;
+&lt;label for="music"&gt;Music&lt;/label&gt;    &lt;br&gt;
+&lt;input type="checkbox" name="Interests" id="sports" value="sports"&gt;
+&lt;label for="sports"&gt;Sports&lt;/label&gt;  &lt;br&gt;
+&lt;input type="checkbox" name="Interests" id="traveling"&gt;
+&lt;label for="traveling"&gt;Traveling&lt;/label&gt;</pre>
+                <h3>Text area</h3>
+                <ul class="hyphen-list">
+                    <li>Used to multiple line text input, such as comments, description, feedback, etc.</li>
+                </ul>
+                <pre>
+&lt;label for="message">Message:&lt;/label&gt;
+&lt;textarea name="message" id="message" rows="4" cols="69"&gt;
+&lt;/textarea&gt;</pre>
+                <h4>Radio button</h4>
+                <ul class="hyphen-list">
+                    <li>It is used to select a single option from a list.</li>
+                </ul>
+                <pre>
+&lt;label&gt;Gender:&lt;/label&gt;      &lt;br&gt;
+&lt;input type="radio" name="Gender" id="male" value="male"&gt;
+&lt;label for="male">male&lt;/label&gt;     &lt;br&gt;
+&lt;input type="radio" name="Gender" id="female" value="female"&gt;
+&lt;label for="female"&gt;female&lt;/label&gt;      &lt;br&gt;</pre>
+                <h4>Dropdown</h4>
+                <ul class="hyphen-list">
+                    <li>It consists of a clickable button or text field that, when activated by the user,
+                        displays a list of predefined options from which the user can select one. </li>
+                </ul>
+                <pre>
+&lt;label for="country"&gt;Select a country&lt;/label&gt;
+&lt;select name="country" id="country"&gt;
+    &lt;option value="Nepal"&gt;Nepal&lt;/option&gt;
+    &lt;option value="USA"&gt;United States&lt;/option&gt;
+    &lt;option value="UK"&gt;United Kingdom&lt;/option&gt;
+    &lt;option value="Canada"&gt;Canada&lt;/option&gt;
+&lt;/select></pre>
+                <h2 id="introduction-to-css">CSS</h2>
+                <ul class="hyphen-list">
+                    <li>CSS stands for Cascading Style Sheets. It describes how HTML elements are to be
+                        displayed on the screen and control the layout of multiple webpages all at once. CSS
+                        is used to define style for your webpages, including the design layout and
+                        variations in display for different devices and screen sizes.</li>
+                </ul>
+                <h3>Types of CSS</h3>
+                <ul class="hyphen-list">
+                    <li>CSS can be ulided into 3 types, they are as follows. </li>
+                </ul>
+                <h3>1. Inline CSS</h3>
+                <ul class="hyphen-list">
+                    <li>If CSS is applied directly to an HTML element using the style attribute then it is
+                        called inline CSS.</li>
+                    <li><strong>For eg</strong>:</li>
+                </ul>
+                <pre>
+&lt;h1 style="color: red; font-size: 16px;"&gt;This is an Example&lt;/h1&gt;</pre>
+                <h3>2. Internal CSS</h3>
+                <ul class="hyphen-list">
+                    <li>If CSS is defined within the &lt;style&gt;&lt;/style&gt; element in the &lt;head&gt;
+                        section of an HTML document then it is called internal CSS.</li>
+                    <li><strong>For eg</strong>:</li>
+                </ul>
+                <pre>
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        h1{    
+            color: blue;    
+            font-size: 16px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;Hello world&lt;/h1&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+                <h3>3. External CSS</h3>
+                <ul class="hyphen-list">
+                    <li>If CSS is defined in a separate file and linked to an HTML document using the
+                        &lt;link&gt; element then such CSS is called external CSS.</li>
+                    <li><strong>For eg</strong>:</li>
+                </ul>
+                <p>Inside index.html</p>
+                <pre>
+&lt;html&gt;    
+
+&lt;head&gt;        
+    &lt;link rel="stylesheet" href="style.css"&gt;    
+&lt;/head&gt;    
+
+&lt;body&gt;        
+    &lt;h1 id="hi"&gt;Hello world&lt;/h1&gt;    
+&lt;/body&gt;
+
+&lt;/html&gt;</pre>
+
+                <p>Inside style.css</p>
+                <pre>
+    #hi{        
+        color: red;    
+    }</pre>
+                <h2 class="end">The End</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

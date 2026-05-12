@@ -1,0 +1,2475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science | Class11</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/icon.png" alt="icon">
+                <h1>Berojgar's Notes</h1>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <nav class="nav" id="navMenu">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="heroContainer">
+                <h2>Class 11 Computer Notes</h2>
+                <h2>Unit 2 : Number System and Conversion Boolean Logic</h2>
+                <p> <strong>Referenced by:</strong>
+                    <span class="referencer-name">Er. Bhisma Raj Joshi</span>
+                    <span class="referencer-title">Lecturer of Computer Science</span>
+                    <span class="referencer-institution">[NAST]</span>
+                </p>
+                <p> <strong>Written and Edited by:</strong>
+                    <span class="author-name">Karan Chaudhary</span>
+                    <a href="mailto:berojgarkaran@gmail.com">berojgarkaran@gmail.com</a>
+                </p>
+                <p><strong>Version</strong>:- 1.0 – January 2026 <strong>Copyright</strong>:- &copy; Berojgar.Dev | All
+                    Rights Reserved </p>
+                <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                    Teacher’s
+                    notes and textbooks were used only as references. All rights are reserved by Berojgar.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div id="unit4" class="noteContent">
+                <h2>Program</h2>
+                <ul class="hyphen-list">
+                    <li>A program is a sequence or set of instructions written to perform a specific
+                        task or set of tasks by a computer or machine.</li>
+                    <li>Programs are usually written in programming
+                        languages (such as C, Python, C++, or Java) that a computer can interpret and
+                        execute.</li>
+                </ul>
+                <h2>Programming</h2>
+                <ul class="hyphen-list">
+                    <li>The process or activity of writing program is called programming, which
+                        makes works easier and faster.</li>
+                </ul>
+                <h2>Programming Language</h2>
+                <ul class="hyphen-list">
+                    <li>A programming language is a set of rules and symbols that are
+                        used to telling a computer to carry out a certain task.</li>
+                    <li>It serves as a bridge between humans and machines, enabling us to create software,
+                        applications, and websites.</li>
+                    <li>Programming languages are also known as computer language.</li>
+                </ul>
+                <h3>Features of good Programming Language</h3>
+                <ul class="hyphen-list">
+                    <li>A good programming language should exhibit several key features here are some
+                        important features:-
+                        <ol type="a">
+                            <li><strong>Simplicity and Readability:-</strong> The syntax should be
+                                straightforward and easy to understand, making the code easier to read and
+                                maintain.</li>
+                            <li><strong>Efficiency</strong>:- The language should allow for efficient
+                                execution, using system
+                                resources like memory and CPU effectively.</li>
+                            <li><strong>Portability</strong>:- The language should be platform-independent,
+                                allowing programs
+                                written in it to be executed on different systems.</li>
+                            <li><strong>Modularity</strong>:- The language should support breaking down a
+                                large system into
+                                smaller, manageable, and reusable components.</li>
+                            <li><strong>Security</strong>:- The software should protect sensitive data and
+                                prevent unauthorized
+                                access. </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Types of Programming Language</h2>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>Computer languages can be categorized into two types, each serving different
+                            purposes and having unique characteristics. Here are the main types:</p>
+                        <ol type="1">
+                            <li>
+                                <h3>LOW LEVEL LANGUAGE</h3>
+                                <ul class="hyphen-list">
+                                    <li>A low-level language is a type of programming language that is very
+                                        close to the computer's hardware it means that the language directly
+                                        interacts with the computer's physical components like the CPU and
+                                        memory.</li>
+                                    <li>Low level language are also called machine dependent language which
+                                        means program written for one type of system cannot be run in
+                                        another system.</li>
+                                    <li>Further low-level programming languages are divided into two types:-
+                                        <ol type="i">
+                                            <li>
+                                                <h4>Machine Level Language[1GL]:-</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>Machine level language which is also known as
+                                                        machine code is the lowest-level programming
+                                                        language. It consists of binary digits (0 and 1)
+                                                        that the computer's CPU can execute directly. </li>
+                                                    <li>
+                                                        <p>This language is specific to each computer's
+                                                            architecture and is used to perform basic
+                                                            operations like arithmetic, data movement and
+                                                            control instructions.</p>
+                                                        <h5>Advantages(Merits)</h5>
+                                                        <ol type="i">
+                                                            <li>It is directly understood by the processor
+                                                                so
+                                                                has faster execution. </li>
+                                                            <li>Language translator is not needed.</li>
+                                                            <li>Requires less memory space as compared to
+                                                                high
+                                                                level programming languages. </li>
+                                                        </ol>
+                                                        <h5>Disadvantages(Demerits)</h5>
+                                                        <ol type="i">
+                                                            <li>It is very difficult to program using 0 and
+                                                                1s.</li>
+                                                            <li>Use of this language makes programming time
+                                                                consuming. </li>
+                                                            <li>Difficult to find errors and to debug.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Assembly Language[2GL]</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It is also known as low level programming language.
+                                                        This
+                                                        language uses symbolic instructions in place of 0
+                                                        and 1,
+                                                        which are called mnemonics. </li>
+                                                    <li>Examples includes ADD, SUB, JMP,RET, PRINT etc.
+                                                    </li>
+                                                    <li>
+                                                        <p>The program written in assembly language is
+                                                            converted
+                                                            into machine code by assembler thus resulting
+                                                            program is called an object code.</p>
+                                                        <h5>Advantages of Assembly level language</h5>
+                                                        <ol type="i">
+                                                            <li>Assembly language allows for highly
+                                                                optimized
+                                                                code that can run faster than code written
+                                                                in
+                                                                higher-level languages. </li>
+                                                            <li>Programs written in assembly language can be
+                                                                very compact, making efficient use of memory
+                                                            </li>
+                                                            <li>Since assembly language is closer to machine
+                                                                code, it doesn't rely on compilers to
+                                                                optimize
+                                                                the code. </li>
+                                                        </ol>
+                                                        <h5>Disadvantages of Assembly level language</h5>
+                                                        <ol type="i">
+                                                            <li>Writing program in assembly language is
+                                                                complex
+                                                                and time consuming. </li>
+                                                            <li>Debugging and maintaining assembly code can
+                                                                be
+                                                                challenging. </li>
+                                                            <li>Assembly language is specific to a
+                                                                particular
+                                                                computer architecture. </li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>High Level Language</h4>
+                                <ul class="hyphen-list">
+                                    <li>A high-level language is a type of programming language designed to
+                                        be
+                                        more user-friendly and closer to natural language, making it easier
+                                        for
+                                        humans to read and write code. </li>
+                                    <li>Unlike low-level languages that are closely aligned with a
+                                        computer's
+                                        hardware, high-level languages use syntax and semantics that
+                                        resemble
+                                        human languages. </li>
+                                    <li>
+                                        <p>It uses familiar English words, special characters and
+                                            mathematical
+                                            symbols in their syntax which makes easier to read, write and
+                                            understand. </p>
+                                        <h5>Advantages of High-Level Language</h5>
+                                        <ol type="i">
+                                            <li>Programmer friendly and easy to understand. </li>
+                                            <li>Portable and machine independent. </li>
+                                            <li>Easy to modify and maintain. </li>
+                                            <li>Easy to debug. </li>
+                                        </ol>
+                                        <h5>Dis-advantages of High-Level Language</h5>
+                                        <ol type="i">
+                                            <li>Need to be translation into machine code. </li>
+                                            <li>Slower execution time. </li>
+                                            <li>Less control over hardware. </li>
+                                            <li>High memory usage. </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <p>High Level Language is also divided into two types.</p>
+                                        <ol type="1">
+                                            <li>
+                                                <h5>Procedural Oriented Programming Language(POP) or 3GL
+                                                </h5>
+                                                <ul class="hyphen-list">
+                                                    <li>It is also high-level programming language which is
+                                                        primarily focus on procedure or steps. </li>
+                                                    <li>It follows top to bottom approach. </li>
+                                                    <li>Examples C, FORTRAN,COBOL etc. </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h5>Object Oriented Programming Language(OOP) or 4GL</h5>
+                                                <ul class="hyphen-list">
+                                                    <li>This approach is based on the data rather than
+                                                        procedure
+                                                        (function and programs are normally divided into
+                                                        objects. </li>
+                                                    <li>All the modern programming languages like Java,
+                                                        Python
+                                                        C++, dot net follow this approach. </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Programming Language Translator</h2>
+                <ul class="hyphen-list">
+                    <li>Translator which is also called language processor is a software tool that
+                        converts a computer program written in one language to another language.
+                    </li>
+                    <li>It takes a program written in high level language which is called source
+                        code,
+                        and convert that source code into machine code which is directly understand
+                        by
+                        CPU. </li>
+                    <li>It also helps to find out the error during translation process. </li>
+                    <li>
+                        <p>There are 3 different types of Translator</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Assembler</h3>
+                                <ul class="hyphen-list">
+                                    <li>Assembly language is a low-level programming language that
+                                        is
+                                        closely related to machine code but is more readable for
+                                        humans.
+                                    </li>
+                                    <li>An assembler is a type of software that translates assembly
+                                        language code into machine code, which is the binary code
+                                        that a
+                                        computer's processor can execute directly. </li>
+                                    <li>Assemblers can be categorized into two types based on the
+                                        number
+                                        of passes they take to process the input. </li>
+                                </ul>
+                                <figure>
+                                    <img src="/images/assembler.png" alt="Assembler" class="note-image">
+                                    <figcaption>fig: Assembler working mechanism</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <h3>Compiler</h3>
+                                <ul class="hyphen-list">
+                                    <li>A compiler is a software tool that translates code written
+                                        in a
+                                        high-level programming language (such as C, C++, Java, or
+                                        Python) into machine code or bytecode code which can be
+                                        directly
+                                        executed by a computer. </li>
+                                    <li>This translator reads the complete program at first if it is
+                                        bug
+                                        free then it converts the source code into machine code at
+                                        once.
+                                        If it detects the errors then the compilation process gets
+                                        terminated. Thus, it also helps to find out the errors.
+                                    </li>
+                                    <li>Simply compiler is processor dependent or platform dependent
+                                        means the codes only works for the system, so, to overcome
+                                        such
+                                        problem cross compiler can be used.</li>
+                                </ul>
+                                <figure>
+                                    <img src="/images/compiler.png" alt="Compiler" class="note-image">
+                                    <figcaption>fig: Working of Compiler</figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <h3>Interpreter</h3>
+                                <ul class="hyphen-list">
+                                    <li>An interpreter is also a software program that translates a
+                                        source code into a machine language. </li>
+                                    <li>However, an interpreter converts high-level programming
+                                        language
+                                        into machine language line-by-line while interpreting and
+                                        running the program. </li>
+                                    <li>Interpreter reads only single statement of a program then
+                                        translates it and execute it. After that it again read the
+                                        next
+                                        statement of the program, translate it and executes.</li>
+                                </ul>
+                                <figure>
+                                    <img src="/images/interpreter.png" alt="Interpreter" class="note-image">
+                                    <figcaption>Fig: How does the interpreter work?</figcaption>
+                                </figure>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Errors</h2>
+                <ul class="hyphen-list">
+                    <li>In programming errors are the mistakes or problems that makes while writing
+                        the
+                        codes, which prevents the execution of the program. </li>
+                    <li>Errors are also called bugs and the process of removing the bugs is called
+                        debugging. </li>
+                    <li>For successful execution of program errors must be removed. </li>
+                    <li>
+                        <p>Types of error</p>
+                        <ol type="i">
+                            <li>
+                                <h3>Syntax error</h3>
+                                <ul class="hyphen-list">
+                                    <li>Are those errors that mainly occurs due to the mistakes
+                                        while
+                                        typing a program or don't follow the syntax of program.</li>
+                                    <li>
+                                        <p>The most frequent syntax error are, missing parenthesis,
+                                            semicolon. </p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+int main(){
+    printf("hello world") //missing semicolon
+}
+</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Semantic error</h3>
+                                <ul class="hyphen-list">
+                                    <li>Semantic error occurs when the statement written in the
+                                        programs
+                                        are not meaningful to the compiler. </li>
+                                    <li>Writing invalid program logic that produce incorrect result
+                                        when
+                                        the instructions are executed.</li>
+                                    <li>Suppose a programmer wants to add 2 numbers</li>
+                                    <li>
+                                        <p>Example</p>
+                                        <pre>
+sum = a - b;  // Error in semantics: wrong operator
+sum = a + b;  // corrected version
+</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Runtime error</h3>
+                                <ul class="hyphen-list">
+                                    <li>Runtime errors are those errors which are occur during
+                                        program
+                                        execution after successful compilation.</li>
+                                    <li>Example division by zero. </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Control Structure</h2>
+                <ul class="hyphen-list">
+                    <li>It is the way that specify the flow of program. It basically analyze and
+                        choose
+                        the direction flow of a program according to condition. </li>
+                    <li>
+                        <p>It can be categorized into 3 types.</p>
+                        <ol type="i">
+                            <li>
+                                <h3>Sequential Structure</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>A sequential structure refers to the simplest control
+                                            flow
+                                            structure where statements are executed one after
+                                            another.
+                                        </p>
+                                        <pre>
+&lt;START&gt;
+    STATEMENT1;
+    STATEMENT2;
+    STATEMENT3;
+&lt;STOP&gt;
+</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Selection Structure</h3>
+                                <ul class="hyphen-list">
+                                    <li>Which is use to make decisions based on the several
+                                        conditions.
+                                    </li>
+                                    <li>It consists of two parameter: condition and statement </li>
+                                    <li>
+                                        <p>Types of Selection Structures in C:</p>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>if statement</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The simplest form of selection structure is
+                                                        the
+                                                        if statement. It evaluates a condition
+                                                        (which is
+                                                        a logical expression) and executes a block
+                                                        of
+                                                        code if the condition is true. </li>
+                                                    <li>
+                                                        <p>Syntax</p>
+                                                        <pre>
+if (condition){
+    // code to be execute if true
+}
+</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>Example</p>
+                                                        <pre>
+#include &lt;stdio.h&gt;
+int main(){
+    int num = 10;
+    if (num > 0){
+        printf("Number is positive\n");
+    }
+    return 0;
+}
+</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>if-else statement</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The if-else statement provides two paths: one if the
+                                                        condition
+                                                        is true and another if the condition is false. </li>
+                                                    <li>
+                                                        <p>Syntax </p>
+                                                        <pre>
+    if (condition) {
+        // Block of code to execute if the condition is true
+    } else {
+        // Block of code to execute if the condition is false
+    }
+</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>Example</p>
+                                                        <pre>
+    #include &lt;stdio.h&gt;
+    int main(){
+        int num = -5;
+        if (num > 0){
+            printf("Number is positive\n");
+        }
+        else{
+            printf("Number is non-positive\n");
+        }
+        return 0;
+    }
+</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>else if ladder</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The else if ladder is used when multiple conditions
+                                                        need to
+                                                        be
+                                                        checked. If the first condition is false, the next
+                                                        condition
+                                                        is
+                                                        evaluated, and so on.</li>
+                                                    <li>If none of the conditions are true, an optional else
+                                                        block
+                                                        can
+                                                        be used as a default case.</li>
+                                                    <li>
+                                                        <p>Syntax</p>
+                                                        <pre>
+if (condition1) {
+    // code to execute
+} else if (condition2) {
+    // code to execute
+} else if (condition3) {
+    // code to execute
+} else {
+    // code to execute
+}</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>Example</p>
+                                                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num = 0;
+    if (num > 0){
+        printf("Number is positive\n");
+    }
+    else if (num &lt; 0) {
+        printf("Number is negative\n");
+    }
+    else {
+        printf("Number is zero\n");
+    }
+    return 0;
+}</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>nested if statement</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>A nested if is an if statement placed inside another
+                                                        if or
+                                                        else
+                                                        block. This allows for checking multiple conditions
+                                                        in a
+                                                        hierarchical manner. </li>
+                                                    <li>
+                                                        <p>Syntax</p>
+                                                        <pre>
+if (condition1) {
+    if (condition2) {
+        // code to execute if both conditions are true
+    }
+}</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>Example</p>
+                                                        <pre>
+#include &lt;stdio.h>
+int main() {
+    int num = 5;
+    if (num > 0) {
+        if (num % 2 == 0) {
+            printf("Number is positive and even\n");
+        }
+        else {
+            printf("Number is positive and odd\n");
+        }
+    }
+    return 0;
+}</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>switch statement</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The selection control structure in which the case
+                                                        expression
+                                                        can
+                                                        be executed if the switch expression is true. </li>
+                                                    <li>
+                                                        <p>Here is syntax..</p>
+                                                        <pre>
+switch (expression) {
+    case constant1:
+    //code to execute if expression equals constant1
+    break;
+    case constant2:
+    //code to execute if expression equals constant2
+    break;
+    // You can have any number of case statements
+    default:
+    //code to execute if expression doesn't match any case
+}</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>Example</p>
+                                                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int day = 3;
+    switch (day) {
+        case 1:
+        printf("Monday\n");
+        break;
+        case 2:
+        printf("Tuesday\n");
+        break;
+        case 3:
+        printf("Wednesday\n");
+        break;
+        case 4:
+        printf("Thursday\n");
+        break;
+        case 5:
+        printf("Friday\n");
+        break;
+        case 6:
+        printf("Saturday\n");
+        break;
+        case 7:
+        printf("Sunday\n");
+        break;
+        default:
+        printf("Invalid day\n");
+    }
+    return 0;
+}</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Iterative(Looping) Structure</h3>
+                                <ul class="hyphen-list">
+                                    <li>In C programming, a looping structure (or iterative structure)
+                                        allows you to
+                                        execute a block of code repeatedivy until a certain condition is
+                                        met,
+                                        otherwise the program is terminated. </li>
+                                    <li>
+                                        <p>There are mainly two types of loops in C Programming: </p>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>Entry Controlled loops</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In Entry controlled loops the test condition is
+                                                        checked
+                                                        before entering the main body of the loop. For Loop
+                                                        and
+                                                        While Loop is Entry-controlled loops.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Exit Controlled loops</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>In Exit controlled loops the test condition is
+                                                        evaluated at the end
+                                                        of the loop body. The loop body will execute at
+                                                        least once, irrespective
+                                                        of whether the condition is true or false. do-while
+                                                        Loop is Exit
+                                                        Controlled loop.</li>
+                                                    <li>
+                                                        <p>Types of Looping Structure in C</p>
+                                                        <ol type="a">
+                                                            <li>
+                                                                <h5>For Loop</h5>
+                                                                <ul class="hyphen-list">
+                                                                    <li>The looping structure in which the
+                                                                        statement is executed at
+                                                                        a specific number of times
+                                                                        repeatedivy if the condition is
+                                                                        true otherwise the program is
+                                                                        terminated. </li>
+                                                                    <li>It belongs to the entry control
+                                                                        loop. </li>
+                                                                    <li>
+                                                                        <p>Syntax</p>
+                                                                        <pre>
+for (initialization; condition; update) {
+    // Block of code to execute
+}</pre>
+                                                                        <figure>
+                                                                            <img src="/images/for-loop.png"
+                                                                                alt="for_loop" class="note-image">
+                                                                            <figcaption>fig:- Flow Diagram
+                                                                                of for loop</figcaption>
+                                                                        </figure>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>// Example of C program to
+                                                                            illustrate for loop</p>
+                                                                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i = 0;
+    for (i = 1; i &lg; = 10; i++) {
+        printf( "Hello World \n");
+    }
+    return 0;
+}</pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <h5>While Loop</h5>
+                                                                <ul class="hyphen-list">
+                                                                    <li>The while loop in C programming is a
+                                                                        control flow structure
+                                                                        that allows you to execute a block
+                                                                        of code repeatedivy as
+                                                                        long as a specified condition remau
+                                                                        true.</li>
+                                                                    <li>It belongs to the entry-controlled
+                                                                        loop category, meaning
+                                                                        that the condition is checked before
+                                                                        the loop body is
+                                                                        executed. </li>
+                                                                    <li>
+                                                                        <p>Syntax</p>
+                                                                        <pre>
+while (condition) {
+    // block of code to execute
+}</pre>
+                                                                        <figure>
+                                                                            <img src="/images/while-loop.png"
+                                                                                alt="while_loop" class="note-image">
+                                                                            <figcaption>Fig:-Flow diagram
+                                                                                for while loop.
+                                                                            </figcaption>
+                                                                        </figure>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>// C program to demonstrate while
+                                                                            loop</p>
+                                                                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i = 0;      // Initialization of loop variable
+    while (i &lt;5) {       // will execute till i is less than 5 
+        printf(“Hello Class \n");       // loop statements
+        i++;        // updating the loop variable
+    }
+    return 0;
+}</pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <h5>Do while loop</h5>
+                                                                <ul class="hyphen-list">
+                                                                    <li>The do-while loop in C programming
+                                                                        is an exit-controlled
+                                                                        loop, meaning that the condition is
+                                                                        evaluated after the loop
+                                                                        body has been executed. This ensures
+                                                                        that the loop body is
+                                                                        executed at least once, even if the
+                                                                        condition is initially
+                                                                        false. </li>
+                                                                    <li>
+                                                                        <p>Syntax</p>
+                                                                        <pre>
+do {
+    // code to execute
+}
+while (condition);</pre>
+                                                                        <figure>
+                                                                            <img src="/images/do-while-loop.png"
+                                                                                alt="do_while_loop" class="note-image">
+                                                                            <figcaption>Fig:- Flow diagram
+                                                                                for do while loop.
+                                                                            </figcaption>
+                                                                        </figure>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>// C program to illustrate
+                                                                            do-while loop</p>
+                                                                        <pre>
+#include &lg;stdio.h&gt;
+int main() {
+    int i = 2;      // Initialization expression
+    do {
+        printf( "Hello World \n");      // loop body
+        i++;// Update expression
+    }
+    while (i &lt;1);        // Test expression
+    return 0;
+}</pre>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+
+                <h2>Program Design Tools</h2>
+                <ul class="hyphen-list">
+                    <li>Program design tools are resources and techniques that are used to develop the
+                        computer program. </li>
+                    <li>
+                        <p>The several program design tools are:-</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Algorithm</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>The program design tools that contain step by step procedure or
+                                            sequential steps which are written by using English language for
+                                            solving specific problem. </p>
+                                        <h4>Characteristics of an Algorithm</h4>
+                                        <ol type="i">
+                                            <li>An algorithm uses finite number of logical steps. </li>
+                                            <li>Each step must be defined precisely and unambiguously. </li>
+                                            <li>Every steps should be executed exactly in finite time.</li>
+                                        </ol>
+                                        <h5>Algorithm Problem</h5>
+                                        <ol type="a">
+                                            <li>
+                                                <p>Write an algorithm to add two numbers entered by users.
+                                                </p>
+                                                <pre>
+Step1: start
+Step2: create variable num1,num2 and result
+Step3: take input value from user
+Step4: result=num1+num2
+Step5: display the result
+Step6: stop</pre>
+                                            </li>
+                                            <li>
+                                                <p>Write an algorithm to calculate the simple interest</p>
+                                                <pre>
+Step1 start
+Step2 create variable P,T,R and S.I
+Step3 take value of P,T,R from user
+Step4 S.I = PTR /100
+Step5 display the S.I
+Step6 stop</pre>
+                                            </li>
+                                            <li>
+                                                <p>Write an algorithm to find the greatest among two number.
+                                                </p>
+                                                <pre>
+Step1 start
+Step2 create variable A and B
+Step3 if A>B{
+                display A is greatest number
+            }
+            else display B is greatest number
+Step4 stop</pre>
+                                            </li>
+                                            <li>
+                                                <p> Write an algorithm to find the area of circle.</p>
+                                                <pre>
+Step1 start
+Step2 create variable R,Pi and A
+Step3 take value of R from user
+Step4 Pi=22/7
+Step5 A = Pi*R*R
+Step6 display the S.I
+Step7 stop</pre>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Flowchart</h3>
+                                <ul class="hyphen-list">
+                                    <li>The diagrammatic or pictorial representation of different steps
+                                        involved in algorithm to solve specific problem is called Flow
+                                        Chart. </li>
+                                    <li>
+                                        <p>It uses different geometrical shapes, symbols to represent
+                                            different action involves in problem solving.</p>
+                                        <h4>Different symbols used in Flowchart are:-</h4>
+                                        <figure>
+                                            <img src="/images/different-symbols-in-flowchart.png"
+                                                alt="symbols in flowchart" class="note-image">
+                                        </figure>
+                                        <h5>Flowchart Problem</h5>
+                                        <ol type="a">
+                                            <li>
+                                                <p>Draw a flowchart to find sum of two number.</p>
+                                                <figure>
+                                                    <img src="/images/sum-of-two-number.png"
+                                                        alt="flowchart to find sum of two number" class="note-image">
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <p>Draw a flow chart to find greatest among two.</p>
+                                                <figure>
+                                                    <img src="/images/greater.png"
+                                                        alt="flowchart to find greatest among two" class="note-image">
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <p>Draw a flowchart to find simple interest.</p>
+                                                <figure>
+                                                    <img src="/images/simple-interst.png"
+                                                        alt="flowchart to find simple interest" class="note-image">
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <p>Write an algorithm and flowchart to find area of circle.
+                                                </p>
+                                                <p><strong>Algorithm</strong></p>
+                                                <pre>
+Step1 start
+Step2 create variable R,Pi and A
+Step3 take value of R from user
+Step4 Pi=22/7
+Step5 A = Pi*R*R
+Step6 display the S.I
+Step7 stop</pre>
+                                                <p><strong>Flowchart</strong></p>
+                                                <figure>
+                                                    <img src="/images/area-of-circle.png"
+                                                        alt="flowchart to find area of circle" class="note-image">
+                                                </figure>
+                                            </li>
+                                            <li>
+                                                <p>DRAW a flow chart to find the entered number is even or
+                                                    odd.</p>
+                                                <figure>
+                                                    <img src="/images/odd-even.png" alt="flowchart to find even or odd"
+                                                        class="note-image">
+                                                </figure>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Pseudocode</h3>
+                                <ul class="hyphen-list">
+                                    <li>It is a kind of algorithm in which the instructions are expressed in
+                                        more English-like structure and mathematical expression. </li>
+                                    <li>
+                                        <p>Here is a simple example of pseudo code to calculate simple
+                                            interest. </p>
+                                        <pre>
+START
+    INPUT principal, rate, time
+    CALCULATE interest = (principal * rate * time) / 100
+    OUTPUT interest
+END</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>BCD codes</h2>
+                <ul class="hyphen-list">
+                    <li>The coding system in which each decimal digit is represented by four-bit binary
+                        number is called Binary Coded Decimal (BCD). </li>
+                    <li>For example (548)<sub>10</sub> to BCD. </li>
+                    <li>Convert (592)<sub>10</sub> to BCD. </li>
+                </ul>
+                <h2>Absolute Binary Code</h2>
+                <ul class="hyphen-list">
+                    <li>Absolute binary code means the representation of positive and negative number in
+                        binary system using a binary '0' for positive number and '1' for negative number.
+                    </li>
+                    <li>For example, +5 is indicated in four bit binary as 0 0101 </li>
+                    <li>example, -9 is indicated as 1 1001 </li>
+                </ul>
+                <h2>ASCII</h2>
+                <ul class="hyphen-list">
+                    <li>ASCII is the acronym for the American Standard Code for Information Interchange. It
+                        is a character encoding standard that represent text in computer. Each character is
+                        assigned to a unique numerical value from 0 to 127. </li>
+                    <li>For example, NULL=0, ESC=27, space=32, !=33, #=35, $=36, A=65, Z=90, a=97, z=122,
+                        DEL=127. </li>
+                </ul>
+                <h2>C Programming Language</h2>
+                <ul class="hyphen-list">
+                    <li>C is high-level general-purpose programming language. Which is developed by
+                        Dennis Ritchie in 1970 at AT&T Bell laboratory in USA.</li>
+                    <li>This is procedure-oriented programming language that follow top-down approach. It
+                        mainly focus on procedure rather than objects like in other Programming Language.
+                    </li>
+                    <li>
+                        <p>It was invented to write an operating system called UNIX.</p>
+                        <h3>Features of C Language</h3>
+                        <ol type="i">
+                            <li>C programs are portable i.e. they can be run on any compiler with little or
+                                without modification.</li>
+                            <li>C provides variety of data-types.</li>
+                            <li>It supports various control statements like if, if else and looping
+                                structures.</li>
+                            <li>It is more user friendly as compared to other Programming Language.</li>
+                            <li>It supports modular programming which means a complex program can be divided
+                                into different modules.</li>
+                        </ol>
+                        <h3>Advantages of C programming Language</h3>
+                        <ol type="i">
+                            <li><strong>Foundation of Modern Programming:</strong>C is the basic programming
+                                language and the mother of many modern languages like Python.</li>
+                            <li><strong>Fast and Efficient:</strong>C compiles into compact, fast executable
+                                code.</li>
+                            <li><strong>Library Support:</strong>Many libraries are written in C, making it
+                                highly versatile.</li>
+                            <li><strong>Simple Syntax:</strong>C has minimal vocabulary, clear syntax, and
+                                is easy to learn.</li>
+                            <li><strong>System-level Programming:</strong>C is close to assembly language,
+                                ideal for system-related tasks.</li>
+                            <li><strong>Flexible and Logical:</strong>It allows clear program structure,
+                                meaningful variable names and flexible control statements.</li>
+                        </ol>
+                        <h3>Disadvantages of C programming Language</h3>
+                        <ol type="i">
+                            <li><strong>No Runtime Checking:</strong>Bugs are hard to find in large
+                                programs.</li>
+                            <li><strong>Lacks Namespace:</strong>No way to avoid name conflicts.</li>
+                            <li><strong>Weak type checking:</strong>Allows mismatched datatypes(Eg.: Integer
+                                passed as float).</li>
+                            <li><strong>No Object-Oriented features:</strong>Lacks polymorphism, data
+                                hiding, constructors, and destructors.</li>
+                            <li><strong>Limited Libraries:</strong>Insufficient for modern programming
+                                needs.</li>
+                            <li><strong>Case Sensitivity:</strong>Mixing uppercase and lowercase can cause
+                                errors.</li>
+                            <li><strong>Compatibility Issues:</strong>Difficult to run on modern 64bit
+                                systems.</li>
+                            <li><strong>Not Designed-Oriented:</strong>Writing C code is not intuitive or
+                                easy.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Let's look at simple C program to Print “Hello Class”</p>
+                        <pre>
+#include&lt;stdio.h&gt;
+int main() {
+    printf(“Hello Class”);
+    return 0;
+}</pre>
+                    </li>
+                    <li>Here the first line of the program "#include &lt;stdio.h&gt;" is a preprocessor
+                        directive, that tells the compiler to include the Standard Input Output (stdio)
+                        library in your program.</li>
+                    <li>The next line int main() is the main function or entry point of the program, from
+                        where execution of the program begu.</li>
+                    <li>The next line printf(“ .... ”); in C which is use to display the message.</li>
+                    <li>In C, return 0; is a statement typically used at the end of the main function to
+                        indicate that the program has executed successfully.</li>
+                </ul>
+                <h3>Character set used in C</h3>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>A character is a set of</p>
+                        <ol type="a">
+                            <li><strong>Alphabets:-</strong> C accepts both lower case and Upper-case
+                                alphabets as variable and function. Example A-Z and a-z</li>
+                            <li><strong>Digits:-</strong> C use decimal numbers from 0-9</li>
+                            <li><strong>Whitespace:-</strong> The white space include Blank space,
+                                Horizontal tab new line etc.</li>
+                            <li>
+                                <p><strong>Special symbols and characters:-</strong> The symbols that are
+                                    used
+                                    while writing a program are called special symbols. The most commonly
+                                    used
+                                    special characters are as following table.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Symbol</th>
+                                            <th>Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>,</td>
+                                            <td>Comma</td>
+                                        </tr>
+                                        <tr>
+                                            <td>""</td>
+                                            <td>Quotation</td>
+                                        </tr>
+                                        <tr>
+                                            <td>*</td>
+                                            <td>Asterisk</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&</td>
+                                            <td>Ampersand</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;&gt;</td>
+                                            <td>Angle Bracket</td>
+                                        </tr>
+                                        <tr>
+                                            <td>{}</td>
+                                            <td>Bracket</td>
+                                        </tr>
+                                        <tr>
+                                            <td>()</td>
+                                            <td>Parenthesis</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$</td>
+                                            <td>Dollar-sign</td>
+                                        </tr>
+                                        <tr>
+                                            <td>;</td>
+                                            <td>Semicolon</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/</td>
+                                            <td>Slash(Forward-slash)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>\</td>
+                                            <td>Backward-slash</td>
+                                        </tr>
+                                        <tr>
+                                            <td>_</td>
+                                            <td>Underscore</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Comments in C</h3>
+                <ul class="hyphen-list">
+                    <li>In C programming, a comment is a note or annotation added to the code to make it
+                        more readable for humans, without affecting the program's behavior or functionality.
+                    </li>
+                    <li>Comments are ignored by the compiler, so they do not become part of the executable
+                        code.</li>
+                    <li>
+                        <p>In C, there are two types of comments:</p>
+                        <ol type="i">
+                            <li>
+                                <p><strong>Single-line comments:</strong> Start with // and continue to the
+                                    end of the line.</p>
+                                <p class="comment">// This is a single-line comment</p>
+                            </li>
+                            <li>
+                                <p><strong>Multi-line comments:</strong> Start with /* and end with */.</p>
+                                <p>They can span multiple line.</p>
+                                <p class="comment">/* This is a multi-line comment */</p>
+                            </li>
+                        </ol>
+                        <h3>Identifiers</h3>
+                        <ul class="hyphen-list">
+                            <li>In C, Identifiers are the name used to identify a variable, function, array,
+                                or
+                                other user-defined items. </li>
+                            <li>It must start with a letter or underscore. </li>
+                            <li>Ex myVariable , total_sum, sum()etc.</li>
+                        </ul>
+                        <h3>Keywords</h3>
+                        <ul class="hyphen-list">
+                            <li>In C, keywords are reserved words that have special meanings defined by the
+                                language. These words cannot be used as identifiers (like variable names,
+                                function names, etc.) because they serve specific syntactic roles in the
+                                language. </li>
+                            <li>Ex int, return, if, while, for, break, continue, and void. Each keyword has
+                                a
+                                unique purpose in controlling the structure and flow of the program.</li>
+                        </ul>
+                        <h3>Tokens</h3>
+                        <ul class="hyphen-list">
+                            <li>In C, tokens are the smallest elements of a program.</li>
+                            <li>With the help of these tokens C program is formed. They include: Keywords,
+                                Identifiers, Constants, Operators etc. </li>
+                        </ul>
+                        <h3>Data Types</h3>
+                        <ul class="hyphen-list">
+                            <li>
+                                <p>In C, datatypes are used to specify the type of data that a variable can
+                                    hold. It can be categorized as follows:</p>
+                                <ol type="1">
+                                    <li>
+                                        <h4>Basic Data Types</h4>
+                                        <ol type="a">
+                                            <li><strong>int:</strong> Used for integers (whole numbers),
+                                                typically 2 or 4 bytes.</li>
+                                            <li><strong>float:</strong> Used for single-precision
+                                                floating-point
+                                                numbers, typically 4 bytes.</li>
+                                            <li><strong>double:</strong> Also used for large floating-point
+                                                numbers, typically 8 bytes.</li>
+                                            <li><strong>char:</strong> Used for characters, typically 1
+                                                byte.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <h4>Derived Data Types</h4>
+                                        <ol type="a">
+                                            <li><strong>Arrays:</strong> Collection of elements of the same
+                                                type, e.g., int arr[10];</li>
+                                            <li><strong>Pointers:</strong> Stores the address of another
+                                                variable, e.g., int *ptr;</li>
+                                            <li>
+                                                <p><strong>Structures:</strong> Allows grouping of different
+                                                    data types,e.g., </p>
+                                                <pre>
+struct Person { 
+    char name[50]; 
+    int age;
+};</pre>
+                                            </li>
+                                            <li><strong>Unions:</strong> Similar to structures, but all
+                                                members
+                                                share the same memory location.</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h3>Constants</h3>
+                        <ul class="hyphen-list">
+                            <li>In C constants are the fixed values that can not be change during the
+                                execution of a
+                                program.</li>
+                            <li>While declaring the constant in program, we use const as keyword.</li>
+                            <li>
+                                <p>Syntax</p>
+                                <pre>
+const datatype name=value;
+const double PI=3.14;  //Example
+</pre>
+                            </li>
+                        </ul>
+                        <h3>Variable</h3>
+                        <ul class="hyphen-list">
+                            <li>Variable is like a container that is use for storing the values like
+                                number, character etc.</li>
+                            <li>
+                                <p>Syntax </p>
+                                <pre>
+datatype variablename=value;
+int x=5;  //Example</pre>
+                                <p>QN. Create a variable mynum and assign the value 7.5</p>
+                                <p>Ans: <strong>float</strong> mynum =7.5;</p>
+                            </li>
+                        </ul>
+                        <h3>Format Specifier</h3>
+                        <ul class="hyphen-list">
+                            <li>In C format specifiers are used to tell the compiler about the type of data
+                                to
+                                be printed or scanned in input or output operations.</li>
+                            <li>These are always starts with % symbol and are use with function like
+                                printf()
+                                and scanf().
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Format Specifier</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>%d</td>
+                                            <td>Integer Format Specifier</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%f</td>
+                                            <td>Float Format Specifier</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%c</td>
+                                            <td>Character Format Specifier</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%s</td>
+                                            <td>String Format Specifier</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%u</td>
+                                            <td>Unsigned Integer Format Specifier</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%ld</td>
+                                            <td>Long Integer Format Specifier</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                        <h3>Statement:-</h3>
+                        <ul class="hyphen-list">
+                            <li>Is a command given to computer to perform certain specific task. Statement
+                                is
+                                formed according to rules of programming. </li>
+                            <li>
+                                <p>Types</p>
+                                <ol type="i">
+                                    <li>
+                                        <p><strong>Simple Statement:-</strong> If the statement consists of
+                                            a
+                                            single line of instruction, then it is called a simple
+                                            statement. It
+                                            may be a declaration of a variable, assigning the value or may
+                                            be an
+                                            expression.</p>
+                                        <p>example</p>
+                                        <pre>
+int a, b; //variable declaration 
+a=5; //assigning values in a and b
+b=10;
+sum=a+b; //Expression
+</pre>
+                                    </li>
+                                    <li><strong>Compound statement:-</strong> A series of statement in a
+                                        block
+                                        is called compound statement. It contain different control
+                                        statements
+                                        like if else, looping statements etc.</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <h3>Operators:-</h3>
+                        <ul class="hyphen-list">
+                            <li>Operators are the symbols that tell the compiler to perform certain
+                                mathematical, logical and relational operation.</li>
+                            <li>
+                                <p>C supports following types of operator.</p>
+                                <ol type="i">
+                                    <li>
+                                        <h4>Arithmetic Operator</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                <p>The operators which are use for basic arithmetic
+                                                    operation
+                                                    are called arithmetic operator. </p>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Operators</th>
+                                                            <th>Name</th>
+                                                            <th>Description</th>
+                                                            <th>Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>+</td>
+                                                            <td>Addition</td>
+                                                            <td>Adds together two valus</td>
+                                                            <td>a+b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>-</td>
+                                                            <td>Subtraction</td>
+                                                            <td>Subtracts one value from another</td>
+                                                            <td>a-b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>*</td>
+                                                            <td>Multiplication</td>
+                                                            <td>Multiplies two values</td>
+                                                            <td>a*b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>/</td>
+                                                            <td>Division</td>
+                                                            <td>Divide one value by another</td>
+                                                            <td>a/b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>%</td>
+                                                            <td>Modulus</td>
+                                                            <td>Returns the division remainder</td>
+                                                            <td>a%b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>++</td>
+                                                            <td>Increment</td>
+                                                            <td>Increase the value of a variable by 1</td>
+                                                            <td>a++</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>--</td>
+                                                            <td>Decrement</td>
+                                                            <td>Decrease the value of variable by 1</td>
+                                                            <td>a--</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Relational Operators</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                <p>Relational Operators is also called comparison operators.
+                                                    Used to compare two values. The return value of
+                                                    comparison
+                                                    operator is always zero(false) and one(true).</p>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Operator</th>
+                                                            <th>Name</th>
+                                                            <th>Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>==</td>
+                                                            <td>Equal to</td>
+                                                            <td>a==b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>!=</td>
+                                                            <td>Not Equal to</td>
+                                                            <td>a!=b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&gt;</td>
+                                                            <td>Greater Than</td>
+                                                            <td>a>b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&lt;</td>
+                                                            <td>Less Than</td>
+                                                            <td>a&lt;b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&gt;=</td>
+                                                            <td>Greater Than or Equal to</td>
+                                                            <td>a&gt;=b</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>&lt;=</td>
+                                                            <td>Less Than or Equal to</td>
+                                                            <td>a&lt;=b </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Logical Operator</h4>
+                                        <ul class="hyphen-list">
+                                            <li>
+                                                <p>Those operators, which are used to compare logical
+                                                    expression. The return value of logical operator is also
+                                                    1(true) or false(0). </p>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Operator</th>
+                                                            <th>Name</th>
+                                                            <th>Example</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>&&</td>
+                                                            <td>AND</td>
+                                                            <td>a&lt;5&&a&gt;10</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>||</td>
+                                                            <td>OR</td>
+                                                            <td>a&lt;5||a&lt;6</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>!</td>
+                                                            <td>NOT</td>
+                                                            <td>5!6</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Assignment Operator</h4>
+                                        <ul class="hyphen-list">
+                                            <li>An operator which is used to assign the values or result of
+                                                an
+                                                expression to a variable. The equal sign(=) is use as
+                                                assignment
+                                                operator.</li>
+                                            <li>Example x=5; //here = is an assignment operator </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Conditional Operator</h4>
+                                        <ul class="hyphen-list">
+                                            <li>This operator is used for making two- way decisions like if
+                                                else
+                                                statements. The operator paired(?) and colon (:) are used.
+                                                It takes
+                                                three operands so it is also called ternary operator.</li>
+                                            <li><strong>Syntax</strong> (condition)? true_value :
+                                                false_value</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                        <p>write a program in c to find smaller number among two by using conditional
+                            operator.
+                        </p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main()
+{
+   int a,b,c;
+   printf("Enter two number ");
+   scanf("%d%d",&a,&b);
+   c = (a>b)? a : b;
+   printf("%d is greatest number /n",c);
+   return 0;
+}
+                                    </pre>
+                        <h3>Expression</h3>
+                        <ul class="hyphen-list">
+                            <li>An expression is a combination of variable, constant and operators arranged
+                                according to the rules of a programming language.</li>
+                            <li> For example, sum=a+b; </li>
+                            <li>Here a and b are operands. The + sign is operator.</li>
+                        </ul>
+                        <h3>Type Conversion</h3>
+                        <ul class="hyphen-list">
+                            <li>
+                                <p>It is also called type casting, is the process of converting one datatype
+                                    into another.</p>
+                                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+   int a = 5,b = 2;
+   int result1 = a / b; // Integer division (no type casting)
+   printf("Integer division: %d \n", result1); // Output: 2
+   float result2 = (float)a / b; // Type casting one operand to float
+   printf("Float division: %.1f \n", result2); // Output: 2.5
+   return 0;
+}</pre>
+                            </li>
+                        </ul>
+                        <h2>Programming in C</h2>
+                        <p>WAP in c to find area of circle.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    const float PI=3.14;
+    float radius, area;
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+    area = PI * radius * radius;
+    printf("The area of the circle is: %.2f\n", area);
+    return 0;
+}</pre>
+                        <p>WAP in c to calculate simple interest.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float principal, rate, time, simple_interest;
+    printf("Enter the principal amount: ");
+    scanf("%f", &principal);
+    printf("Enter the annual rate of interest (in percentage): ");
+    scanf("%f", &rate);
+    printf("Enter the time (in years): ");
+    scanf("%f", &time);
+    simple_interest = (principal * rate * time) / 100;
+    printf("The simple interest is: %.2f\n", simple_interest);
+    return 0;
+}</pre>
+                        <p>WAP to find greatest among three number</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num1, num2, num3;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    if (num1 >= num2 && num1 >= num3) {
+        printf("The greatest number is: %d\n", num1);
+    }
+    else if (num2 >= num1 && num2 >= num3) {
+        printf("The greatest number is: %d\n", num2);
+    }
+    else {
+        printf("The greatest number is: %d\n", num3);
+    }
+    return 0;
+}</pre>
+                        <p>WAP in c to find the middive number among three.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num1, num2, num3, middle;
+    printf("Enter three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    if ((num1 > num2 && num1 &lt;num3) || (num1 &lt;num2 && num1 > num3)) {
+        middle = num1;
+    }
+    else if ((num2 > num1 && num2 &lt;num3) || (num2 &lt;num1 && num2 > num3)) {
+        middle = num2;
+    }
+    else {
+        middle = num3;
+    }
+    printf("The middle number is: %d\n", middle);
+    return 0;
+}</pre>
+                        <p>WAP to enter percentage and print the division.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float percentage;
+    printf("Enter the percentage: ");
+    scanf("%f", &percentage);
+    if (percentage >= 80) {
+        printf(“Distinction\n");
+    }
+    else if (percentage >= 60) {
+        printf("First Division\n");
+    }
+    else if (percentage >= 50) {
+        printf("Second Division\n");
+    }
+    else if (percentage >= 40) {
+        printf("Third Division\n");
+    }
+    else {
+        printf("Fail\n");
+    }
+    return 0;
+}</pre>
+                        <p>WAP in C to find out whether the entered number is even or odd number.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() { 
+    int number;
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+    if (number % 2 == 0) {
+        printf("The number %d is even.\n", number);
+    }
+    else {
+        printf("The number %d is odd.\n", number);
+    }
+    return 0;
+}</pre>
+                        <p>WAP to input a number and print it is Positive or Negative number.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    if (number > 0) {
+        printf("The number %d is Positive.\n", number);
+    }
+    else if (number &lt; 0) {
+        printf("The number %d is Negative.\n", number);
+    }
+    else {
+        printf("The number is Zero.\n");
+    }
+    return 0;
+}</pre>
+                        <p>WAP to calculate profit and loss.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    float cp, sp, profit_or_loss;
+    printf("Enter the cost price: ");
+    scanf("%f", &cp);
+    printf("Enter the selling price: ");
+    scanf("%f", &sp);
+    if (sp > cp) {
+        profit_or_loss = sp - cp;
+        printf("You made a profit of: %.2f\n", profit_or_loss);
+    }
+    else if (cp > sp) {
+        profit_or_loss = cp - sp;
+        printf("You made a loss of: %.2f\n", profit_or_loss);
+    }
+    else {
+        printf("No profit, no loss.\n");
+    }
+    return 0;
+}</pre>
+                        <p>WAP to display the multiplication table of any number.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num, i;
+    printf("Enter a number to display its multiplication table: ");
+    scanf("%d", &num);
+    printf("Multiplication table of %d:\n", num);
+    for (i = 1; i &lt;= 10; i++) {
+        printf("%d x %d = %d\n", num, i, num * i);
+    }
+    return 0;
+}</pre>
+                        <p> WAP in C to print sum of natural number.</p>
+                        <pre>
+include&lt;stdio.h&gt;
+int main() {
+    int n, i, sum=0;
+    printf(“Enter a number”);
+    scanf(“%d”, &n);
+    for(i=1; i&lt;=n; i++) {
+        sum = sum + i ;
+    }
+    printf(“The sum of natural number up to %d is %d”, n, sum);
+    return 0;
+}</pre>
+                        <p>WAP in C to calculate product of natural number.</p>
+                        <pre>
+include&lt;stdio.h&gt;
+int main() {
+    int n, i, f = 1;
+    printf(“Enter a number”);
+    scanf(“%d”, &n);
+    for(i = 1; i &lt;= n; i++) {
+        f = f * i ;
+    }
+    printf(“The product of natural number up to %d is %d”, n, f);
+    return 0;
+}</pre>
+                        <p>WAP in C to print the Fibonacci series up to n'th term.</p>
+                        <pre>
+#include&lt;stdio.h&gt;
+int main() {
+    int n, a = 0, b = 1, next_term, i;
+    printf(“Enter a number”);
+    scanf(“%d”, &n);
+    for(i = 0; i &gt; n; i++) {
+        printf(“%d \t”, a);
+        next_term = a + b;
+        a = b;
+        b = next_term;
+    }
+    return 0;
+}</pre>
+                        <p>C program to read a number and find is it exactly divisible by 3 and 5 or not?
+                        </p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    if (number % 3 == 0 && number % 5 == 0) {
+        printf("%d is divisible by both 3 and 5.\n", number);
+    }
+    else if(number % 3 == 0) {
+        printf("%d is only divisible by 3\n", number);
+    }
+    else if(number % 5 == 0) {
+        printf("%d is only divisible by 5\n", number);
+    }
+    else printf("%d is not divisible by 3 and 5",number);
+    return 0;
+}</pre>
+                        <p>WAP in C to read number from 1-12 from user and display 1-January, 2-February...
+                            And
+                            for other display wrong input.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n;
+    printf("Enter number from 1 to 12 ");
+    scanf("%d",&n);
+    if(n==1) {
+        printf("1-January"); 
+    }
+    else if(n==2) {
+        printf("2-February");
+    } 
+    else if(n==3) {
+        printf("3-March");
+    }
+    else if(n==4) {
+        printf("4-April");
+    }
+
+    // And so on..
+    
+    else printf("12-December");
+    return 0;
+}</pre>
+                        <p>write a program to read a number and display its reverse.</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, r;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    while (n > 0) {
+        r = n % 10;
+        printf("%d", r);
+        n = n / 10;
+    }
+    return 0;
+}</pre>
+                        <p>#WAP to check the entered number is Armstrong number or not?</p>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, r, c, arm = 0;
+    printf("Enter any number: ");
+    scanf("%d", &n);
+    while (n > 0) {
+        r = n % 10;
+        arm = (r * r * r) + arm;
+        n = n / 10;
+    }
+    if (c == arm) {
+        printf("%d is an Armstrong number.\n", c);
+    }
+    else {
+        printf("%d is not an Armstrong number.\n", c);
+    }
+    return 0;
+}</pre>
+                        <p>#WAP to check the entered number is palindrome or not?</p>
+                        <pre>
+#include&lt;stdio.h&gt;
+int main() {
+    int n, temp, sum = 0, rem;
+    printf("Enter a number \n");
+    scanf("%d", &n);
+    temp = n;
+    while(n != 0) {
+        rem = n % 10;
+        sum = sum * 10 + rem;
+        n = n / 10;
+    }
+    if(temp == sum) {
+        printf("The entered number is palindrome");
+    }
+    else printf("Not palindrome");
+    return 0;
+}</pre>
+                        <p>WAP to print a pattern</p>
+                        <pre>
+* 
+* *
+* * *
+* * * *
+* * * * *</pre>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i, j;
+    for (i = 1; i &lt;= 5; i++) {
+        for (j = 1; j &lt;= i; j++) {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+    return 0;
+}</pre>
+                        <p>WAP to print a pattern</p>
+                        <pre>
+* * * * *
+* * * *
+* * *
+* *
+*
+</pre>
+                        <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i, j;
+    for (i = 1; i &lt;= 5; i++) {
+        for (j = 5; j >= i; j--) {
+            printf(“ * ");
+        }
+        printf("\n");
+    }
+    return 0;
+}</pre>
+                        <p>WAP to print a pattern</p>
+                        <pre>
+C
+C O
+C O M 
+C O M P 
+C O M P U
+C O M P U T 
+C O M P U T E 
+C O M P U T E R
+</pre>
+                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[] = "COMPUTER"; 
+    int i, j, len;
+    len=strlen(str);
+    for (i = 0; i &lt;len; i++) {
+        for (j = 0; j &lt;= i; j++) {
+            printf("%c ", str[j]); 
+        }
+        printf("\n");
+    }
+    return 0;
+}</pre>
+                        <p>WAP to print a pattern</p>
+                        <pre>
+C O M P U T E R 
+C O M P U T E 
+C O M P U T 
+C O M P U
+C O M P
+C O M 
+C O 
+C 
+</pre>
+                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[] = "COMPUTER";
+    int i, j, len;
+    len=strlen(str);
+    for (i = 0; i &lt;len; i++) {
+        for (j = 0; j &lt;len- i; j++) {
+            printf("%c ", str[j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}</pre>
+                        <h3>Array</h3>
+                        <ul class="hyphen-list">
+                            <li>It is the collection of similar data-type(Homogeneous) stored in contiguous
+                                memory location. </li>
+                            <li>It can be declared as: </li>
+                            <li><strong>Syntax</strong> datatype arrayname[size];</li>
+                            <li><strong>Example</strong> int arr[5];</li>
+                            <li>It can be initialized as int num[5]={1,2,3,4,5};</li>
+                            <li>Float num[3]={1.2, 2.5, 2.2};</li>
+                            <li>
+                                <p>Array is used to store multiple values in a single variable instead of
+                                    &nbsp;declaring separate variable for each values. </p>
+                                <figure>
+                                    <img src="/images/array.png" alt="Array elements" class="note-image">
+                                    <figcaption>Fig: Array </figcaption>
+                                </figure>
+                                <h4>Advantages of Array</h4>
+                                <ol type="a">
+                                    <li><strong>Code Optimization:-</strong> Less code required to access
+                                        data.
+                                    </li>
+                                    <li><strong>Random Access:-</strong> We can access any element randomly
+                                        using
+                                        array.</li>
+                                    <li><strong>Simple syntax:-</strong> Array have simple and straight
+                                        forward
+                                        syntax. </li>
+                                    <li><strong>Easy Sorting:-</strong> We can sort the elements of array by
+                                        using
+                                        few line of code. </li>
+                                </ol>
+                                <h4>Dis-advantages</h4>
+                                <ol>
+                                    <li>In C array have a fix size that need to be defined at the compile
+                                        time.</li>
+                                    <li>This makes it difficult to resize the array dynamically.</li>
+                                </ol>
+                                <h4>Types of Array</h4>
+                                <ol>
+                                    <li>
+                                        <h5>One-Dimensional Array( 1D Array)</h5>
+                                        <ul class="hyphen-list">
+                                            <li>In one dimensional Array the data are stored sequentially
+                                                and have
+                                                only one dimension.</li>
+                                            <li>Syntax datatype arrayname[size]; </li>
+                                            <li>Int num[5]; </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Multi-Dimensional Array</h5>
+                                        <ul class="hyphen-list">
+                                            <li>Are those array that have more than one dimension. Like 2D,
+                                                3D
+                                                array. </li>
+                                            <li>int matrix[3][3];</li>
+                                            <li>here 3 is the number of rows and 3is the number of columns.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>WAP to enter 10 numbers and display them</p>
+                <pre>
+include&lt;stdio.h&gt;
+int main() {
+    int num[10],i;
+    printf(“Enter 10 numbers \n”);
+    for(i=0;i &lt; 10;i++) {
+        printf(“Enter number %d \t”,i+1);
+        scanf(“%d”, &num[i]);
+    }
+    printf(“The entered numbers are:\n”);
+    for(i=0;i &lt; 10;i++) {
+        printf(“%d \t”, num[i]); 
+    }
+    return 0;
+}</pre>
+                <p>WAP to find the greatest among 10 numbers.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int num[10];
+    int i, max;
+    printf("Enter 10 numbers:\n");
+    for (i = 0; i &lt;10; i++) {
+        printf("Number %d: ", i + 1);
+        scanf("%d", &num[i]);
+    }
+    max = num[0];
+    for (i = 1; i &lt;10; i++) {
+        if (num[i] > max) {
+            max = numbers[i];       // Update
+        }
+    }
+    printf("The greatest number among the entered numbers is: %d\n", max);
+    return 0;
+}</pre>
+                <p>WAP to sort the given numbers in Ascending order.</p>
+                <pre>
+#include&lt;stdio.h&gt;
+int main() {
+    int n, i, j, temp;
+    printf("Enter how many number do you want to sort?\t");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter elements of array \n");
+    for(i=0; i&lt;n; i++) {
+        printf("Enter %d elements \t",i+1);
+        scanf("%d", &arr[i]); 
+    }         
+    //codes for sorting in ascending order
+    for(i=0; i&lt;n-1; i++) { 
+        for(j=i+1; j&lt;n; j++) {
+            if (arr[i]>arr[j]) {
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    printf("After sorting in ascending order:-");
+    for(i=0; i &lt; n; i++) {
+        printf("%d \t", arr[i]); 
+    }
+    return 0;
+}</pre>
+                <p>WAP to sort the given numbers in Descending order.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, i, j, temp; 
+    printf("Enter how many number do you want to sort?\t");
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter elements of array \n");
+    for(i=0; i&lt;n; i++) {
+        printf("Enter %d elements \t",i+1);
+        scanf("%d", &arr[i]); 
+    }
+    //codes for sorting in ascending order
+    for(i=0; i&lt;n-1; i++) { 
+        for(j=i+1; j&lt;n; j++) {
+            if (arr[i]&lt;arr[j]) {
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+    printf("After sorting in descending order:-");
+    for(i=0; i &lt; n; i++) {
+        printf("%d \t", arr[i]);
+    }
+    return 0;
+}</pre>
+                <p>WAP to input salary of n employee and count total no of employee getting
+                    salary between 30k-50k.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int n, i, count = 0;
+    float salary[10];
+    printf("Enter the number of employees (max 10): ");
+    scanf("%d", &n);
+    for (i = 0; i &lt;n; i++) {
+        printf("Enter salary of employee %d: ", i + 1);
+        scanf("%f", &salary[i]);
+    }
+    for (i = 0; i &lt;n; i++) {
+        if (salary[i] &gt;= 30000 && salary[i] &lt;= 50000)
+        {
+            count++;
+        }
+    }
+    printf("Total number of employees with salary between 30k and 50k: %d\n", count);
+    return 0;
+}</pre>
+                <p>WAP to enter 3x3 matrix and display it.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int matrix[3][3];
+    int i, j;
+    printf("Enter elements of the 3x3 matrix:\n");
+    for (i = 0; i &lt;3; i++) {
+        for (j = 0; j &lt;3; j++) {
+            printf("Enter element at position (%d, %d): ", i , j);
+            scanf("%d", &matrix[i][j]); 
+        }
+    }
+    printf("The entered 3x3 matrix is:\n");
+    for (i = 0; i &lt;3; i++) {
+        for (j = 0; j &lt;3; j++) {
+            printf("%d\t", matrix[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}</pre>
+                <p>WAP to add two 3x3 matrix.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    int i, j;
+    int matrix1[3][3], matrix2[3][3], result[3][3];
+    // Input for the first 3x3 matrix
+    printf("Enter elements of the first 3x3 matrix:\n");
+    for (i = 0; i &lt;3; i++) {
+        for (j = 0; j &lt;3; j++) {
+            printf("Enter element [%d][%d]: ", i + 1, j + 1);
+            scanf("%d", &matrix1[i][j]);
+        }
+    }
+    // Input for the second 3x3 matrix
+    printf("Enter elements of the second 3x3 matrix:\n");
+    for (i = 0; i &lt;3; i++) {
+        for (j = 0; j &lt;3; j++) {
+            printf("Enter element [%d][%d]: ", i + 1, j + 1);
+            scanf("%d", &matrix2[i][j]);
+        }
+    }
+    // Add the two matrices
+    for (i = 0; i &lt;3; i++) {
+        for (j = 0; j &lt;3; j++) {
+            result[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+    // Display the resulting matrix
+    printf("The resulting matrix after addition is:\n");
+    for (i = 0; i &lt;3; i++) { 
+        for (j = 0; j &lt;3; j++) {
+            printf("%d\t", result[i][j]);
+        }
+        printf("\n");
+    }
+    return 0; 
+}</pre>
+                <h3>String</h3>
+                <ul class="hyphen-list">
+                    <li>In 'C' programming string is typically represented as array of
+                        characters terminated by a null character '\0' . </li>
+                    <li>
+                        <p>Example</p>
+                        <pre>
+char str[6] = "Hello";
+// String declaration </pre>
+                    </li>
+                    <li>Here, str is an array of 6 characters, where: 'H', 'e',
+                        'l', 'l', 'o', '\0' </li>
+                </ul>
+                <h3>String Function</h3>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>The header file &lt;string.h&gt; contain some string manipulation
+                            function. The most common string manipulation function in C are listed
+                            below. </p>
+                        <ol type="1">
+                            <li>
+                                <h4>strlen()</h4>
+                                <ul class="hyphen-list">
+                                    <li>The string function that returns the length of string. </li>
+                                    <li>
+                                        <p>For example, </p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char name[12];
+    int length;
+    printf(“Enter Name:- ”);
+    scanf(“%s”, name);
+    length=strlen(name);
+    printf(“The length of the string is %d”, length);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>strcpy()</h4>
+                                <ul class="hyphen-list">
+                                    <li>The string function that is use to copy a string from one
+                                        location to another(from one variable to another). </li>
+                                    <li>
+                                        <p>For example, </p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char first[10];
+    char second[10];
+    printf(“Enter a string:”);
+    scanf(“%s”, first);
+    strcpy(second, first);
+    printf(“The first string is %s and second string is %s”, first, second);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>strcmp()</h4>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>This function is used to compare two strings and returns
+                                            integer values indicating their relationship: </p>
+                                        <ol type="a">
+                                            <li>Returns 0: If both strings are equal.</li>
+                                            <li>Returns a negative value: If, first string&lt;second
+                                                string. </li>
+                                            <li>Returns a positive value: first string &gt; second
+                                                string. </li>
+                                        </ol>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str1[] = "Hello";
+    char str2[] = "World";
+    char str3[] = "Hello";
+    int result1 = strcmp(str1, str2);
+    int result2 = strcmp(str1, str3);
+    printf("Comparison of str1 and str2: %d\n", result1);
+    printf("Comparison of str1 and str3: %d\n", result2);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>strcat()</h4>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>This function is use to join one string to another. It takes two
+                                            string as arguments, the characters of the second string will be
+                                            appended to the first string. This process of adding string is
+                                            known as string concatenation.</p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt; {
+    char str1[20] = "Hello";
+    char str2[ 5] = " World!";
+    strcat(str1, str2);
+    printf("Concatenated String: %s\n", str1);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>strupr()</h4>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>The strupr() function is a C library function used to convert all
+                                            the characters in a string to uppercase. It stands for "string
+                                            uppercase."</p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str);
+    strupr(str);
+    printf("Uppercase string: %s\n", str);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>strlwr()</h4>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>This function is used to converts the uppercase characters of
+                                            string to the lower-case character. </p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[100] = "HELLO, CLASS!";
+    printf("Original String: %s\n", str);
+    strlwr(str);
+    printf("Lowercase String: %s\n", str);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>strrev()</h4>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>This function is used to reverse the given string.</p>
+                                        <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char str[100] = "Hello, World!";
+    printf("Original String: %s\n", str);
+    strrev(str);
+    printf("Reversed String: %s\n", str);
+    return 0;
+}</pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <p>WAP to check the entered character is vowel or consonant.</p>
+                <pre>
+#include &lt;stdio.h&gt;
+int main() {
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+        printf("%c is a vowel.\n", ch);
+    } else printf("%c is a consonant.\n", ch);
+    return 0;
+}</pre>
+                <p>WAP to check the entered string is palindrome or not?</p>
+                <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    char a[10];
+    char b[10];
+    printf("Enter string: ");
+    scanf("%s", a);
+    strcpy(b, a);
+    strrev(a);
+    if (strcmp(a, b) == 0) {
+        printf("%s is palindrome\n", b);
+    }
+    else printf("%s is not palindrome\n", b);
+    return 0;
+}</pre>
+                <p>WAP that reads a specified number of names from user, sorts these names in alphabetical
+                    order. </p>
+                <pre>
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main() {
+    int i, j, n;
+    printf("Enter the number of names: ");
+    scanf("%d", &n);
+    char str[n][200];
+    char temp[200];
+    printf("Enter names:\n");
+    for (i = 0; i &lt; n; i++) {
+        printf("Enter name %d: ", i + 1);
+        scanf("%s", str[i]);
+    }
+    for (i = 0; i &lt; n - 1; i++) {
+        for (j = i + 1; j &lt; n; j++) {
+            if (strcmp(str[i], str[j]) > 0) {
+                strcpy(temp, str[i]);
+                strcpy(str[i], str[j]);
+                strcpy(str[j], temp);
+            }
+        }
+    }
+    printf("The names after sorting are:\n");
+    for (i = 0; i &lt; n; i++)
+    {
+        printf("%s\n", str[i]);
+    }
+    return 0;
+}
+</pre>
+                <h2 class="end">THE END</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

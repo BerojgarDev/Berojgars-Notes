@@ -1,0 +1,1882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science | Class11</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/icon.png" alt="icon">
+                <h1>Berojgar's Notes</h1>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="hamburger">&#9776;</button>
+            <nav class="nav" id="navMenu">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h2>Computer Notes</h2>
+                    <h2>Class 11 </h2><br>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p><br>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p><br>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p><br>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="toc">
+            <div>
+                <h2>Unit 2: Number System, Conversion And Boolean Logic</h2>
+            </div>
+            <div>
+                <h3>Objective</h3>
+                <ol type="1">
+                    <li>
+                        <a href="#number-system">Number System</a>
+                    </li>
+                    <li>
+                        <a href="#conversion">Conversion of Number System</a>
+                    </li>
+                    <li>
+                        <a href="#1s-complement">1’s complement</a>
+                    </li>
+                    <li>
+                        <a href="#2s-complement">2’s complement</a>
+                    </li>
+                    <li>
+                        <a href="#boolean-algebra">Boolean Algebra</a>
+                    </li>
+                    <li>
+                        <a href="#de-morgan-law">De-Morgan’s Laws</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="content">
+            <div id="unit2" class="noteContent">
+                <h2 id="number-system">Number System</h2>
+                <ul class="hyphen-list">
+                    <li>The number system, which is also known as the numeric system; is the way of
+                        expressing the number by using the specific symbols or digits.</li>
+                    <li>
+                        <p>Number system can be categorized into two types:-</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Non-Positional Number system</h3>
+                                <ul class="hyphen-list">
+                                    <li>A non-positional number system is a number system where the value of
+                                        a symbol is independent of its position in the number.</li>
+                                    <li>Example : Roman Number System.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Positional Number system</h3>
+                                <ul class="hyphen-list">
+                                    <li>Positional number system is the one in which there is specific value
+                                        or
+                                        weight for each digit.</li>
+                                    <li>
+                                        <p>It can be further divided into four types.</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Binary Number </h4>
+                                                <ul class="hyphen-list">
+                                                    <li>These numbers are represented by using two digits (0
+                                                        and 1) only and the base of the binary number is 2.
+                                                    </li>
+                                                    <li>Example: (101011)<sub>2</sub></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Decimal Number</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It is the most common and widely used number system.
+                                                        It uses the digits from 0.9 to represent the number.
+                                                    </li>
+                                                    <li>The base of the decimal number is 10.</li>
+                                                    <li>Example: (150)<sub>10</sub></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Octal Number</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The number system in which base 8 is used is called
+                                                        octal number. The Value of octal number ranges. from
+                                                        0-7. </li>
+                                                    <li>Example : (175)<sub>8</sub></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Hexa-Decimal Number</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The number system in which base is 16. It ranges
+                                                        from 0-15.and represented by 0, 1, 2, 3, 4, 5, 6, 7,
+                                                        8, 9 & 10=A, 11=B, 12=C, 13=D, 14=E, 15=F.</li>
+                                                    <li>Example: (A3B5)<sub>16</sub></li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="conversion">Conversion</h2>
+                <ul class="hyphen-list">
+                    <li>
+                        <p>There are many conversion from one base system to another.</p>
+                        <ol type="1">
+                            <li>
+                                <h3>From binary to decimal.</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(11110)<sub>2</sub> = (?)<sub>10</sub></p>
+                                        <p>soln: 1&times;2<sup>4</sup> + 1&times;2<sup>3</sup> +
+                                            1&times;2<sup>2</sup> + 1&times;2<sup>1</sup> +
+                                            0&times;2<sup>0</sup></p>
+                                        <p>= 16 + 8 + 4 + 2 +0</p>
+                                        <p>= 30</p>
+                                        <p>∴ (11110)<sub>2</sub> = (30)<sub>10</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(111011.110)<sub>2</sub> = (?)<sub>10</sub></p>
+                                        <p>Soln : 1&times;2<sup>5</sup> + 1&times;2<sup>4</sup> +
+                                            1&times;2<sup>3</sup> + 0&times;2<sup>2</sup> +
+                                            1&times;2<sup>1</sup> + 1&times;2<sup>0</sup> .
+                                            1&times;2<sup>-1</sup> + 1&times;2<sup>-2</sup> +
+                                            1&times;2<sup>-3</sup> + 0&times;2<sup>-4</sup></p>
+                                        <p>= 32 + 16 + 8 + 0 + 2 + 1 . 1/2 + 1/4 + 1/8 + 0</p>
+                                        <p>= 59.875</p>
+                                        <p>∴ (111011.1110)<sub>2</sub> = (59.875)<sub>10</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From octal to decimal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(472)<sub>8</sub> = (?)<sub>10</sub></p>
+                                        <p>Soln: 4&times;8<sup>2</sup> + 7&times;8<sup>1</sup> +
+                                            7&times;8<sup>0</sup></p>
+                                        <p>= 256 + 56 + 2</p>
+                                        <p>= 314</p>
+                                        <p>∴ (472)<sub>8</sub> = (314)<sub>10</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(541.71)<sub>8</sub> =(?)<sub>10</sub></p>
+                                        <p>soln: 5&times;8<sup>2</sup> + 4&times;8<sup>1</sup> +
+                                            1&times;8<sup>0</sup> . 7&times;8<sup>-1</sup>+
+                                            1&times;8<sup>-2</sup></p>
+                                        <p>= 320 + 32 + 1 . 7/8 + 1/16</p>
+                                        <p>= 353.890625</p>
+                                        <p>∴ (541.71)<sub>8</sub> = (353.890625)<sub>10</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>Hexa-decimal to decimal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(9BAC)<sub>16</sub> = (?)<sub>10</sub></p>
+                                        <p>Soln: 9&times;16<sup>3</sup> + 11&times;16<sup>2</sup> +
+                                            10&times;16<sup>1</sup> + 12&times;16<sup>0</sup></p>
+                                        <p>= 36864 + 2816 + 160 + 12</p>
+                                        <p>= 39852</p>
+                                        <p>∴ (9BAC)<sub>16</sub> = (39852)<sub>10</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(AC9E.B43)<sub>16</sub> = (?)<sub>10</sub></p>
+                                        <p>soln: 10&times;16<sup>3</sup> + 12&times;16<sup>2</sup> +
+                                            9&times;16<sup>1</sup> + 14&times;16<sup>0</sup> .
+                                            11&times;16<sup>-1</sup> + 4&times;16<sup>-2</sup> +
+                                            3&times;16<sup>-3</sup> </p>
+                                        <p>= 10x4096 + 12x256 + 9x16 + 14x1 . 11/16 + 4/256 + 3/4096 </p>
+                                        <p>= 40960+3072+144+14 . (2816+64+3)/4096 </p>
+                                        <p>= 44190.704</p>
+                                        <p>∴ (AC9E.B43)<sub>16</sub> = (44190.704)<sub>10</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>Decimal to binary</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(435)<sub>10</sub> = (?)<sub>2</sub></p>
+                                        <p>soln: here,</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>2</td>
+                                                <td>435</td>
+                                                <td> R</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>217</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>108</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>54</td>
+                                                <td>- 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>27</td>
+                                                <td>- 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>13</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>6</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>- 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>0</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (435)<sub>10</sub> = (110110011)<sub>2</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(25.45)<sub>20</sub> = (?)<sub>2</sub></p>
+                                        <p>soln: here, Taking Integer part first (i.e 25)</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>2</td>
+                                                <td>25</td>
+                                                <td> R</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>12</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>6</td>
+                                                <td>- 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td>- 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>0</td>
+                                                <td>- 1</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (25)<sub>10</sub> = (11001)<sub>2</sub></p>
+                                        <p>now, taking fractional part (i.e. 0.45)</p>
+                                        <table class="math-multi">
+                                            <tr>
+                                                <td>0.45</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td>=</td>
+                                                <td>0.90</td>
+                                                <td>&rarr;</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.90</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td>=</td>
+                                                <td>1.80</td>
+                                                <td>&rarr;</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.80</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td>=</td>
+                                                <td>1.60</td>
+                                                <td>&rarr;</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.60</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td>=</td>
+                                                <td>1.20</td>
+                                                <td>&rarr;</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.20</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td>=</td>
+                                                <td>0.40</td>
+                                                <td>&rarr;</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.40</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td>=</td>
+                                                <td>0.80</td>
+                                                <td>&rarr;</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </table>
+                                        <p>Since, 0.80 repeats. So, we stops here</p>
+                                        <p>∴ (0.45)<sub>10</sub> = (011100)<sub>2</sub></p>
+                                        <p>now, combining both integer & fractional part</p>
+                                        <p>∴ (25.45)<sub>10</sub> = (11001.011100)<sub>2</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(52.35)<sub>10</sub> = (2)<sub>2</sub></p>
+                                        <p>Soln: here, Taking integer part (i.e. 52)</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>2</td>
+                                                <td>52</td>
+                                                <td> R</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>26</td>
+                                                <td> - 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>13</td>
+                                                <td> - 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>7</td>
+                                                <td> - 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>3</td>
+                                                <td> - 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td> - 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>0</td>
+                                                <td> - 1</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (52)<sub>10</sub> = (110100)<sub>2</sub></p>
+                                        <p>now, Taking fractional part (i.e. 0.35)</p>
+                                        <table class="math-multi">
+                                            <tr>
+                                                <td>0.35 </td>
+                                                <td>&times;</td>
+                                                <td> 2 </td>
+                                                <td> = </td>
+                                                <td> 0.70 </td>
+                                                <td>&rarr;</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.70 </td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td> = </td>
+                                                <td> 1.40 </td>
+                                                <td>&rarr;</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.40 </td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td> = </td>
+                                                <td> 0.80 </td>
+                                                <td>&rarr;</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.80 </td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td> = </td>
+                                                <td> 1.60 </td>
+                                                <td>&rarr;</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.60 </td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td> = </td>
+                                                <td> 1.20 </td>
+                                                <td>&rarr;</td>
+                                                <td>1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.20 </td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td> = </td>
+                                                <td> 0.40 </td>
+                                                <td>&rarr;</td>
+                                                <td>0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.40</td>
+                                                <td>&times;</td>
+                                                <td>2</td>
+                                                <td> = </td>
+                                                <td> 0.80 </td>
+                                                <td>&rarr;</td>
+                                                <td>xx</td>
+                                            </tr>
+                                        </table>
+                                        <p>now, combining both integer & fractional parts.</p>
+                                        <p>∴ (52.35)<sub>10</sub> =(110100.01010)<sub>2</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>Decimal to Octal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(412)<sub>10</sub> = (?)<sub>8</sub></p>
+                                        <p>Soln: here,</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>412</td>
+                                                <td> R</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>51</td>
+                                                <td> - 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>6</td>
+                                                <td> - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>0</td>
+                                                <td> - 6</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ Ans: (412)<sub>10</sub> = (634)<sub>8</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(538.45)<sub>10</sub> = (?)<sub>8</sub></p>
+                                        <p>Soln: here, Taking integer part only i.e 538</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>538</td>
+                                                <td> R</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>67</td>
+                                                <td> - 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>8</td>
+                                                <td> - 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>1</td>
+                                                <td> - 0</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8 </td>
+                                                <td>0</td>
+                                                <td> - 1</td>
+                                            </tr>
+                                        </table>
+                                        <p>Now, taking Fractional part i.e 0.45</p>
+                                        <table class="math-multi">
+                                            <tr>
+                                                <td>0.45</td>
+                                                <td>&times;</td>
+                                                <td> 8 </td>
+                                                <td> = </td>
+                                                <td> 3.60 </td>
+                                                <td>&rarr;</td>
+                                                <td> 3</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.60</td>
+                                                <td>&times;</td>
+                                                <td> 8 </td>
+                                                <td> = </td>
+                                                <td> 4.80 </td>
+                                                <td>&rarr;</td>
+                                                <td> 4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.80</td>
+                                                <td>&times;</td>
+                                                <td> 8 </td>
+                                                <td> = </td>
+                                                <td> 6.40 </td>
+                                                <td>&rarr;</td>
+                                                <td> 6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.40</td>
+                                                <td>&times;</td>
+                                                <td> 8 </td>
+                                                <td> = </td>
+                                                <td> 2.40 </td>
+                                                <td>&rarr;</td>
+                                                <td> 2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.40</td>
+                                                <td>&times;</td>
+                                                <td> 8 </td>
+                                                <td> = </td>
+                                                <td> 2.40 </td>
+                                                <td>&rarr;</td>
+                                                <td> xx</td>
+                                            </tr>
+                                        </table>
+                                        <p>Now, combining integer and fractional parts</p>
+                                        <p>∴ Answer: (538.45)<sub>10</sub> = (1032.3462)<sub>8</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>Decimal to Hexadecimal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(941)<sub>10</sub> = (?)<sub>16</sub></p>
+                                        <p>Soln: here,</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>16 </td>
+                                                <td> 941 </td>
+                                                <td> R</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16 </td>
+                                                <td>58</td>
+                                                <td> - 13 = D</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16 </td>
+                                                <td> 3 </td>
+                                                <td> - 10 = A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16 </td>
+                                                <td> 0 </td>
+                                                <td> - 3</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ Ans: (941)<sub>10</sub> = (3AD)<sub>16</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(29.48)<sub>10</sub> = (?)<sub>16</sub></p>
+                                        <p>Soln: here, Taking integer part only i.e 29</p>
+                                        <table class="math-ladder">
+                                            <tr>
+                                                <td>16 </td>
+                                                <td> 29 </td>
+                                                <td> R </td>
+                                            </tr>
+                                            <tr>
+                                                <td>16 </td>
+                                                <td> 1 </td>
+                                                <td> - 13 = D</td>
+                                            </tr>
+                                            <tr>
+                                                <td>16 </td>
+                                                <td> 0 </td>
+                                                <td> - 1</td>
+                                            </tr>
+                                        </table>
+                                        <p>Now, Taking fractional part i.e 0.48</p>
+                                        <table class="math-multi">
+                                            <tr>
+                                                <td>0.48 </td>
+                                                <td>&times;</td>
+                                                <td> 16 </td>
+                                                <td> = </td>
+                                                <td> 7.68 </td>
+                                                <td>&rarr;</td>
+                                                <td> 7</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.68 </td>
+                                                <td>&times;</td>
+                                                <td> 16 </td>
+                                                <td> = </td>
+                                                <td> 10.88 </td>
+                                                <td>&rarr;</td>
+                                                <td> 10 = A</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.88 </td>
+                                                <td>&times;</td>
+                                                <td> 16 </td>
+                                                <td> = </td>
+                                                <td> 14.08 </td>
+                                                <td>&rarr;</td>
+                                                <td> 14 = E</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.08 </td>
+                                                <td>&times;</td>
+                                                <td> 16 </td>
+                                                <td> = </td>
+                                                <td> 1.28 </td>
+                                                <td>&rarr;</td>
+                                                <td> 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0.28 </td>
+                                                <td>&times;</td>
+                                                <td> 16 </td>
+                                                <td> = </td>
+                                                <td> 4.48 </td>
+                                                <td>&rarr;</td>
+                                                <td> 4</td>
+                                            </tr>
+                                        </table>
+                                        <p>∵ 0.48 is repeating numbers, so it should be stoped.</p>
+                                        <p>Now, combining integer and fractional parts</p>
+                                        <p>∴ Answer: (29.48)<sub>10</sub> = (1D.7AE14)<sub>16</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From Binary to Octal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(11001110111)<sub>2</sub> = (?)<sub>8</sub></p>
+                                        <p>Soln: here,</p>
+                                        <p>Paring binary numbers in 3 bits from right to left in order to
+                                            convert binary to octal.</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>011</td>
+                                                <td>001</td>
+                                                <td>110</td>
+                                                <td>111</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>3</td>
+                                                <td>1</td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ Answer: (11001110111)<sub>2</sub> = (3167)<sub>8</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(111001.1111001)<sub>2</sub> = (?)<sub>8</sub></p>
+                                        <p>Soln: here, Taking integer part only i.e 111001 Paring binary
+                                            numbers in 3 bits from right to left in order to convert binary
+                                            to octal.</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>111</td>
+                                                <td>001</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>7</td>
+                                                <td>1</td>
+                                            </tr>
+                                        </table>
+                                        <p>Again, Taking fractional part only i.e 1111001 Paring binary
+                                            numbers in 3 bits from left to right in order to convert binary
+                                            to octal.</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>111</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>7</td>
+                                                <td>4</td>
+                                                <td>4</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ Answer: (111001.1111001)<sub>2</sub> = (71.744)<sub>8</sub></p>
+                                        <p>OR,</p>
+                                        <p><strong>For integer part:</strong> Paring binary numbers in 3
+                                            bits from right to left in order to convert binary to octal.</p>
+                                        <p><strong>For fractional part:</strong> Paring binary numbers in 3
+                                            bits from left to right in order to convert binary to octal.</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>111</td>
+                                                <td>001</td>
+                                                <td>.111</td>
+                                                <td>100</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>7</td>
+                                                <td>1</td>
+                                                <td>7</td>
+                                                <td>4</td>
+                                                <td>4</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ Answer: (111001.1111001)<sub>2</sub> = (71.744)<sub>8</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From Octal to Binary</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(156.76)<sub>8</sub> = (?)<sub>2</sub></p>
+                                        <p>Soln: here,</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>1</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>.7</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>001</td>
+                                                <td>101</td>
+                                                <td>110</td>
+                                                <td>.111</td>
+                                                <td>110</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ Answer: (156.76)<sub>8</sub> = (111110)<sub>2</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From Binary to hexadecimal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(1111100011)<sub>2</sub> = (?)<sub>16</sub></p>
+                                        <p>Soln: Here, Paring binary numbers in 4 bits from right to left in
+                                            order to convert binary to hexadecimal.</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>0011</td>
+                                                <td>1110</td>
+                                                <td>0011</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hexadecimal</td>
+                                                <td>3</td>
+                                                <td>14 = E</td>
+                                                <td>3</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (1111100011)<sub>2</sub> = (3E3)<sub>16</sub></p>
+                                    </li>
+                                    <li>
+                                        <p>(11111000.11001011)2 = (?)16</p>
+                                        <p><strong>For integer part:</strong> Paring binary numbers in 4
+                                            bits from right to left in order to convert binary to
+                                            hexadecimal.</p>
+                                        <p><strong>For fractional part:</strong> Paring binary numbers in 4
+                                            bits from left to right in order to convert binary to
+                                            hexadecimal.</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>1111</td>
+                                                <td>1000</td>
+                                                <td>1100</td>
+                                                <td>1011</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hexadecimal</td>
+                                                <td>15 = F</td>
+                                                <td>8</td>
+                                                <td>12 = C</td>
+                                                <td>11 = B</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (11111000.11001011)<sub>2</sub> = (F8.CB)<sub>16</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From Hexadecimal to binary</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(ABAB.5C)<sub>16</sub> = (?)<sub>2</sub></p>
+                                        <p>Soln: here,</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Hexadecimal</td>
+                                                <td>A</td>
+                                                <td>B</td>
+                                                <td>A</td>
+                                                <td>B</td>
+                                                <td>.5</td>
+                                                <td>C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>1010</td>
+                                                <td>1011</td>
+                                                <td>1010</td>
+                                                <td>1011</td>
+                                                <td>.0101</td>
+                                                <td>1100</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (ABAB.5C)<sub>16</sub> =
+                                            (1010101110101011.01011100)<sub>2</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From octal to hexadecimal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(563.256)<sub>8</sub> = (?)<sub>16</sub></p>
+                                        <p>Soln: here, octal to binary</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                                <td>3</td>
+                                                <td>.2</td>
+                                                <td>5</td>
+                                                <td>6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>101</td>
+                                                <td>110</td>
+                                                <td>011</td>
+                                                <td>.010</td>
+                                                <td>101</td>
+                                                <td>110</td>
+                                            </tr>
+                                        </table>
+                                        <p>Paring the binary to convert into hexadecimal</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>0001</td>
+                                                <td>0111</td>
+                                                <td>0011</td>
+                                                <td>.0101</td>
+                                                <td>0111</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hexadecimal</td>
+                                                <td>1</td>
+                                                <td>7</td>
+                                                <td>3</td>
+                                                <td>.5</td>
+                                                <td>7</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (563.256)<sub>8</sub> = (173.57)<sub>16</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>From hexadecimal to octal</h3>
+                                <ol type="a">
+                                    <li>
+                                        <p>(ABC.3D)<sub>16</sub> = (?)<sub>8</sub></p>
+                                        <p>Soln: here, hexadecimal to binary</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Hexadecimal</td>
+                                                <td>A</td>
+                                                <td>B</td>
+                                                <td>C</td>
+                                                <td>.3</td>
+                                                <td>D</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>1010</td>
+                                                <td>1011</td>
+                                                <td>1100</td>
+                                                <td>.0011</td>
+                                                <td>1101</td>
+                                            </tr>
+                                        </table>
+                                        <p>Paring the binary to convert into octal</p>
+                                        <table class="conversion">
+                                            <tr>
+                                                <td>Binary</td>
+                                                <td>101</td>
+                                                <td>010</td>
+                                                <td>111</td>
+                                                <td>100</td>
+                                                <td>.001</td>
+                                                <td>111</td>
+                                                <td>010</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Octal</td>
+                                                <td>5</td>
+                                                <td>2</td>
+                                                <td>7</td>
+                                                <td>4</td>
+                                                <td>.1</td>
+                                                <td>7</td>
+                                                <td>2</td>
+                                            </tr>
+                                        </table>
+                                        <p>∴ (ABC.3D)<sub>16</sub> = (5274.172)<sub>8</sub></p>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Binary addition</h2>
+                <ol type="a">
+                    <li>
+                        <p>(1001.111)<sub>2</sub> + (111.10101)<sub>2</sub></p>
+                        <p>Soln: here,</p>
+                        <pre>
+      1 0 0 1. 1 1 1 0 0
+    <u>+   1 1 1. 1 0 1 0 1</u>
+    1 0 0 0 1. 1 0 0 0 1</pre>
+                        <p>Ans: (10001.10001)<sub>2</sub></p>
+                    </li>
+                </ol>
+                <h2>Binary subtraction</h2>
+                <ol type="a">
+                    <li>
+                        <p>(1100)<sub>2</sub> - (101)<sub>2</sub></p>
+                        <p>Soln: here,</p>
+                        <pre>
+    1 1 0 0
+<u>-	0 1 0 1</u>
+    1 1  1</pre>
+                        <p>Ans: (111)<sub>2</sub></p>
+                    </li>
+                </ol>
+                <h2 id="1s-complement">1's complement method</h2>
+                <p><strong>Step 1:</strong> Calculate is complement of subtrahend</p>
+                <p><strong>Step 2:</strong> Add I's Complement with minumend.</p>
+                <p><strong>Step 3:</strong> If overflow bit present then add the overflow bit with remaining
+                    part.</p>
+                <p>OR</p>
+                <p>If no overflow bit occurs then calculate 1's complement and put -ve sign.</p>
+                <ol type="1">
+                    <li>
+                        <p>Subtract the binary number (1110)<sub>2</sub> from (0100)<sub>2</sub> using 1's
+                            complement method.</p>
+                        <pre>
+Soln:	Minumend (M)=(0100)2
+        Subtrahend (s) = (1110)2
+Step 1: Calculate 1'complement of subtrahend 
+        = 0001
+Step 2: Add 1's complement with M 
+        0100 
+    <u>+	0001</u>
+        0101
+Step 3: Since no overflow bit occurs. So, calculate 1's complement & put -ve sign. 
+        ∴ -(1010)<sub>2</sub>
+</pre>
+                    </li>
+                    <li>
+                        <p>(1110)<sub>2</sub> - (0100)<sub>2</sub></p>
+                        <pre>
+Soln:	M = 1110
+        S = 0100
+Step 1: Calcalate Is complement of subtrahend
+        = 1011
+Step 2: Add with M
+            1110
+        <u>+	1011</u>
+         '1'1001
+Step 3: Since, overflow bit occurs, Add overflow bit with remaining part
+             1001
+            <u>+   1</u>
+             1010
+
+        Ans: (1010)<sub>2</sub></pre>
+                    </li>
+                    <li>
+                        <p>Subtract (0101)<sub>2</sub> from (1100)<sub>2</sub> using 1's complement method.
+                        </p>
+                        <pre>
+Soln: 	M = 1100 
+        S = 0101
+Step 1: Calculate 1's complement of Subtrahend 
+        = 1010
+Step 2: Add with M
+            1100 
+        <u>+	1010</u>
+         '1'0110
+Step 3: Since, overflow bit occurs, Add overflow bit with remaining port.
+        0110
+        <u>+  1</u>
+        0111
+
+    ∴ Ans: (0111)<sub>2</sub></pre>
+                    </li>
+                    <li>
+                        <p>Subtract 9 from 12 by using 1's complement</p>
+                        <pre>
+Soln: 		M = 12 = 1100
+            S = 9 = 1001
+Step 1: Calculate 1's complement of S
+			=0110
+Step 2: Add with M
+        1100
+    <u>+	0110</u>
+     '1'0010
+Step 3: Since, overflow occurs so add overflow with remaining part,
+            0010
+            <u>+  1</u>
+              11
+
+        ∴ Ans: (11)<sub>2</sub> &rAarr; 3</pre>
+                    </li>
+                    <li>
+                        <p>Subtract the binary number (10100)<sub>2</sub> from (111011)<sub>2</sub> using
+                            1's complement method.</p>
+                        <pre>
+Soln: 		M= 111011
+            S = 000100
+Step 1: Calculate the i's complement of s -111011
+Step 2: Add with M
+    1  1  1  0 1 1
+     <u>+ 0 0 0 1 1 0</u>
+   '1' 1 1 0 1 1 0
+Step 3: Since overflow occurs so, add overflow with remaining part,
+            110110
+            <u>+    1</u>
+            110111
+        
+            ∴ Ans: (10111)<sub>2</sub></pre>
+                    </li>
+                </ol>
+                <h2 id="2s-complement">2's complement method</h2>
+                <p>Step 1: Calculate 2's complement of subtrahend</p>
+                <p>i.e. 1's complement +1</p>
+                <p>Step 2: Add with minumend value.</p>
+                <p>Step3: If overflow bit occurs; discard the overflow bit & write remaining part as answer.
+                </p>
+                <p>OR</p>
+                <p>If no overflow bit occurs then, Calculate 2's complement & put '-ve' sign.</p>
+                <ol type="1">
+                    <li>
+                        <p>(0100)<sub>2</sub> - (1110)<sub>2</sub> using 2's complement method.</p>
+                        <pre>
+Soln:	Here,
+        S=1110
+        M=0100
+Step 1: Calculate 2's complement of S
+        = 0001+1
+        = 0010
+Step 2: Add with minuend value (M).
+         0100
+        <u>+0010</u>
+         0110
+Step 3: Since, no overflow bit occurs.So, calculate 2's complement & put '-ve' sign.
+        1001+1
+        = 1010
+
+∴ Ans: (-1010)<sub>2</sub></pre>
+                    </li>
+                    <li>
+                        <p>Q.N.2 Subtract the binary number 11 from the binary number 1110 using 2's
+                            complement method.</p>
+                        <pre>
+Soln: 	Here,
+        M= 1110
+        S=0011
+Step 1: Calculate 2's complement of S
+        = 1's complement +1
+        = 1100+1
+        = 1101
+Step 2: Add with M
+            1101
+        <u>+	1110</u>
+          '1'1011
+Step 3: Since, overflow bit occurs. So, discard the overflow bit & write the remaining part as answer.
+∴ Answer: (1011)<sub>2</sub></pre>
+                    </li>
+                </ol>
+                <h2 id="boolean-algebra">Boolean Algebra </h2>
+                <ul class="hyphen-list">
+                    <li>It is the two value system of algebra that is used to design and analyze the logical
+                        circuit.</li>
+                    <li>It has two values O and 1.</li>
+                    <li>It was invented by George Boole in 1854.</li>
+                </ul>
+                <h2>Logical circuit</h2>
+                <ul class="hyphen-list">
+                    <li>The switching circuit which is used to perform various Logical Operation is called
+                        logic circuit.</li>
+                    <li>These are the fundamental building blocks of digital Logic circuits.</li>
+                    <li>
+                        <p>Logic gates are categorized into 3 types.</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Basic Gates</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>The logical gates in which fundamental circuits are designed are
+                                            called Basic Gates.</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>AND gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It is used to perform logical multiplication.</li>
+                                                    <li><strong>Boolean Expression:</strong> Y = A.B</li>
+                                                    <li>
+                                                        <p><strong>Logical Structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/and.png" alt="AND gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth table:</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td colspan="2">Input</td>
+                                                                    <td>Output</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>B</td>
+                                                                    <td>Y = A.B</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>OR gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It is a logical gate which is used to perform
+                                                        logical addition.</li>
+                                                    <li><strong>Boolean Expression:</strong>Y = A + B</li>
+                                                    <li>
+                                                        <p><strong>Logical Structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/or.png" alt="OR gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth table</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td colspan="2">Input</td>
+                                                                    <td>Output</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>B</td>
+                                                                    <td>Y = A + B</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>NOT gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The logic gate that is used to perform the
+                                                        complement of a binary variable.</li>
+                                                    <li><strong>Boolean Expression: </strong>Y = A&#773;</li>
+                                                    <li>
+                                                        <p><strong>Logical Structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/not.png" alt="NOT gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth table</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td>Input</td>
+                                                                    <td>Output</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>Y = A&#773;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Universal Gate</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>The logic gate which is derived from the 'main gate' or 'Basic
+                                            gate'.</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>NAND gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It is formed by the combination of NOT & AND gate.
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Boolean expression:</strong>Y = <span
+                                                                style="text-decoration: overline;">A.B</span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Logical structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/nand.png" alt="NAND gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth Table</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td colspan="2">Input</td>
+                                                                    <td>Output</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>B</td>
+                                                                    <td>Y = <span
+                                                                            style="text-decoration: overline;">A.B</span>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>NOR gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It is formed by the combination of NOT and OR gate.
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Boolean expression:</strong>Y = <span
+                                                                style="text-decoration: overline;">A +
+                                                                B</span>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Logical structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/nor.png" alt="NOR gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth table:</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td colspan="2">Input</td>
+                                                                    <td>Output</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>B</td>
+                                                                    <td>Y = <span style="text-decoration: overline;">A
+                                                                            + B</span></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Exclusive Gate/Combined gate</h3>
+                                <ul class="hyphen-list">
+                                    <li>
+                                        <p>They are composed of OR and NOT gates.</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>EX-OR (X-OR) gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>The gate that generates true output if the number of
+                                                        one is odd, Otherwise it generates false output.
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Boolean Expression:</strong> Y =
+                                                            A&CirclePlus;B = A&#773;.B + A.B&#773;</p>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Logical structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/xor.png" alt="EX-OR gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth table</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th colspan="2">Input</th>
+                                                                    <th colspan="3">Output</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>B</td>
+                                                                    <td>A&#773;.B</td>
+                                                                    <td>A.B&#773;</td>
+                                                                    <td>Y = A&#773;.B + A.B&#773;</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>EX-NOR (X-NOR) gate</h4>
+                                                <ul class="hyphen-list">
+                                                    <li>It generates true output if the number of one to
+                                                        even, Otherwise it generates false output.</li>
+                                                    <li>
+                                                        <p><strong>Boolean Expression:</strong> Y =
+                                                            <span
+                                                                style="text-decoration: overline;">A&CirclePlus;B</span>
+                                                            = A&#773;.B&#773; + A.B
+                                                        </p>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Logical structure:</strong></p>
+                                                        <figure>
+                                                            <img src="/images/xnor.png" alt="X-NOR gate">
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Truth table</strong></p>
+                                                        <table class="truth-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td colspan="2">Input</td>
+                                                                    <td colspan="3">Output</td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>A</td>
+                                                                    <td>B</td>
+                                                                    <td>A.B</td>
+                                                                    <td>A&#773;.B&#773;</td>
+                                                                    <td>Y = A&#773;.B&#773; + A.B</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                    <td>0</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>1</td>
+                                                                    <td>0</td>
+                                                                    <td>1</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="de-morgan-law">De-Morgan's First Law</h2>
+                <p>It states that, " The complement of the sum of variables is equal to the product of their
+                    individual complement." </p>
+                <p>i.e <span style="text-decoration: overline;">A + B</span> = A&#773;.B&#773;</p>
+                <p><strong>Proof:-</strong> Suppose A and B are variable and their complement is A and B to
+                    take the logical operation AND and OR.</p>
+                <ol type="a">
+                    <li>
+                        <h3>Logic gate verification method</h3>
+                        <p>L.H.S = <span style="text-decoration: overline;">A + B</span></p>
+                        <figure>
+                            <img src="/images/De-Morgan's-FirstLaw-LHS.png" alt="De-Morgan's First Law LHS">
+                        </figure>
+                        <p>R.H.S = A&#773;.B&#773;</p>
+                        <figure>
+                            <img src="/images/De-Morgan's-FirstLaw-RHS.png" alt="De-Morgan's First Law RHS">
+                        </figure>
+                    </li>
+                    <li>
+                        <h3>Mathematical Verification method</h3>
+                        <p>L.H.S = <span style="text-decoration: overline;">A + B</span></p>
+                        <table class="truth-table">
+                            <thead>
+                                <tr>
+                                    <td colspan="2">Input</td>
+                                    <td colspan="2">Output</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>A+B</td>
+                                    <td>Y = <span style="text-decoration: overline;">A + B</span></td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>R.H.S = A&#773;.B&#773;</p>
+                        <table class="truth-table">
+                            <thead>
+                                <tr>
+                                    <td colspan="2">Input</td>
+                                    <td colspan="3">Output</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>A&#773;</td>
+                                    <td>B&#773;</td>
+                                    <td>A&#773;.B&#773;</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+                <h2>De-Morgan's second law</h2>
+                <p>It states that, "Complement of product of variable is equal to sum of their individual
+                    complement."</p>
+                <p>i.e. <span style="text-decoration: overline;">A.B</span> = A&#773; + B&#773;</p>
+                <p><strong>Proof:-</strong> Suppose A and & are variable and their complement are A and B to
+                    take the logical operation AND and OR.</p>
+                <ol type="a">
+                    <li>
+                        <h3>Logic gate verification method</h3>
+                        <p>LHS = <span style="text-decoration: overline;">A.B</span></p>
+                        <figure>
+                            <img src="/images/De-Morgan's-secondLaw-LHS.png" alt="De-Morgan's second Law LHS">
+                        </figure>
+                        <p>R.H.S = A&#773; + B&#773;</p>
+                        <figure>
+                            <img src="/images/De-Morgan's-secondLaw-RHS.png" alt="De-Morgan's second Law RHS">
+                        </figure>
+                    </li>
+                    <li>
+                        <h3>Mathematical verification method</h3>
+                        <p>LHS = <span style="text-decoration: overline;">A.B</span></p>
+                        <table class="truth-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Input</th>
+                                    <th colspan="2">Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>A.B</td>
+                                    <td><span style="text-decoration: overline;">A.B</span></td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>R.H.S = A&#773; + B&#773;</p>
+                        <table class="truth-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Input</th>
+                                    <th colspan="3">Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>B</td>
+                                    <td>A&#773;</td>
+                                    <td>B&#773;</td>
+                                    <td>Y = A&#773; + B&#773;</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ol>
+                <h2 class="end">THE END</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

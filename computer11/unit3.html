@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science | Class11</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/icon.png" alt="icon">
+                <h1>Berojgar's Notes</h1>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <nav class="nav" id="navMenu">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="heroContainer">
+                <h2>Class 11 Computer Notes</h2>
+                <h2>Unit 2 : Number System and Conversion Boolean Logic</h2>
+                <p> <strong>Referenced by:</strong>
+                    <span class="referencer-name">Er. Bhisma Raj Joshi</span>
+                    <span class="referencer-title">Lecturer of Computer Science</span>
+                    <span class="referencer-institution">[NAST]</span>
+                </p>
+                <p> <strong>Written and Edited by:</strong>
+                    <span class="author-name">Karan Chaudhary</span>
+                    <a href="mailto:berojgarkaran@gmail.com">berojgarkaran@gmail.com</a>
+                </p>
+                <p><strong>Version</strong>:- 1.0 – January 2026 <strong>Copyright</strong>:- &copy; Berojgar.Dev | All
+                    Rights Reserved </p>
+                <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                    Teacher’s
+                    notes and textbooks were used only as references. All rights are reserved by Berojgar.</p>
+            </div>
+        </section>
+        <section class="content">
+            <div id="unit3" class="noteContent">
+                <h2>Concept of Software</h2>
+                <ul class="hyphen-list">
+                    <li>It is the collection of instruction, data and computer programs which are used
+                        to run
+                        machines and carry out the particular activities.</li>
+                    <li>As we know the hardware cannot do anything itself, so to carry out the specific
+                        operation software is required.</li>
+                </ul>
+                <h3>Categories of Software</h3>
+                <ul class="hyphen-list">
+                    <li>Software is simply categorized into two types. They are system software and
+                        application
+                        software. </li>
+                    <li>They are further ulided into different types which are shown in figure below:
+                    </li>
+                </ul>
+                <figure>
+                    <img src="/images/Category-of-Software.png" alt="Categories of software" class="note-image">
+                    <figcaption> fig: Categories of software</figcaption>
+                </figure>
+                <h2>System software</h2>
+                <ul class="hyphen-list">
+                    <li>The group of programs which allow the computer to communicate with different
+                        computer
+                        components or other hardware devices are called computer systems.</li>
+                    <li>In simple words, system software is a collection of programmes that manage and
+                        support A
+                        computer Adelaide and application software.</li>
+                    <li>It includes the operating system device drive and utility programme that helps
+                        the
+                        computer run smoothly. </li>
+                    <li>It can be further device into following types. </li>
+                </ul>
+                <h3>Operating system</h3>
+                <ul class="hyphen-list">
+                    <li>It is a system support that is stored on secondary devices such as HDD or SDD.
+                        When you
+                        power on your computer , the system firmware(BIOS) initiates the loading of as
+                        into RAM.
+                    </li>
+                    <li>It provides a user interface enabling interaction with the system and running
+                        applications by allocating memory and processing power. Popular examples include
+                        windows,macOS and linux.Essentially, the OS is the bridge between users and
+                        users
+                        computers inner workings. </li>
+                </ul>
+                <h3>Package loader</h3>
+                <ul class="hyphen-list">
+                    <li>A package loader is a component of an operating system responsible for loading
+                        and
+                        managing software packages or applications.</li>
+                    <li>It locates the necessary files ,resolves dependencies ,and ensures the correct
+                        version
+                        of each package is loaded into memory. This process enables applications to run
+                        smoothly
+                        on the system.</li>
+                    <li>The package loader acts as the mediators between the software and the operating
+                        system.
+                    </li>
+                </ul>
+                <h3>Language processor</h3>
+                <ul class="hyphen-list">
+                    <li>A language processor translates high level programming code into machine code
+                        that the
+                        computer can execute. It includes assemblers, compilers and interpreters serving
+                        specific tasks. </li>
+                    <li>Language processors ensure that code written by programmers is correctly
+                        transformed
+                        into inductions for the computer's hardware.</li>
+                </ul>
+                <h3>Utility software</h3>
+                <ul class="hyphen-list">
+                    <li>Utility software is a program designed to help manage, maintain and optimize
+                        computer
+                        performance.</li>
+                    <li>Examples include antivirus software, disk clean-up tools, firewall, etc. these
+                        tools
+                        assist in diagnosing issues, maintaining system health and improving efficiency.
+                    </li>
+                </ul>
+                <h3>Application Software</h3>
+                <ul class="hyphen-list">
+                    <li>Application software includes programs designed to perform specific tasks for
+                        users,
+                        such as word processors, spreadsheets and web browsers. Those applications help
+                        users
+                        create documents, manage data, browse the internet, and user-centric tasks.</li>
+                    <li>It can be further ulided into two types:</li>
+                </ul>
+                <h3>General Purpose(Package Software)</h3>
+                <ul class="hyphen-list">
+                    <li>General purpose software is designed to perform a wide range of tasks, making it
+                        versatile and applicable to various user needs.</li>
+                    <li>Examples: word processors, spreadsheet, browsers.</li>
+                    <li>These programs can be used in many different contexts. Essentially,
+                        general-purpose
+                        software provides board functionality to support multiple activities.</li>
+                </ul>
+                <h3>Specific Purpose(Tailored Software)</h3>
+                <ul class="hyphen-list">
+                    <li>Tailored Software, also known as specific purpose software, is specifically
+                        designed to
+                        perfectly meet the unique needs and requirements of an inulidual or
+                        organization.</li>
+                    <li>If the users requirements are not met these software can change easily because
+                        these
+                        software are made by normal programmers or developers.</li>
+                    <li>For Example: billing system, marks sheet generator, attendance & school
+                        management
+                        system, etc.</li>
+                </ul>
+                <h2>Operating System</h2>
+                <ul class="hyphen-list">
+                    <li>It is an organised collection of software programs that control the overall
+                        resources of
+                        the computer system(Memory,CPU I/O devices).</li>
+                    <li>It provides a platform for other software and applications to execute or run. It
+                        acts as
+                        an intermediate between user and the hardware which can be shown in figure
+                        below.</li>
+                </ul>
+                <figure>
+                    <img src="/images/os.png" alt="Operating System">
+                    <figcaption> fig: Operating System</figcaption>
+                </figure>
+                <ul class="hyphen-list">
+                    <li>The most popular OS includes Linux OS, Mac OS, Windows OS, etc.</li>
+                    <li>Today operating systems can be found in every device like smartphones, PCs, Auto
+                        Mobiles, T.Vs, etc.</li>
+                </ul>
+                <h3>Function of Operating System</h3>
+                <ul class="hyphen-list">
+                    <li>The major functions of an OS are as follows:</li>
+                </ul>
+                <ol>
+                    <li>
+                        <h4>Memory Management</h4>
+                        <ul class="hyphen-list">
+                            <li>It refers to the management of the primary(main) memory.</li>
+                            <li>During the execution of a program, it takes or shares a fixed amount of
+                                memory.
+                                After completion of execution it releases the memory. During the
+                                execution if
+                                the RAM is not sufficient to store the data the secondary memory is used
+                                which
+                                is called virtual memory.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Processor Management</h4>
+                        <ul class="hyphen-list">
+                            <li>In a multiprogramming environment the OS decides which process gets the
+                                processor when and for how long, this process is called process
+                                schedule.</li>
+                            <li>It allocates processors to execute processes and deallocates when a
+                                process no
+                                longer exists.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>I/O Management</h4>
+                        <ul class="hyphen-list">
+                            <li>An OS manages the different I/O devices by using their respective
+                                drivers. It
+                                decides which process gets the device when and for how long. It
+                                allocates I/O
+                                devices when required to perform specific operation and it deallocates
+                                the I/O
+                                devices when the process is finished.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>User Interface(UI)</h4>
+                        <ul class="hyphen-list">
+                            <li>It is the ideal environment in which the user can work on through which
+                                the user
+                                can interact with the computer.</li>
+                            <li>Every OS provides the features of UI in order to enhance the experiences
+                                of
+                                computer systems. It acts as a bridge between user and computer.</li>
+                            <li>There are various types of interfaces like GUI(Graphical User
+                                Interface),
+                                VUI(Voice User Interface), CLI(Command Line Interface), etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Security</h4>
+                        <ul class="hyphen-list">
+                            <li>The OS contains a number of built-in tools to protect against viruses,
+                                security
+                                threats, unauthorised access and other suspicious activities.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Deadlock Prevention</h4>
+                        <ul class="hyphen-list">
+                            <li>The deadlock is the situation where a set of processes are blocked
+                                because each
+                                process is holding a resource and waiting for another resource required
+                                by some
+                                other process. </li>
+                        </ul>
+                    </li>
+                </ol>
+                <figure>
+                    <img src="/images/Deadlock.png" alt="Deadlock">
+                    <figcaption> fig: Deadlock</figcaption>
+                </figure>
+                <ul class="hyphen-list">
+                    <li>So, the operating system helps to avoid the deadlock condition by proper
+                        resource
+                        allocation.</li>
+                </ul>
+                <h3>Process and its states</h3>
+                <ul class="hyphen-list">
+                    <li>An instance of a program itself is not a process, it becomes a process when an
+                        executable file is loaded into the memory.</li>
+                    <li>The different states of a process is shown in figure below.</li>
+                </ul>
+                <figure> <img src="/images/State-of-process.png" alt="State of processing">
+                    <figcaption> fig: States of process</figcaption>
+                </figure>
+                <ul class="hyphen-list">
+                    <li><strong>New states</strong>:- In new states, the process being created.</li>
+                    <li><strong>Ready states</strong>:- The process is written into an assignment to a
+                        processor. </li>
+                    <li><strong>Running states</strong>:- In this state, the instructions are being
+                        executed.
+                    </li>
+                    <li><strong>Waiting states</strong>:- The process is waiting for some event to occur
+                        such as
+                        I/O completion, or reception of signals.</li>
+                    <li><strong>Terminate states</strong>:- In this state, the process is completed and
+                        process
+                        is terminated. </li>
+                </ul>
+                <h3>Types of Operating System</h3>
+                <ul class="hyphen-list">
+                    <li>There are several types of OS, some of them are as follows.</li>
+                </ul>
+                <h4>1. Multi-programming OS</h4>
+                <ul class="hyphen-list">
+                    <li>The OS in which more than one program can be executed at the same time is called
+                        a multi-programming OS. It is a technique in which multiple programs are executed
+                        simultaneously by a single processor.</li>
+                </ul>
+                <figure> <img src="/images/Multi-programming.Png" alt="multi–programming">
+                    <figcaption> fig: Multi-programming OS</figcaption>
+                </figure>
+                <h4>2. Multi-tasking OS</h4>
+                <ul class="hyphen-list">
+                    <li>Multi-tasking OS simply refers to the type of Multi-programming OS in which more
+                        than one task can be executed at a time.</li>
+                    <li>In Multi-Tasking OS, there is only one CPU that switches between the different
+                        processes so quickly that gives the illusion that all processes are executing at the
+                        same time.
+                    </li>
+                </ul>
+                <figure> <img src="/images/Multi-tasking.png" alt="multi-tasking">
+                    <figcaption> fig: Multi-Tasking OS</figcaption>
+                </figure>
+                <h4>3. Multi-processing OS</h4>
+                <ul class="hyphen-list">
+                    <li>A multi-processing OS uses two or more CPUs, to execute multiple processes
+                        simultaneously improving performance and reliability.</li>
+                    <li>Each processor can run different processes or share tasks for faster execution.
+                        It is
+                        used in high-performance systems like services and super computers. This ensures
+                        better
+                        multi-tasking, fault tolerance and efficient CPU utilization.</li>
+                </ul>
+                <figure>
+                    <img src="/images/Multi-processing.png" alt="multi-processing">
+                    <figcaption> fig: Multi-Processing OS </figcaption>
+                </figure>
+                <h4>4. Distributed OS</h4>
+                <ul class="hyphen-list">
+                    <li>A distributed operating system is an operating system that runs on multiple
+                        computers
+                        but makes them work together like a single system.</li>
+                    <li>It helps those computers share resources, work on tasks together, and appear as
+                        one to
+                        the user. It is designed to be more reliable and able to grow easily by adding
+                        more
+                        computers to the network.</li>
+                </ul>
+                <figure> <img src="/images/Distributed-Os.png" alt="distributed OS">
+                    <figcaption> fig: Distributed OS </figcaption>
+                </figure>
+                <h2>Mobile Operating system</h2>
+                <ul class="hyphen-list">
+                    <li>A mobile operating system is software that manages the hardware and software
+                        resources
+                        of a mobile device, like a smartphone or tablet. </li>
+                    <li>It provides a platform for applications(apps) to run and enables user
+                        interaction with
+                        the mobile device.</li>
+                </ul>
+                <h3>Types of Mobile operating system</h3>
+                <ol>
+                    <li>
+                        <h3>Android OS</h3>
+                        <ul class="hyphen-list">
+                            <li><strong>Developed by</strong>: Google</li>
+                            <li><strong>Based on</strong>: Linux kernel</li>
+                            <li><strong>Features</strong>:
+                                <ol type="a">
+                                    <li>Open-source and highly customizable</li>
+                                    <li>Supports a vast range of applications via Google Play Store</li>
+                                    <li>Regular updates with security and performance improvements</li>
+                                    <li>Supports multiple device manufacturers</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example devices</strong>: Samsung Galaxy, Google Pixel, OnePlus,
+                                etc.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>iOS</h3>
+                        <ul class="hyphen-list">
+                            <li><strong>Developed by</strong>: Apple Inc.</li>
+                            <li><strong>Based on</strong>: Unix (Darwin kernel)</li>
+                            <li><strong>Features</strong>
+                                <ol type="a">
+                                    <li>Closed-source operating system</li>
+                                    <li>High level of security and privacy</li>
+                                    <li>Smooth performance and optimized hardware–software integration
+                                    </li>
+                                    <li>Access to applications through Apple App Store only</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example devices</strong>: iPhone series</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Harmony</h3>
+                        <ul class="hyphen-list">
+                            <li><strong>Developed by</strong>: Huawei</li>
+                            <li><strong>Based on</strong>: Microkernel architecture</li>
+                            <li><strong>Features</strong>:
+                                <ol type="a">
+                                    <li>Designed for smartphones, tablets, and IoT devices</li>
+                                    <li>Supports distributed system across multiple devices</li>
+                                    <li>High performance with low power consumption</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example devices</strong>: Huawei Mate and P series</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Kai OS</h3>
+                        <ul class="hyphen-list">
+                            <li><strong>Developed by</strong>: KaiOS Technologies</li>
+                            <li><strong>Based on</strong>: Linux</li>
+                            <li><strong>Features</strong>:
+                                <ol type="a">
+                                    <li>Designed for feature phones with smart capabilities</li>
+                                    <li>Lightweight and efficient for low-end hardware</li>
+                                    <li>Supports apps like WhatsApp, YouTube, and Google Maps</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example devices</strong>: JioPhone, Nokia 8110 4G</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>BlackBerry OS</h3>
+                        <ul class="hyphen-list">
+                            <li><strong>Developed by</strong>: BlackBerry Limited</li>
+                            <li><strong>Based on</strong>: Java-based operating system</li>
+                            <li><strong>Features</strong>:
+                                <ol type="a">
+                                    <li>Known for high security and encrypted communication</li>
+                                    <li>Strong support for email and business applications</li>
+                                    <li>Physical QWERTY keyboard support</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example devices</strong>: BlackBerry Bold, Curve, and Torch</li>
+                            <li><strong>Note</strong>: BlackBerry OS is now discontinued</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2>Open-Source Operating System</h2>
+                <ul class="hyphen-list">
+                    <li>Open-source generally refers to those OS whose source code is freely available
+                        on the
+                        internet. Basically the software that falls under general public licence is open
+                        source.
+                        They need not to buy the licence to use the software.</li>
+                    <li>The open source OS code can be modified according to the users requirement and
+                        redistributed and redistributed to any other person. Some examples include UNIX,
+                        LINUX, SOLARIS, etc. </li>
+                </ul>
+                <h3>Linux Operating System</h3>
+                <ul class="hyphen-list">
+                    <li>Linux is an open-source, Unix-like operating system that was first created by
+                        Linus
+                        Torvalds in 1991 at the university of Helsinki as a project and released the
+                        version of Linux including all the source code.</li>
+                    <li>Unlike other operating systems, linux is free to use, modify and distribute,
+                        which has
+                        led to widespread use in various environments and a variety of software tools
+                        that
+                        provide a user-frienuly interface.</li>
+                    <li>Anyone who uses the OS can also contribute to its improvement, whether it's
+                        fixing bugs,
+                        adding new features, or ensuring compatibility with new hardware. This has led
+                        to a global community of developers, enthusiasts, and companies who actively
+                        contribute to making Linux better and more widely used.</li>
+                </ul>
+                <h4>Advantages of Linux</h4>
+                <ol type="1">
+                    <li>It is free of cost.</li>
+                    <li>There is no need to spend time and money to obtain a licence.</li>
+                    <li>It has higher scalability.</li>
+                    <li>It is flexible for high performance server applications, desktop applications
+                        and embedded systems.</li>
+                    <li>It is one of the most secure Operating Systems.</li>
+                </ol>
+                <h3>Unix Operating System</h3>
+                <ul class="hyphen-list">
+                    <li>Unix is a powerful , flexible and manageable OS with good utilities and
+                        communication
+                        mobility. It is a multi-user, multi-tasking, and multi-processing operating
+                        system.</li>
+                    <li>It is used in bigger size machines like super computers, mainframe computers and
+                        mini-computers.</li>
+                    <li>It was developed by AT&T Bell laboratory around 1970 AD. Unix is developed in C
+                        programming language and development of Unix has given birth to many OS such as
+                        Linux, Solaris, etc. which inherits its main features from Unix.</li>
+                </ul>
+                <h4>Advantages of Unix</h4>
+                <ol type="1">
+                    <li><strong>Multi-User & Multi-Tasking:-</strong> UNIX supports multiple users and
+                        allows them to run
+                        multiple processes simultaneously without interference.</li>
+                    <li><strong>Stability and Reliability:-</strong> UNIX is known for its ability to run
+                        continuously
+                        without crashing, making it highly reliable.</li>
+                    <li><strong>Security:-</strong> UNIX has strong security features, including user
+                        authentication and
+                        file permission, to protect data and system integrity.</li>
+                    <li><strong>Portability:-</strong> UNIX can be installed and run on different types of
+                        hardware,
+                        making it
+                        highly adaptable.</li>
+                    <li><strong>Powerful Command-Line Interface:-</strong> UNIX provides a versatile
+                        command-line
+                        interface that offers powerful tools for system management and automation.</li>
+                </ol>
+                <h2 class="end">THE END</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

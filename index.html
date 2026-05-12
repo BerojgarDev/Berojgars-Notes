@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berojgar's Notes</title>
+    <title>Computer Science | Class11</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,37 +14,104 @@
 <body>
     <header>
         <div class="logo">
-            <img src="" alt="icon">
-            <h1>Berojgar's Notes</h1>
+            <a href="index.html">
+                <img src="images/icon.png" alt="icon">
+                <h1>Berojgar's Notes</h1>
+            </a>
         </div>
-        <div class="navigation">
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="services.html">Services</a></li>
-                </ul>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <nav class="nav" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="terms.html">Terms</a>
             </nav>
         </div>
     </header>
     <main>
         <section class="hero">
-            <div>
-                <button><a href="class11/computer.html">Computer Science - I</a></button>
-                <button><a href="class12/computer.html">Computer Science - II</a></button>
+            <div class="heroContainer">
+                <h2>Class 11 : Computer Science</h2>
+                <p class="hero-tagline">Stop Memorizing. Start Understanding.</p>
+                <p class="hero-message">Learn NEB Class 11 Computer Science in a simple and practical way.</p>
+                <p class="hero-message">From binary numbers to programming logic — everything explained clearly for
+                    exams and real
+                    understanding.</p>
             </div>
         </section>
-        <section class="future">
-            <div>
-                <p>Right now, We can only provide you Notes of Computer Science for NEB Class 11 And Class 12.</p>
-                <p>More subjects will be provides soon....</p>
+        <section class="content">
+            <div class="unitList">
+                <h2>Unit List</h2>
+                <div class="list">
+                    <div class="unit">
+                        <h2>Unit 1: Computer System</h2>
+                        <a href="/computer11/unit1.html" class="btn">View Notes</a>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 2: Number System and Conversion Boolean Logic</h2>
+                            <a href="/computer11/unit2.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 3: Computer Software and Operating System</h2>
+                            <a href="/computer11/unit3.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 4: Programming Concepts and Logic</h2>
+                            <a href="/computer11/unit4.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 5: Web Technology-I</h2>
+                            <a href="/computer11/unit5.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 6: MultiMedia</h2>
+                            <a href="/computer11/unit6.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="unit">
+                            <h2> Unit 7: ICT and Cyber Law</h2>
+                            <a href="/computer11/unit7.html" class="btn">View Notes</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy;Berojgar.Dev | All Rights are Reserved.</p>
+        <p><a href="https://BerojgarDev.github.io/Berojgar">&copy;Berojgar.Dev</a> 2026 | All Rights are Reserved.</p>
     </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
     <script src="script.js"></script>
 </body>
 
