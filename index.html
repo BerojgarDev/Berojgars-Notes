@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/icon.png" alt="icon">
-                <h1>Berojgar's Notes</h1>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
             </a>
         </div>
         <div class="nav-wrapper">
@@ -40,78 +40,84 @@
                 <!-- Slider circle -->
                 <span class="toggle-circle"></span>
             </button>
-            <button class="hamburger" id="hamburger">&#9776;</button>
-            <nav class="nav" id="navMenu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="terms.html">Terms</a>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
             </nav>
         </div>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="heroContainer">
-                <h2>Class 11 : Computer Science</h2>
-                <p class="hero-tagline">Stop Memorizing. Start Understanding.</p>
-                <p class="hero-message">Learn NEB Class 11 Computer Science in a simple and practical way.</p>
-                <p class="hero-message">From binary numbers to programming logic — everything explained clearly for
-                    exams and real understanding.</p>
-                <a class="btn" href="#unit">Start Learning</a>
-            </div>
-        </section>
-        <section class="content">
-            <div class="unitList">
-                <h2>Unit List</h2>
-                <div id="unit" class="list">
-                    <div class="unit">
-                        <h2>Unit 1: Computer System</h2>
-                        <a href="/computer11/unit1.html" class="btn">View Notes</a>
-                    </div>
-                    <div class="list">
-                        <div class="unit">
-                            <h2> Unit 2: Number System and Conversion Boolean Logic</h2>
-                            <a href="/computer11/unit2.html" class="btn">View Notes</a>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <div class="unit">
-                            <h2> Unit 3: Computer Software and Operating System</h2>
-                            <a href="/computer11/unit3.html" class="btn">View Notes</a>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <div class="unit">
-                            <h2> Unit 4: Programming Concepts and Logic</h2>
-                            <a href="/computer11/unit4.html" class="btn">View Notes</a>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <div class="unit">
-                            <h2> Unit 5: Web Technology-I</h2>
-                            <a href="/computer11/unit5.html" class="btn">View Notes</a>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <div class="unit">
-                            <h2> Unit 6: MultiMedia</h2>
-                            <a href="/computer11/unit6.html" class="btn">View Notes</a>
-                        </div>
-                    </div>
-                    <div class="list">
-                        <div class="unit">
-                            <h2> Unit 7: ICT and Cyber Law</h2>
-                            <a href="/computer11/unit7.html" class="btn">View Notes</a>
-                        </div>
+        <!-- HERO -->
+        <section class="hero--home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Computer Science</h2>
+                    <p class="tagline">STOP MEMORIZING. START UNDERSTANDING.</p>
+                    <p class="description">
+                        Learn NEB Class 11 and Class 12 Computer Science in a simple, practical, and exam-focused way.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/computer11/" class="btn btn-primary">Class 11 Notes</a>
+                        <a href="/computer12/" class="btn btn-secondary">Class 12 Notes</a>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Why Students Choose Us</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-book fa-2x"></i>
+                        <h3>Exam Focused</h3>
+                        <p>Complete coverage of NEB syllabus with important questions and past exam trends.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-lightbulb fa-2x"></i>
+                        <h3>Concept Clarity</h3>
+                        <p>Simple explanations, diagrams, and real-life examples.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-code fa-2x"></i>
+                        <h3>Practical Code</h3>
+                        <p>Well-commented programs you can run and modify.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                        <h3>Mobile Friendly</h3>
+                        <p>Beautiful reading experience on any device.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK TOPICS -->
+        <section class="topics">
+            <div class="container">
+                <h2 class="section-title">Popular Topics</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">Number System & Boolean Logic</div>
+                    <div class="topic-card">C Programming Fundamentals</div>
+                    <div class="topic-card">Database Management System</div>
+                    <div class="topic-card">Computer Networks</div>
+                    <div class="topic-card">Web Technologies (HTML, CSS, JS)</div>
+                    <div class="topic-card">Data Structures & Algorithms</div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+        <p>&copy; 2026 <a href="https://berojgar-liard.vercel.app/">Berojgar</a> | All Rights Reserved</p>
     </footer>
-    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+
     <script src="script.js"></script>
 </body>
 

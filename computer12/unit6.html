@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 12 Computer Science Notes - Complete Unit 3">
+    <title>Computer Science | Class12</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 12 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="toc">
+            <div>
+                <h2>Unit 6 : Software Process Models (SPM)</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#software-project">Software Project Concept</a></li>
+                    <li><a href="#software-development-process">Concept of software development process</a></li>
+                    <li><a href="#sdlc-life-cycle">Concept of SDLC life cycle</a></li>
+                    <li><a href="#system-analyst-vs-software-engineer">System Analyst Vs Software Engineer</a></li>
+                    <li><a href="#software-development-models">Different Software Development Models</a></li>
+                    <li><a href="#requirement-collection">Requirement Collection Methods</a></li>
+                    <li><a href="#project-management">Software Project Management and Its Need.</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content">
+            <div id="unit6" class="noteContent">
+                <h2>Some terms used in Software Project Models</h2>
+                <ul>
+                    <li><strong>Instruction:-</strong> An instruction is a command given to a computer to perform a
+                        certain specified operation on given data.</li>
+                    <li>
+                        <p><strong>Program:-</strong> The program is a sequence of instructions or it is the set of code
+                            that are usually designed to perform a specific task or function.</p>
+                        <p>For example a sum program is only used to calculate the sum but it cannot be used to
+                            calculate division.</p>
+                    </li>
+                    <li><strong>Software:-</strong> A set of programs written for a computer to perform a particular
+                        task is called software.</li>
+                    <li>
+                        <p><strong>Project:-</strong> A project is a well defined task which is a collection of several
+                            operations done in order to achieve a goal. For example software development and its
+                            delivery</p>
+                        <p>The project comes with a start time and an end time. Projects end when its goal is achieved
+                            so it is a temporary phase in any organization.</p>
+                    </li>
+                </ul>
+                <h2 id="software-project">Software Project</h2>
+                <ul>
+                    <li>A software project is the complete procedure of software development from requirement gathering
+                        to testing and maintenance.</li>
+                    <li>It is carried out according to the execution methodologies, in a specified period of time to
+                        achieve the intended software product.</li>
+                </ul>
+                <h2 id="software-development-process">Software development process</h2>
+                <ul>
+                    <li>In software engineering a software development process is the process of dividing the software
+                        development work into different distinct phases.</li>
+                    <li>The main goal of the software development process is to improve the design of product and
+                        management of product.</li>
+                    <li>The overall process of software development can be explained in terms of software development
+                        life cycle.</li>
+                </ul>
+                <h2 id="sdlc-life-cycle">Software Development Lifecycle (SDLC)</h2>
+                <ul>
+                    <li>SDLC is the acronym for Software Development Life Cycle.</li>
+                    <li>It is also called the Software Development Process.</li>
+                    <li>It is the process used by software companies or industry to design, develop and test high
+                        quality software products.</li>
+                    <li>
+                        <p>It is a framework that defines different tasks performed during the software development
+                            process.</p>
+                        <figure>
+                            <img src="../images/SDLC.png" alt="SDLC">
+                            <figcaption>Fig:- Software Development Lifecycle (SDLC)</figcaption>
+                        </figure>
+                        <ol type="1">
+                            <li>
+                                <h3>Planning</h3>
+                                <ul>
+                                    <li>The planning stage is the initial phase of the SDLC.</li>
+                                    <li>It involves defining the project scope, goals, and objectives. During this
+                                        stage, project managers work with clients to determine the software’s
+                                        requirements and feasibility.</li>
+                                    <li>
+                                        <p>The feasibility study analyzed the proposed system from different aspects so
+                                            the development team or company can conclude how practical or beneficial the
+                                            system will be to the organization.</p>
+                                        <p>The feasibility study includes Economic, Technical, Operational, Schedule
+                                            feasibility.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Requirement Gathering and Analysis</h3>
+                                <ul>
+                                    <li>After the feasibility study, requirement gathering, and analysis phase is
+                                        conducted.</li>
+                                    <li>During this phase, all relevant information is collected from the customer to
+                                        develop a product as per their expectation.</li>
+                                    <li>The business analyst and project manager set up a meeting with the customer to
+                                        gather all the information like what the customer wants to build, who will be
+                                        the end user and what is the purpose of the product.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Design</h3>
+                                <ul>
+                                    <li>It is concerned with the design of the wireframes to illustrate how the software
+                                        will look and function.</li>
+                                    <li>It involves designing of various things such as input design, processing and
+                                        output design etc.</li>
+                                    <li>
+                                        <p>Following design tools are used in this phase.</p>
+                                        <ol type="a">
+                                            <li><strong>Algorithm</strong>:- It is a finite sequence of instructions for
+                                                solving a problem.</li>
+                                            <li><strong>Flowchart</strong>:- It is the pictorial representation of an
+                                                algorithm.</li>
+                                            <li><strong>ER Diagram</strong>:- The entity-relationship diagram is an
+                                                overall logical structure of a database that can be expressed
+                                                graphically.</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Implementation</h3>
+                                <ul>
+                                    <li>
+                                        After the system design the programmers begin to develop the program by using a
+                                        suitable high level programming language based on the design specifications
+                                        created in the previous stage.</li>
+                                    <li>
+                                        <p>In this phase, the following processes are done.</p>
+                                        <ol type="i">
+                                            <li>convert the logical structure into program</li>
+                                            <li>database is created</li>
+                                            <li>user are trained</li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>System Testing</h3>
+                                <ul>
+                                    <li>It is an investigation conducted to provide stakeholders with information about
+                                        the quality of the product or service under test.</li>
+                                    <li>In this phase the testing and debugging tasks are performed. If any
+                                        inconsistencies, errors or problems are found then they are corrected by
+                                        improving the individual units.</li>
+                                    <li>
+                                        <p><strong>Types of Software Testing:-</strong></p>
+                                        <ol type="a">
+                                            <li><strong>Black Box testing</strong>:- Process of testing the whole
+                                                project and test whether a whole system is functioning or not.</li>
+                                            <li><strong>White Box Testing</strong>:- In white box testing the particular
+                                                model or unit is tested which helps to test the software internal logic.
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Deployment</h3>
+                                <ul>
+                                    <li>After successful testing and bug fixing the developed project is deployed to the
+                                        end users.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Review and Maintenance</h3>
+                                <ul>
+                                    <li>After system deployment, this phase involves periodic maintenance of hardware
+                                        and software to ensure proper functioning.</li>
+                                    <li>The review task includes objectives, cost, performance, standards, and
+                                        recommendations.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="system-analyst">System Analyst vs Software Engineer</h2>
+                <ul>
+                    <li>A system analyst is a highly skilled person who selects, configures and analyzes the computer
+                        based information system to support the decision making activities of an organization.</li>
+                    <li>
+                        <p>A good system analyst must have following characteristics:</p>
+                        <ol type="i">
+                            <li>Knowledge of an organization.</li>
+                            <li>Technical Knowledge.</li>
+                            <li>Interpersonal communication skills.</li>
+                            <li>Problem solving skills.</li>
+                            <li>System analysis and design skills.</li>
+                            <li>Good characters and ethics.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>The major duties and responsibilities of system analyst are..</p>
+                        <ol type="i">
+                            <li>Define Requirements</li>
+                            <li>Prioritizing Requirements</li>
+                            <li>Analysis and Evaluation</li>
+                            <li>Solving the problem</li>
+                            <li>Design the system etc..</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="software-engineer">Software Engineer/Developer</h2>
+                <ul>
+                    <li>A Software Engineer (or Software Developer) is a professional who designs, develops, tests, and
+                        maintains software applications and systems to meet the needs of users and organizations.</li>
+                    <li>They use programming languages, frameworks, and engineering principles to build reliable and
+                        efficient
+                        software.</li>
+                    <li>
+                        <p>Characteristics of Good Software engineer are:</p>
+                        <ol type="i">
+                            <li>Strong programming knowledge</li>
+                            <li>Problem-solving Ability</li>
+                            <li>Creativity and innovation</li>
+                            <li>Teamwork and communication skills</li>
+                            <li>Adaptability</li>
+                            <li>Ethics and responsibility</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <p>Duties/Responsibilities of a software engineer are:</p>
+                        <ol type="i">
+                            <li>Analyze user requirement</li>
+                            <li>Design software solution</li>
+                            <li>Write and test code</li>
+                            <li>Debug and maintain software</li>
+                            <li>Collaborate with teams</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3 id="system-analyst-vs-software-engineer">Differences between System Analyst and Software developer.
+                </h3>
+                <table class="table">
+                    <tr>
+                        <th>System Analyst</th>
+                        <th>Software Developer</th>
+                    </tr>
+                    <tr>
+                        <td>Deals with the overall management of the project.</td>
+                        <td>Deals with designing and development of good quality software or applications.</td>
+                    </tr>
+                    <tr>
+                        <td>Conduct user research, interview customers and develop requirement documents.</td>
+                        <td>Software engineers use the documents created by analysts to build the solution.</td>
+                    </tr>
+                    <tr>
+                        <td>Do not require a high level of coding skills.</td>
+                        <td>Requires a high level of coding skills.</td>
+                    </tr>
+                    <tr>
+                        <td>System analysts design the external interface of different components of a project.</td>
+                        <td>Software engineers implement the design by using coding.</td>
+                    </tr>
+                    <tr>
+                        <td> Perform their duties in an office.</td>
+                        <td> Programmers can work remotely.</td>
+                    </tr>
+                </table>
+                <h2 id="software-development-models">Software Development Model</h2>
+                <ul>
+                    <li>A software development model is a structured and systematic approach of planning, designing,
+                        building, testing and deploying of software systems.</li>
+                    <li>It serves as a framework that outlines the tasks, activities and processes involved in
+                        developing the software.</li>
+                    <li>These models provide the guidelines and best practices for the software development team
+                        throughout the project life cycle.</li>
+                </ul>
+                <h3>Types of Software Development Models</h3>
+                <ul>
+                    <li>
+                        <p>There are several software development models each with its own set of principles and
+                            methodologies.</p>
+                        <ol type="a">
+                            <li>
+                                <h3>Waterfall Model</h3>
+                                <ul>
+                                    <li>The waterfall model is the linear and the sequential approach where each phase
+                                        is completed before moving to the next phase.</li>
+                                    <li>It is the oldest type of software development model.</li>
+                                    <li>
+                                        <p>The diagrammatic representation of the waterfall model is shown in figure
+                                            below.</p>
+                                        <figure>
+                                            <img src="../images/Waterfall.png" alt="WaterFall Model">
+                                            <figcaption>Fig:- Waterfall Model</figcaption>
+                                        </figure>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>Requirement Analysis</h4>
+                                                <ul>
+                                                    <li>It is the first state of the waterfall model. In this stage the
+                                                        developer should identify the actual requirements of the
+                                                        customer.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>System Design</h4>
+                                                <ul>
+                                                    <li>Once the requirements of the customers have been collected, the
+                                                        design phase is conducted.</li>
+                                                    <li>In this phase the team builds out the skeleton of how the
+                                                        software will work and how information will be accessed.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Programming/Development</h4>
+                                                <ul>
+                                                    <li>During the programming phase, the system design is converted
+                                                        into the actual product by programming or coding. This
+                                                        development phase involves the creation of the system software.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Testing</h4>
+                                                <ul>
+                                                    <li>This is the phase where the development teams hand the project
+                                                        over the quality assurance or testing team.</li>
+                                                    <li>QA testers search for any bugs or errors that need to be fixed
+                                                        before the project is deployed.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Deployment</h4>
+                                                <ul>
+                                                    <li>This is the stage in which the ready software product is
+                                                        deployed to the end users or customers.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Maintenance</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p>Once the product is deployed, there may be chances of
+                                                            discovering the new bugs on the project.</p>
+                                                        <p>Which are required to be maintained so that it can work as
+                                                            expected.</p>
+                                                        <h4>Advantages of WaterFall model</h4>
+                                                        <ol type="i">
+                                                            <li>Simple and easy to understand</li>
+                                                            <li>Clear structure and goals</li>
+                                                            <li>Comprehensive Documentation</li>
+                                                            <li>Good for stable requirement</li>
+                                                            <li>Easy progress Measurement</li>
+                                                        </ol>
+                                                        <h4>Disadvantages of WaterFall model</h4>
+                                                        <ol type="i">
+                                                            <li>Lack of flexibility and Adaptebility</li>
+                                                            <li>Late Testing and User Feedback</li>
+                                                            <li>High Cost of Changes</li>
+                                                            <li>Not Suitable for Complex Projects</li>
+                                                            <li>Expended Project Timelines</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Prototyping Model</h3>
+                                <ul>
+                                    <li>The software development model that focuses on creating a working model called
+                                        prototype of the software to gather the feedback and refine the requirements
+                                        before developing the final product.</li>
+                                    <li>This model is more suitable for developing the new system where there are no
+                                        clear ideas of requirements, inputs and output of the system.</li>
+                                    <li>
+                                        <p>The diagrammatic representation of this model is shown in fig
+                                            below.</p>
+                                        <figure>
+                                            <img src="../images/prototyping-model.png" alt="Prototyping Model">
+                                            <figcaption>Fig :- Prototyping Model</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <p>The different phases of this model are:-</p>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>Requirement Gathering</h4>
+                                                <ul>
+                                                    <li>In this phase the initial requirements are collected from users
+                                                        but these are mostly incomplete.</li>
+                                                </ul>
+                                            <li>
+                                                <h4>Quick Design</h4>
+                                                <ul>
+                                                    <li>Once the requirement phase is completed, the basic design of the
+                                                        software is created.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Develop the prototype</h4>
+                                                <ul>
+                                                    <li>The prototype is developed based on the initial
+                                                        design. The prototype can take various forms.</li>
+                                                    <li><strong>Throwaway prototyping:-</strong> A disposable prototype
+                                                        is developed just to understand the requirement. Once its
+                                                        purpose served, then it is discarded.</li>
+                                                    <li><strong>Evolutionary prototyping:-</strong> The
+                                                        initial prototype is refined continuously and evolved into the
+                                                        final product.</li>
+                                                </ul>
+                                            <li>
+                                                <h4>User satisfaction</h4>
+                                                <ul>
+                                                    <li>The prototype is presented to the end users for
+                                                        evaluation and feedback. This phase is very important to
+                                                        clarify the requirements.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Refinement</h4>
+                                                <ul>
+                                                    <li>Based on the feedback received the prototype and
+                                                        requirements are refined. In this phase the new features and
+                                                        changes are added into the design.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Deployment</h4>
+                                                <ul>
+                                                    <li>Once the system is developed it is deployed on
+                                                        the production line as a finished product.</li>
+                                                </ul>
+                                                <h4>Advantages of prototyping model</h4>
+                                                <ol type="i">
+                                                    <li>Errors can be detected earlier.</li>
+                                                    <li>Higher chances of user expectation meet.</li>
+                                                    <li>Rapid development.</li>
+                                                    <li>Suitable where user requirements are changing.
+                                                    </li>
+                                                </ol>
+                                                <h4>Dis-advantages of prototyping model</h4>
+                                                <ol type="i">
+                                                    <li>Time consuming process.</li>
+                                                    <li>Special tools and techniques are required.</li>
+                                                    <li>It may increase the complexity of the system.</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Agile model/methodology</h3>
+                                <ul>
+                                    <li>An agile methodology is an iterative approach of software development. It breaks
+                                        down the development of a product into repeated cycles (iterations).</li>
+                                    <li>It refers to a set of principles and practices for software development that
+                                        focus on flexibility, collaboration and customer satisfaction.</li>
+                                    <li>
+                                        <p>The diagrammatic representation and the different phases involved in agile
+                                            methodology are as follows.</p>
+                                        <figure>
+                                            <img src="../images/Agile.png" alt="Agile methodology">
+                                            <figcaption>Fig:-Agile methodology</figcaption>
+                                        </figure>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>Requirement Gathering</h4>
+                                                <ul>
+                                                    <li>This is the first phase in which the basic requirements of the
+                                                        customers are gathered and plan for the further steps.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Design</h4>
+                                                <ul>
+                                                    <li>When all the requirements are identified, the design phase
+                                                        is design tools like ER diagram, UML diagram and data flow
+                                                        diagram are used for the system design.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Development</h4>
+                                                <ul>
+                                                    <li>When the design phase is completed the development phase is
+                                                        conducted. In this phase the system design is provided to the
+                                                        development team and according to the provided design, the
+                                                        developer team starts to develop the project.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Testing</h4>
+                                                <ul>
+                                                    <li>In the testing phase the tester team simply tries to find out
+                                                        the bugs and any errors present in the system. If errors are
+                                                        found then it's fixed.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Deployment</h4>
+                                                <ul>
+                                                    <li>After the successful testing the ready product is deployed on
+                                                        the cloud or handover to the customer.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Review and Feedback</h4>
+                                                <ul>
+                                                    <li>After releasing the product, the team receives the feedback
+                                                        about the product and their works. According to the feedback the
+                                                        team can find out the customer satisfaction.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Launch</h4>
+                                                <ul>
+                                                    <li>The launch phase ensures that the software is successfully
+                                                        deployed, configured, and accessible to users. It marks the
+                                                        transition from development to real-world usage.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                                <h5>Advantages of Agile Methodology</h5>
+                                <ol type="i">
+                                    <li>Flexible and adapts to changes easily.</li>
+                                    <li>Faster delivery of working software.</li>
+                                    <li>Continuous customer involvement.</li>
+                                    <li>Improved product quality through regular testing.</li>
+                                    <li>Better team work and communication.</li>
+                                </ol>
+                                <h5>Disadvantage of Agile model</h5>
+                                <ol type="i">
+                                    <li>Difficult to predict time, cost, and scope.</li>
+                                    <li>Needs constant customer feedback.</li>
+                                    <li>Can be hard to manage in large projects.</li>
+                                    <li>Documentation is often incomplete.</li>
+                                    <li>Risk of scope creep due to changing requirements.</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>Spiral Model</h3>
+                                <ul>
+                                    <li>The software development model that combines the elements of both waterfall
+                                        model and prototyping model is called spiral model.</li>
+                                    <li>This model is particularly well suited for large scale and complex projects.
+                                    </li>
+                                    <li>
+                                        <p>This model focuses on risk management.</p>
+                                        <figure>
+                                            <img src="../images/Spiral_model.png" alt="Spiral Model">
+                                            <figcaption>Fig:- Spiral Model</figcaption>
+                                        </figure>
+                                    </li>
+                                    <li>
+                                        <p>The different phases involved are:-</p>
+                                        <ol type="1">
+                                            <li>
+                                                <h4>Planning</h4>
+                                                <ul>
+                                                    <li>In this initial phase, project objectives, requirements are
+                                                        defined and decide to continue further loop of spiral. If
+                                                        decided to continue, plans are drawn up for the next phase.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Risk Analysis</h4>
+                                                <ul>
+                                                    <li>In this phase, the development team identifies potential risks,
+                                                        like requirement changes, security issues, budget or schedule
+                                                        problems, and team conflicts, and plans how to manage and reduce
+                                                        them.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Engineering</h4>
+                                                <ul>
+                                                    <li>In this phase the actual development of the project occurs. This
+                                                        phase is similar to the development phase where the programmers
+                                                        write down the codes for the project.</li>
+                                                    <li>In this phase different tasks like design, coding, integration,
+                                                        testing and implementation are performed.</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Evaluation</h4>
+                                                <ul>
+                                                    <li>After the launch of a software project on the client’s site,
+                                                        the client is open to sharing feedback about the software. If
+                                                        any bugs or errors are found out then the correction lists will
+                                                        be sent to the development team, and again, a new baseline will
+                                                        begin to fix all the bugs, and after fixation of all
+                                                        requirements, the final product will be ready for final launch.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="requirement-collection">Requirements collection methods</h2>
+                <ul>
+                    <li>Requirement collection is the first step and very crucial step in the software development
+                        process. This plays a very important role in system design and development.</li>
+                    <li>
+                        <p><strong>Here are some common methods:</strong></p>
+                        <ol type="1">
+                            <li>
+                                <h3>Interview</h3>
+                                <ul>
+                                    <li>Conducting one on one or group interviews with stakeholders including end-users,
+                                        customers, subject matter experts is a traditional and effective method for
+                                        gathering requirements.
+                                        It is the best method when detailed, quantitative information is needed by key
+                                        stakeholders.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Surveys and Questionaries</h3>
+                                <ul>
+                                    <li>Surveys and questionnaires are useful to collect requirements by large no. of
+                                        stakeholders.</li>
+                                    <li>In this method written sets of questions are distributed to a large audience to
+                                        collect the data or requirements. They can be distributed electronically or on
+                                        paper and allow stakeholders to provide feedback.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Workshops</h3>
+                                <ul>
+                                    <li>Workshops focus groups bring together and can be an effective way of collecting
+                                        requirements.</li>
+                                    <li>It promotes stakeholders engagement and collaboration & helps to reach agreement
+                                        quickly.</li>
+                                    <li>Best for complex projects requiring diverse input and agreement among multiple
+                                        stakeholders.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Document Analysis</h3>
+                                <ul>
+                                    <li>In these methods the existing documents, reports, manuals are analyzed to
+                                        collect requirements.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Observation</h3>
+                                <ul>
+                                    <li>Observing users or system operation in their environment helps analysts to
+                                        understand how people are working and what problems they face.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Prototyping</h3>
+                                <ul>
+                                    <li>This modern approach gathers requirements by creating a prototype of the system,
+                                        allowing users to see the product and give feedback.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Brainstorming</h3>
+                                <ul>
+                                    <li>A method of requirement collection in which a group of members are encouraged to
+                                        share the ideas and requirements freely without criticism.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="project-management">Software Project Management</h2>
+                <ul>
+                    <li>
+                        <p>Software project management is the process of planning, organizing and executing the
+                            development of software applications within the constraints of time, budget and quality.</p>
+                        <figure>
+                            <img src="../images/quality-software.png" alt="quality-software">
+                            <figcaption>Fig:- Triple constraints for software project</figcaption>
+                        </figure>
+                        <h3>Software project management activities</h3>
+                        <ul>
+                            <li>
+                                <p>The different activities are listed below:-</p>
+                                <ol>
+                                    <li>
+                                        <h4>Project planning</h4>
+                                        <ul>
+                                            <li>This involves defining the project scope, objectives, requirements and
+                                                constraints. The project manager creates a detailed project plan that
+                                                outlines the tasks, timelines and resources.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Resource Management</h4>
+                                        <ul>
+                                            <li>It involves identifying the right people and resources (developers,
+                                                designers, testers, hardware, software) required for the project.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Risk Management</h4>
+                                        <ul>
+                                            <li>In software projects, there may be different types of risks so
+                                                identifying the risk and developing the strategies to mitigate them is
+                                                simply called risk management.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Cost Management</h4>
+                                        <ul>
+                                            <li>Cost management in software development is essential for ensuring that
+                                                projects are completed within the budget while meeting quality and time
+                                                constraints. Effective cost management involves planning, estimating,
+                                                budgeting and controlling costs throughout the software development
+                                                lifecycle.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Time Management</h4>
+                                        <ul>
+                                            <li>It is the process of planning, organizing and controlling how much time
+                                                to spend on specific tasks while managing the project.Effective time
+                                                management helps the developer team prioritize tasks, maximize
+                                                productivity and complete the task within the given timeframe.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Need of software project management</h3>
+                <ul>
+                    <li>The simple software project management process involves a series of activities
+                        aimed at ensuring that software projects are completely meeting their objectives and
+                        delivering value to the stakeholders. Hence it is essential to manage the software
+                        project
+                        effectively.</li>
+                </ul>
+                <h2>Feasibility Study</h2>
+                <ul>
+                    <li>Feasibility study in software engineering is a study to evaluate feasibility of
+                        proposed project.</li>
+                    <li>It is one of the important stages of the
+                        Software Project
+                        Management Process.</li>
+                    <li>
+                        <p><strong>Types of Feasibility study:</strong></p>
+                        <ol type="1">
+                            <li>
+                                <h3>Technical Feasibility</h3>
+                                <ul>
+                                    <li>Checks if the project can be developed with the availability technology,
+                                        tools & technology skill.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Economical Feasibility</h3>
+                                <ul>
+                                    <li>Determine whether the project is cost effective i.e. if the expected
+                                        benefits out of the cost.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Operational Feasibility</h3>
+                                <ul>
+                                    <li>Famine whether the software will work in the real environment and be
+                                        acceptable to the user.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Schedule Feasibility</h3>
+                                <ul>
+                                    <li>Access whether the project can be completed within the required time
+                                        frame.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Legal Feasibility</h3>
+                                <ul>
+                                    <li>Ensures that the project complies with laws, regulations & organization
+                                        policies. In the legal feasibility study project is analyzed from a
+                                        legality point of view.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Quality Software</h2>
+                <ul>
+                    <li>Quality Software is software that meets or exceeds customer expectations and performs
+                        its intended functions efficiently, reliably, and securely. It should be easy to use,
+                        maintain, and adapt to changing needs while minimizing defects and failures.</li>
+                    <li>
+                        <p>Key Aspects that conclude Software Quality</p>
+                        <ol type="a">
+                            <li>
+                                <h3>Functionality</h3>
+                                <ul>
+                                    <li>The Software performs all required tasks correctly and completely.</li>
+                                    <li>It meets the specified requirements and user needs.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Reliability</h3>
+                                <ul>
+                                    <li>The software operators without failure under specified conditions.</li>
+                                    <li>It provides consistent performance over time.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Usability</h3>
+                                <ul>
+                                    <li>The software is easy to learn and use.</li>
+                                    <li>The user interface is intuitive and user-friendly.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Efficiency</h3>
+                                <ul>
+                                    <li>The software makes optimal use of system resources such as memory. CPU,
+                                        and storage.</li>
+                                    <li>It performs tasks within acceptable time limits.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Maintainability</h3>
+                                <ul>
+                                    <li>The software can be easily modified to correct defects, improve
+                                        performance, or adapt to changes.</li>
+                                    <li>The code is well-structured, documented, and modular.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Portability</h3>
+                                <ul>
+                                    <li>The software can be transferred and run on different hardware or
+                                        operating systems with minimal effort.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Security</h3>
+                                <ul>
+                                    <li>The software protects data and resources against unauthorized access and
+                                        attacks.</li>
+                                    <li>It ensures data integrity, confidentiality, and availability.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Scalability</h3>
+                                <ul>
+                                    <li>The software can handle increased workload or number of users without
+                                        performance degradation.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Reusibility</h3>
+                                <ul>
+                                    <li>Parts of the software can be reused in other applications, reducing
+                                        development time and cost.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Testing</h3>
+                                <ul>
+                                    <li>The software supports easy testing and verification of its
+                                        functionalities.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 class="end">THE END</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

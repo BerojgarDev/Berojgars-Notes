@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 12 Computer Science Notes - Complete Unit 2">
+    <title>Computer Science | Class12</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 12 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="toc">
+            <div>
+                <h2>Unit 2 : Computer Network</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#concept-of-data-communication">Concept of Data Communication</a></li>
+                    <li><a href="#communication-system">Block Diagram of Communication System</a></li>
+                    <li><a href="#mode-of-communication">Mode of communication</a></li>
+                    <li><a href="#computer-network">Computer network</a></li>
+                    <li><a href="#transmission-medium">Transmission medium</a></li>
+                    <li><a href="#impairments">Impairments</a></li>
+                    <li><a href="#basic-terms">Basic terms in Computer Network</a></li>
+                    <li><a href="#osi-reference-model">OSI reference model</a></li>
+                    <li><a href="#classful-ip-address">Classful IP Address</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content">
+            <div id="unit2" class="noteContent">
+                <h2 id="concept-of-data-communication">Data Communication</h2>
+                <ul>
+                    <li>
+                        <p>The process of exchanging data between two devices i.e sender and receiver through
+                            transmission medium such as wired or wireless is called data communication.</p>
+                        <figure>
+                            <img src="../images/data-communication.png" alt="Data Communication">
+                            <figcaption>Fig: Data Communication</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <h3>Elements of communication system</h3>
+                <ol type="1">
+                    <li><strong>Information:</strong> It is the message which is exchanged between computers during the
+                        communication process.</li>
+                    <li><strong>Channel:</strong> It is the path along which data and information passes in the form of
+                        electrical signals.</li>
+                    <li><strong>Encoder:</strong> Encoder is the translator that converts the information into
+                        electrical form.</li>
+                    <li><strong>Amplifier:</strong> It is the electronic device that amplifies the strength of the
+                        transmitted signal.</li>
+                    <li><strong>Decoder:</strong> It is also the translator that converts the electrical signal back to
+                        the form that is acceptable to the receiver.</li>
+                </ol>
+                <h2 id="communication-system">Communication System</h2>
+                <figure>
+                    <img src="../images/Block-Diagram-of-communication-system.png"
+                        alt="Block diagram of Communication System">
+                    <figcaption>Fig: Block Diagram of Communication System</figcaption>
+                </figure>
+                <ul>
+                    <li>
+                        <p>As shown in above figure it consist of various components which are as follows:</p>
+                    </li>
+                    <ol type="1">
+                        <li>
+                            <p><strong>Source:</strong> The source is the location from where the sender sends the
+                                message or information. It could be voice, image, text, video, etc.</p>
+                        </li>
+                        <li>
+                            <p><strong>Encoder</strong>The message or information selected from the source is in the
+                                physical form the source is in the physical form so it needs to be converted into
+                                electrical signal first. So the encoder helps to convert the physical message into an
+                                electrical signal.</p>
+                        </li>
+                        <li>
+                            <p><strong>Transmitter:</strong> The transmitter is the device or circuit that prepares the
+                                signal for long distance transmission. It boosts the signal strength to allow for long
+                                distance.</p>
+                        </li>
+                        <li>
+                            <p><strong>Channel:</strong> The transmission channel is the medium used to send messages or
+                                information over long distances while travelling through different unwanted signals
+                                mixed with the original signal which degrades the quality. Such signals are called
+                                noise.</p>
+                        </li>
+                        <li>
+                            <p><strong>Receiver:</strong> It is a device or circuit that receives the signal after it
+                                has travelled a certain distance through the channel. The receiver is also responsible
+                                for the noise eliminator present in the signal.
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Decoder</strong>The electronic signal receiver by the receiver is now converted
+                                into actual message and this task is done by decoder.</p>
+                        </li>
+                        <li>
+                            <p><strong>Destination:</strong> The destination is the point at which the communication
+                                system and the receiver side receives the actual message.</p>
+                        </li>
+                    </ol>
+                </ul>
+                <h2 id="mode-of-communication">Mode of communication</h2>
+                <ul>
+                    <li>As we know in data communication there is the exchange of information between two terminals. So,
+                        depending upon the direction of flow of signal during communication.</li>
+                    <li>
+                        <p>It can be categories into three types:-</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Simple mode</h3>
+                                <figure>
+                                    <img src="../images/Simple-Mode.png" alt="Simple Mode">
+                                    <figcaption>Fig: Simple Mode</figcaption>
+                                </figure>
+                                <ul>
+                                    <li>In the simple mode, data flows occur unidirectional which means signal flow
+                                        forwards to the receiver only.</li>
+                                    <li><strong>Example:</strong> Radio/Television Broadcasting, etc.</li>
+                            </li>
+                            <li>
+                                <h3>Half Duplex Mode</h3>
+                                <figure>
+                                    <img src="../images/Half-Duplex-mode.png" alt="Half Duplex Mode">
+                                    <figcaption>Fig: Half Duplex Mode</figcaption>
+                                </figure>
+                                <ul>
+                                    <li>In this model, a bi-directional flow of data or information occurs but the
+                                        transmission is only one way at a time. While one device is sending another it
+                                        only receives data and vice-versa.</li>
+                                    <li><strong>Example:</strong> Walkie-talkie etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Full Duplex Mode</h3>
+                                <figure>
+                                    <img src="../images/Full-Duplex-mode.png" alt="Full Duplex Mode">
+                                    <figcaption>Fig: Full Duplex Mode</figcaption>
+                                </figure>
+                                <ul>
+                                    <li>In this model, a bi-directional flow of data or information occurs and the
+                                        transmission can occur in both ways simultaneously.</li>
+                                    <li><strong>Example:</strong> Telephone etc.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="computer-network">Computer network</h2>
+                <ul>
+                    <li>It is a group of computer systems and other computer hardware devices that are linked together
+                        through the communication channels to facilitate the communication.</li>
+                    <li>In it a computer network is a series of points or nodes that are inter connected with others for
+                        exchanging data.</li>
+                    <li>
+                        <p>The network model can be classified on the basis of size, topology and architecture.</p>
+                    </li>
+                </ul>
+                <ol type="1">
+                    <li>
+                        <h3>Classification on the basis of size</h3>
+                        <ul>
+                            <li>
+                                <p>On the basis of size network mode is divided in following types</p>
+                            </li>
+                            <li>
+                                <ol type="a">
+                                    <li>
+                                        <h4>Local Area Network(LAN)</h4>
+                                    </li>
+                                    <ul>
+                                        <li>It is the type of network which is under the same administration control.
+                                        </li>
+                                        <li>
+                                            <p>It is designed to operate within a limited geographical area such as
+                                                room, building, school, etc. and covers only a few KM(up to 3). Higher
+                                                speed data transfer rate up to 1 Gbps.</p>
+                                            <figure>
+                                                <img src="../images/LAN.png" alt="LAN">
+                                                <figcaption>Fig: LAN</figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <h4>Metropolitan Area Network(MAN)</h4>
+                                    </li>
+                                    <ul>
+                                        <li>These are the network models which are specially designed for town or city.
+                                            It covers a larger area than LAN and smaller than WAN. It covers a distance
+                                            of up to 100KM. It has a lower data transfer rate as compared to LAN (i.e
+                                            10Mbps).</li>
+                                        <li>
+                                            <p>Some examples include cable TVs, ISP (Internet Service Provider), etc.
+                                            </p>
+                                            <figure>
+                                                <img src="../images/MAN.png" alt="MAN">
+                                                <figcaption>Fig: MAN</figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                    <li>
+                                        <h4>Wide Area Network(WAN)</h4>
+                                    </li>
+                                    <ul>
+                                        <li>It is also known as network of networks. They are used to connect LANs
+                                            together so that users and computers in one location can communicate with
+                                            users and computers in another location. It covers a wide range of
+                                            districts, countries, and the world.</li>
+                                        <li>It has the lowest data transfer rate among all there i.e (64kbps-10mbps).
+                                        </li>
+                                        <li>
+                                            <p>Example GPS, banking network, telecommunication network, etc.</p>
+                                            <figure>
+                                                <img src="../images/WAN.png" alt="WAN">
+                                                <figcaption>Fig: WAN</figcaption>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Classification on the basis of topology</h3>
+                        <ul>
+                            <li>
+                                <p>The term topology refers to the way in which a network is laid out physically. Simply
+                                    it reflects how different computer servers and the physical devices are connected
+                                    with each other.</p>
+                                <ol type="a">
+                                    <li>
+                                        <h4>Bus Topology</h4>
+                                        <ul>
+                                            <li>
+                                                <p>A network topology which connects networking components along a
+                                                    single
+                                                    continuous cable (bus) is known as Bus topology.</p>
+                                                <figure>
+                                                    <img src="../images/Bus-Topology.png" alt="Bus Topology">
+                                                    <figcaption>Fig: Bus Topology</figcaption>
+                                                </figure>
+                                                <h5>Advantages</h5>
+                                                <ol type="i">
+                                                    <li>Easy to install the topology.</li>
+                                                    <li>Low cost as compared to others.</li>
+                                                    <li>Easy to add new components to the network.</li>
+                                                </ol>
+                                                <h5>Disadvantages</h5>
+                                                <ol type="i">
+                                                    <li>Network goes down if there is a problem on the bus.</li>
+                                                    <li>High chances of data collision because all devices share the
+                                                        same path.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Star Topology</h4>
+                                        <ul>
+                                            <li>
+                                                <p>In this topology, each node in the network is connected to a
+                                                    central hub. The hub acts as a bridge between the nodes, allowing
+                                                    data to be transferred between them.</p>
+                                                <figure>
+                                                    <img src="../images/Star-Topology.png" alt="Star Topology">
+                                                    <figcaption>Fig: Star Topology</figcaption>
+                                                </figure>
+                                                <h5>Advantages</h5>
+                                                <ol type="i">
+                                                    <li>Simple and easy to set up</li>
+                                                    <li>Easy to add and remove nodes.</li>
+                                                    <li>Easy to find-out fault because of the use of a hub.</li>
+                                                </ol>
+                                                <h5>Disadvantages</h5>
+                                                <ol type="i">
+                                                    <li>Required more cable length.</li>
+                                                    <li>High cost as compared to other topologies.</li>
+                                                    <li>If the hub goes down, then the whole network goes down.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Ring Topology</h4>
+                                        <ul>
+                                            <li>
+                                                <p>In ring topology each device has a dedicated points to point
+                                                    connection with only two devices on either side of it. </p>
+                                            </li>
+                                            <li>
+                                                <p>In such topology a single is passed along the ring in the direction
+                                                    of the destination node.
+                                                </p>
+                                                <figure>
+                                                    <img src="../images/ring-topology.png" alt="Ring Topology">
+                                                    <figcaption>Fig: Ring Topology</figcaption>
+                                                </figure>
+                                                <h5>Advantages</h5>
+                                                <ol type="i">
+                                                    <li>Simple and cheap technology.</li>
+                                                    <li>Less chance of data collision.</li>
+                                                    <li>Easy to manage.</li>
+                                                </ol>
+                                                <h5>Disadvantages</h5>
+                                                <ol type="i">
+                                                    <li>Data or signal must have to pass through all nodes.</li>
+                                                    <li>If any one node goes down the entire network goes down.</li>
+                                                    <li>Slower performance.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Mesh Topology</h4>
+                                        <ul>
+                                            <li>
+                                                <p>Mesh topology is a network setup where others node to every other
+                                                    node are connected.</p>
+                                            </li>
+                                            <li>
+                                                <p>This creates multiple pathways for data transmission ensuring high
+                                                    reliability and fault tolerance.</p>
+                                            </li>
+                                            <li>
+                                                <p>It’s often used in critical applications like
+                                                    military communications, and advanced networking systems.</p>
+                                                <figure>
+                                                    <img src="../images/mesh-topology.png" alt="Mesh Topology">
+                                                    <figcaption>Fig: Mesh Topology</figcaption>
+                                                </figure>
+                                                <h5>Advantages</h5>
+                                                <ol type="i">
+                                                    <li>High reliability and fault tolerance.</li>
+                                                    <li>Multiple pathways for data transmission.</li>
+                                                    <li>Improve network performance.</li>
+                                                </ol>
+                                                <h5>Disadvantages</h5>
+                                                <ol type="i">
+                                                    <li>Extensive cabling and hardware.</li>
+                                                    <li>Configuration complexity.</li>
+                                                    <li>Troubleshooting issues can be challenging because of numeric
+                                                        connection.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Classification on the basis of architecture</h3>
+                        <ul>
+                            <li>
+                                <p>Computer Networks can be classified on the basis of architecture into two
+                                    categories</p>
+                                <ol type="a">
+                                    <li>
+                                        <h4>Peer-to-Peer Network (P2P Network)</h4>
+                                        <ul>
+                                            <li>In the peer to peer model, “Peer” generally refers to the computer
+                                                system, these peers are connected to each other through the internet.
+                                            </li>
+                                            <li>As peers, each computer can take client function and server function.
+                                            </li>
+                                            <li>
+                                                <p>This network is very essential and important for a small environment,
+                                                    usually up to 10 computers.</p>
+                                                <figure>
+                                                    <img src="../images/Peer2peer.png" alt="Peer-to-Peer Network">
+                                                    <figcaption>Fig: Peer-to-Peer Network</figcaption>
+                                                </figure>
+                                                <h5>Advantages</h5>
+                                                <ol type="i">
+                                                    <li><strong>Low cost</strong>- No need for a central server.</li>
+                                                    <li><strong>Easy to set up</strong>- Simple to install and manage.
+                                                    </li>
+                                                    <li><strong>Direct sharing</strong>- Computers share files directly
+                                                        with
+                                                        each other.</li>
+                                                </ol>
+                                                <h5>Disadvantages</h5>
+                                                <ol type="i">
+                                                    <li><strong>Less Secure</strong>- Data is not centralized, making it
+                                                        difficult to secure.</li>
+                                                    <li><strong>No central control</strong>- Data is not centralized,
+                                                        making
+                                                        it difficult to maintain.</li>
+                                                    <li><strong>Slower performance</strong>- Speed depends on other
+                                                        user’s computers.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Client-Server Network</h4>
+                                        <ul>
+                                            <li>It is the most popular model for computer networks that utilize client
+                                                and server devices each designed for specific purposes.</li>
+                                            <li>
+                                                <p>In this model, the client is the person or computer that sends
+                                                    requests to access data from server, and server and those devices
+                                                    that handle the request from many clients simultaneously.</p>
+                                                <figure>
+                                                    <img src="../images/Client-Server.png" alt="Client-Server Network">
+                                                    <figcaption>Fig: Client-Server Network</figcaption>
+                                                </figure>
+                                                <h5>Advantages</h5>
+                                                <ol type="i">
+                                                    <li><strong>High Security</strong>- Data is centralized, making it
+                                                        easy to secure.</li>
+                                                    <li><strong>Central Control</strong>- Data is centralized, making it
+                                                        easy to maintain.</li>
+                                                    <li><strong>High Performance</strong>- Speed depends on the server's
+                                                        capability.</li>
+                                                </ol>
+                                                <h5>Disadvantages</h5>
+                                                <ol type="i">
+                                                    <li><strong>High Cost</strong>- Requires a dedicated server.</li>
+                                                    <li><strong>Server failure risk</strong>- If the server fails,
+                                                        clients can’t access data.</li>
+                                                    <li><strong>Need expertise</strong>- Requires trained staff for
+                                                        maintenance and security.</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="transmission-medium">Transmission Medium</h2>
+                <ul>
+                    <li>Transmission medium simply refers to the path that can carry information from source to
+                        destination.</li>
+                    <li>
+                        <p>There are two types of medium i.e. Guided and Un-Guided</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Guided Media</h3>
+                                <ul>
+                                    <li>The guided medium consists of physical connection between the source and
+                                        destination through a wire or cable.</li>
+                                    <li>
+                                        <p>It can be further classified as:-</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Twisted Pair Cable</h4>
+                                                <ul>
+                                                    <li>The guided medium in which pairs of wires are twisted together.
+                                                    </li>
+                                                    <li>The main reason for twisting the wire is to reduce the outgoing
+                                                        noise and incoming noise.</li>
+                                                    <li>These are used in LANs, Ethernet, Telephones, etc.</li>
+                                                    <li>
+                                                        <p>These are further divided into 2 types i.e.STP and UTP</p>
+                                                        <ol type="i">
+                                                            <li>
+                                                                <h5>STP (Shielded Twisted Pair) Cable</h5>
+                                                                <ul>
+                                                                    <li>As the name indicates, this is shielded by
+                                                                        metallic braid or fossil shield to reduce
+                                                                        electromagnetic interference.</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <h5>UTP (Un-Shielded Twisted Pair) Cable</h5>
+                                                                <ul>
+                                                                    <li>The type of twisted pair cable in which the
+                                                                        shield is absent.</li>
+                                                                    <li>
+                                                                        <p>The difference between these two cables is
+                                                                            shown below.</p>
+                                                                        <figure>
+                                                                            <img src="../images/twiested-pair-cable.png"
+                                                                                alt="STP and UTP Cable">
+                                                                            <figcaption>Fig: STP and UTP Cable
+                                                                            </figcaption>
+                                                                        </figure>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Coaxial Cable</h4>
+                                                <ul>
+                                                    <li>Co-axial cable are those cables which are capable to carries
+                                                        signal of higher frequency range than twisted pair cable.</li>
+                                                    <li>In this cable, there is a central core conductor of solid wire
+                                                        (usually copper wire) enclosed in an insulating sheet.</li>
+                                                    <li>The primary use of this cable can be found on TV networks.</li>
+                                                    <li>
+                                                        <p>The structure is as shown below.</p>
+                                                        <figure>
+                                                            <img src="../images/co-axial.png" alt="Coaxial Cable">
+                                                            <figcaption>Fig: Coaxial Cable</figcaption>
+                                                        </figure>
+                                                        <h5>Advantages</h5>
+                                                        <ol type="i">
+                                                            <li>It has good shielding, so interference is very low.</li>
+                                                            <li>It supports higher bandwidth than twisted pair cable.
+                                                            </li>
+                                                            <li>It allows data transmission over long distances.</li>
+                                                        </ol>
+                                                        <h5>Disadvantages</h5>
+                                                        <ol type="i">
+                                                            <li>It is thicker and less flexible than twisted pair cable.
+                                                            </li>
+                                                            <li>Installation and maintenance are difficult.</li>
+                                                            <li>It is more expensive than twisted pair cable.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Fiber Optics</h4>
+                                                <ul>
+                                                    <li>
+                                                        <p>Fiber Optics cables are those cables which consist of a
+                                                            plastic/glass core that carries data in the form of light.
+                                                            This cable is based on the principle of total reflection.
+                                                        </p>
+                                                        <figure>
+                                                            <img src="../images/optical-fiber.png" alt="Fiber Optics">
+                                                            <figcaption>Fig: Fiber Optics</figcaption>
+                                                        </figure>
+                                                        <h5>Advantages</h5>
+                                                        <ol type="i">
+                                                            <li>High-speed data transmission.</li>
+                                                            <li>Low signal loss over long distances.</li>
+                                                            <li>Immunity to electromagnetic interference.</li>
+                                                        </ol>
+                                                        <h5>Disadvantages</h5>
+                                                        <ol type="i">
+                                                            <li>Higher Installation costs.</li>
+                                                            <li>Can be easily damaged if mishandled.</li>
+                                                            <li>Limited flexibility installation.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Unguided Media</h3>
+                                <ul>
+                                    <li>It is also called wireless medium, since there is absence of wire to connect the
+                                        source and destination.</li>
+                                    <li>
+                                        <p>In this medium, the data signals are flows in the form of electromagnetic
+                                            waves.</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Microwaves</h4>
+                                                <ul>
+                                                    <li>These are the electromagnetic waves ranging in the frequency
+                                                        between 1-300 GHz.</li>
+                                                    <li>Microwaves are unidirectional and narrowly focused. This means
+                                                        that the sending and receiving antenna need to be aligned in the
+                                                        same direction.</li>
+                                                    <li>
+                                                        <p>In microwaves a transmitter sends electrical signals
+                                                            representing the data to be transmitted. A receiver accepts
+                                                            the signals and converts them into digital form.</p>
+                                                        <figure>
+                                                            <img src="../images/Microwave-technology.png"
+                                                                alt="Microwave">
+                                                            <figcaption>Fig: Microwave</figcaption>
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <p><strong>Examples:</strong> Radar System, LANs(Wi-Fi) used
+                                                            microwaves frequency.</p>
+                                                        <h5>Advantages</h5>
+                                                        <ol type="i">
+                                                            <li>Enables fast data transfer</li>
+                                                            <li>High bandwidth capabilities</li>
+                                                            <li>High efficiency and reliability</li>
+                                                        </ol>
+                                                        <h5>Disadvantages</h5>
+                                                        <ol type="i">
+                                                            <li> Noise interference(Little rain, fog and other obstacles
+                                                                can obstruct the line of sight).</li>
+                                                            <li> Required un-obstruct path between the transmitter and
+                                                                receiver.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Satellite Communication</h4>
+                                                <ul>
+                                                    <li>Satellite communication involves the use of a satellite station
+                                                        in earth’s orbit to transmit data between devices.</li>
+                                                    <li>In satellite communication, the message is sent from the earth
+                                                        station which is called up-link (frequency 6GHz - 14GHz). The
+                                                        satellite receives that up-link and again transmits back to the
+                                                        earth through the transponder; such signal is called down-link
+                                                        (Frequency 4GHz - 12GHz).</li>
+                                                    <li>
+                                                        <p>The most popular examples of satellite communication are
+                                                            television broadcasting, mobile communication, GPS system,
+                                                            etc.</p>
+                                                        <figure>
+                                                            <img src="../images/satellite-communication.png"
+                                                                alt="Satellite">
+                                                            <figcaption>Fig: Satellite Communication</figcaption>
+                                                        </figure>
+                                                    </li>
+                                                    <li>
+                                                        <h5>Advantages</h5>
+                                                        <ol type="i">
+                                                            <li>It provides wide global coverage including remote areas.
+                                                            </li>
+                                                            <li>It supports long-distance communication.</li>
+                                                            <li>It is suitable for broadcasting services like TV and
+                                                                Radio.</li>
+                                                            <li>It enables communication without a physical cable.</li>
+                                                        </ol>
+                                                        <h5>Disadvantages</h5>
+                                                        <ol type="i">
+                                                            <li>It covers a very large geographical area</li>
+                                                            <li>It supports long-distance communication.</li>
+                                                            <li>It is useful for TV, radio, and Internet services.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>Radio Transmission</h4>
+                                                <ul>
+                                                    <li>The radio transmission involves the sending the signals using
+                                                        the radio waves through the air </li>
+                                                    <li>The radio transmission system uses electromagnetic waves of
+                                                        frequency between 3Hz to 300GHz.</li>
+                                                    <li>The antenna consists of a transmitter and radio receiver to
+                                                        receive the signal. </li>
+                                                    <li>
+                                                        <p>Service broadcasting channel remote control devices like
+                                                            drone , bluetooth use radio transmission.</p>
+                                                        <h5>Advantages</h5>
+                                                        <ol type="i">
+                                                            <li>It allows wireless communication without using cable.
+                                                            </li>
+                                                            <li>It can cover a large area.</li>
+                                                            <li>It is easy and quick to install.</li>
+                                                        </ol>
+                                                        <h5>Disadvantages</h5>
+                                                        <ol type="i">
+                                                            <li>It is affected by noise and interference.</li>
+                                                            <li>It provides lower data security.</li>
+                                                            <li>It has limited bandwidth compared to wired media.</li>
+                                                        </ol>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="impairments">Impairments</h2>
+                <ul>
+                    <li>In a communication system the signal that is received at the receiver side may differ from the
+                        signal that is transmitted , this is due to the various impairments.</li>
+                    <li>Simply impairments refers to the disturbance and noise that are added with voice or data in the
+                        channel which degrades the quality of signal and causes signal bit error.</li>
+                    <li>
+                        <p>The basic signal impairments are:-</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Attenuation</h3>
+                                <ul>
+                                    <li>It means loss of energy when a signal travels through a medium its strength
+                                        decreases with distance.</li>
+                                    <li>Beyond a certain database, attenuation becomes unacceptably great and that's why
+                                        repeater and amplifier are used to boost the single at regular intervals.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Jitter</h3>
+                                <ul>
+                                    <li>It is an uneven delay in the delivery of audio and video packets. If there is
+                                        variation in packet arrival time then jitter occurs. It is measured in
+                                        millisecond(ms).</li>
+                                    <li>For example: Video packets are arrived at every 30ms on the receiver side and at
+                                        some time some packets are arrived at 40ms the uneven quality of video is the
+                                        result.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Distortion</h3>
+                                <ul>
+                                    <li>Distortion means change in shape and form of the signal due to the unwanted
+                                        signal fluctuation.</li>
+                                    <li>Each signal component has its own propagation speed through a medium. Therefore
+                                        its own delay through a medium is arriving at the final destination.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Crosstalk</h3>
+                                <ul>
+                                    <li>It is the phenomenon of hearing another conversion. It occurs due to the
+                                        electrical coupling between nearby twisted pair cables that carry multiple
+                                        signals. Whereas the fiber optics cable does not experience crosstalk.</li>
+                                    <li>The real life example of crosstalk is sometimes we can hear another conversation
+                                        on our phone.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Echo</h3>
+                                <ul>
+                                    <li>It is simply bouncing back of signal at the end of the wire so that there is
+                                        inference with the normal transmission and causing the loss of signal.</li>
+                                    <li>An echo is the sound caused by reflection of sound waves from a surface or
+                                        transmission medium back to the listener.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Noise</h3>
+                                <ul>
+                                    <li>It is the unwanted and undefined mixture of the signal so that the quality of
+                                        the signal is degraded at the receiver side.</li>
+                                    <li>Noise can be classified as external noise and internal noise.</li>
+                                    <li>Internal noise is noise that is generated internally or within the system.</li>
+                                    <li><strong>Example:</strong>Thermal noise, External noise is the noise that is
+                                        generated due to the external component like industrial noise, atmospheric
+                                        noise, etc.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="basic-terms">Basic Terms used in computer network</h2>
+                <ol type="1">
+                    <li>
+                        <h3>IP Address</h3>
+                        <ul>
+                            <li>Internet protocol address is a unique numerical value assigned to each device that is
+                                connected to a computer network. It serves two main functions identifying the network
+                                interface or host and providing the location of the device in the network.</li>
+                            <li>There are two types of IP address IPv4(32 bits) and IPv6(128 bits).</li>
+                            <li>IPv4 address is written in decimal notation consisting of four numbers separated by
+                                dots. For example 192.168.1.1</li>
+                            <li>IPv6 address is written in hexadecimal notation consisting of eight groups of four
+                                digits separated by colons. For example 2001:0db8:85a3:0000:0000:8a2e:0370:7334</li>
+                        </ul>
+                        <h4>Difference between IPv4 and IPv6</h4>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>IPv4</th>
+                                    <th>IPv6</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Uses a 32 bits address</td>
+                                    <td>Uses a 128 bits address</td>
+                                </tr>
+                                <tr>
+                                    <td>Address is written in decimal format</td>
+                                    <td>Address is written in hexadecimal format</td>
+                                </tr>
+                                <tr>
+                                    <td>Provides limited address space</td>
+                                    <td>Provide vast address space</td>
+                                </tr>
+                                <tr>
+                                    <td>Security features are optional</td>
+                                    <td>Security is built in (IPsec)</td>
+                                </tr>
+                                <tr>
+                                    <td>Supports broadcast communication</td>
+                                    <td>Does not support broadcast communication (uses multicast)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h3>Why is IPv6 needed over IPv4?</h3>
+                        <ol type="i">
+                            <li> IPv4 address space is limited and it is expected to run out of addresses in the near
+                                future.</li>
+                            <li> IPv6 address space is vast and it is expected to last for a long time.</li>
+                            <li> IPv6 is more secure than IPv4.</li>
+                            <li> IPv6 is more efficient than IPv4.</li>
+                            <li>IPv6 supports automatic address configuration</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h2>MAC Address</h2>
+                        <ul>
+                            <li>A MAC(Media Access Control) address is a unique identifier assigned to a network
+                                interface
+                                card/controller for communication.</li>
+                            <li>Since NIC is a hardware component that enables a device to connect to a network.</li>
+                            <li>MAC address is stored in ROM and it is 48 bit in length and contains 12 hexa-decimal
+                                numbers
+                                each of 4 bits.</li>
+                            <li>
+                                <p>Typically Mac address is written in one of the following formate:</p>
+                                <p style="text-align: center;">MM:MM:MM:SS:SS:SS</p>
+                                <p style="text-align: center;">MM-MM-MM-SS-SS-SS</p>
+                            </li>
+                            <li>Where “MM” stands for the manufacturer's identifier and “SS” represents the serial
+                                number
+                                assigned by the manufacturer.</li>
+                            <li><strong>For example:</strong> 00-A0-C9-14-C8-29</li>
+                        </ul>
+                        <h3>Difference between MAC Address and IP Address</h3>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>MAC Address</th>
+                                    <th>IP Address</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Physical address assigned by manufacturer</td>
+                                    <td>Logical address assigned by network administrator</td>
+                                </tr>
+                                <tr>
+                                    <td>Used to identify the location of the device in the network</td>
+                                    <td>Used to identify a device on a network</td>
+                                </tr>
+                                <tr>
+                                    <td>Fixed and cannot be changed</td>
+                                    <td>Can be changed (dynamic or static)</td>
+                                </tr>
+                                <tr>
+                                    <td>Works at Data Link Layer (Layer 2) in OSI Model</td>
+                                    <td>Works at Network Layer (Layer 3) in OSI Model</td>
+                                </tr>
+                                <tr>
+                                    <td>Eg: 00-A0-C9-14-C8-29</td>
+                                    <td>Eg: 192.168.1.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <h3>Subnet Mask</h3>
+                        <ul>
+                            <li>It is a logical subdivision of an IP address. The process of dividing a network into two
+                                or more networks is called subnetting.</li>
+                            <li>It is a 32bits number created by setting host bits to all 0’s and setting network bits
+                                to 1’s.</li>
+                            <li><strong>For example:</strong> 255.255.255.0, tells us the first three groups denote
+                                network portion and the last group denotes host portion.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Gateway</h3>
+                        <ul>
+                            <li>It is a node or bridge in a computer network that can be used to join one device to
+                                another. It can act as an entry and exit point for a network, through which all the
+                                traffic flows.</li>
+                            <li>In real life our home router acts as the gateway that manages the traffic between your
+                                local devices and the network.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Internet</h3>
+                        <ul>
+                            <li>The internet is a vast global network that connects millions of devices worldwide. It
+                                allows devices to communicate and share the information.</li>
+                            <li>It consists of two major components: network protocol and hardware. Network protocols
+                                means the set of rules which enables the system and user to exchange data and services
+                                between them.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Intranet</h3>
+                        <ul>
+                            <li>An intranet is a private network that functions similar to the internet but it is
+                                limited to the small place, internal use. It is accessible only to members and provides
+                                services like sharing information, access to databases, collaborating on projects within
+                                the organization.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Extranet</h3>
+                        <ul>
+                            <li>An extranet is an extension of the internet that allows access and sharing of resources
+                                to specific external users outside of the organizations such as clients, partners, or
+                                suppliers.</li>
+                            <li>It enables these authorized parties to securely access a certain level of security.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Bandwidth</h3>
+                        <ul>
+                            <li>The rate of data transmission in a given medium per unit time is known as bandwidth. It
+                                is measured in terms of bps (bytes per second), Kbps (kilobytes per second), Mbps
+                                (megabytes per second), etc.</li>
+                            <li>Higher the bandwidth, higher will be the data transmission and faster will be the
+                                communication. But if bandwidth is low then it leads to network congestion causing
+                                network impairments.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Network Tool</h3>
+                        <ul>
+                            <li>
+                                <p> Network tools are those tools that are used for supporting the easier and effective
+                                    network connection in data communication.</p>
+                                <ol type="a">
+                                    <li>
+                                        <h4>Packet Tracker</h4>
+                                        <ul>
+                                            <li>It is a powerful network simulation tool developed by Cisco systems. The
+                                                main purpose of this packet tracker is configuration of the network,
+                                                visualizing and troubleshooting. It allows us to experiment with network
+                                                behavior, build models and also to trace the movement of data packets in
+                                                data communication.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Remote Login</h4>
+                                        <ul>
+                                            <li>It refers to the ability to access and control a computer or device from
+                                                a different location over the internet. This can be achieved by using
+                                                different remote software applications like TeamViewer, Anydesk etc.
+                                                remote login running </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="osi-reference-model">OSI Reference Model</h2>
+                <ul>
+                    <li>An Open System Interconnection (OSI) is the architectural model developed by international
+                        standard organization (ISO) to allow the sending and receiving of data between two computers.
+                    </li>
+                    <li> It is divided into seven layers that work together to carry out specialized network functions.
+                    </li>
+                    <li>
+                        <p> The different layers and their respective functions are explained below:</p>
+                        <figure>
+                            <img src="../images/OSI-Refrence-Model.png" alt="OSI Reference Model">
+                            <figcaption>Fig: OSI Reference Model</figcaption>
+                        </figure>
+                        <ol>
+                            <li>
+                                <h3>Application Layer</h3>
+                                <ul>
+                                    <li>It is the top most layer of OSI reference model which is implemented by the
+                                        network application.</li>
+                                    <li>It is the end user layer which produces data that has to be transferred over the
+                                        network.</li>
+                                    <li>Browser, Messenger, HTTP, FTP runs on this layer.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Presentation Layer</h3>
+                                <ul>
+                                    <li>It is also called a translation layer. It is concerned with the syntax and
+                                        semantics of the information, which is exchanged between two systems.</li>
+                                    <li>It ensures that the data is in a usable format or not. In this layer the
+                                        different tasks like translation, encryption, decryption, data compression, etc.
+                                        operations are performed.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Session Layer</h3>
+                                <ul>
+                                    <li>This layer is responsible for establishment of the connection and maintenance of
+                                        the session. After completing the data transfer it terminates a session.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Transport Layer</h3>
+                                <ul>
+                                    <li>This layer is responsible for transmitting the data used in transmission
+                                        protocols like TCP and UDP.</li>
+                                    <li>It provides services to application layers and takes services from the network
+                                        layers.</li>
+                                    <li>It is responsible for the end to end delivery of complete messages and also
+                                        provides the acknowledgement of successful data transmission.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Network Layer</h3>
+                                <ul>
+                                    <li>It works for the transmission of data between two nodes on a network. It selects
+                                        the shortest path to transmit the packets from the number of routes available.
+                                        IP address and subnet mark are used in this layer.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>DataLink Layer</h3>
+                                <ul>
+                                    <li>This is responsive for node to node delivery of the message. It ensures that the
+                                        data is transmitted error free and in correct sequence. It consists of two sub
+                                        layers LLC and MAC.</li>
+                                    <li>LLC (Logic Link Control)is responsible for flow control and error correlation
+                                        while MAC (Media Access Control) is responsible for providing access to the
+                                        medium.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Physical Layer</h3>
+                                <ul>
+                                    <li>It is the bottom layer of the OSI reference model. It is responsible for the
+                                        actual physical connection between the devices.</li>
+                                    <li>This layer is responsible for transmitting individual bits from node to next.
+                                    </li>
+                                    <li>Hubs, Repeaters, NICs and Cables are used as Hardware components.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="classful-ip-address">Classful IP Addressing</h2>
+                <ul>
+                    <li>It was an early method (1931-1993) used to assign IP addresses and divide the IPv4 address space
+                        into fixed classes.</li>
+                    <li>
+                        <p>Each IP address was categorized based on its leading bits, and the class determined its
+                            network and host portion.</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Class A IP Address</h3>
+                                <ul>
+                                    <li>The class A IP addresses are assigned to the networks that contain a large
+                                        number of hosts.</li>
+                                    <li>Let’s say you’re running a large organization, like a multinational company with
+                                        offices in various countries. You’d need a massive number of IP addresses to
+                                        allocate to all the devices (Computer, Printer, Servers, etc.) in your network.
+                                        This is where Class A IP addresses come into play.</li>
+                                    <li>
+                                        <p>As we know IP addresses contain network bits and hosts. Here in class A,
+                                            Network ID contains 8 bits and Host ID contains 24 bits.</p>
+                                        <table class="ip-address-table">
+                                            <tr>
+                                                <td>1 bit</td>
+                                                <td>7 bits</td>
+                                                <td>24 bits</td>
+                                            </tr>
+                                            <tr>
+                                                <td>0</td>
+                                                <td>Network ID</td>
+                                                <td>Host ID</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>In class A the first bits in the first octet is always 0 and it ranges from
+                                        0.0.0.0 to 127.255.255.255.</li>
+                                    <li>But 0.0.0.0 is used for reserved purposes like (Network identification/default
+                                        route). Similarly, 127.0.0.1 is used for local host testing. So usable
+                                        1.0.0.0-126.255.255.255.</li>
+                                    <li>The default subnet mark of class A IP address is 255.0.0.0.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Class B IP Address</h3>
+                                <ul>
+                                    <li>
+                                        <p>These addresses are for medium-sized networks like universities, business,
+                                            organizations,
+                                            etc. They range from 128.0.0.0 to 191.255.255.255 and the first two bits are
+                                            always set
+                                            to 1 and 0 respectively.</p>
+                                        <table class="ip-address-table">
+                                            <tr>
+                                                <td>1st bit</td>
+                                                <td>2nd bit</td>
+                                                <td>14 bits</td>
+                                                <td>16 bits</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>0</td>
+                                                <td>Network ID</td>
+                                                <td>Host ID</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>The default subnet mask for class B is 255.255.0.0.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Class C IP Address</h3>
+                                <ul>
+                                    <li>
+                                        <p>These addresses are for small networks like LANs, small businesses, etc. They
+                                            range from 192.0.0.0 to 223.255.255.255 and the first three bits are always
+                                            set to 1, 1 and 0 respectively.</p>
+                                        <table class="ip-address-table">
+                                            <tr>
+                                                <td>1st bit</td>
+                                                <td>2nd bit</td>
+                                                <td>3rd bit</td>
+                                                <td>21 bits</td>
+                                                <td>8 bits</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                                <td>Network ID</td>
+                                                <td>Host ID</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>They are designed for smaller networks like home networks, small business, and
+                                        small organizations.</li>
+                                    <li>Subnet mark is 255.255.255.0.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Class D IP Address</h3>
+                                <ul>
+                                    <li>
+                                        <p>They range from 224.0.0.0 to
+                                            239.255.255.255 and the first four bits are always set to 1, 1, 1, and 0
+                                            respectively.</p>
+                                        <table class="ip-address-table">
+                                            <tr>
+                                                <td>1st bit</td>
+                                                <td>2nd bit</td>
+                                                <td>3rd bit</td>
+                                                <td>4th bit</td>
+                                                <td>28 bits</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>0</td>
+                                                <td>Host ID</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>These IP addresses are dedicated to multicasting, which means a technique that
+                                        allows data to be sent from one sender to multiple receivers.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Class E IP Address</h3>
+                                <ul>
+                                    <li>
+                                        <p>These addresses are reserved for experimental purposes. They range from
+                                            240.0.0.0 to 255.255.255.255 and the first four bits are always set to 1, 1,
+                                            1, and 1 respectively.</p>
+                                        <table class="ip-address-table">
+                                            <tr>
+                                                <td>1st bit</td>
+                                                <td>2nd bit</td>
+                                                <td>3rd bit</td>
+                                                <td>4th bit</td>
+                                                <td>28 bits</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>Host ID</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                                    <li>They are reserved for experimental purposes.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>No subnet marks for class D and class E (Network and division isn’t needed).</li>
+                </ul>
+                <h2 class="end">The End</h2>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

@@ -14,10 +14,10 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/images/icon.png" alt="Berojgar Notes logo">
-                <h1>Berojgar's Notes</h1>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
             </a>
         </div>
         <div class="nav-wrapper">
@@ -41,8 +41,9 @@
                 <!-- Slider circle -->
                 <span class="toggle-circle"></span>
             </button>
-            <button class="hamburger" id="hamburger">&#9776;</button>
-            <nav class="nav" id="navMenu">
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
                 <a href="/index.html">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/contact.html">Contact</a>
@@ -54,21 +55,21 @@
         <section class="hero">
             <div class="coverpage">
                 <div class="sub-class">
-                    <h2>Computer Notes</h2>
-                    <h2>Class 11 </h2><br>
+                    <h1>Computer Notes</h1>
+                    <h2>Class 11 </h2>
                 </div>
                 <div class="reference">
                     <p> <strong>Referenced by:</strong></p>
                     <p>Er. Bhisma Raj Joshi</p>
                     <p>Lecturer of Computer Science</p>
-                    <p>[NAST]</p><br>
+                    <p>[NAST]</p>
                 </div>
                 <div class="author">
                     <p> <strong>Written and Edited by:</strong></p>
-                    <p>Karan Chaudhary</p><br>
+                    <p>Karan Chaudhary</p>
                 </div>
                 <p><strong>Version</strong>:- 1.0 - January 2026</p>
-                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p><br>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
                 <div class="disclaimer">
                     <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
                         Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
@@ -86,17 +87,17 @@
                     <li><a href="#computer-system">Concept of computer system</a></li>
                     <li><a href="#history-of-computer">History of Computer</a></li>
                     <li><a href="#generation-of-computer">Generation of Computer</a></li>
-                    <li><a href="#">Measurement unit of processor</a></li>
-                    <li><a href="#">Classification of Computer</a></li>
-                    <li><a href="#">Mobile Computing</a></li>
-                    <li><a href="#">Computer architecture and origination</a></li>
-                    <li><a href="#">Component of Computer</a></li>
-                    <li><a href="#">Concept of Microprocessor</a></li>
-                    <li><a href="#">Bus Structure</a></li>
-                    <li><a href="#">Memory</a></li>
-                    <li><a href="#">Input Devices</a></li>
-                    <li><a href="#">Output Devices</a></li>
-                    <li><a href="#">Hardware Interfaces</a></li>
+                    <li><a href="#measurement-unit-of-processor">Measurement unit of processor</a></li>
+                    <li><a href="#classification-of-computer">Classification of Computer</a></li>
+                    <li><a href="#mobile-computing">Mobile Computing</a></li>
+                    <li><a href="#computer-architecture-and-origination">Computer architecture and origination</a></li>
+                    <li><a href="#component-of-computer">Component of Computer</a></li>
+                    <li><a href="#concept-of-microprocessor">Concept of Microprocessor</a></li>
+                    <li><a href="x#bus-structure">Bus Structure</a></li>
+                    <li><a href="#memory">Memory</a></li>
+                    <li><a href="#input-devices">Input Devices</a></li>
+                    <li><a href="#output-devices">Output Devices</a></li>
+                    <li><a href="#hardware-interfaces">Hardware Interfaces</a></li>
                 </ol>
             </div>
         </section>
@@ -312,7 +313,7 @@
                         </ol>
                     </li>
                 </ul>
-                <h2>History of Computer</h2>
+                <h2 id="history-of-computer">History of Computer</h2>
                 <ul>
                     <li>
                         The development of computers was not spontaneous. Many scientists and many
@@ -610,7 +611,7 @@
                         </ol>
                     </li>
                 </ul>
-                <h2>Generation of Computer</h2>
+                <h2 id="generation-of-computer">Generation of Computer</h2>
                 <ul>
                     <li>
                         <p>The term “Generation of Computers” refers to the evolution of computer technology
@@ -731,7 +732,7 @@
                         </ol>
                     </li>
                 </ul>
-                <h2>Measurement units in computer</h2>
+                <h2 id="measurement-unit-of-processor">Measurement units in computer</h2>
                 <ol type="a">
                     <li>
                         <h3>Processing Speed</h3>
@@ -770,7 +771,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ul>
                     </li>
                 </ol>
-                <h2>Classification of Computer on the basis of size and Speed</h2>
+                <h2 id="classification-of-computer">Classification of Computer on the basis of size and Speed</h2>
                 <ul>
                     <li>The classification of computers based on speed and size refers to grouping computers
                         according to their physical dimensions (size) and their processing capabilities
@@ -862,7 +863,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ol>
                     </li>
                 </ul>
-                <h2>Mobile Computing</h2>
+                <h2 id="mobile-computing">Mobile Computing</h2>
                 <ul>
                     <li>Mobile computing refers to the technology that allows users to transmit and receive
                         data—such as voice, audio, video, text, and images—via computers or mobile devices
@@ -939,7 +940,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ul>
                     </li>
                 </ol>
-                <h2>Computer architecture</h2>
+                <h2 id="computer-architecture-and-origination">Computer architecture</h2>
                 <ul>
                     <li>Computer architecture refers to those attributes of a system visible to a programmer
                         or those attributes that have a direct impact on the logical execution of a program.
@@ -980,7 +981,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </tr>
                     </tbody>
                 </table>
-                <h2>Components of computer system</h2>
+                <h2 id="component-of-computer">Components of computer system</h2>
                 <ul>
                     <li>A computer system is an integrated set of hardware and software designed to perform
                         computational tasks.</li>
@@ -1076,7 +1077,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ul>
                     </li>
                 </ol>
-                <h2>Concept of Microprocessor</h2>
+                <h2 id="concept-of-microprocessor">Concept of Microprocessor</h2>
                 <ul>
                     <li>The CPU contains three components ALU, CU and Register. When all these three
                         components are integrated into a single chip then it is called Microprocessor.</li>
@@ -1128,7 +1129,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ul>
                     </li>
                 </ol>
-                <h2>Bus Structure</h2>
+                <h2 id="bus-structure">Bus Structure</h2>
                 <ul>
                     <li>Bus structure simply refers to the pathway through which data and information can be
                         exchanged between the different components of the computer System.</li>
@@ -1164,7 +1165,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                     <li><strong>Power Distribution:-</strong> Distribute electrical power to various
                         components within a System.</li>
                 </ol>
-                <h2>Memory</h2>
+                <h2 id="memory">Memory</h2>
                 <ul>
                     <li>In computers, memory is a device that stores data and instructions for a computer
                         system. It's crucial for the computer to function, as it holds everything from the
@@ -1498,7 +1499,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ol>
                     </li>
                 </ul>
-                <h2>Input Devices</h2>
+                <h2 id="input-devices">Input Devices</h2>
                 <ul>
                     <li>An input device is hardware that allows users to enter data and control signals into
                         a computer. For eg: keyboards, mouse, scanners, cameras, joysticks, and microphones.
@@ -1555,7 +1556,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ol>
                     </li>
                 </ul>
-                <h2>Output Devices</h2>
+                <h2 id="output-devices">Output Devices</h2>
                 <ul>
                     <li>The output unit in a computer system refers to different hardware components that
                         provide information and results of computation to the outside world in the form that
@@ -1811,7 +1812,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
                         </ol>
                     </li>
                 </ul>
-                <h2>Hardware Interfaces</h2>
+                <h2 id="hardware-interfaces">Hardware Interfaces</h2>
                 <ul>
                     <li>It is the part through which data is transferred between a computer and other
                         devices connected to the computer.</li>
@@ -1912,7 +1913,7 @@ Femtosecond (10-15 sec) = 1/1,000,000,000,000,000
         </section>
     </main>
     <footer>
-        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
     </footer>
     <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
     <a href="#" onclick="history.back()" class="go-back-btn">Back</a>

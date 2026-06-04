@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 12 Computer Science Notes - Complete Unit 1">
+    <title>Computer Science | Class12</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 12 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="toc">
+            <div>
+                <h2>Unit 1 : DBMS (Database Management System)</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#concept-of-dbms">Concept of DBMS</a></li>
+                    <li><a href="#concept-of-database">Concept of Database</a></li>
+                    <li><a href="#database-management-system">Database Management System</a></li>
+                    <li><a href="#concept-of-keys">Concept of Keys</a></li>
+                    <li><a href="#concept-of-sql">Concept of SQL</a></li>
+                    <li><a href="#concept-of-database-model">Concept of Database Model</a></li>
+                    <li><a href="#normalization">Normalization</a></li>
+                    <li><a href="#centralized-and-distributed-database">Centralized and Distributed database</a>
+                    </li>
+                    <li><a href="#dba">Concept of DBA(Database Administrator)</a></li>
+                    <li><a href="#data-security">Concept of Data security</a></li>
+                    <li><a href="#data-integrity">Concept of Data Integrity</a></li>
+                </ol>
+            </div>
+        </section>
+        <section class="content">
+            <div id="unit1" class="noteContent">
+                <h2 id="concept-of-dbms">DBMS</h2>
+                <ul>
+                    <li>
+                        Data are the collection of raw facts and figures, which do not give any particular sense. It
+                        may be in the form of numbers, fig, or the alphabet.
+                    </li>
+                    <li>
+                        <p>For example, 11, Hari, Pokhara etc.</p>
+                        <ol type="a">
+                            <li>
+                                <p><strong>Primary Data</strong>:- Those data, which are directly collected from
+                                    surveys, experiments or observation.</p>
+                            </li>
+                            <li>
+                                <p><strong>Secondary Data</strong>:- Already existing data or collected by someone else.
+                                </p>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Information</h2>
+                <ul>
+                    <li>When data is processed for objectives, it becomes information. Information always provides clear
+                        meaning or sense.</li>
+                    <li><strong>For example:</strong> Hari lives in Pokhara-11.</li>
+                    <li>
+                        <p>The process of converting the data into information is called data processing.</p>
+                        <figure>
+                            <img src="/images/data-processing.png" alt="Data Processing">
+                            <figcaption>Data Processing</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <h3>Difference between data and information</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Raw facts and figures without context. </td>
+                            <td>Processed or organized data that has meaning.</td>
+                        </tr>
+                        <tr>
+                            <td>Unprocessed, unorganized, and raw.</td>
+                            <td>Processed, structured, and organized.</td>
+                        </tr>
+                        <tr>
+                            <td>To record facts for future use.</td>
+                            <td>Provide meaning and help in decision making.</td>
+                        </tr>
+                        <tr>
+                            <td>Marks of students: 70, 85, 90; example.</td>
+                            <td>Average marks of the class: 81.6; is an example.</td>
+                        </tr>
+                        <tr>
+                            <td>Information is derived from data.</td>
+                            <td>Information depends on data for its source.</td>
+                        </tr>
+                        <tr>
+                            <td>May have little or no meaning alone. </td>
+                            <td>Always meaningful and useful.</td>
+                        </tr>
+                        <tr>
+                            <td>Qualitative or quantitative facts. </td>
+                            <td>Data interpreted into a meaningful form. </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Flat File System</h2>
+                <ul>
+                    <li>It is also called file-based system, is the traditional way of keeping records of any
+                        organization in a manual filing system where information and data are stored in plain text
+                        format.</li>
+                </ul>
+                <h3>Disadvantages of Flat File System</h3>
+                <ol type="1">
+                    <li>Data Security was poor.</li>
+                    <li>Data sharing was almost impossible.</li>
+                    <li>High maintenance cost.</li>
+                    <li>The same record was stored in more files.</li>
+                </ol>
+                <h2 id="concept-of-database">Database</h2>
+                <ul>
+                    <li>
+                        <p>It is the collection of logically related data for a particular domain or field.</p>
+                        <figure>
+                            <img src="/images/database.png" alt="Database">
+                            <figcaption>Database</figcaption>
+                        </figure>
+                    </li>
+                    <li>In database data are organized into tabular fashion. i.e. in the form of rows and columns.</li>
+                    <li><strong>Field or Attribute:-</strong> Field is the column of the database table. </li>
+                    <li><strong>Record or Tuple:-</strong> Record is the row of the database table. </li>
+                </ul>
+                <h2 id="database-management-system">Database Management System (DBMS)</h2>
+                <ul>
+                    <li>As we know, a database is the collection of inter-related data. So a database management system
+                        is a general-purpose software system that allows users to create, maintain and manipulate the
+                        database.</li>
+                    <li>Some common DBMS are SQL server, Oracle, MY SQL etc.</li>
+                </ul>
+                <h3>Advantages of DBMS</h3>
+                <ol type="1">
+                    <li>Using DBMS data stored in the database can be shared among multiple users or computers.</li>
+                    <li>The duplication or repetition of the same type of data is reduced, which is called data
+                        redundancy.</li>
+                    <li>By using DBMS, we can easily create a copy of the original file, which helps in data backup and
+                        recovery.</li>
+                    <li>By using DBMS, we can restrict the use of databases to unauthorized persons.</li>
+                    <li>It maintains correctness or accuracy in data which is called data integrity.</li>
+                </ol>
+                <h2>Application of DBMS</h2>
+                <ol type="1">
+                    <li>
+                        <h3>Hospital</h3>
+                        <ul>
+                            <li>It is used to keep the record of the patient and doctors, to generate bills.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Airlines and Railways</h3>
+                        <ul>
+                            <li>Airline and Railways use databases for online reservation, displaying schedules.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>College and Schools</h3>
+                        <ul>
+                            <li>Databases are used in colleges or schools to keep records of the students and teachers.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Telecommunication</h3>
+                        <ul>
+                            <li>Telecommunication departments use databases to store the information about the
+                                communication network, records of call to generation bills, data consumption etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Companies and Organizations</h3>
+                        <ul>
+                            <li>Different companies and organisations use databases to store the information about their
+                                employees, salary, tax payment etc.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="concept-of-keys">Keys </h2>
+                <ul>
+                    <li>Key is the set of attributes that is used to identify the data in a table and is also used to
+                        establish a relationship with another table.</li>
+                </ul>
+                <h3>Types of Key:</h3>
+                <ol type="1">
+                    <li>
+                        <h4>Primary Key</h4>
+                        <ul>
+                            <li>It is used to identify a row in a table uniquely.</li>
+                            <li>A primary key cannot contain null value.</li>
+                            <li>A table cannot have more than one primary key.</li>
+                            <li>
+                                <p>Let’s clear through an example</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>EMP-ID</th>
+                                            <th>NAME</th>
+                                            <th>ADDRESS</th>
+                                            <th>SSN</th>
+                                            <th>PAN-NO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>101</td>
+                                            <td>John</td>
+                                            <td>20</td>
+                                            <td>435</td>
+                                            <td>123456789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>102</td>
+                                            <td>Jane</td>
+                                            <td>21</td>
+                                            <td>899</td>
+                                            <td>987654321</td>
+                                        </tr>
+                                        <tr>
+                                            <td>103</td>
+                                            <td>Doe</td>
+                                            <td>22</td>
+                                            <td>435</td>
+                                            <td>123456789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>104</td>
+                                            <td>Smith</td>
+                                            <td>23</td>
+                                            <td>899</td>
+                                            <td>987654321</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>In the above table EMP-ID is the primary key since it is unique for each employee.</li>
+                            <li>In the table we can even select SSN and PAN-NO as primary keys since they are also
+                                unique.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Alternative Key</h4>
+                        <ul>
+                            <li>Except the primary key, the keys that are suitable for the primary key are called
+                                Alternate keys.</li>
+                            <li>These keys are also unique. In the above employee table SSN and PAN-NO can be considered
+                                as Alternate keys</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Candidate Key</h4>
+                        <ul>
+                            <li>It is the set of attributes that uniquely identifies records in a table.</li>
+                            <li>The combination of Primary and Alternative keys.</li>
+                            <li>Here in the above employee table EMP-ID, SSN, PAN-NO are candidate keys.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Composite Key</h4>
+                        <ul>
+                            <li>When two or more attributes together are used to uniquely identify a record, that
+                                combination is called a composite key.</li>
+                            <li>It is used when a single attribute is not enough to uniquely identify a record.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Foreign Key</h4>
+                        <ul>
+                            <li>A foreign key is an attribute that creates a relationship between two tables.</li>
+                            <li>It refers to the Primary Key of another table.</li>
+                            <li>It helps maintain referential integrity in the database.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="concept-of-sql">SQL</h2>
+                <ul>
+                    <li>SQL refers to the Structured Query Language. It is an international standard database query
+                        language for accessing and managing the data in the database.</li>
+                    <li>It was introduced and developed by IBM in 1970.</li>
+                    <li>It is not a programming language. It is just a database language.</li>
+                    <li>
+                        <p>SQL is made up of the sub languages, they are:</p>
+                        <ol type="1">
+                            <li>
+                                <h3>Data Definition Language (DDL)</h3>
+                                <ul>
+                                    <li>Data definition language consists of the SQL commands that can be used to define
+                                        the database schema.</li>
+                                    <li>Since, schema refers to the logical and visual configuration of the entire
+                                        relational database. It includes names, description, records, elements, etc.
+                                    </li>
+                                    <li>
+                                        <p>The DDL commands are:</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>CREATE</h4>
+                                                <ul>
+                                                    <li>This command is used to create the database and its objectives
+                                                        like table, index, views etc.</li>
+                                                    <li><strong>Syntax: </strong> CREATE DATABASE DB_Name;</li>
+                                                    <li><strong>Example: </strong> CREATE DATABASE School;</li>
+                                                    <li>
+                                                        <p>Similarly, if we want to create table in</p>
+                                                        <pre>CREATE TABLE TABLENAME(COLNAME1 DATATYPE, COLNAME2 DATATYPE....)</pre>
+                                                    </li>
+                                                    <li><strong>Example: </strong>
+                                                        <pre>CREATE TABLE Student(Rollno INT(3), Name VARCHAR(20), Age INT(2));</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>DROP</h4>
+                                                <ul>
+                                                    <li>This command is used to delete the database and its objectives
+                                                        like table, index, views etc.</li>
+                                                    <li><strong>Syntax: </strong> DROP DATABASE DB_Name;</li>
+                                                    <li><strong>Example: </strong> DROP DATABASE School;</li>
+                                                    <li>
+                                                        <p>Similarly, if we want to delete table in</p>
+                                                        <pre>DROP TABLE TABLENAME;</pre>
+                                                    </li>
+                                                    <li><strong>Example: </strong>
+                                                        <pre>DROP TABLE Student;</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>ALTER</h4>
+                                                <ul>
+                                                    <li>This is used to alter the structure of the database. For example
+                                                        we need to add columns in an already existing table then we can
+                                                        use this alter command.</li>
+                                                    <li><strong>Syntax: </strong> ALTER TABLE TABLENAME ADD COLNAME
+                                                        DATATYPE;</li>
+                                                    <li><strong>Example: </strong> ALTER TABLE Student ADD CGPA
+                                                        FLOAT(4);
+                                                    </li>
+                                                    <li>Similarly, for Modify an existing column, syntax:
+                                                        <pre>ALTER TABLE table_name CHANGE COLUMN old_column_name new_column_name data_type;</pre>
+                                                    </li>
+                                                    <li><strong>Example: </strong>
+                                                        <pre>ALTER TABLE students CHANGE COLUMN fullname student_name VARCHAR(100);</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>TRUNCATE</h4>
+                                                <ul>
+                                                    <li>This command is used to remove all the records from the table
+                                                        but the structure of the table still exists.</li>
+                                                    <li><strong>Syntax: </strong> TRUNCATE TABLE TABLENAME;</li>
+                                                    <li><strong>Example: </strong> TRUNCATE TABLE Student;</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>RENAME</h4>
+                                                <ul>
+                                                    <li>This command is used to rename the table or columns.</li>
+                                                    <li><strong>Syntax: </strong> RENAME TABLE TABLENAME TO
+                                                        NEWTABLENAME;
+                                                    </li>
+                                                    <li><strong>Example: </strong> RENAME TABLE Student TO Students;
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Data Manipulation Language (DML)</h3>
+                                <ul>
+                                    <li>The DML contains the SQL commands that deal with the manipulation of data
+                                        present in the database.</li>
+                                    <li>
+                                        <p>The DML commands are as follows:</p>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>INSERT</h4>
+                                                <ul>
+                                                    <li>This command is used to insert the records into the table.</li>
+                                                    <li><strong>Syntax: </strong> INSERT INTO TABLENAME(COLNAME1,
+                                                        COLNAME2, ...) VALUES(VAL1, VAL2, ...);</li>
+                                                    <li><strong>Example: </strong> INSERT INTO Student(Rollno,
+                                                        Name, Age) VALUES(1, "Karan", 20);</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>UPDATE</h4>
+                                                <ul>
+                                                    <li>This command is used to update the records in the table.</li>
+                                                    <li><strong>Syntax: </strong> UPDATE TABLENAME SET COLNAME = VAL
+                                                        WHERE
+                                                        CONDITION;</li>
+                                                    <li><strong>Example: </strong> UPDATE Student SET Age = 21 WHERE
+                                                        Rollno
+                                                        =1;</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>SELECT</h4>
+                                                <ul>
+                                                    <li>This command is used to select the records from the table.</li>
+                                                    <li><strong>Syntax: </strong> SELECT * FROM TABLENAME;</li>
+                                                    <li><strong>Example: </strong> SELECT * FROM Student;</li>
+                                                    <li>
+                                                        <p>But if we want to get a student's name only then.</p>
+                                                        <pre>SELECT name FROM Student;</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>To find all the record of rollno. 1 then.</p>
+                                                        <pre>SELECT * FROM Student WHERE Rollno = 1;</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>If we want to display the name starts from letter B then.</p>
+                                                        <pre>SELECT name FROM Student WHERE name LIKE "B%";</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>Similarly, To select records where a column value ends with
+                                                            the
+                                                            letter B, then.</p>
+                                                        <pre>SELECT name FROM Student WHERE name LIKE "%B";</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>To select records where a column contains the letter B in the
+                                                            middle, then.</p>
+                                                        <pre>SELECT name FROM Student WHERE name LIKE "%B%";</pre>
+                                                    </li>
+                                                    <li>
+                                                        <p>To select records where a column contains the second letter
+                                                            B,
+                                                            then.</p>
+                                                        <pre>SELECT name FROM Student WHERE name LIKE "_B%";</pre>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <h4>DELETE</h4>
+                                                <ul>
+                                                    <li>This command is used to delete the records from the table.</li>
+                                                    <li><strong>Syntax: </strong> DELETE FROM TABLENAME WHERE CONDITION;
+                                                    </li>
+                                                    <li><strong>Example: </strong> DELETE FROM Student WHERE Rollno = 1;
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Data Control Language (DCL)</h3>
+                                <ul>
+                                    <li>
+                                        <p>DCL (Data Control Language) is used to control access to data in a database.
+                                        </p>
+                                        <p><strong>GRANT: </strong> This command is used to give permission to the user
+                                            to access the data in the database.</p>
+                                        <p><strong>REVOKE: </strong> This command is used to remove permission from the
+                                            user to access the data in the database.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="concept-of-database-model">Database Model</h2>
+                <ul>
+                    <li>It is a set of rules and standards that define how the database organises or stores data.</li>
+                    <li>While designing databases we need to describe the structure of a database and how they are
+                        related to each other.</li>
+                    <li>So the database model helps to define the logical design and structure of the database.</li>
+                    <li>
+                        <p>Types of database model:</p>
+                        <ol>
+                            <li>
+                                <h3>Hierarchical model</h3>
+                                <ul>
+                                    <li>This model is one of the oldest types of database models developed by IBM.</li>
+                                    <li>In this model data are organized into an inverted tree like structure.</li>
+                                    <li>
+                                        <p>This model exhibits parent child relationship. A child can have only one
+                                            parent
+                                            but a parent can have more than one child.</p>
+                                        <figure>
+                                            <img src="../images/hierarchical-database-model.png"
+                                                alt="Hierarchical model">
+                                            <figcaption>Fig: Hierarchical model</figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <h4>Advantage of Hierarchical model</h4>
+                                <ul>
+                                    <li>This database model is easier to design.</li>
+                                    <li>Searching is faster if the parent node is known.</li>
+                                    <li>It support one to one and one to many relationship.</li>
+                                </ul>
+                                <h4>Disadvantage of Hierarchical model</h4>
+                                <ul>
+                                    <li>The old method does not support many to many relationships.</li>
+                                    <li>It increases redundancy because the same data is to be repeated in different
+                                        places.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Network model</h3>
+                                <ul>
+                                    <li>This model is similar to the hierarchical database model but the major
+                                        difference is that the child node can have more than one parent node.</li>
+                                    <li>In hierarchical database models there is only one parent node so to overcome
+                                        this limitation the network database model is developed.</li>
+                                    <li>
+                                        <p>In this model a parent may have multiple children as well as a child having
+                                            multiple parents.</p>
+                                        <figure>
+                                            <img src="../images/network-database-model.png" alt="">
+                                            <figcaption>Fig: Network model</figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <h4>Advantage of Network model</h4>
+                                <ul>
+                                    <li>More flexible than hierarchical models because it accepts many to many
+                                        relationships.</li>
+                                    <li>Simple and easy to design.</li>
+                                    <li>Searching is faster because of multidirectional pointers.</li>
+                                </ul>
+                                <h4>Disadvantage of Network model</h4>
+                                <ul>
+                                    <li>In a complex program it is difficult to handle the relationship.</li>
+                                    <li>Less security because of sharing data.</li>
+                                    <li>Lack of flexibility and scalability.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Relational model</h3>
+                                <ul>
+                                    <li>It is the type of database model in which data is organized into tables which
+                                        contain multiple rows(records or tuples) and columns(attributes or fields).</li>
+                                    <li>It is the most commonly used database model and it is more flexible than
+                                        hierarchical and network database models.</li>
+                                    <li>
+                                        <p>In this model there are multiple tables and are connected with each-other .
+                                            Means there is a relationship between multiple tables.</p>
+                                        <figure>
+                                            <img src="../images/relational-database-model.png" alt="">
+                                            <figcaption>Fig: Relational model</figcaption>
+                                        </figure>
+                                    </li>
+                                </ul>
+                                <h4>Advantage of Relational model</h4>
+                                <ul>
+                                    <li>It is more flexible than hierarchical database models.</li>
+                                    <li>Very low chance of data redundancy</li>
+                                </ul>
+                                <h4>Disadvantage of Relational model</h4>
+                                <ul>
+                                    <li>It is more complex than other models.</li>
+                                    <li>It needs more powerful computers and data storage devices.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="normalization">Normalization</h2>
+                <ul>
+                    <li>It is a database design process in which the complex table is broken down into simple separate
+                        tables.</li>
+                    <li>This includes creating multiple tables and establishing relationships between those tables
+                        according to rules.</li>
+                    <li>For normalization the different steps are followed which are called normal forms.</li>
+                </ul>
+                <h3>Types of normalization</h3>
+                <ol type="1">
+                    <li>
+                        <h4>First Normal Form (1NF)</h4>
+                        <ul>
+                            <li>This is the most basic level of normalization and a table is said to be in first normal
+                                form 1NF if it contains an atomic value.</li>
+                            <li>Means each table cell should contain a single value. If a table contains a multivalued
+                                attribute then it violates 1NF.</li>
+                            <li>
+                                <p>Let’s clear through an example.</p>
+                                <table class="table">
+                                    <caption>Player_info</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Player_ID</th>
+                                            <th>Player_Name</th>
+                                            <th>Games</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Ravi</td>
+                                            <td>Cricket, Football</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Aniket</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Abhijit</td>
+                                            <td>Football, Hockey</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Karun</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Here, in this table Player_info there are two values in the first row and third row
+                                    of the Games column so we have to convert it into 1NF as…</p>
+                                <table class="table">
+                                    <caption>Player_info</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Player_ID</th>
+                                            <th>Player_Name</th>
+                                            <th>Games</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Ravi</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Ravi</td>
+                                            <td>Football</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Aniket</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Abhijit</td>
+                                            <td>Football</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Abhijit</td>
+                                            <td>Hockey</td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Karun</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Second Normal Form (2NF)</h4>
+                        <ul>
+                            <li>The table is said to be in second normal form if the table is in 1’st normal form and
+                                does not contain any partial dependency, meaning the table should be fully functional
+                                dependent.</li>
+                            <li>
+                                <p>Let us consider a table customer.</p>
+                                <table class="table">
+                                    <caption>Customer</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Customer_ID</th>
+                                            <th>Store_ID</th>
+                                            <th>Location</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>11</td>
+                                            <td>Kathmandu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>12</td>
+                                            <td>Biratnagar</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>11</td>
+                                            <td>Kathmandu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>12</td>
+                                            <td>Biratnagar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Here, in this table there is partial dependency, Location depends only on Store_ID,
+                                    while the primary key is (Customer_ID, Store_ID). So, we have to remove this..</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Customer_ID</th>
+                                            <th>Store_ID</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>11</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Store_ID</th>
+                                            <th>Location</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Kathmandu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Biratnagar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>Now it is fully dependent on Store_ID. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Third Normal Form (3NF)</h4>
+                        <ul>
+                            <li>
+                                <p>The table is said to be in 3rd normal form if it satisfies the following two
+                                    conditions.</p>
+                                <ol>
+                                    <li>The table must be in 2nd normal form.</li>
+                                    <li>There should be no transitive dependency.</li>
+                                </ol>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Rollno</th>
+                                            <th>Game</th>
+                                            <th>Fee</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Football</td>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Cricket</td>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>basketball</td>
+                                            <td>400</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>football</td>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Cricket</td>
+                                            <td>300</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>The table is in 1NF because there are no multi-value attributes. It is also in 2NF
+                                because the non-key attributes are fully functional dependent on primary key Roll_No.
+                            </li>
+                            <li>
+                                <p>But the table is not in 3NF because there is transitive dependency. i.e Roll_No →
+                                    Game & Game → Fee. This creates a transitive dependency, violating 3NF. So, we have
+                                    to fix it.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Rollno</th>
+                                            <th>Game</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Football</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>basketball</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>football</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Cricket</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Game</th>
+                                            <th>Fee</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Football</td>
+                                            <td>500</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cricket</td>
+                                            <td>300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>basketball</td>
+                                            <td>400</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p><strong>Solution to Achieve 3NF:</strong></p>
+                                <p>The table is decomposed into two tables:</p>
+                                <ol>
+                                    <li>Rollno → Game (Student-specific data).</li>
+                                    <li>Game → Fee (Game-specific fee details).</li>
+                                </ol>
+                                <p>This removes the transitive dependency and satisfies 3NF.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="centralized-and-distributed-database">Centralized database</h2>
+                <ul>
+                    <li>A centralized database is basically a type of database that is stored, located as well as
+                        maintained at a single location only.</li>
+                    <li>It works on the client server architecture where clients are those who request for services or
+                        resources and server is one that provides services or resources to clients.</li>
+                    <li>This type of database is managed and modified only from the location where it is maintained.
+                    </li>
+                    <li>
+                        <p>This type of database is mainly used by institutions or organisations like payment gateways,
+                            Healthcare system, Education Institutions, HRMS etc.</p>
+                        <figure>
+                            <img src="../images/Centralized-database.png" alt="Centralized Data">
+                            <figcaption>Fig: Centralized Database</figcaption>
+                        </figure>
+                        <h3>Advantages</h3>
+                        <ol type="1">
+                            <li>Ensure data consistency and integrity.</li>
+                            <li>Easy to manage and secure.</li>
+                            <li>Reduces data redundancy.</li>
+                            <li>Simplifies data backup and recovery.</li>
+                        </ol>
+                        <h3>Disadvantages</h3>
+                        <ol type="1">
+                            <li>Single point of failure.</li>
+                            <li>Heavy network load.</li>
+                            <li>High maintenance.</li>
+                            <li>Limited scalability.</li>
+                            <li>Slow access for remote users.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Distributed Database</h2>
+                <ul>
+                    <li>It is a type of database which consists of multiple databases that are connected with each other
+                        and are spread across different physical locations.</li>
+                    <li>In distributed databases the communication between multiple databases at different physical
+                        locations is done by a computer network.</li>
+                    <li>The data stored in various physical locations can be managed independently.</li>
+                    <li>
+                        <p>This type of database is mostly used by Amazon, Google, Facebook, Telecommunications,
+                            Netflix, YouTube etc.</p>
+                        <figure>
+                            <img src="../images/Distributed-database.png" alt="Distributed Database">
+                            <figcaption>Fig: Distributed Database</figcaption>
+                        </figure>
+                        <h3>Advantages</h3>
+                        <ol type="1">
+                            <li>Improved data availability and reliability.</li>
+                            <li>Faster local data access.</li>
+                            <li>Reduced network load.</li>
+                            <li>Easy expansion and scalability.</li>
+                            <li><strong>Fault tolerance:</strong> system continues even if one site fails.</li>
+                        </ol>
+                        <h3>Disadvantage</h3>
+                        <ol type="1">
+                            <li>Complex design and management.</li>
+                            <li>Difficult to maintain data consistency.</li>
+                            <li>High setup and maintenance cost.</li>
+                            <li>Security control is more complicated.</li>
+                            <li>Requires reliable network connectivity.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Difference between Centralized and Distributed Database</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Centralized Database</th>
+                            <th>Distributed Database</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Data is stored at a single location.</td>
+                            <td>Data is stored at multiple locations.</td>
+                        </tr>
+                        <tr>
+                            <td>Easier to maintain data consistency.</td>
+                            <td>Difficult to maintain data consistency.</td>
+                        </tr>
+                        <tr>
+                            <td>Failure of the central system stops the whole database.</td>
+                            <td>Failure of one site doesn't affect the others.</td>
+                        </tr>
+                        <tr>
+                            <td>Slower access for remote users.</td>
+                            <td>Faster access for local users.</td>
+                        </tr>
+                        <tr>
+                            <td>Less complex to design and manage.</td>
+                            <td>More complex to design and manage.</td>
+                        </tr>
+                        <tr>
+                            <td>Lower installation and maintenance cost.</td>
+                            <td>Higher installation and maintenance cost.</td>
+                        </tr>
+                        <tr>
+                            <td>Limited scalability</td>
+                            <td>Highly scalable and easily expandable.</td>
+                        </tr>
+                        <tr>
+                            <td>Less network dependency.</td>
+                            <td>Highly dependent on network connection.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2 id="dba">Database Administrator (DBA)</h2>
+                <ul>
+                    <li>DBA is the most responsible person in an organization who has central control over both data and
+                        application programs.</li>
+                    <li>
+                        <p>The major task of DBA is to keep the database server up to date, secure and provide
+                            information to the users on demand.</p>
+                        <h3>Qualities of Good DBA</h3>
+                        <ol type="1">
+                            <li>Should have complete knowledge about DBMS.</li>
+                            <li>Should have good database design skills.</li>
+                            <li>Should have a good understanding of network architecture.</li>
+                            <li>Should have in-depth knowledge about the OS in which the database server is running.
+                            </li>
+                        </ol>
+                        <h3>Responsibilities of DBA</h3>
+                        <ol type="1">
+                            <li><strong>Schema Defination:</strong> The DBA creates the original database schema using
+                                DDL.</li>
+                            <li><strong>New Software Installation:</strong>DBA is also responsible for installation of
+                                new DBMS software applications and other related software.</li>
+                            <li><strong>Data Analysis:</strong>DBA also analyses data stored in DB to extract some
+                                meaningful information from data.</li>
+                            <li><strong>Security Enforcement:</strong>DBA is responsible for maintaining and monitoring
+                                the security of the database.</li>
+                            <li><strong>Routine Maintenance and Check</strong></li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="data-security">Data Securities</h2>
+                <ul>
+                    <li>Database security refers to the measures and practices to protect databases and the information
+                        stored from unauthorized access, misuse, modification, or destruction.</li>
+                    <li>It involves implementing various security mechanisms to ensure the confidentiality, integrity,
+                        and availability of data.</li>
+                    <li>It's all about keeping your data safe from people who shouldn't see it.</li>
+                    <li>Imagine you have a treasure full of precious jewels, but you don't want just anyone to open it.
+                        So, you put a strong lock on it with a special key that only you and trusted people have. That's
+                        what database security does - it puts locks and special keys on your digital treasure or your
+                        data, to keep it safe from hackers, snoops, and other bad guys.</li>
+                </ul>
+                <h2 id="data-integrity">Data Integrity</h2>
+                <ul>
+                    <li>Data integrity refers to the accuracy, consistency, and reliability of data. It ensures that
+                        data remains unchanged during operations like storage, retrieval, or transmission unless
+                        explicitly modified by authorized processes.</li>
+                    <li>
+                        <h3>Key Practices to Maintain Data Integrity:</h3>
+                        <ul>
+                            <li>Implement access controls and user authentication.</li>
+                            <li>Regularly back up data and perform data validation checks.</li>
+                            <li>Use error detection and correction tools, such as checksums and redundancy measures.
+                            </li>
+                            <li>Ensure compliance with data standards and protocols.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2 class="end">The End</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

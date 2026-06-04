@@ -1,0 +1,2900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 12 Computer Science Notes - Complete Unit 3">
+    <title>Computer Science | Class12</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 12 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="toc">
+            <div>
+                <h2>Unit 3: Web Technology -II</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#web-technology">Introduction to Web Technology and Web Development</a></li>
+                    <li><a href="#client-server">Introduction to Client side and Server side Scripting</a></li>
+                    <li><a href="#javascript">Introduction to JavaScript and Its uses</a></li>
+                    <li><a href="#variables-js">Variables, Datatypes and Operators used in JavaScript</a></li>
+                    <li><a href="#function-js">Function and Control Structure</a></li>
+                    <li><a href="#event-js">Event Handeling in JS</a></li>
+                    <li><a href="#php">Introduction to PHP and Its uses</a></li>
+                    <li><a href="#variables-php">Variables, Datatypes and Operators in PHP</a></li>
+                    <li><a href="#database-connectivity">Database connectivity</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content">
+            <div id="unit3" class="noteContent">
+                <h2 id="web-technology">Web technology</h2>
+                <ul>
+                    <li>Web Technology refers to the various tools and techniques that help to communicate between the
+                        different
+                        types of devices over the network by using the internet.</li>
+                    <li>It consists of two words: web and technology.</li>
+                    <li>The term web simply refers to World Wide Web(www), is the cyber space containing webpages,
+                        documents
+                        and other resources which can be accessed by using their URL.</li>
+                    <li>The term Technology refers to the tools and techniques that make resources available on the web
+                        such as web
+                        browser, programming language and databases and protocols.</li>
+                </ul>
+                <h3>Web Technology can be classified into the following:</h3>
+                <ol type="a">
+                    <li>
+                        <h4>World Wide Web(WWW)</h4>
+                        <ul>
+                            <li>It is also known as a Web, is a collection of websites or web pages stored in web
+                                servers and
+                                connected to local computers through the internet. The three basic languages that make
+                                up www
+                                are HTML, CSS and JavaScript.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Web pages</h4>
+                        <ul>
+                            <li>A webpage is the collection of the digital document (text, images, videos, hyperlinks)
+                                that is linked to the WWW and viewable by the user. These web pages can be accessed
+                                through the different types of web browsers.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Web Browsers</h4>
+                        <ul>
+                            <li>The web browser is a software to explore the Web. It provides an interface between the
+                                server and the client. So that the users can send requests to the server for web
+                                documents and services.</li>
+                            <li><strong>Example:</strong> Chrome, Microsoft Edge, Safari etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Web Server</h4>
+                        <ul>
+                            <li>Are the software or hardware systems that store, process and deliver web pages to the
+                                users.</li>
+                            <li>They respond to requests from the web browser and give responses to the users through
+                                the browser.</li>
+                            <li><strong>Examples:-</strong> Apache, Nginx, Microsoft Internet Information Service(IIs)
+                                etc.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2>Web Development</h2>
+                <ul>
+                    <li>Web development involves the process of building, creating, and maintaining websites or web
+                        applications. It includes different tasks such as web design, web publishing, web programming,
+                        and
+                        database management, etc.</li>
+                    <li>In one word, it is the creation of an application that works over the internet i.e. websites.
+                    </li>
+                </ul>
+                <h3>Classification of Web Development</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Front-End Development</h4>
+                        <ul>
+                            <li>Front-End Development is also known as client-side development. It is the process of
+                                developing the visual elements of the website that are visible and interactive to the
+                                end
+                                users.</li>
+                            <li>The person who is responsible for development of client-side or front-end is called as
+                                <strong>Front-End Developer</strong>
+                            </li>
+                            <li>It includes the design, layout, and user interface of the website.</li>
+                            <li><strong>Technologies Used:</strong> HTML, CSS, JavaScript</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Back-End Development</h4>
+                        <ul>
+                            <li>Back-End Development is also known as server-side development. It is the process of
+                                developing the server-side logic, databases, and APIs that power the website.</li>
+                            <li>A person who is responsible for development of the backend side of the web is called as
+                                <strong>Backend Developer</strong>
+                            </li>
+                            <li>It includes the task related with database interactions, user authentication, server,
+                                network and hosting configuration, and business logic.</li>
+                            <li><strong>Technologies Used:</strong> PHP, Python, Node.js, Ruby, Java, MySQL, PostgreSQL
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Full-Stack Development</h4>
+                        <ul>
+                            <li>Full-Stack Development is the process of developing both the front-end and back-end of a
+                                website.</li>
+                            <li>A person who is responsible for development of the full-stack side of the web is called
+                                as <strong>Full-Stack Developer</strong></li>
+                            <li><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, Python, Node.js, Ruby,
+                                Java, MySQL, PostgreSQL</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Web development languages</h3>
+                <ol type="1">
+                    <li>
+                        <h4>Front-End languages</h4>
+                        <ol type="a">
+                            <li>
+                                <h5>HTML</h5>
+                                <ul>
+                                    <li>HTML stands for Hypertext Markup Language.</li>
+                                    <li>It is used to design the front-end portion of web pages using a markup language.
+                                    </li>
+                                    <li>HTML is the combination of Hypertext and Markup language. Hypertext defines the
+                                        link between the web pages. The markup language is used to define the text
+                                        documentation within the tag which defines the structure of web pages.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>CSS</h5>
+                                <ul>
+                                    <li>Cascading Style Sheets simply referred to as CSS is a designed language intended
+                                        to simplify the process of making web pages presentable.</li>
+                                    <li>CSS allows you to apply styles to web pages.</li>
+                                    <li>More importantly, CSS enables you to do this independent of the HTML that makes
+                                        up each web page.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>JavaScript</h5>
+                                <ul>
+                                    <li>JavaScript is a famous scripting language used to create magic on the sites to
+                                        make the site interactive for the user. </li>
+                                    <li>It is used for the functionality of a website to run cool games and web-based
+                                        software. </li>
+                                    <li>It also provides different frontend frameworks like React JS, Angular, Vue
+                                        JS,Next.JS etc</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>Back-End languages</h4>
+                        <ol type="a">
+                            <li>
+                                <h5>PHP</h5>
+                                <ul>
+                                    <li>PHP is a server-side scripting language designed specifically for web
+                                        development. </li>
+                                    <li>Since, PHP code is executed on the server-side, it is called a server-side
+                                        scripting language.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Python</h5>
+                                <ul>
+                                    <li>Python is a high-level, interpreted programming language known for its
+                                        simplicity and readability.</li>
+                                    <li>It is widely used in web development, data science, artificial intelligence, and
+                                        more due to its extensive standard library and community support.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Node.js</h5>
+                                <ul>
+                                    <li>Node.js is a JavaScript runtime built on the V8 engine that allows you to run
+                                        server-side JavaScript code.</li>
+                                    <li>It enables event-driven, non-blocking I/O operations, making it highly scalable
+                                        for building fast web servers and APIs.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Ruby</h5>
+                                <ul>
+                                    <li>Ruby is a dynamic, interpreted programming language known for its elegant syntax
+                                        and focus on developer productivity.</li>
+                                    <li>It is widely used for web development, particularly with the Ruby on Rails
+                                        framework, which emphasizes convention over configuration.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Java</h5>
+                                <ul>
+                                    <li>Java is a high-level, OOP language designed to be platform-independent. </li>
+                                    <li>It is widely used for building robust, secure, and scalable applications,
+                                        including web, mobile, and enterprise systems.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>C#</h5>
+                                <ul>
+                                    <li>It is a general-purpose, modern and OOP language pronounced as “C sharp”.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>DBMS</h5>
+                                <ol type="i">
+                                    <li>
+                                        <h6>MySQL</h6>
+                                        <ul>
+                                            <li>MySQL is a popular open-source relational database management system
+                                                (RDBMS) that stores and retrieves data using structured query language
+                                                (SQL).</li>
+                                            <li>It is widely used for web applications, offering reliability,
+                                                scalability, and ease of use.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h6>PostgreSQL</h6>
+                                        <ul>
+                                            <li>PostgreSQL is a powerful, open-source relational database system known
+                                                for its reliability, extensibility, and strict SQL compliance.</li>
+                                            <li>It supports complex queries, transactions, and various data types,
+                                                making it suitable for enterprise-level applications.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h6>MongoDB</h6>
+                                        <ul>
+                                            <li>MongoDB is a popular NoSQL database that stores data in flexible,
+                                                JSON-like documents.</li>
+                                            <li>It is widely used for web applications requiring scalability,
+                                                flexibility, and high performance.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h6>SQLite</h6>
+                                        <ul>
+                                            <li>SQLite is a lightweight, self-contained, and serverless relational
+                                                database engine.</li>
+                                            <li>Unlike client-server databases like PostgreSQL, SQLite is an embedded
+                                                library that stores the entire database inside a single cross-platform
+                                                file on your disk.</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                <h3 id="client-server">Difference between client-side and server-side scripting</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Client-Side Scripting</th>
+                            <th>Server-Side Scripting</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Source code is visible to the user.</td>
+                            <td>Source code is not visible to the user.</td>
+                        </tr>
+                        <tr>
+                            <td>Its main function is to provide the requested output to the end user.</td>
+                            <td>Its main function is to manipulate and provide access to the respective database as
+                                requested.</td>
+                        </tr>
+                        <tr>
+                            <td>It usually depends on the browser and its version.</td>
+                            <td>In this any server-side technology can be used and it does not depend on the client.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>It runs on the user’s computer.</td>
+                            <td>It runs on the webserver.</td>
+                        </tr>
+                        <tr>
+                            <td>There are many advantages linked with this like faster response times, a more
+                                interactive application.</td>
+                            <td>The primary advantage is its ability to highly customize response requirements, access
+                                rights based on the user.</td>
+                        </tr>
+                        <tr>
+                            <td>It does not provide security for data. </td>
+                            <td>It provides more security for data.</td>
+                        </tr>
+                        <tr>
+                            <td>It is a technique used in web development in which scripts run on the client’s browser.
+                            </td>
+                            <td>It is a technique in which a script runs on the webserver.</td>
+                        </tr>
+                        <tr>
+                            <td>HTML, CSS, and JavaScript are used.</td>
+                            <td>PHP, Python, Java, Ruby are used.</td>
+                        </tr>
+                        <tr>
+                            <td>No need for interaction with the server.</td>
+                            <td>It is all about interacting with the servers.</td>
+                        </tr>
+                        <tr>
+                            <td>It reduces load on the processing unit of the server. </td>
+                            <td>It increases the processing load on the server.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Internet Technology</h2>
+                <ul>
+                    <li>Internet technology refers to the tools, protocols, and systems that enable communication,
+                        data sharing, and connectivity over the internet.</li>
+                    <li>It includes foundational technologies like TCP/IP, HTTP, and DNS that support data transmission
+                        and web services. Advances like cloud computing, IoT, and 5G have expanded internet capabilities
+                        across devices and industries.</li>
+                    <li>Internet technology powers web applications, social media, e-commerce, and global
+                        communication. Its continuous evolution drives innovation and reshapes how people and businesses
+                        interact worldwide.</li>
+                </ul>
+                <h2 id="javascript">Introduction to JavaScript</h2>
+                <ul>
+                    <li>It is a light-weight object-oriented programming language which is used by several websites and
+                        web
+                        browsers for scripting the webpages.</li>
+                    <li>It is an interpreted, full-fledged programming language that enables dynamic interactivity on
+                        websites when applied to an HTML document.</li>
+                    <li>It was introduced as ‘Mocha’ in the year 1995 by Marc Anderssen for adding programs to the
+                        webpages in the Netscape Navigator browser.</li>
+                    <li>With JavaScript, users can build modern web applications to interact directly without reloading
+                        the page every time.</li>
+                    <li>The traditional website uses JS to provide several forms of interactivity and simplicity.</li>
+                </ul>
+                <h3>Application of JavaScript</h3>
+                <ul>
+                    <li>
+                        <p>JavaScript is used to create interactive websites. It is mainly used for:</p>
+                        <ol type="a">
+                            <li>
+                                <h4>Mobile App Development</h4>
+                                <ul>
+                                    <li>JS framework like React Native is used for mobile app development.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Pop-up windows and dialog box</h4>
+                                <ul>
+                                    <li>Used to create an alert dialog box, confirm dialog box and prompt dialog box.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Server-Side Development</h4>
+                                <ul>
+                                    <li>Using Node.JS we can develop the server side of the website.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Single Page Application</h4>
+                                <ul>
+                                    <li>Used for development of SPA by using frameworks like React JS, Angular ,Vue Js
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Client-Side Validation</h4>
+                                <ul>
+                                    <li>Helps to ensure that user inputs are correctly formatted before they are
+                                        submitted to the server.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Features of JavaScript</h3>
+                <ol type="i">
+                    <li>Light Weight Scripting language</li>
+                    <li>Dynamic Typing</li>
+                    <li>OOP support</li>
+                    <li>Functional Programming</li>
+                    <li>Platform Independent</li>
+                    <li>Prototype-based</li>
+                    <li>Interpreted Language</li>
+                    <li>Client-Side Validation</li>
+                </ol>
+                <h3>Methods of displaying output in JS</h3>
+                <ol type="1">
+                    <li>
+                        <h4>alert()</h4>
+                        <ul>
+                            <li>
+                                <p>Displays a message in a browser alert dialog box.</p>
+                                <pre><code>&lt;script&gt;
+    alert("Hello World");
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>console.log()</h4>
+                        <ul>
+                            <li>
+                                <p>Displays output in the browser console.</p>
+                                <pre><code>&lt;script&gt;
+    console.log("Hello World");
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>document.write()</h4>
+                        <ul>
+                            <li>
+                                <p>Displays output in the HTML document.</p>
+                                <pre><code>&lt;script&gt;
+    document.write("Hello World");
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>document.getElementById().innerHTML</h4>
+                        <ul>
+                            <li>
+                                <p>Displays output in an HTML element.</p>
+                                <pre><code>&lt;script&gt;
+    document.getElementById("demo").innerHTML = "Hello World";
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>window.prompt()</h4>
+                        <ul>
+                            <li>
+                                <p>Displays a message with a text input field to collect user input.</p>
+                                <pre><code>&lt;script&gt;
+    let userName = prompt("Enter your name");
+    alert("Hello " + userName);
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>confirm()</h4>
+                        <ul>
+                            <li>
+                                <p>Displays a message with "OK" and "Cancel" buttons.</p>
+                                <pre><code>&lt;script&gt;
+    let userConfirm = confirm("Are you sure?");
+    alert("You clicked " + userConfirm);
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Where can we write the JavaScript code?</h3>
+                <ol type="1">
+                    <li>
+                        <h4>Between the body tag of html</h4>
+                        <pre><code>&lt;html&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            alert("Hello World");
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>Between the head tag of html</h4>
+                        <pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;script&gt;
+            alert("Hello World");
+        &lt;/script&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>External JavaScript</h4>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="script.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                        <p style="color: red;">in script.js file: </p>
+                        <pre><code>alert("Hello World");</code></pre>
+                    </li>
+                </ol>
+                <h3>JavaScript Comment</h3>
+                <ul>
+                    <li>Comments are a meaningful way to deliver messages, add information about the code, warnings or
+                        suggestions so that end users can easily interpret the code.</li>
+                    <li>The JavaScript comment is ignored by the JavaScript engine i.e. embedded in the browser.
+                    </li>
+                </ul>
+                <h4>Types of JavaScript Comments</h4>
+                <ol type="1">
+                    <li>
+                        <h4>Single Line Comment</h4>
+                        <ul>
+                            <li>It is represented by double forward slashes (//). It can be used before and after the
+                                statement.</li>
+                            <li>Used to comment a single line of code.</li>
+                        </ul>
+                        <pre><code>&lt;script&gt;
+    // This is a single line comment
+    alert("Hello World");
+&lt;/script&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>Multi Line Comment</h4>
+                        <ul>
+                            <li>It can be used to add single as well as multi line comments.</li>
+                            <li>It is represented by forward slash with asterisk then asterisk with forward slash.</li>
+                        </ul>
+                        <pre><code>&lt;script&gt;
+    /* This is a multi line comment
+       It can span multiple lines
+       and can be used to comment multiple lines of code */
+    alert("Hello World");
+&lt;/script&gt;</code></pre>
+                    </li>
+                </ol>
+                <h3 id="variables-js">Variable in JS</h3>
+                <ul>
+                    <li>A JavaScript variable is simply a name given to storage location or we can also define
+                        variables as containers for storing data of different datatypes.</li>
+                    <li>
+                        <p>There are some rules while declaring a JavaScript variable.</p>
+                        <ol type="1">
+                            <li>The name must start with a letter (a-z or A-Z), underscore or dollar ($) sign.</li>
+                            <li>After the first letter we can use digits (0 to 9), for example value1.</li>
+                            <li>JavaScript variables are case sensitive, meaning a and A are different.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h4>JavaScript variable declaration and initialization</h4>
+                <ol type="1">
+                    <li>Using var keyword:- var x, var first_name, var x = 10; var name=“Hari”;</li>
+                    <li>Using let keyword such as:- let _value; let x; let x=10;let name; etc</li>
+                    <li>Using const keywords such as:- const x; const pie; const price; const x=10; const pie=3.24;
+                        const price=5000; etc.</li>
+                </ol>
+                <h4>JavaScript variable scope</h4>
+                <ul>
+                    <li>The scope of a variable is the region of your program in which it is defined.</li>
+                    <li>There are two types of variable scope.</li>
+                </ul>
+                <ol type="1">
+                    <li>
+                        <h4>Global Scope</h4>
+                        <ul>
+                            <li>A JavaScript global variable is accessible from any function. A variable i.e. declared
+                                outside the function or declared with a window object is known as a global variable.
+                            </li>
+                            <li><strong>Example:</strong>
+                                <pre><code>&lt;script&gt;
+    var x = 10; // Global variable
+    function myFunction() {
+        console.log(x); // Can access global variable
+    }
+    myFunction();
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Local Scope</h4>
+                        <ul>
+                            <li>A JavaScript local variable is declared inside a block or function and It is accessible
+                                within the function or block only.</li>
+                            <li><strong>Example:</strong>
+                                <pre><code>&lt;script&gt;
+    var y = 20; // Global variable
+    function myFunction() {
+        var z = 30; // Local variable
+        console.log(y); // Can access global variable
+        console.log(z); // Can access local variable
+    }
+    myFunction();
+    console.log(y); // Can access global variable
+    console.log(z); // Cannot access local variable
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>JavaScript Data Types</h3>
+                <ul>
+                    <li>Data types are used to determine what type of data is stored in the variable.</li>
+                    <li>There are two types of data types in JavaScript.</li>
+                </ul>
+                <ol type="1">
+                    <li>
+                        <h4>Primitive Data Types</h4>
+                        <ul>
+                            <li>
+                                <p>Primitive data types serve as the fundamental building blocks from which all other
+                                    data types are constructed.</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>DataType</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>String</td>
+                                            <td>Represents sequence of characters.</td>
+                                            <td>name = ”hari”;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Number</td>
+                                            <td>Represents nubmeric value (both integer and floating point numbers).
+                                            </td>
+                                            <td>age=10; </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boolean</td>
+                                            <td>Represents true or false value.</td>
+                                            <td>isStudent=true;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>undefined</td>
+                                            <td>Represents a variable that has not been assigned a value.</td>
+                                            <td>name;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Null</td>
+                                            <td>Represents an intentional absence of any object or value.</td>
+                                            <td>name=null;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Non-Primitive Data Types</h4>
+                        <ul>
+                            <li>Non-primitive data types which are also known as composite or reference data types.</li>
+                            <li>These non-primitive data types allow to group and organize multiple values into a single
+                                variable.</li>
+                            <li>
+                                <p>The non-primitive data types in JS are as follows:</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>DataType</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Object</td>
+                                            <td>A collection of key value pairs. It represents an instance through which
+                                                we can cross members of an object.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Array</td>
+                                            <td>It is a linear data structure that stores a collection of elements of
+                                                the same data type.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <p>Example of object:</p>
+                                <pre><code>&lt;script&gt;
+    let person = {  name: "Alice",
+                age: 30,
+                isStudent: false,
+                email: "Alice33@gmail.com"
+            };
+&lt;/script&gt;</code></pre>
+                            </li>
+                            <li>
+                                <p>In JS, we can access members of an object by using dot operator( ‘.’ ) or square
+                                    bracket ( ‘[]’ ). Suppose if you want to access members of the above object.</p>
+                                <pre><code>&lt;script&gt;
+// Using Dot Notation
+console.log(person.name); //Alice
+console.log(person.email); //Alice33@gmail.com
+console.log(person.name, person.age); //Alice 30
+// Using Square Bracket Notation
+console.log(person["name"]); //Alice
+Console.log(person["age"]); //30
+&lt;/script&gt;</code></pre>
+                            </li>
+                            <li>
+                                <p>Example of Array:</p>
+                                <pre><code>&lt;script&gt;
+let fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
+// Accessing array members using index
+console.log(fruits[0]); // Output: Apple
+console.log(fruits[3]); // Output: Mango
+// Modifying array members using index
+fruits[1] = 'Grapes';
+console.log(fruits); // ['Apple', 'Grapes', 'Orange', 'Mango']
+// Finding the length of the array
+console.log(fruits.length); // Output: 4
+// Adding a new element to the end of the array
+fruits.push('Strawberry');
+console.log(fruits); // ['Apple', 'Grapes', 'Orange', 'Mango', 'Strawberry']
+// Removing the last element from the array
+fruits.pop();
+console.log(fruits); // ['Apple', 'Grapes', 'Orange', 'Mango']
+&lt;/script&gt;</code></pre>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>JavaScript Operators</h3>
+                <ul>
+                    <li>JavaScript operators are symbols that are used to perform operations on operands.</li>
+                    <li>For example:- var sum = 10 + 20;</li>
+                    <li>Here, + is the arithmetic operator and = is the assignment operator.</li>
+                    <li>
+                        <p>There are following types of operators in JavaScript.</p>
+                        <ol type="1">
+                            <li>
+                                <h4>Arithmetic Operators</h4>
+                                <ul>
+                                    <li>Arithmetic operators are used to perform arithmetic operations on the operands.
+                                    </li>
+                                    <li>
+                                        <p>The following operators are known as JavaScript arithmetic operators.</p>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Operator</th>
+                                                    <th>Description</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>+</td>
+                                                    <td>Addition</td>
+                                                    <td>x = 10, y = 20, result = x + y; // result will be 30</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>-</td>
+                                                    <td>Subtraction</td>
+                                                    <td>x = 10, y = 20, result = x - y; // result will be -10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>*</td>
+                                                    <td>Multiplication</td>
+                                                    <td>x = 10, y = 20, result = x * y; // result will be 200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>/</td>
+                                                    <td>Division</td>
+                                                    <td>x = 10, y = 20, result = x / y; // result will be 0.5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>%</td>
+                                                    <td>Modulus</td>
+                                                    <td>x = 10, y = 20, result = x % y; // result will be 10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>++</td>
+                                                    <td>Increment</td>
+                                                    <td>x = 10, result = x++; // result will be 10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>--</td>
+                                                    <td>Decrement</td>
+                                                    <td>x = 10, result = x--; // result will be 10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Comparison Operators</h4>
+                                <ul>
+                                    <li>The JavaScript comparison operators are used to compare the two operands.</li>
+                                    <li>
+                                        <p>The comparison operators are as follows:</p>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Operator</th>
+                                                    <th>Description</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>==</td>
+                                                    <td>Equal to</td>
+                                                    <td>x = 10, y = 20, result = x == y; // result will be false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>===</td>
+                                                    <td>Identical to</td>
+                                                    <td>x = 10, y = "10", result = x === y; // result will be false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>!=</td>
+                                                    <td>Not equal to</td>
+                                                    <td>x = 10, y = 20, result = x != y; // result will be true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>!==</td>
+                                                    <td>Not identical to</td>
+                                                    <td>x = 10, y = "10", result = x !== y; // result will be true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>></td>
+                                                    <td>Greater than</td>
+                                                    <td>x = 10, y = 20, result = x > y; // result will be false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&lt;</td>
+                                                    <td>Less than</td>
+                                                    <td>x = 10, y = 20, result = x &lt; y; // result will be true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&gt;=</td>
+                                                    <td>Greater than or equal to</td>
+                                                    <td>x = 10, y = 20, result = x &gt;= y; // result will be false</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>&lt;=</td>
+                                                    <td>Less than or equal to</td>
+                                                    <td>x = 10, y = 20, result = x &lt;= y; // result will be true</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Logical Operators</h4>
+                                <ul>
+                                    <li>
+                                        <p>JavaScript is used to perform logical operations on values. They are
+                                            essential for making decisions in code, combining multiple conditions, and
+                                            controlling the flow of a program.</p>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Operator</th>
+                                                    <th>Description</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>&&</td>
+                                                    <td>Logical AND</td>
+                                                    <td>x = 10, y = 20, result = x &amp;&amp; y; // result will be true
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>||</td>
+                                                    <td>Logical OR</td>
+                                                    <td>x = 10, y = 20, result = x || y; // result will be true</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>!</td>
+                                                    <td>Logical NOT</td>
+                                                    <td>x = 10, y = 20, result = !x; // result will be false</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Assignment Operators</h4>
+                                <ul>
+                                    <li>
+                                        <p>JavaScript assignment operators are used to assign values to variables. They
+                                            are essential for initializing and updating variable values in code.</p>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Operator</th>
+                                                    <th>Description</th>
+                                                    <th>Example</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>=</td>
+                                                    <td>Assignment</td>
+                                                    <td>x = 10;</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>+=</td>
+                                                    <td>Addition assignment</td>
+                                                    <td>x += 10; // same as x = x + 10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>-=</td>
+                                                    <td>Subtraction assignment</td>
+                                                    <td>x -= 10; // same as x = x - 10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>*=</td>
+                                                    <td>Multiplication assignment</td>
+                                                    <td>x *= 10; // same as x = x * 10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>/=</td>
+                                                    <td>Division assignment</td>
+                                                    <td>x /= 10; // same as x = x / 10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>%=</td>
+                                                    <td>Modulus assignment</td>
+                                                    <td>x %= 10; // same as x = x % 10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Special Operators</h4>
+                                <ul>
+                                    <li>
+                                        <p>A variety of special operators provide ways to work with data and manipulate
+                                            values.</p>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Operator</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>?:</td>
+                                                    <td>The conditional operator returns value based on the condition.
+                                                        It is like if-else.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>,</td>
+                                                    <td>The comma operator evaluates each of its operands in order from
+                                                        left to right, and returns the value of the last operand.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>delete</td>
+                                                    <td>The delete operator removes a property from an object.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>in</td>
+                                                    <td>The in operator returns true if the specified property is in the
+                                                        specified object or its prototype chain.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>instanceof</td>
+                                                    <td>The instanceof operator returns true if the specified object is
+                                                        an instance of the specified constructor.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>new</td>
+                                                    <td>The new operator creates a new object.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>typeof</td>
+                                                    <td>The typeof operator returns the type of a variable.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>void</td>
+                                                    <td>The void operator evaluates the expression and returns
+                                                        undefined.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>JavaScript Control Structure</h3>
+                <ul>
+                    <li>
+                        <p>Control structures are just a way to specify the flow of control in a program. It basically
+                            analyzes and chooses the direction.</p>
+                        <ol type="a">
+                            <li>
+                                <h4>JavaScript If statement</h4>
+                                <ul>
+                                    <li>It evaluates content only if the expression is true.</li>
+                                    <li>
+                                        <p><strong>Example:</strong></p>
+                                        <pre><code>&lt;script&gt;
+    var a = 20;
+    if (a &gt; 10) {
+        document.write("value of a is greater than 10");
+    }
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>JavaScript If else Statement</h4>
+                                <ul>
+                                    <li>It evaluates the content whether the condition is true or false.</li>
+                                    <li>
+                                        <p>Here is an example:</p>
+                                        <pre><code>&lt;script&gt;
+    var a = 10;
+    if (a &gt; 10) {
+        document.write("value of a is greater than 10");
+    } else {
+        document.write("value of a is less than 10");
+    }
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>JavaScript Nested If Statement</h4>
+                                <ul>
+                                    <li>It evaluates the content only if the expression is true from several
+                                        expressions.</li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;script&gt;
+var a = 20;
+if (a == 10) {
+    document.write("a is equal to 10");
+}
+else if (a == 15) {
+    document.write("a is equal to 15");
+}
+else if (a == 20) {
+    document.write("a is equal to 20");
+}
+else {
+    document.write("a is not equal to 10,15,20");
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>JavaScript Switch Statement</h4>
+                                <ul>
+                                    <li>Switch statement is used to execute one code from multiple expressions.</li>
+                                    <li>It is just like the else if statement that we have learned in the previous page.
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;script&gt;
+var a = 10;
+switch (a) {
+    case 10:
+        document.write("a is equal to 10");
+        break;
+    case 15:
+        document.write("a is equal to 15");
+        break;
+    case 20:
+        document.write("a is equal to 20");
+        break;
+    default:
+        document.write("a is not equal to 10,15,20");
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>JavaScript Loops</h3>
+                <ul>
+                    <li>The JavaScript loops are used to iterate the piece of code repeatedly until the certain
+                        condition is true.</li>
+                    <li>It makes the code compact.</li>
+                    <li>It is mostly used in arrays.</li>
+                    <li>
+                        <p>Types of loop:</p>
+                        <ol type="1">
+                            <li>
+                                <h4>JavaScript For loop</h4>
+                                <ul>
+                                    <li>The JavaScript for loop iterates the elements for the fixed number of times.
+                                        It should be used if the number of iterations is known.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>&lt;script&gt;
+for (initialization; condition; increment/decrement){
+//statement to be executed
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                    <li>
+                                        <p><strong>Example:</strong></p>
+                                        <pre><code>&lt;script&gt;
+for (var i = 0; i &lt; 5; i++) {
+    document.write(i + " ");
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>JavaScript While Loop</h4>
+                                <ul>
+                                    <li>Control flow statement that allows you to repeatedly execute a block of code as
+                                        long as the specified condition is true.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>&lt;script&gt;
+while (condition) {
+    //statement to be executed
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                    <li>
+                                        <p><strong>Example:</strong></p>
+                                        <pre><code>&lt;script&gt;
+while (i &lt; 5) {
+    document.write(i + " ");
+    i++;
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>JavaScript Do While Loop</h4>
+                                <ul>
+                                    <li>It is similar to while loop but the body of the while loop is executed once then
+                                        only the condition is checked.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>&lt;script&gt;
+do {
+    //statement to be executed
+} while (condition);
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                    <li>
+                                        <p><strong>Example:</strong></p>
+                                        <pre><code>&lt;script&gt;
+do {
+    document.write(i + " ");
+    i++;
+} while (i &lt; 5);
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>“for in” Loop</h4>
+                                <ul>
+                                    <li>The JavaScript for loop is used for iterating through the properties of an
+                                        object.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>&lt;script&gt;
+for (variable in object) {
+    // code block to be executed
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                    <li>
+                                        <p><strong>Example:</strong></p>
+                                        <pre><code>&lt;script&gt;
+ let person = {
+       fname: "John",
+       lname: "Doe",
+       age: 25
+   };
+   for (let key in person) {
+       document.write(key + ":" + person[key]);
+   }
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>“for of” Loop</h4>
+                                <ul>
+                                    <li>The for of loop iterates over the values of an iterable object, such as an array
+                                        or a string.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>&lt;script&gt;
+for (variable of iterable) {
+    // code block to be executed
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                    <li>
+                                        <p><strong>Example:</strong></p>
+                                        <pre><code>&lt;script&gt;
+const arr = [1, 2, 3, 4, 5];
+for (let value of arr) {
+    console.log(value); // Outputs: 1 2 3 4 5.
+}
+&lt;/script&gt;
+</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3 id="function-js">Function in JS</h3>
+                <ul>
+                    <li>Functions in JavaScript are fundamental building blocks that allow you to group code together to
+                        perform specific tasks. They make your code reusable and modular.
+                        A JavaScript function can be defined using the function keyword.</li>
+                    <li>
+                        <p>Syntax:</p>
+                        <pre><code>&lt;script&gt;
+function function_name() {  //defining a function
+    // code to be executed
+};
+function_name(); //calling a function
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <p><strong>Example:</strong></p>
+                        <pre><code>&lt;script&gt;
+function ShowMessage() {
+    alert("Hello World!");
+}
+ShowMessage();
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                </ul>
+                <h4>Parameter Passing and Return in Functions</h4>
+                <ul>
+                    <li>It is the mechanism used to pass parameters(values) to a function.</li>
+                    <li>These passed parameters can be captured inside the function and any manipulation can be done
+                        over
+                        those parameters.</li>
+                    <li>A function can take multiple parameters separated by comma.</li>
+                    <li>The return Statement in a JavaScript function can have an optional return statement.</li>
+                    <li>
+                        <p>We can call a function that returns a value and use it in our program. It is required
+                            whenever we
+                            want to return a value from a function.</p>
+                        <pre><code>&lt;script&gt;
+function demo(a, b) {
+    s = a + b;
+    return s;
+}
+var c = demo(20, 30); //=50
+document.write("this is from return statement " + c);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                </ul>
+                <h3>Programming in JavaScript</h3>
+                <ol type="1">
+                    <li>
+                        <h4>WAP in JS to take input from users and calculate their sum by using a function.</h4>
+                        <pre><code>&lt;script&gt;
+    function sum(a, b) {
+        return a + b;
+    }
+    var num1 = prompt("Enter first number");
+    var num2 = prompt("Enter second number");
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    var result = sum(num1, num2);
+    document.write("Sum of " + num1 + " and " + num2 + " is: " + result);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP in to calculate the factorial of a number.</h4>
+                        <pre><code>&lt;script&gt;
+    function factorial(){
+        var n,i,fact=1;
+        n = prompt("Enter a Number : ");
+        n = parseInt(n);
+        if (n &lt; 0){
+            alert("factorial not exist");
+            return;
+        }
+        for(i = 1; i &lt;= n; i++){
+            fact = fact * i;
+        }
+        document.write("Factorial is "+fact);
+    }
+    factorial();
+    &lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to print Fibonacci series up to 10’th term.</h4>
+                        <pre><code>&lt;script&gt;
+    let a = 0, b = 1;
+    console.log(a);
+    console.log(b);
+    for (let i = 2; i &lt; 10; i++) {
+        const nextTerm = a + b;
+        console.log(nextTerm);
+        a = b;
+        b = nextTerm;
+    }
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to find the greatest number among three.</h4>
+                        <pre><code>&lt;script&gt;
+    var x,y,z;
+    x = prompt("Enter first number");
+    y = prompt("Enter second number");
+    z = prompt("Enter third number");
+    x = parseInt(x);
+    y = parseInt(y);
+    z = parseInt(z);
+
+    if (x &gt; y && x &gt; z){
+        document.write("Greatest number is: " + x);
+    }
+    else if (y &gt; x && y &gt; z){
+        document.write("Greatest number is: " + y);
+    }
+    else{
+        document.write("Greatest number is: " + z);
+    }
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to check whether the number is even or odd.</h4>
+                        <pre><code>&lt;script&gt;
+    var n;
+    n = prompt("Enter a number");
+    n = parseInt(n);
+    if (n % 2 == 0){
+        document.write("The number is even");
+    }
+    else{
+        document.write("The number is odd");
+    }
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to check palindrome or not?</h4>
+                        <pre><code>&lt;script&gt;
+    var n, rev = 0, rem;
+    n = prompt("Enter a Number : ");
+    n = parseInt(n);
+    while (n != 0)
+    {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n = parseInt(n / 10);
+    }
+    document.write("Reversed number is: " + rev);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP in JS to check palindrome using function.</h4>
+                        <pre><code>&lt;script&gt;
+    function isPalindrome(str) {
+        const reversedStr = str.split('').reverse().join('');
+        return str === reversedStr;
+    }
+    var n = prompt("Enter a string");
+    if (isPalindrome(n)) {
+        document.write("The string is a palindrome");
+    } else {
+        document.write("The string is not a palindrome");
+    }
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to display multiplication table of a number.</h4>
+                        <pre><code>&lt;script&gt;
+    var n,i;
+    n = prompt("Enter a number");
+    n = parseInt(n);
+    for (i = 1; i &lt;= 10; i++) {
+        document.write(n + " * " + i + " = " + (n * i) + "&lt;br&gt;");
+    }
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to calculate the sum of first n natural numbers.</h4>
+                        <pre><code>&lt;script&gt;
+    var n,i,sum = 0;
+    n = prompt("Enter a number");
+    n = parseInt(n);
+    for (i = 1; i &lt;= n; i++) {
+        sum = sum + i;
+    }
+    document.write("Sum of first " + n + " natural numbers is: " + sum);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to find the square root of a number.</h4>
+                        <pre><code>&lt;script&gt;
+    var n,sqrt;
+    n = prompt("Enter a number");
+    n = parseInt(n);
+    sqrt = Math.sqrt(n);
+    document.write("Square root of " + n + " is: " + sqrt);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to reverse the given string.</h4>
+                        <pre><code>&lt;script&gt;
+    var str,rev = "";
+    str = prompt("Enter a string");
+    for (var i = str.length - 1; i >= 0; i--) {
+        rev = rev + str[i];
+    }
+    document.write("Reversed string is: " + rev);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to print the Armstrong number up to 100.</h4>
+                        <pre><code>&lt;script&gt;
+    var n,i,sum = 0,rem;
+    for (i = 1; i &lt;= 100; i++) {
+        n = i;
+        while (n != 0) {
+            rem = n % 10;
+            sum = sum + rem * rem * rem;
+            n = parseInt(n / 10);
+        }
+        if (sum == i) {
+            document.write(i + " &lt;br&gt;");
+        }
+        sum = 0;
+    }
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to take input from the user and calculate its factorial using function.</h4>
+                        <pre><code>&lt;script&gt;
+     function factorial(n) {
+       if (n &lt; 0) {
+           return "Undefined for negative numbers.";
+       }
+       else {
+           let result = 1;
+           for (let i = 2; i &lt;= n; i++) {
+               result = result * i;
+           }
+           return result;
+       }
+   }
+   let number = parseInt(prompt("Enter a number:"));
+   let fact = factorial(number);
+   document.write("Factorial of " + number + " is: " + fact);
+&lt;/script&gt;
+</code></pre>
+                    </li>
+                </ol>
+                <h3 id="event-js">JavaScript Events</h3>
+                <ul>
+                    <li>JavaScript Events are actions or occurrences that happen in the browser, such as a user clicking
+                        a button, pressing a key, resizing the window, or an element finishing loading.</li>
+                    <li>
+                        <p>Handling events is a crucial aspect of web development, as it allows you to create
+                            interactive and dynamic user interfaces.</p>
+                        <ol type="i">
+                            <li>
+                                <h4>Mouse events</h4>
+                                <table class="table">
+                                    <tr>
+                                        <th>Event Performer</th>
+                                        <th>Event Handler</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>click</td>
+                                        <td>onclick</td>
+                                        <td>When the mouse clicks on an element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mouseover</td>
+                                        <td>onmouseover</td>
+                                        <td>When the cursor of the mouse comes over the element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mouseout</td>
+                                        <td>onmouseout</td>
+                                        <td>When the cursor of the mouse leaves an element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mousedown</td>
+                                        <td>onmousedown</td>
+                                        <td>When the mouse button is pressed over the element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>mousemove</td>
+                                        <td>onmousemove</td>
+                                        <td>When the mouse moment takes place.</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <h4>Keyboard events</h4>
+                                <table class="table">
+                                    <tr>
+                                        <th>Event Performer</th>
+                                        <th>Event Handler</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>keydown</td>
+                                        <td>onkeydown</td>
+                                        <td>When the key is pressed over the element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>keyup</td>
+                                        <td>onkeyup</td>
+                                        <td>When the key is released over the element.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>keypress</td>
+                                        <td>onkeypress</td>
+                                        <td>When the key is pressed and released over the element.</td>
+                                    </tr>
+                                </table>
+                            </li>
+                            <li>
+                                <h3>Form events</h3>
+                                <table class="table">
+                                    <tr>
+                                        <th>Event Performer</th>
+                                        <th>Event Handler</th>
+                                        <th>Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>change</td>
+                                        <td>onchange</td>
+                                        <td>When the value of the element changes.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>focus</td>
+                                        <td>onfocus</td>
+                                        <td>When the element gets focus.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>submit</td>
+                                        <td>onsubmit</td>
+                                        <td>When the element submits its data.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>blur</td>
+                                        <td>onblur</td>
+                                        <td>When the element loses focus.</td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h4>Examples of event Handeling</h4>
+                <ol type="a">
+                    <li>
+                        <h5>onclick()</h5>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            function change(){
+                alert("button is clicked");
+            }
+        &lt;/script&gt;
+        &lt;input type="button" value="click me" onclick="change()"&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h5>onmouseover()</h5>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            function change(){
+                alert("button is clicked");
+            }
+        &lt;/script&gt;
+        &lt;input type="button" value="click me" onclick="change()"&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h5>onkeydown()</h5>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            function change(){
+                alert("button is clicked");
+            }
+        &lt;/script&gt;
+        &lt;input type="button" value="click me" onclick="change()"&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h5>onsubmit()</h5>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script&gt;
+            function change(){
+                alert("button is clicked");
+            }
+        &lt;/script&gt;
+        &lt;input type="button" value="click me" onclick="change()"&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                </ol>
+                <h3>Forms Validation using JavaScript</h3>
+                <ul>
+                    <li>Forms are the basic elements of HTML. We use HTML form elements in order to create the
+                        JavaScript form.</li>
+                    <li>Form validation normally used to occur at the server, after the client had entered all the
+                        necessary data and then pressed the Submit button.</li>
+                    <li>JavaScript provides a way to validate form's data on the client’s computer before sending it to
+                        the web server.</li>
+                    <li>
+                        <p>Form validation generally performs two functions.</p>
+                        <ol type="a">
+                            <li><strong>Basic Validation:</strong> First of all, the form must be checked to make sure
+                                all the mandatory fields are filled in.</li>
+                            <li><strong>Data Format Validation:</strong> Secondly, the data that is entered must be
+                                checked for correct form and value.</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h4>Basic Validation</h4>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Document&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Form Validation Example&lt;/h1&gt;
+        &lt;form onsubmit="validateForm()"&gt;
+            &lt;label for="name"&gt;Name:&lt;/label&gt;
+            &lt;input type="text" id="name" name="name"&gt;
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email"&gt;
+            &lt;input type="submit" value="Submit"&gt;
+        &lt;/form&gt;
+        &lt;script&gt;
+            function validateForm() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                if (name === '' || email === '') {
+                    document.write("Please fill both form");
+                }
+            }
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <h2>Introduction to jQuery</h2>
+                <ul>
+                    <li>jQuery is a powerful and widely used JavaScript library designed to simplify client-side
+                        scripting.</li>
+                    <li>jQuery is a fast, small, cross-platform, and feature-rich JavaScript library.</li>
+                    <li>It simplifies common tasks related to HTML document traversal, manipulation, animation, event
+                        handling, and AJAX (Asynchronous JavaScript and XML).</li>
+                    <li>Its main motto is to write less and do more which means jQuery condenses complex JavaScript
+                        tasks into concise methods.</li>
+                </ul>
+                <h3>Features of jQuery</h3>
+                <ol type="a">
+                    <li>The jQuery is very small, fast, lightweight JavaScript library</li>
+                    <li>It has a lot of built-in animation effects which can be used directly in websites.</li>
+                    <li>It is used to improve the performance of an application.</li>
+                    <li>It is platform-independent.</li>
+                    <li>It is used to develop a responsive web application.</li>
+                </ol>
+                <h2 id="php">Introduction to PHP</h2>
+                <ul>
+                    <li>PHP stands for Hypertext Preprocessor. It is a server-side scripting language designed for web
+                        development. </li>
+                    <li>PHP is embedded in HTML code and interpreted by a web server with a PHP processor module, which
+                        generates dynamic web pages.</li>
+                    <li>It is an open-source, cross platform scripting language and is widely used for web development
+                        purposes. </li>
+                    <li>It performs different tasks such as handling forms, interacting with databases, and creating
+                        dynamic and interactive websites.</li>
+                    <li>It is called server-side scripting language because, when a user makes a request to a web
+                        server, the server processes the request, executes the server-side script, interacts with
+                        databases if needed, and then sends the result (usually HTML, CSS, or other client-readable
+                        content) back to the client's browser.</li>
+                </ul>
+                <h3>Features/Advantages of PHP</h3>
+                <ol type="a">
+                    <li><strong>Open Source:-</strong> PHP is freely available and can be used, modified, and
+                        distributed without any
+                        cost</li>
+                    <li><strong>Server-Side Scripting:-</strong> PHP is primarily designed for server-side scripting,
+                        allowing developers
+                        to create dynamic web pages by executing code on the server.</li>
+                    <li><strong>Cross-Platform:-</strong> PHP is platform-independent, meaning it can run on various
+                        operating systems
+                        such as Windows, Linux, macOS etc.</li>
+                    <li><strong>Integration:-</strong> PHP can easily integrate with various databases, including MySQL,
+                        PostgreSQL, SQLite,
+                        and more, making it well-suited for building database-driven web applications.</li>
+                    <li><strong>Extensive Library Support:-</strong> PHP has a rich set of libraries and extensions that
+                        provide additional
+                        functionalities, simplifying common tasks such as handling sessions, working with XML, parsing
+                        JSON, and more.</li>
+                    <li><strong>Community Support:-</strong> The PHP community is large and active, offering differing
+                        resources, forums,
+                        and documentation.</li>
+                </ol>
+                <h3>Weakness/Disadvantages of PHP</h3>
+                <ol type="a">
+                    <li>PHP's main strength and flexibility is also its weakness. It can be a little too forgiving of
+                        errors.</li>
+                    <li>With no strict rules, inexperienced programmers have the freedom to create some very bad
+                        solutions to simple problems.</li>
+                    <li>PHP is an interpreted language, which can reduce speed.</li>
+                    <li>While PHP has improved its security features over time, improper use of the language can still
+                        lead to security vulnerabilities. like SQL injection, cross-site scripting (XSS), and other
+                        common web application security threats.</li>
+                    <li>Object-oriented patterns may not be as polished as in some other programming languages.</li>
+                    <li>
+                        <p>Despite these weaknesses, PHP remains a popular and widely used language for web development,
+                            especially for building dynamic websites and web applications. Many successful websites and
+                            applications are built using PHP, and ongoing improvements are made to address its
+                            limitations.
+                        </p>
+                    </li>
+                </ol>
+                <h3>Basics of PHP</h3>
+                <ol type="i">
+                    <li><strong>Setting up the environment</strong>:- To run PHP a web development is needed. This needs
+                        a PHP compatible web server and interpreter. Packages like WAMP, XAMP etc. can be used which
+                        includes a web server.</li>
+                    <li><strong>Writing the code and running the script</strong>:- PHP scripts are plain text. A PHP
+                        script begins with &lt;?php and ends with ?&gt; . The PHP code is saved with extension .php and
+                        is saved in the root directory of the web server.</li>
+                </ol>
+                <h3>PHP Basic Syntax</h3>
+                <pre><code>&lt;?php
+    // PHP code goes here
+?&gt;</code></pre>
+                <ul>
+                    <li>The default file extension for PHP files is ".php".</li>
+                    <li>A PHP file normally contains HTML tags, and some PHP scripting code.</li>
+                    <li>
+                        <p>Here, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP
+                            function
+                            "echo" to output the text "Hello World!" on a web page:</p>
+                        <pre><code>&lt;?php
+    echo"Hello World";
+?&gt;</code></pre>
+                    </li>
+                    <li>PHP statements end with a semicolon (;).</li>
+                    <li>
+                        <p>Example:</p>
+                        <pre><code>&lt;html&gt;
+&lt;body&gt;
+   &lt;h1&gt;My first PHP page&lt;/h1&gt;
+   &lt;?php
+   echo "Hello Class 12";
+   ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                </ul>
+                <h3>Php within html</h3>
+                <ul>
+                    <li>
+                        <p>We can add php code inside html as shown in example below.</p>
+                        <pre><code>&lt;h1&gt;Hello from HTML Page&lt;/h1&gt;
+&lt;p&gt;
+   &lt;?php
+   echo "Hi there.\n";
+   $answer = 6 * 7;
+   echo "The answer is $answer ";
+   print 5 + 5; //we can use print also for print the result
+   ?&gt;
+&lt;/p&gt;
+&lt;p&gt;Yes, another paragraph.&lt;/p&gt;</code></pre>
+                    </li>
+                </ul>
+                <h3>PHP is case sensitive</h3>
+                <ul>
+                    <li>PHP is case sensitive language in case of variables, whereas keywords like if, else, while,
+                        echo, etc. are not case-sensitive.</li>
+                    <li>
+                        <p>Example:</p>
+                        <pre><code>&lt;?php
+$myVar = "Hello World";
+echo $myVar;
+ECHO $myVar;
+?&gt;</code></pre>
+                    </li>
+                    <li>
+                        <p>Example:</p>
+                        <pre><code>&lt;?php
+$color = "red";
+echo "My car is " . $color . "&lt;br&gt;";
+echo "My house is " . $COLOR . "&lt;br&gt;";
+echo "My boat is " . $coLOR . "&lt;br&gt;";
+?&gt;</code></pre>
+                    </li>
+                </ul>
+                <h3 id="variables-php">Variable Names</h3>
+                <ul>
+                    <li>A variable starts with the $ sign, followed by the name of the variable</li>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li>A variable name cannot start with a number A variable name can only contain alpha-numeric
+                        characters and underscores (A-z, 0-9, and _ )</li>
+                    <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+                    <li>
+                        <p>Here are few examples:</p>
+                        <pre><code>&lt;?php
+$abc = 12;
+$total = 0;
+$largest_so_far = 0;
+$name = "Hari";
+$PHP;
+?&gt;</code></pre>
+                    </li>
+                </ul>
+                <h3>Data Types</h3>
+                <ul>
+                    <li>Variables can store data of different types, and different data types have different
+                        meanings. In PHP data types are used to hold different types of data or values.</li>
+                    <li>
+                        <h4>PHP supports the following data types:</h4>
+                        <ul>
+                            <li><strong>String:-</strong> holds letter or alphabet like ram, hari, nast etc.</li>
+                            <li><strong>Integer:-</strong> whole number like 6, 55 etc.</li>
+                            <li><strong>Float:-</strong> floating point numbers like 19.6, 80.99, etc</li>
+                            <li><strong>Boolean:-</strong> TRUE, FALSE</li>
+                            <li><strong>Array:-</strong> collection of similar datatypes eg. $cars = array("Volvo",
+                                "BMW", "Toyota");</li>
+                            <li><strong>Object:-</strong> it is an instance of class defines the structure and behaviour
+                            </li>
+                            <li><strong>NULL:-</strong> NULL is a special type that only has one value: NULL</li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Operators in PHP</h3>
+                <ul>
+                    <li>An operator is a symbol that performs a specific action on data.</li>
+                    <li>It tells the php engine what kind of action to perform.</li>
+                    <li>
+                        <h4>Types of Operators in PHP</h4>
+                        <ol type="i">
+                            <li>
+                                <h5>Arithmetic Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>+</td>
+                                            <td>Addition</td>
+                                            <td>$c = $a + $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>Subtraction</td>
+                                            <td>$c = $a - $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>*</td>
+                                            <td>Multiplication</td>
+                                            <td>$c = $a * $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/</td>
+                                            <td>Division</td>
+                                            <td>$c = $a / $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%</td>
+                                            <td>Modulus</td>
+                                            <td>$c = $a % $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>**</td>
+                                            <td>Exponential</td>
+                                            <td>$c = $a ** $b;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </li>
+                            <li>
+                                <h5>Assignment Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>=</td>
+                                            <td>Assign value</td>
+                                            <td>$c = 101;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>+=</td>
+                                            <td>Add and assign value</td>
+                                            <td>$c += $b; //Equivalent to $c= $c + $b </td>
+                                        </tr>
+                                        <tr>
+                                            <td>-=</td>
+                                            <td>Subtract and assign value</td>
+                                            <td>$c -= $b; //Equivalent to $c= $c - $b</td>
+                                        </tr>
+                                        <tr>
+                                            <td>*=</td>
+                                            <td>Multiply and assign value</td>
+                                            <td>$c *= $b; //Equivalent to $c= $c * $b</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/=</td>
+                                            <td>Division and assign value</td>
+                                            <td>$c /= $b; //Equivalent to $c= $c / $b</td>
+                                        </tr>
+                                        <tr>
+                                            <td>%=</td>
+                                            <td>Modulus and assign value</td>
+                                            <td>$c %= $b; //Equivalent to $c= $c % $b</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <h5>Comparison Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                            <th>Example</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>==</td>
+                                            <td>Equal</td>
+                                            <td>$c == $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>===</td>
+                                            <td>Identical</td>
+                                            <td>$c === $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>!= or &lt;&gt;</td>
+                                            <td>Not Equal</td>
+                                            <td>$c != $b; or $c &lt;&gt; $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>!==</td>
+                                            <td>Not Identical</td>
+                                            <td>$c !== $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;</td>
+                                            <td>Less than</td>
+                                            <td>$c &lt; $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&gt;</td>
+                                            <td>Greater than</td>
+                                            <td>$c &gt; $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;=</td>
+                                            <td>Less than or equal to</td>
+                                            <td>$c &lt;= $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&gt;=</td>
+                                            <td>Greater than or equal to</td>
+                                            <td>$c &gt;= $b;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>&lt;=&gt;</td>
+                                            <td>Spaceship Operator (3-way Comparison)</td>
+                                            <td>$c &lt;=&gt; $b;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <h5>Logical Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>&& or and</td>
+                                            <td>And- True if both condition is true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>|| or or</td>
+                                            <td>Or- True if atleast one condition is true</td>
+                                        </tr>
+                                        <tr>
+                                            <td>!</td>
+                                            <td>Not- Reverse the condition</td>
+                                        </tr>
+                                        <tr>
+                                            <td>xor</td>
+                                            <td>Xor- True if only one condition is true</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <h5>Increment/Decrement Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>++$variable</td>
+                                            <td>Pre-Increment- Increment by one before assignment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$variable++</td>
+                                            <td>Post-Increment- Increment by one after assignment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>--$variable</td>
+                                            <td>Pre-Decrement- Decrement by one before assignment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$variable--</td>
+                                            <td>Post-Decrement- Decrement by one after assignment</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <h5>String Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>.</td>
+                                            <td>Concatenation - Concatenate two strings</td>
+                                        </tr>
+                                        <tr>
+                                            <td>.=</td>
+                                            <td>Concatenation assignment - Concatenate two strings and assign the result
+                                                to the first string</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <h5>Array Operators</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Operator</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>+</td>
+                                            <td>Union - Union of two arrays</td>
+                                        </tr>
+                                        <tr>
+                                            <td>==</td>
+                                            <td>Equality - Check if two arrays are equal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>===</td>
+                                            <td>Identity - Check if two arrays are identical</td>
+                                        </tr>
+                                        <tr>
+                                            <td>!=</td>
+                                            <td>Inequality - Check if two arrays are not equal</td>
+                                        </tr>
+                                        <tr>
+                                            <td>!==</td>
+                                            <td>Not Identity - Check if two arrays are not identical</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </li>
+                            <li>
+                                <h5>Ternary Operator</h5>
+                                <ul>
+                                    <li>Ternary operators (?:) is used as shorthand for if-else statements.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>condition ? expression_if_true : expression_if_false;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$age = 18;
+$result = ($age >= 18) ? "Adult" : "Minor";
+echo $result;
+// Output: Adult
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Null Coalescing Operator</h5>
+                                <ul>
+                                    <li>Returns the first non-null value.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>$variable = $expression1 ?? $expression2;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$name = $username ?? "Guest";
+echo $name;
+// Output: Guest
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Instance of Operator</h5>
+                                <ul>
+                                    <li>The type-checking operator that checks whether an object belongs to a specific
+                                        class or interface.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>$object instanceof ClassName;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+if ($obj instanceof Student) {
+    echo "Object is instance of Student";
+}
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>New Operator</h5>
+                                <ul>
+                                    <li>Used to create an object (instantiate a class).</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>$object = new ClassName([$arg1, $arg2, ...]);</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$student = new Student();
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Cloning Operator</h5>
+                                <ul>
+                                    <li>Used to create a copy of an object.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>$newObject = clone $oldObject;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$newStudent = clone $student;
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Scope Resolution Operator</h5>
+                                <ul>
+                                    <li>Used to access static members (properties and methods) of a class.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>ClassName::methodName();</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$result = Calculator::add(2, 3);
+echo $result;
+// Output: 5
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Error Control Operator</h5>
+                                <ul>
+                                    <li>Suppresses runtime errors, warnings, and notices.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>$variable = @($expression);</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$file = @file("non_existent_file.txt");
+echo $file === false ? "File not found" : "File found";
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Execution Operator</h5>
+                                <ul>
+                                    <li>Executes an external command and returns its output.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>$output = `command`;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+$ip = `hostname -I`;
+echo "Server IP: " . $ip;
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Type Hinting</h5>
+                                <ul>
+                                    <li>Type hinting is a feature in PHP that allows you to specify the expected data
+                                        type of a function parameter or return value.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>function functionName(TypeName $parameter): ReturnType {}</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+function add(int $a, int $b): int {
+    return $a + $b;
+}
+
+// Type coercion (auto-conversion)
+echo add("5", 10); // Output: 15
+
+// Strict type mode (optional)
+// declare(strict_types=1);
+// echo add("5", 10); // Throws TypeError in strict mode
+?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Yield Operator</h5>
+                                <ul>
+                                    <li>Generator yield (returns value).</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>yield $value;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+function number(){
+   yield 1;
+   yield 2;
+       yield 3;
+   }</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Yield from Operator</h5>
+                                <ul>
+                                    <li>Yield values form another iterable.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>yield from expression;</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+function allNumber(){
+       yield from [1, 2, 3];
+   }</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h5>Print Operator</h5>
+                                <ul>
+                                    <li>Print can be used in expressions because it returns 1.</li>
+                                    <li>
+                                        <p>Syntax:</p>
+                                        <pre><code>print "message";</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>Example:</p>
+                                        <pre><code>&lt;?php
+   print "hello";
+   $x = print "hello"; // $x = 1
+   ?&gt;</code></pre>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Basic programming in PHP</h3>
+                <ol>
+                    <li>
+                        <h4>WAP to find the greatest number among three.</h4>
+                        <pre><code>&lt;?php
+   $num1 = 10;
+   $num2 = 20;
+   $num3 = 30;
+   if ($num1 >= $num2 && $num1 >= $num3){
+       echo "$num1 is greatest";
+   }
+   else if ($num2 >= $num1 && $num2 >= $num3){
+       echo "$num2 is greatest";
+   }
+   else{
+       echo "$num3 is greatest";
+   }
+   ?&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to find the greatest number among three by using function.</h4>
+                        <pre><code>&lt;?php
+// Function to find the greatest number
+function findGreatest($a, $b, $c) {
+   return max($a, $b, $c);
+} //here max is built in function in php
+$num1 = 20;
+$num2 = 10;
+$num3 = 1;
+$greatestNumber = findGreatest($num1, $num2, $num3); //calling a function
+echo " The greatest number is: $greatestNumber ";
+   ?&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to find the greatest number among three by taking input from users.</h4>
+                        <pre><code>&lt;html&gt;
+&lt;body&gt;
+   &lt;form method="post"&gt;
+       Enter three numbers:&lt;br&gt;
+       Number 1: &lt;input type="text" name="number1"&gt;&lt;br&gt;
+       Number 2: &lt;input type="text" name="number2"&gt;&lt;br&gt;
+       Number 3: &lt;input type="text" name="number3"&gt;&lt;br&gt;
+       &lt;input type="submit" value="Find Greatest"&gt;
+   &lt;/form&gt;
+   &lt;?php
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       // Get user input
+       $a = $_POST["number1"];
+       $b = $_POST["number2"];
+       $c = $_POST["number3"];
+       //to check the entered numbers are numeric or not
+       if (is_numeric($a) && is_numeric($b) && is_numeric($c)) {
+           // Find the greatest number
+           $gn = max($a, $b, $c);
+           // Display the result
+           echo "&lt;p&gt;The greatest number is: $gn&lt;/p&gt;";
+       } else {
+           echo "&lt;p&gt;Please enter valid numeric values.&lt;/p&gt;";
+       }
+   } ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP in PHP to print Fibonacci up to nth term</h4>
+                        <pre><code>&lt;html&gt;
+&lt;body&gt;
+   &lt;form method="post"&gt;
+       Enter the value of n: &lt;input type="text" name="n">&lt;br&gt;
+       &lt;input type="submit" value="Generate Fibonacci Series"&gt;
+   &lt;/form&gt;
+   &lt;?php
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       $n = $_POST["n"]; // Get user input
+       function fibonacci($n)
+       {
+           $a = 0;
+           $b = 1;
+           echo "&lt;p&gt;Fibonacci Series: &lt;/p&gt;";
+           echo "&lt;p&gt;$a&lt;/p&gt;";
+           echo "&lt;p&gt;$b&lt;/p&gt;";
+           for ($i = 2; $i &lt; $n; $i++) {
+               $c = $a + $b;
+               echo "&lt;p&gt;$c&lt;/p&gt;";
+               $a = $b;
+               $b = $c;
+           }
+       }
+       if (is_numeric($n) && $n > 0) {
+           fibonacci($n);
+       } else {
+           echo "&lt;p&gt;Please enter a positive integer.&lt;/p&gt;";
+       }
+   } ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to find the number is palindrome or not.</h4>
+                        <pre><code>&lt;html&gt;
+&lt;body&gt;
+   &lt;h1&gt;Palindrome Checker&lt;/h1&gt;
+   &lt;form method="post" action=""&gt;
+       &lt;label for="number"&gt;Enter a number:&lt;/label&gt;
+       &lt;input type="text" id="number" name="number" value=""&gt;
+       &lt;input type="submit" value="Check"&gt;
+   &lt;/form&gt;
+   &lt;?php
+   if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       $number = $_POST["number"];
+       function isPalindrome($number)
+       {
+           $strNumber = strval($number);
+           $reverseStr = strrev($strNumber);
+           return $strNumber == $reverseStr;
+       }
+       if (isPalindrome($number)) {
+           echo "&lt;p&gt;$number is a palindrome.&lt;/p&gt;";
+       } else {
+           echo "&lt;p&gt;$number is not a palindrome.&lt;/p&gt;";
+       }
+   }
+   ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP in PHP to check if a number is divisible by 2 and 3 or not.</h4>
+                        <pre><code>&lt;?php
+function checkDivisibility($number)
+{
+   if ($number % 2 == 0 && $number % 3 == 0) {
+       echo "$number is divisible by both 2 and 3";
+   } elseif ($number % 2 == 0) {
+       echo "$number is divisible by 2.";
+   } elseif ($number % 3 == 0) {
+       echo "$number is divisible by 3.";
+   } else {
+       echo "$number is not divisible by 2 or 3.";
+   }
+}
+// Example usage:
+$givenNumber = 30;
+checkDivisibility($givenNumber);
+?&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP in php to check if the given year is leap year or not.</h4>
+                        <pre><code>&lt;html&gt;
+   &lt;body&gt;
+       &lt;h2&gt;Leap Year Checker&lt;/h2&gt;
+       &lt;form method="post"&gt;
+           Enter a year: &lt;input type="text" name="year"&gt;
+           &lt;input type="submit" value="Check"&gt;
+       &lt;/form&gt;
+       &lt;?php
+       if ($_SERVER["REQUEST_METHOD"] == "POST") {
+           $year = $_POST["year"];
+           // Validate input
+           if (is_numeric($year) && $year > 0 && floor($year) == $year) {
+              if ((($year % 4 == 0) && ($year % 100 != 0)) || ($year % 400 == 0)) {
+                   echo "&lt;p&gt;$year is a Leap Year!&lt;/p&gt;";
+               } else {
+                   echo "&lt;p&gt;$year is not a Leap Year.&lt;/p&gt;";
+               }
+           } else {
+  	             echo "&lt;p&gt;Please enter a valid positive integer for the year.&lt;/p&gt;";
+           }
+       }
+       ?&gt;
+   &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP in PHP to calculate the factorial of a number entered by the user.</h4>
+                        <pre><code>&lt;html&gt;
+&lt;body&gt;
+   &lt;b&gt;Factorial Calculation&lt;/b&gt;
+   &lt;form method="post"&gt;
+       Input a number 
+       &lt;input type="number" name="number"&gt;&lt;br&gt;
+       &lt;input type="submit" value="Calculate"&gt;
+   &lt;/form&gt;
+   &lt;?php
+       if($_SERVER["request_method"]="post") {
+           $n=$_POST["number"];
+           $fact=1;
+           for($i=1; $i&lt;=$n; $i++) {
+               $fact=$fact*$i;
+           }
+        echo "The factorial of $n is $fact"; }
+    ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>WAP to print the sum of first n natural numbers</h4>
+                        <pre><code>&lt;?php
+function sumOfNatural($n) {
+   if ($n &lt;= 0) {
+       return 0;
+   }
+   return ($n * ($n + 1)) / 2;
+}
+$num = 10;
+echo "Sum of first $num natural numbers is " . sumOfNatural($num);
+   ?&gt;</code></pre>
+                    </li>
+                    <li>
+                        <h4>Write a PHP code to display the simple interest.</h4>
+                        <pre><code>&lt;html&gt;
+&lt;body&gt;
+   &lt;B&gt; Calculate Simple Interest&lt;/B&gt; &lt;br/&gt;
+   &lt;form method="POST"
+       Enter Principal:&lt;input type="Number" name="p"/&gt; &lt;br/&gt;
+       Enter Time:&lt;input type="Number" name="t"/&gt; &lt;br/&gt;
+       Enter Rate:&lt;input type="Number" name="r"/&gt; &lt;br/&gt;
+       &lt;input type="submit" value="Calculate SI"/&gt;
+       &lt;/form&gt;
+       &lt;?php
+       if($_SERVER["REQUEST_METHOD"]="POST") {
+           $t=$_POST['t'];
+           $r=$_POST['r'];
+           $si=($p*$t*$r)/100;
+           echo "Simple Interest=$si"; }
+           $p=$_POST['p'];
+       ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </li>
+                </ol>
+                <h2 id="database-connectivity">Database Connectivity</h2>
+                <ul>
+                    <li>
+                        <p><strong>Database:-</strong> It is the collection of data and information which are stored and
+                            organized systematically.</p>
+                        <h3>In the database:</h3>
+                        <ul>
+                            <li>The stored data can be retrieved easily when required.</li>
+                            <li>Data is stored in tabular form (columns and rows).</li>
+                            <li>The column of the table is known as a field and the row of the table is known as records
+                                which represent individual information.</li>
+                            <li>
+                                <p>Each table has a unique field known as a primary key which makes it distinct from
+                                    other records for identification.</p>
+                                <ol type="1">
+                                    <li>
+                                        <h4>WAP to make connections to the database.</h4>
+                                        <pre><code>&lt;?php
+$servername = "your_servername";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_database";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+}
+else {
+    echo 'Connected successfully ';
+}
+?&gt;</code></pre>
+                                    </li>
+                                    <li>
+                                        <h4>WAP to make connections with the database and insert data into the table.
+                                        </h4>
+                                        <pre><code>&lt;?php
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+//Above a form having field fullname,email,password and phone
+    $FullName = $_POST['fullname']; 
+    $Email = $_POST['email'];
+    $Password = $_POST['password'];
+    $Phone = $_POST['phone'];
+    // Make connection
+    $servername = "localhost";
+    $username = "root"; //by default username is root
+    $password = ""; //by default password remains empty
+    $dbname = "student"; //write db name where data will be insert
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    else {
+        // Prepare and execute the statement
+        $stm = $conn->prepare("INSERT INTO registration (FullName, Email, Password, Phone) VALUES (?, ?, ?, ?)");
+        $stm->bind_param("sssi", $FullName, $Email, $Password, $Phone);
+        $stm->execute();
+        echo "Registration Successfully.";
+        $stm->close();           // Close the statement and connection
+        $conn->close();
+    }
+}
+?&gt;</code></pre>
+                                    </li>
+                                    <li>
+                                        <h4>WAP to make connections with the database and Fetch data from the database
+                                            table.</h4>
+                                        <pre><code>&lt;?php
+$servername = "localhost";
+$username = "your_username";
+$password = "your_password";
+$dbname = "your_database_name";
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+   die("Connect Failed: " . $conn->connect_error);
+}
+$sql = "SELECT id, name, email from users";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+   while ($row = $result->fetch_assoc()) {
+       echo "ID " . $row["id"] . "-name " . $row["name"] . "-Email" . $row["email"] . "&lt;br/&gt;";
+   }
+} else {
+   echo "0 results";
+}
+$conn->close();
+?&gt;</code></pre>
+                                    </li>
+                                    <li>
+                                        <h4>WAP to make connections with the database and display the results in tabular
+                                            form</h4>
+                                        <pre><code>&lt;?php
+// Database connection
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "student";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+// Prepare the select statement
+$stmt = $conn->prepare("SELECT id, FullName, Email, Phone FROM registration");
+$stmt->execute();
+$result = $stmt->get_result();
+if ($result->num_rows > 0) {
+    // Output data in a table
+    echo "&lt;table border='1'&gt;
+          &lt;tr&gt;
+              &lt;th&gt;ID&lt;/th&gt;
+              &lt;th&gt;Full Name&lt;/th&gt;
+              &lt;th&gt;Email&lt;/th&gt;
+              &lt;th&gt;Phone&lt;/th&gt;
+          &lt;/tr&gt;";
+    while($row = $result->fetch_assoc()) {
+        echo "&lt;tr&gt;
+              &lt;td&gt;" . $row["id"] . "&lt;/td&gt;
+              &lt;td&gt;" . $row["FullName"] . "&lt;/td&gt;
+              &lt;td&gt;" . $row["Email"] . "&lt;/td&gt;
+              &lt;td&gt;" . $row["Phone"] . "&lt;/td&gt;
+              &lt;/tr&gt;";
+    }
+    echo "&lt;/table&gt;";
+} else {
+    echo "0 results";
+}
+$stmt->close();
+$conn->close();
+?&gt;</code></pre>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>GET and POST Methods in PHP</h2>
+                <ul>
+                    <li>In PHP, GET and POST are HTTP request methods used to transfer data from a client (web browser)
+                        to a web server. </li>
+                    <li>These methods are commonly used while submitting data through HTML forms. PHP provides
+                        superglobal arrays $_GET and $_POST to access the data sent by these methods.</li>
+                </ul>
+                <ol type="1">
+                    <li>
+                        <h3>GET Method:-</h3>
+                        <ul>
+                            <li>The GET method sends data to the server by appending it to the URL in the form of
+                                name–value pairs.</li>
+                            <li>
+                                <p>Characteristics of GET method:</p>
+                                <ol type="a">
+                                    <li>Data is visible in the browser’s address bar</li>
+                                    <li>Limited amount of data can be sent</li>
+                                    <li>Less secure as data can be easily seen</li>
+                                    <li>Data can be bookmarked and cached</li>
+                                    <li>Mainly used to retrieve or search data</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example:</strong> $_GET['username'];</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>POST Method:-</h3>
+                        <ul>
+                            <li>The POST method sends data to the server inside the HTTP request body, not through the
+                                URL.</li>
+                            <li>
+                                <p>Characteristics of POST method:</p>
+                                <ol type="a">
+                                    <li>Data is not visible in the URL</li>
+                                    <li>Large amount of data can be transmitted</li>
+                                    <li>More secure than GET</li>
+                                    <li>Data cannot be bookmarked</li>
+                                    <li>Suitable for sending sensitive data (passwords)</li>
+                                </ol>
+                            </li>
+                            <li><strong>Example:</strong> $_POST['username'];</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 class="end">THE END</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

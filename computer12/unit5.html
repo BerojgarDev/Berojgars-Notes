@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 12 Computer Science Notes - Complete Unit 3">
+    <title>Computer Science | Class12</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 12 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="toc">
+            <div>
+                <h2>Unit 5 : OOP (Object Oriented Programming)</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#pop">Concept of Procedural Oriented Programming</a></li>
+                    <li><a href="#oop">Concept of Object Oriented Programming</a></li>
+                    <li><a href="#oop-vs-pop">Differences between OOP and POP</a></li>
+                    <li><a href="#features">Features of OOP</a></li>
+                    <li><a href="#advantages">Advantages of OOP</a></li>
+                    <li><a href="#disadvantages">Disadvantages of OOP</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content">
+            <div id="unit5" class="noteContent">
+                <h2>Approaches of Program Development</h2>
+                <ul>
+                    <li> Generally there are two ways of program development they are follows:-</li>
+                </ul>
+                <ol type="1">
+                    <li>
+                        <h3 id="pop">Procedure Oriented Programming</h3>
+                        <ul>
+                            <li>It is a conventional or old method of
+                                programming in which the program is
+                                written into many small parts and are
+                                combined together.</li>
+                            <li>
+                                The main focus is on procedure rather than
+                                data.
+                            </li>
+                            <li>
+                                It is just a list of instructions like get some
+                                input, add these numbers, divide by number
+                                and finally display the output.
+                            </li>
+                            <li>
+                                Procedure Oriented Programming language
+                                uses high level language such as COBol,
+                                FORTRAN, C etc.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 id="oop"> Object Oriented Programming(OOP)</h3>
+                        <ul>
+                            <li>
+                                It is a modern approach of programming in
+                                which both data and function are combined
+                                into a single unit which is called an object.
+
+                            </li>
+                            <li>
+                                This approach is based on the data rather
+                                than procedure (function) and programs are
+                                normally divided into objects.
+                            </li>
+                            <li>
+                                All the modern programming languages like
+                                Java, Python C++, dot net follow this
+                                approach.
+                            </li>
+
+                        </ul>
+                    </li>
+                </ol>
+                <h3 id="oop-vs-pop">Differences between POP and OOP</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Procedure Oriented Programming(POP)</th>
+                            <th>Object Oriented Programming(OOP)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Convenient approach to programming.</td>
+                            <td>It is a modern approach.</td>
+                        </tr>
+                        <tr>
+                            <td>Programs are divided into modules.</td>
+                            <td>Programs are divided into objects.</td>
+                        </tr>
+                        <tr>
+                            <td>It follows a top-down method.</td>
+                            <td>It follows the bottom-up method.</td>
+                        </tr>
+                        <tr>
+                            <td>Generally data cannot be hidden.</td>
+                            <td>Data can be hidden.</td>
+                        </tr>
+                        <tr>
+                            <td>It does not model the real world perfectly.</td>
+                            <td>It models the real world perfectly.</td>
+                        </tr>
+                        <tr>
+                            <td>Code maintenance is difficult.</td>
+                            <td>Code maintenance is easy.</td>
+                        </tr>
+                        <tr>
+                            <td>Code reusability is difficult.</td>
+                            <td>Code reusability is easy.</td>
+                        </tr>
+                        <tr>
+                            <td>Examples: FORTRAN, COBol, Pascal, C, etc.</td>
+                            <td>Examples: C++, JAVA, Python, etc.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 id="features">Features of OOP</h3>
+                <ul>
+                    <li>
+                        The object oriented programming language supports the following concepts.
+                    </li>
+                    <ol type="1">
+                        <li>
+                            <h3>Objects</h3>
+                            <ul>
+                                <li>In OOP objects are the basic runtime entities. It is an instance of the class and it
+                                    may be a person, place or table of data.</li>
+                                <li>Syntax: Class_name Object_name</li>
+                                <li>Example: College NAST
+                                    Birds parrot</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Class</h3>
+                            <ul>
+                                <li>Class is a common name given to the object of similar characteristics. It is a
+                                    blueprint that describes the details of an object.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Inheritance </h3>
+                            <ul>
+                                <li>It is the process by which objects of one class acquire the properties of objects of
+                                    another class in a secure manner.</li>
+                                <li>It is an ability to create a new class from a pre-existing class. Where pre-existing
+                                    class is called parent class or base class and newly formed class is called child or
+                                    derived class.</li>
+                                <li>The major advantage of inheritance in OOP is code reusability. This means that we
+                                    can add additional features to an existing class without modifying it.</li>
+                                <h4>Types of inheritance:</h4>
+                                <ol type="a">
+                                    <li>
+                                        <h5>Single level inheritance</h5>
+                                        <ul>
+                                            <li>A derived(child) class inherits from only one base(parents) class.</li>
+                                            <li><strong>Example:</strong> A car inherits from a vehicle class, gaining
+                                                all its properties & methods.</li>
+                                            <figure>
+                                                <img src="../images/single-level-inheritance.png" alt="">
+                                                <figcaption>Fig: Single level inheritance</figcaption>
+                                            </figure>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Multilevel inheritance</h5>
+                                        <ul>
+                                            <li>A derived(child) class inherits from a base(parents) class which in turn
+                                                is derived from another base(parent) class creating a chain of
+                                                inheritance.</li>
+                                            <li><strong>Example:</strong> Animal → Mammal → Dog</li>
+                                            <li>A Dog inherits from a Mammal and Mammal inherits from an Animal.</li>
+                                            <figure>
+                                                <img src="../images/Multilevel-inheritance.png" alt="">
+                                                <figcaption>Fig: Multilevel inheritance</figcaption>
+                                            </figure>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Multiple inheritance</h5>
+                                        <ul>
+                                            <li>A derived(child) class inherits from two or more base(parents) classes
+                                                simultaneously.</li>
+                                            <li><strong>Note:</strong> Some languages, like JAVA, do not directly
+                                                support
+                                                multiple inheritance of classes due to complexity but allow it though
+                                                interfaces.</li>
+                                            <figure>
+                                                <img src="../images/multiple-inheritance.png" alt="">
+                                                <figcaption>Fig: Multiple Inheritance</figcaption>
+                                            </figure>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5>Hierarchical inheritance</h5>
+                                        <ul>
+                                            <li>A single base class serves as a parent class for multiple derived(base)
+                                                classes.</li>
+                                            <li><strong>Example:</strong> A shape class could be the parents class of
+                                                circle, square,
+                                                and triangle classes.</li>
+                                            <figure>
+                                                <img src="../images/Hierarchical-inheritance.png" alt="">
+                                                <figcaption>
+                                                    Fig: Hierarchical Inheritance
+                                                </figcaption>
+                                            </figure>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h5> Hybrid inheritance</h5>
+                                        <ul>
+                                            <li>This is the combination of any two or more of the other types of
+                                                inheritance.
+                                            </li>
+                                            <li>
+                                                <P><strong>Example:</strong> A scenario combination multilevel
+                                                    and hierarchical hierarchical inheritance, or
+                                                    multiple and multilevel inheritance.</P>
+                                                <figure>
+                                                    <img src="../images/Hybrid-inheritance.png" alt="">
+                                                    <figcaption> Fig: Hybrid Inheritance</figcaption>
+                                                </figure>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </ul>
+                        </li>
+                </ul>
+                </li>
+                <li>
+                    <h3>Data Encapsulation</h3>
+                    <ul>
+                        <li>The wrapping of data and function into a single unit is called data encapsulation.</li>
+                        <li>The main purpose of data encapsulation is handling the complexity.</li>
+                        <li>The encapsulated data is not accessible from the outside world, only those functions which
+                            are wrapped in it can access it.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3> Data Abstraction</h3>
+                    <ul>
+                        <li>The act of representing only essential features without including the background details or
+                            explanations is called data abstraction.</li>
+                        <li>In one word abstraction means show only what is necessary.</li>
+                        <li>It is achieved through encapsulation.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3> Polymorphism</h3>
+                    <ul>
+                        <li>It is an ability to take more than one form or multiple forms.</li>
+                        <li>An operator may exhibit different behaviour in different instances.</li>
+                        <li>
+                            <p>Polymorphism can be implemented by two ways</p>
+                            <ol type="a">
+                                <li>
+                                    <h4> Static Polymorphism</h4>
+                                    <ul>
+                                        <li>It uses the concept of operator overloading. It is the process of making an
+                                            operator exhibit different behaviour in different instances.</li>
+                                    </ul>
+                                <li>
+                                    <h4> Dynamic Polymorphism</h4>
+                                    <ul>
+                                        <li>It uses the concept of overriding. It allows a subclass or child-class to
+                                            provide a specific implementation of a method that is already provided by
+                                            its parent class.</li>
+                                        <li>It helps to achieve runtime polymorphism.</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+                <h3>What are the major differences between Data Abstraction and Encapsulation?</h3>
+                <p>The following are the major differences between
+                    Data Abstraction and Encapsulation.</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Data Abstraction</th>
+                            <th>Data Encapsulation</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Abstraction hides implementation details and shows only essential features.</td>
+                            <td>Encapsulation binds and methods into a single unit(Class).</td>
+
+                        </tr>
+                        <tr>
+                            <td>Focus on what an object does.</td>
+                            <td>Focus on how data is hidden and protected.</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Achieved using abstract classes and interfaces.</td>
+                            <td>Achieved using access specifiers like private, public protected.</td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Provides simplicity by reducing complexity.</td>
+                            <td>Provides security by preventing unauthorized access.</td>
+                        </tr>
+                        <tr>
+                            <td>Example: Driving a car without knowing how the engine works.</td>
+                            <td>Example: Car engine details are hidden inside the car body.</td>
+                        </tr>
+                </table>
+                <h3 id="advantages"> Advantages of OOP</h3>
+                <ul>
+                    <li>
+                        Code repetition is reduced by using inheritance.
+                    </li>
+                    <li>
+                        Data is more secure due to a data hiding feature called abstraction.
+                    </li>
+                    <li>
+                        A complex program can be made simpler by dividing the program into multiple objects.
+                    </li>
+                    <li>
+                        Upgrading and maintenance of software is easy.
+                    </li>
+                    <li>
+                        It perfectly models the real world system.
+                    </li>
+                </ul>
+                <h3 id="disadvantages"> Disadvantages of OOP</h3>
+                <ul>
+                    <li>Compiler and runtime overhead is high.</li>
+                    <li> Developers should analyze the problem in an object oriented way.</li>
+                    <li>Requires mastery in software engineering</li>
+                    <li>Useful only for large and complex</li>
+                </ul>
+                <h2 class="end">THE END</h2>
+
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

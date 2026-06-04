@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/icon.png" alt="icon">
-                <h1>Berojgar's Notes</h1>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
             </a>
         </div>
         <div class="nav-wrapper">
@@ -40,12 +40,13 @@
                 <!-- Slider circle -->
                 <span class="toggle-circle"></span>
             </button>
-            <button class="hamburger" id="hamburger">&#9776;</button>
-            <nav class="nav" id="navMenu">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="terms.html">Terms</a>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
             </nav>
         </div>
     </header>
@@ -55,16 +56,19 @@
             <p>Have questions about the notes or found a mistake? I'd love to hear from you.</p>
 
             <div class="contact-details">
-                <p><strong>Email:</strong> <a href="mailto:BerojgarKaran@gmail.com">BerojgarKaran@gmail.com</a></p>
-                <p><strong>Socials:</strong> <a href="https://www.youtube.com/@Berojgar690">YouTube</a> | <a
-                        href="https://github.com/BerojgarDev">GitHub</a></p>
+                <p><strong>Email:</strong> <a href="mailto:BerojgarKaran@gmail.com" target="_blank"
+                        rel="noopener">BerojgarKaran@gmail.com</a></p>
+                <p><strong>Socials:</strong> <a href="https://www.youtube.com/@Berojgar690" target="_blank"
+                        rel="noopener">YouTube</a> | <a href="https://github.com/BerojgarDev" target="_blank"
+                        rel="noopener">GitHub</a></p>
             </div>
 
             <p>I usually respond within 24-48 hours. Let's learn together!</p>
         </section>
     </main>
     <footer>
-        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+        <p><a href="https://berojgar-liard.vercel.app/" target="_blank" rel="noopener">&copy;Berojgar</a> | All
+            Rights are Reserved.</p>
     </footer>
     <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
     <script src="script.js"></script>

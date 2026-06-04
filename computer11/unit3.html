@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/images/icon.png" alt="icon">
-                <h1>Berojgar's Notes</h1>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
             </a>
         </div>
         <div class="nav-wrapper">
@@ -40,8 +40,9 @@
                 <!-- Slider circle -->
                 <span class="toggle-circle"></span>
             </button>
-            <button class="hamburger" id="hamburger">&#9776;</button>
-            <nav class="nav" id="navMenu">
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
                 <a href="/index.html">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/contact.html">Contact</a>
@@ -51,28 +52,47 @@
     </header>
     <main>
         <section class="hero">
-            <div class="heroContainer">
-                <h2>Class 11 Computer Notes</h2>
-                <h2>Unit 2 : Number System and Conversion Boolean Logic</h2>
-                <p> <strong>Referenced by:</strong>
-                    <span class="referencer-name">Er. Bhisma Raj Joshi</span>
-                    <span class="referencer-title">Lecturer of Computer Science</span>
-                    <span class="referencer-institution">[NAST]</span>
-                </p>
-                <p> <strong>Written and Edited by:</strong>
-                    <span class="author-name">Karan Chaudhary</span>
-                    <a href="mailto:berojgarkaran@gmail.com">berojgarkaran@gmail.com</a>
-                </p>
-                <p><strong>Version</strong>:- 1.0 – January 2026 <strong>Copyright</strong>:- &copy; Berojgar.Dev | All
-                    Rights Reserved </p>
-                <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
-                    Teacher’s
-                    notes and textbooks were used only as references. All rights are reserved by Berojgar.</p>
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 11 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="toc">
+            <div>
+                <h2>Unit 3: Computer Software and Operating System</h2>
+            </div>
+            <div>
+                <h3>Objective</h3>
+                <ol type="1">
+                    <li><a href="#concept-of-software">Concept of Software</a></li>
+                    <li><a href="#operating-system">Operating System</a></li>
+                    <li><a href="#mobile-os">Mobile Operating System</a></li>
+                    <li><a href="#opensource-os">Open-Source Operating System</a></li>
+                </ol>
             </div>
         </section>
         <section class="content">
             <div id="unit3" class="noteContent">
-                <h2>Concept of Software</h2>
+                <h2 id="concept-of-software">Concept of Software</h2>
                 <ul class="hyphen-list">
                     <li>It is the collection of instruction, data and computer programs which are used
                         to run
@@ -183,7 +203,7 @@
                         management
                         system, etc.</li>
                 </ul>
-                <h2>Operating System</h2>
+                <h2 id="operating-system">Operating System</h2>
                 <ul class="hyphen-list">
                     <li>It is an organised collection of software programs that control the overall
                         resources of
@@ -361,7 +381,7 @@
                 <figure> <img src="/images/Distributed-Os.png" alt="distributed OS">
                     <figcaption> fig: Distributed OS </figcaption>
                 </figure>
-                <h2>Mobile Operating system</h2>
+                <h2 id="mobile-os">Mobile Operating system</h2>
                 <ul class="hyphen-list">
                     <li>A mobile operating system is software that manages the hardware and software
                         resources
@@ -454,7 +474,7 @@
                         </ul>
                     </li>
                 </ol>
-                <h2>Open-Source Operating System</h2>
+                <h2 id="opensource-os">Open-Source Operating System</h2>
                 <ul class="hyphen-list">
                     <li>Open-source generally refers to those OS whose source code is freely available
                         on the
@@ -527,7 +547,7 @@
         </section>
     </main>
     <footer>
-        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
     </footer>
     <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
     <a href="#" onclick="history.back()" class="go-back-btn">Back</a>

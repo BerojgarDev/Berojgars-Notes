@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Class 12 Computer Science Notes - Complete Unit 3">
+    <title>Computer Science | Class12</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
+            </a>
+        </div>
+        <div class="nav-wrapper">
+            <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle light" type="button">
+                <!-- Sun Icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-sun">
+                    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                    <path
+                        d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7">
+                    </path>
+                </svg>
+
+                <!-- Moon Icon (optional for dark mode) -->
+                <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    style="display:none;">
+                    <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                </svg>
+
+                <!-- Slider circle -->
+                <span class="toggle-circle"></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
+                <a href="/index.html">Home</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+                <a href="/terms.html">Terms</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 12 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="toc">
+            <div>
+                <h2>Unit 7 : Recent Trends in ICT</h2>
+            </div>
+            <div>
+                <h2>Objective</h2>
+                <ol type="1">
+                    <li><a href="#ai">Concept of AI and Robotic</a></li>
+                    <li><a href="#cloud-computing">Concept of Cloud Computing</a></li>
+                    <li><a href="#big-data">Concept of Big Data</a></li>
+                    <li><a href="#virtual-reality">Concept of Virtual Reality</a></li>
+                    <li><a href="#e-commerce">Concept of e-commerce, e-medicine, e-government</a></li>
+                    <li><a href="#mobile-computing">Concept of Mobile Computing</a></li>
+                    <li><a href="#iot">Concept of IoT</a></li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="content">
+            <div id="unit7" class="noteContent">
+                <h2 id="ai">Concept of AI</h2>
+                <ul>
+                    <li>The term artificial intelligence(AI) was coined in 1956 by John McCarthy. According to him “The
+                        science and engineering of making intelligent machines, especially intelligent computer programs
+                        is called AI ”.</li>
+                    <li>
+                        <p>It is the intelligence displayed by the machines in contrast to the natural intelligence
+                            displayed by the humans.</p>
+                        <figure>
+                            <img src="/images/AI.png" alt="AI">
+                            <figcaption>Fig:-Branches of AI</figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <h3>Components of AI</h3>
+                <ul>
+                    <li>
+                        <p>The major components of AI are listed below.</p>
+                        <ol type="a">
+                            <li>
+                                <h4>Learning</h4>
+                                <ul>
+                                    <li>Learning is the process of converting experience into expertise or knowledge.
+                                    </li>
+                                    <li>AI learning can be categorized into two types.</li>
+                                    <li><strong>Supervised learning:- </strong>It involves building a machine, which can
+                                        learn the model based on the labelled samples or examples. Such as face
+                                        recognition, speech recognition etc.</li>
+                                    <li><strong>Un-Supervised learning:-</strong> In this type of learning there is no
+                                        labelled data trained to machines. It is based on the algorithm to find the
+                                        structure of underlying data to discover the hidden patterns.</li>
+                                    <li>Used in clustering or making groups, recommender systems etc.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Reasoning</h4>
+                                <ul>
+                                    <li>AI reasoning refers to deriving the new information from existing information
+                                        using different rules and principles provided to it.</li>
+                                    <li>AI systems use reasoning to make inferences, draw conclusions and solve
+                                        problems. The main aim of reasoning is to create machines that can reason like
+                                        humans using logic & common sense.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Problem Solving</h4>
+                                <ul>
+                                    <li>It refers to the ability to find out the solution of the problem by researching,
+                                        performing the logical algorithm and by using the differential equations.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Perception</h4>
+                                <ul>
+                                    <li>It is the process in which the different perceivers are used to analyze the
+                                        different objects, extract features and analyze the relationship between various
+                                        components of the environment.</li>
+                                    <li>Autonomous driving is an example of how AI implements perception.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Neural Network</h4>
+                                <ul>
+                                    <li>Neural networks are a type of machine learning process in artificial
+                                        intelligence (AI) that teaches computers how to process data based on the human
+                                        brain.</li>
+                                    <li>Neural networks are made up of interconnected nodes, or neurons, in a layered
+                                        structure that resembles the human brain.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Applications of AI</h3>
+                <ul>
+                    <li>
+                        <p>AI is used in various fields some of the most popular fields are:-</p>
+                        <ol>
+                            <li>
+                                <h4>Games playing</h4>
+                                <ul>
+                                    <li>AI plays a crucial role in strategic games such as chess, poker. AI provides
+                                        different
+                                        logical tricks and logical thinking while playing games.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>NLP</h4>
+                                <ul>
+                                    <li>By using AI, it is possible to interact with computers that understand the
+                                        natural
+                                        language spoken by humans. Examples: OK google, Cortona, Alexa, Siri etc..</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Robotics</h4>
+                                <ul>
+                                    <li>AI is used to develop the different types of robots. Different sectors like
+                                        aviation,
+                                        education, health, manufacturing etc. robots are used which is only possible due
+                                        to AI.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Image Processing</h4>
+                                <ul>
+                                    <li>It is the process of using algorithms to analyze images and extract useful
+                                        information
+                                        from
+                                        them.</li>
+                                    <li>It involves transforming an image into a digital form and performing different
+                                        operations on
+                                        it.</li>
+                                    <li>The output of image processing is either the image itself, or its
+                                        characteristics or
+                                        features.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>Expert System</h4>
+                                <ul>
+                                    <li>An expert system is a computer program that is designed to solve complex
+                                        problems and to
+                                        provide decision-making ability like a human.</li>
+                                    <li>It solves complex issues as an expert by extracting knowledge stored in its
+                                        knowledge
+                                        base.</li>
+                                    <li>Pattern Recognition, Vision System, Music System etc.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2>Robotics</h2>
+                <ul>
+                    <li>Robotics is the branch of engineering science that involves the design,
+                        construction and operation of robots. It integrates knowledge from mechanical engineering,
+                        electrical engineering and computer science.</li>
+                    <li>Robots are the reprogrammable multifunctional automated machines that can
+                        execute specific tasks with little or no human intervention.</li>
+                    <li>These can be used in various fields like industries, medical, services, space, military and
+                        defense, agricultural etc.</li>
+                    <li>A robot has following essential characteristics:</li>
+                    <li><strong>Sensing:-</strong> Robots use sensors to collect information from their environment.
+                        Sensors can detect light, heat, distance, sound, pressure, movement, or touch.</li>
+                    <li><strong>Movement:-</strong> Robots have actuators or motors that allow them to move. The type
+                        of movement depends on the robot’s design—wheels, legs, tracks, or robotic arms.</li>
+                    <li><strong>Energy:-</strong> Every robot needs a power source to operate its components. Power can
+                        come from electricity, batteries, and solar energy.</li>
+                    <li><strong>Intelligence:-</strong> Intelligence is the “brain” of the robot—implemented through
+                        programming, algorithms, or AI. It allows the robot to make decisions, adapt to changes, and
+                        respond to its environment.</li>
+                </ul>
+                <h2 id="cloud-computing">Cloud Computing</h2>
+                <ul>
+                    <li>The term cloud computing simply refers to the internet-based computing, which provides various
+                        services such as software development, storage of file and application, networking on the remote
+                        server etc.</li>
+                    <li>
+                        <p>With the help of cloud computing users can access all the required data and resources via
+                            the internet and users can work remotely.</p>
+                        <figure>
+                            <img src="../images/cloud-computing.png" alt="">
+                            <figcaption>Fig: Cloud Computing</figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p><strong>Types of Cloud Computing</strong></p>
+                        <ol type="1">
+                            <li>
+                                <h3>On the basis of Deployment model</h3>
+                                <ol type="a">
+                                    <li>
+                                        <h4>Public Cloud</h4>
+                                        <ul>
+                                            <li>The cloud which is accessible to the general public is simply called
+                                                a
+                                                public cloud.</li>
+                                            <li>In public cloud resources are managed or operated by third parties,
+                                                meaning the
+                                                cloud
+                                                service
+                                                provider itself.</li>
+                                            <li>Examples include Google Drive, Gmail, YouTube, One-Drive etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Private Cloud</h4>
+                                        <ul>
+                                            <li>It is dedicated to a single organization or company and the private
+                                                clouds offer more
+                                                security but may require higher cost.</li>
+                                            <li>Examples: Banks Internal Cloud, University internal cloud etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Hybrid Cloud</h4>
+                                        <ul>
+                                            <li>It is a combination of private and public clouds that work together,
+                                                allowing data and
+                                                applications to move between them. This gives organizations more
+                                                flexibility,
+                                                scalability,
+                                                and cost efficiency.</li>
+                                            <li>Example Hospital uses both public and private cloud</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <h3>On the basis of Service model</h3>
+                                <ol type="a">
+                                    <li>
+                                        <h4>SaaS(Software as a Service)</h4>
+                                        <ul>
+                                            <li>In this service model, there is no need to install the application on
+                                                the user's
+                                                computer.</li>
+                                            <li>The users can directly use the software provided by the service provider
+                                                on the
+                                                internet.</li>
+                                            <li>Examples: MS office 365, ZOOM, Netflix, Spotify etc.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>IaaS(Infrastructure as a Service)</h4>
+                                        <ul>
+                                            <li>The cloud service model that provides virtualized computing resources or
+                                                infrastructures
+                                                over the internet.</li>
+                                            <li>AWS, Azure are the best examples of IaaS. These provide different
+                                                infrastructures like
+                                                virtual server, storage, and different networking services so that the
+                                                user can manage
+                                                their
+                                                own server rather than the overhead of maintaining a physical server.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>PaaS(Platform as a Service)</h4>
+                                        <ul>
+                                            <li>The service model of cloud computing provides a platform and environment
+                                                for developers
+                                                to
+                                                build and deploy applications.</li>
+                                            <li>The service model of cloud computing provides a platform and environment
+                                                for developers
+                                                to
+                                                build and deploy applications.</li>
+                                            <li>Google App Engine is the best example of PaaS service. Here developers
+                                                can write codes
+                                                in
+                                                popular programming languages like python, java etc. without installing
+                                                the compiler on
+                                                the
+                                                computer.</li>
+                                            <li>Similarly, Heroku is a platform as a service (PaaS) that enables
+                                                developers to build,
+                                                run,
+                                                and operate applications entirely in the cloud.</li>
+                                        </ul>
+                                        <h3>Advantages of Cloud computing</h3>
+                                        <ol type="i">
+                                            <li>Cost Efficient</li>
+                                            <li>Unlimited Storage</li>
+                                            <li>Backup and Recovery</li>
+                                            <li>Easy access to information</li>
+                                            <li>Improved Collaboration</li>
+                                        </ol>
+                                        <h3>Disadvantages of Cloud computing</h3>
+                                        <ol type="i">
+                                            <li>Technical Issues</li>
+                                            <li>Risk of data loss</li>
+                                            <li>Limited Control and Customization</li>
+                                            <li>Dependency on Service Provider</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h2 id="big-data">Big data</h2>
+                <ul>
+                    <li>Big Data refers to the vast and complex sets of data that are too large
+                        and diverse for
+                        traditional data processing and analysis methods to handle effectively.</li>
+                    <li>This data typically involves massive volumes of information, coming from
+                        the various
+                        sources
+                        and are present in the different formats.</li>
+                    <li>
+                        <p>To process and extract the information from the big data, specialized
+                            tools are
+                            required.</p>
+                        <p><strong>Hadoop</strong> for data storage and management</p>
+                        <p><strong>Apache Spark</strong> for data processing and analysis</p>
+                        <p><strong>Tableau, Power BI</strong> for data visualization.</p>
+                    </li>
+                </ul>
+                <h3>Characteristics of Big Data</h3>
+                <ul>
+                    <li>
+                        <p>It can be characterized by five Vs.</p>
+                        <ol type="i">
+                            <li><strong>Volume:-</strong> Big data involves large amounts of data often ranging from
+                                terabyte to
+                                petabytes or
+                                even exabytes.</li>
+                            <li><strong>Velocity:-</strong> It refers to how quickly data is generated and how quickly
+                                that data moves.
+                                It is
+                                an important aspect for companies that need data flow quickly, so that
+                                at the right time
+                                they can analyze the data and make decisions.</li>
+                            <li><strong>Variety:-</strong> Big data is diverse in nature. It can include structured data
+                                (data stored in
+                                a
+                                database), semi-structured data(JSON, XML) and un-structured data(Text
+                                Files, Images,
+                                Videos.)</li>
+                            <li><strong>Veracity:-</strong> Big data may not always be accurate or trustworthy. So
+                                veracity overall
+                                refers to
+                                the level of trust in the collected data.</li>
+                            <li><strong>Value:-</strong> The primary goal of big data analysis is to extract meaningful
+                                information and
+                                value
+                                from the data</li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Application of Big Data</h3>
+                <ol type="i">
+                    <li>
+                        <h4>Recommendation:</h4>
+                        <ul>
+                            <li>By tracking the users search activities and spending habits the popular
+                                online
+                                e-commerce
+                                websites use big data for recommendation.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Smart Traffic System:</h4>
+                        <ul>
+                            <li>By using different cameras implemented beside the roads are used to
+                                track the traffic.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Health-Care:</h4>
+                        <ul>
+                            <li>To keep the different records of patients and different medical
+                                research.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Business Analytics:</h4>
+                        <ul>
+                            <li>It is used by business analysts to analyze the different customer
+                                behaviors.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Government & Public Policy:</h4>
+                        <ul>
+                            <li>The government uses big data for surveillance, crime analysis and
+                                disaster response.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Social media & online advertising</h4>
+                    </li>
+                    <li>
+                        <h4>Environment Monitoring </h4>
+                    </li>
+                </ol>
+                <h3>Advantages of Big Data</h3>
+                <ol type="i">
+                    <li>Improves decision-making through data analysis</li>
+                    <li>Handle & process large volume of data efficiently</li>
+                    <li>Provides real-time insights</li>
+                    <li>Helps in predicting future trends</li>
+                    <li>Enhances business performance and productivity</li>
+                </ol>
+                <h3>Disadvantages of Big Data:</h3>
+                <ol type="i">
+                    <li>High cost of storage and processing</li>
+                    <li>Data security and privacy issues</li>
+                    <li>Requires skilled professionals</li>
+                    <li>Complexity in managing large datasets</li>
+                    <li>Data quality and accuracy problems</li>
+                </ol>
+                <h2 id="virtual-reality">Virtual Reality</h2>
+                <ul>
+                    <li>
+                        It is a technology that allows users to immerse themselves in a computer
+                        generated
+                        simulated
+                        environment.
+                    </li>
+                    <li>
+                        It creates an illusion of the real world so that users can feel they are
+                        present in the
+                        real
+                        world.
+                    </li>
+                    <li>
+                        Virtual reality is typically achieved through the use of specialized
+                        hardware and
+                        software
+                        devices like head mounted display(HMD), motion tracking devices and
+                        different dimensions
+                        of
+                        audios like 3D,4D,8D etc.
+                    </li>
+                </ul>
+                <h3>Applications of Virtual Reality</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Healthcare:</h4>
+                        <ul>
+                            <li>It can be used in medical studies so that students can know the
+                                different parts of the
+                                human
+                                body, practice procedures and surgeries.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Scientific Research:</h4>
+                        <ul>
+                            <li>It is used in scientific research and laboratories so that scientists
+                                can easily
+                                research
+                                molecular, biology and chemistry.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Entertainment:</h4>
+                        <ul>
+                            <li>VR is used in different entertainment sectors like Gaming, Cinema and
+                                film and live
+                                events
+                                and concerts etc.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Military Training:</h4>
+                        <ul>
+                            <li>Used in military training for soldiers to get familiar with weapons and
+                                battle ground
+                                areas.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Pilot Training:</h4>
+                        <ul>
+                            <li>Used to train pilots. So that without any physical damage they can
+                                complete their
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="mobile-computing">Mobile Computing</h2>
+                <ul>
+                    <li>Mobile computing can be defined as the technology that focuses on the
+                        use of mobile
+                        devices
+                        and wireless computing devices that allows users to access and utilize
+                        the digital
+                        information and services while on the move.
+                    </li>
+                    <li>
+                        Here the term mobile devices refers to the small and portable devices
+                        that can support
+                        wireless connection. These devices include PCs, Tablets, Palmtops,
+                        Mobile phones etc.</li>
+                </ul>
+                <h3>Applications of Mobile computing</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Communication:</h4>
+                        <ul>
+                            <li>Mobile computing devices, primarily smart phones, are used for voice,
+                                video calls,
+                                texting
+                                and instant messaging.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Internet Access:</h4>
+                        <ul>
+                            <li>Mobile devices provide on the go internet access through the cellular
+                                data connection
+                                and
+                                Wi-Fi networks that allows users to browse websites, check email and
+                                access cloud based
+                                services.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Social Media:</h4>
+                        <ul>
+                            <li>Social media apps on mobile devices allow users to share and update
+                                photos and videos as
+                                well as interact with friends.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Navigation and Location services:</h4>
+                        <ul>
+                            <li>Mobile computing provides GPS technology which allows users to navigate
+                                the location and
+                                accurate direction based on the services.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Mobile banking and payments</h4>
+                    </li>
+                    <li>
+                        <h4>E-Commerce</h4>
+                    </li>
+                </ol>
+                <h2 id="e-commerce">E-Commerce(E-Business)</h2>
+                <ul>
+                    <li>The term E-Commerce is the short form Electronic Commerce, which refers
+                        to the buying
+                        and
+                        selling of goods and services over the internet or by using the ICT.</li>
+                    <li>
+                        <p>It is becoming popular day by day due to the advancements in technology.</p>
+                        <h3>Classification of e-commerce</h3>
+                        <ol type="1">
+                            <li>
+                                <h4>B2B(Business to Business):</h4>
+                                In B2B commerce the one business team or company sells the product and
+                                services to
+                                another
+                                business company. It is related to the bulk purchase, wholesale
+                                transaction.
+                            </li>
+                            <li>
+                                <h4>B2C(Business to Consumer):</h4>
+                                In B2C, the services and goods are sold directly to the consumer.
+                                Examples: Amazon, daraz etc..
+                            </li>
+                            <li>
+                                <h4>C2C(Customer to Consumer):</h4>
+                                This e-commerce involves individuals selling products or services to
+                                other individuals
+                                like
+                                ebay.com
+                            </li>
+                            <li>
+                                <h4>C2B(Consumer to Business):</h4>
+                                In e-commerce, the consumer offers products or services to businesses.
+                                Freelancing
+                                platforms, influencer marketing etc. are the examples of C2B.
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+                <h3>Application of E-Commerce</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Online retail:</h4>
+                        <ul>
+                            <li>Online retailers like amazon, Alibaba, daraz etc. enables consumers to
+                                browse and
+                                purchase a
+                                wide range of products online.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Buying and Selling of Digital Products:</h4>
+                        <ul>
+                            <li>E-Commerce facilitates the sales of digital products such as e-books,
+                                software, music,
+                                movies and online courses directly to consumers over the internet. </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Online Marketplace:</h4>
+                        <ul>
+                            <li>It creates a marketplace for buyer and seller and brings them together.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Food Delivery:</h4>
+                        <ul>
+                            <li>It helps to grow the food industry with the help of different apps.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Health-Care:</h4>
+                        <ul>
+                            <li>Patients can schedule appointments, order, medication through e-commerce
+                                platforms.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2>E-Governance(Electronic Governance)</h2>
+                <ul>
+                    <li>It can be defined as the use of information and communication
+                        technologies provided by
+                        the
+                        government, to enhance the range and quality of information and service
+                        provided to
+                        citizens.
+                    </li>
+                    <li>The main purpose of this e-governance is to make the government process
+                        more transparent
+                        and
+                        accessible between the government and the citizens.
+                    </li>
+                </ul>
+                <h3>Applications of e-governance</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Online service:</h4>
+                        <ul>
+                            <li>E-Governance enables citizens to access government services and
+                                information online. It
+                                includes different services like license renewal, paying tax, etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Digital Identity:</h4>
+                        <ul>
+                            <li>It provides digital identity to the citizens like smart driving license
+                                cards, digital
+                                voting cards etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Public Engagement:</h4>
+                        <ul>
+                            <li>Different social media and online platforms are used to engage citizens
+                                in policy
+                                discussion
+                                and decision making processes.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>E-Education:</h4>
+                        <ul>
+                            <li>In the education sector e-governance supports online learning platforms,
+                                digital
+                                classrooms,
+                                remote education etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Security and Privacy:</h4>
+                        <ul>
+                            <li>E-Governance helps to secure the data of the public by implementing
+                                various data privacy
+                                and
+                                cybersecurity rules.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2>E-Medicine</h2>
+                <ul>
+                    <li>E-medicine refers to the use of digital technologies and the internet to
+                        deliver health
+                        care
+                        services, medical information, and patient care remotely. It includes
+                        telemedicine,
+                        Electronic Health Records (EHRs), and mobile health apps.</li>
+                </ul>
+                <h3>Application of E-Medicine</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Teleconsultation:</h4>
+                        <ul>
+                            <li>
+                                Remote diagnosis and treatments through video calls.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>E-Prescription:</h4>
+                        <ul>
+                            <li>Doctors send prescriptions electronically to pharmacies.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Health Monitoring:</h4>
+                        <ul>
+                            <li>Wearable devices track heart rate, blood pressure, etc.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Electronic Health Records(EHRs):</h4>
+                        <ul>
+                            <li>Store and share patients' data digitally.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Medical Educating & Training:</h4>
+                        <ul>
+                            <li>Online learning for healthcare professionals.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Remote Surgery:</h4>
+                        <ul>
+                            <li>Use of robotics and internet technologies for operations.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="e-education">E-education</h2>
+                <ul>
+                    <li>E-education(Electronic Education) refers to use of digital technologies,
+                        electronic devices and
+                        internet connectivity to provide access to education and learning resources.
+                    </li>
+                    <li>
+                        It includes online classes, digital libraries, e-learning platforms, and
+                        virtual
+                        classrooms
+                        that makes education accessible anytime and anywhere.
+                    </li>
+                </ul>
+                <h3>Present Condition of E-education in Nepal</h3>
+                <ol type="a">
+                    <li>
+                        <h4>Growth after COVID-19:</h4>
+                        <ul>
+                            <li>The pandemic accelerated the adoption of online classes using tools like
+                                Zoom, Google
+                                classroom, and Microsoft Teams.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Urban vs Rural Gap:</h4>
+                        <ul>
+                            <li>E-education is more developed in urban areas; rural regions still face
+                                issues like poor
+                                internet connectivity and lack of digital devices.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Government Effort:</h4>
+                        <ul>
+                            <li>Initiatives such as sikai chautari, E-paath, and E-Pustakalay promote
+                                digital learning.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Private Sector:</h4>
+                        <ul>
+                            <li>Schools, Colleges, and ed-tech startups are investing in e-learning
+                                platforms and
+                                digital
+                                resources.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Challenges:</h4>
+                        <ul>
+                            <li>Limited infrastructure, digital literacy, and unstable electricity
+                                remain major barriers.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                <h2 id="iot">IoT(Internet of Things)</h2>
+                <ul>
+                    <li>IoT simply refers to a network of physical objects or things that are
+                        embedded with
+                        software, sensors and other technologies to connect and exchange data
+                        with other devices
+                        and
+                        systems over the internet.</li>
+                    <li>The major goal of IoT is to enable these objects to collect the data,
+                        share the data and
+                        make intelligent decisions.</li>
+                    <li>for example smart lighting, smart thermostats, smart-watch, traffic
+                        management etc.</li>
+                </ul>
+                <h3>Advantages of IoT</h3>
+                <ol type="i">
+                    <li>
+                        <h4>Efficiency and Automation</h4>
+                        <ul>
+                            <li>IOT enables automation of various tasks and processes, it reduces human
+                                intervention.</li>
+                            <li>For example thermostats can adjust temperature setting according to room
+                                temperature.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Data collection and Analysis</h4>
+                        <ul>
+                            <li>IoT devices generate large amounts of data that can be analyzed to gain
+                                valuable insights.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Enhance safety and security</h4>
+                        <ul>
+                            <li>IoT can improve safety by monitoring critical systems and responding to
+                                emergencies
+                                automatically. For example, smoke detectors can alert home owners and
+                                emergency
+                                services.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Environmental Benefits</h4>
+                        <ul>
+                            <li>It can reduce waste and environmental impact by optimizing the resources
+                                used. For
+                                example
+                                smart agriculture can optimize irrigation and reduce water consumption.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Innovate new business model</h4>
+                        <ul>
+                            <li>IoT supports improving decision making and increases the value and new
+                                ideas in
+                                business.</li>
+                        </ul>
+                    </li>
+                </ol>
+                <h3>Disadvantages of IoT</h3>
+                <ol type="i">
+                    <li>Security and privacy risk</li>
+                    <li>Complexity</li>
+                    <li>High cost</li>
+                </ol>
+                <h2 class="end">THE END</h2>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
+    </footer>
+    <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
+    <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

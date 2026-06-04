@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/images/icon.png" alt="icon">
-                <h1>Berojgar's Notes</h1>
+        <div>
+            <a class="logo" href="/index.html">
+                <img src="/images/icon.png" alt="Berojgar's Notes Logo">
+                <p class="site-title">Berojgar's Notes</p>
             </a>
         </div>
         <div class="nav-wrapper">
@@ -40,8 +40,9 @@
                 <!-- Slider circle -->
                 <span class="toggle-circle"></span>
             </button>
-            <button class="hamburger" id="hamburger">&#9776;</button>
-            <nav class="nav" id="navMenu">
+            <button class="hamburger" id="hamburger" aria-label="Open Navigation Menu"
+                aria-expanded="false">&#9776;</button>
+            <nav class="nav" id="navMenu" aria-label="Main Navigation">
                 <a href="/index.html">Home</a>
                 <a href="/about.html">About</a>
                 <a href="/contact.html">Contact</a>
@@ -51,28 +52,50 @@
     </header>
     <main>
         <section class="hero">
-            <div class="heroContainer">
-                <h2>Class 11 Computer Notes</h2>
-                <h2>Unit 2 : Number System and Conversion Boolean Logic</h2>
-                <p> <strong>Referenced by:</strong>
-                    <span class="referencer-name">Er. Bhisma Raj Joshi</span>
-                    <span class="referencer-title">Lecturer of Computer Science</span>
-                    <span class="referencer-institution">[NAST]</span>
-                </p>
-                <p> <strong>Written and Edited by:</strong>
-                    <span class="author-name">Karan Chaudhary</span>
-                    <a href="mailto:berojgarkaran@gmail.com">berojgarkaran@gmail.com</a>
-                </p>
-                <p><strong>Version</strong>:- 1.0 – January 2026 <strong>Copyright</strong>:- &copy; Berojgar.Dev | All
-                    Rights Reserved </p>
-                <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
-                    Teacher’s
-                    notes and textbooks were used only as references. All rights are reserved by Berojgar.</p>
+            <div class="coverpage">
+                <div class="sub-class">
+                    <h1>Computer Notes</h1>
+                    <h2>Class 11 </h2>
+                </div>
+                <div class="reference">
+                    <p> <strong>Referenced by:</strong></p>
+                    <p>Er. Bhisma Raj Joshi</p>
+                    <p>Lecturer of Computer Science</p>
+                    <p>[NAST]</p>
+                </div>
+                <div class="author">
+                    <p> <strong>Written and Edited by:</strong></p>
+                    <p>Karan Chaudhary</p>
+                </div>
+                <p><strong>Version</strong>:- 1.0 - January 2026</p>
+                <p><strong>Copyright</strong>:- &copy; Berojgar.Dev | All Rights Reserved </p>
+                <div class="disclaimer">
+                    <p><strong>Disclaimer</strong>:- These notes are created for educational purposes by the student.
+                        Teacher's notes and textbooks were used only as references. All rights are reserved by Berojgar.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="toc">
+            <div>
+                <h2>Unit 4: Programming in C - I</h2>
+            </div>
+            <div>
+                <h3>Objective</h3>
+                <ol class="1">
+                    <li><a href="#concept-of-programming">Concept of program</a></li>
+                    <li><a href="#type-of-programming-language">Types of Programming Language</a></li>
+                    <li><a href="#translator">Programming Language Translator</a></li>
+                    <li><a href="#error">Errors</a></li>
+                    <li><a href="#control-structure">Control Structure</a></li>
+                    <li><a href="#program-design-tool">Program Design Tools</a></li>
+                    <li><a href="#c">C Programming Language</a></li>
+                </ol>
             </div>
         </section>
         <section class="content">
             <div id="unit4" class="noteContent">
-                <h2>Program</h2>
+                <h2 id="concept-of-programming">Program</h2>
                 <ul class="hyphen-list">
                     <li>A program is a sequence or set of instructions written to perform a specific
                         task or set of tasks by a computer or machine.</li>
@@ -116,7 +139,7 @@
                         </ol>
                     </li>
                 </ul>
-                <h2>Types of Programming Language</h2>
+                <h2 id="type-of-programming-language">Types of Programming Language</h2>
                 <ul class="hyphen-list">
                     <li>
                         <p>Computer languages can be categorized into two types, each serving different
@@ -281,7 +304,7 @@
                         </ol>
                     </li>
                 </ul>
-                <h2>Programming Language Translator</h2>
+                <h2 id="translator">Programming Language Translator</h2>
                 <ul class="hyphen-list">
                     <li>Translator which is also called language processor is a software tool that
                         converts a computer program written in one language to another language.
@@ -364,7 +387,7 @@
                         </ol>
                     </li>
                 </ul>
-                <h2>Errors</h2>
+                <h2 id="error">Errors</h2>
                 <ul class="hyphen-list">
                     <li>In programming errors are the mistakes or problems that makes while writing
                         the
@@ -424,7 +447,7 @@ sum = a + b;  // corrected version
                         </ol>
                     </li>
                 </ul>
-                <h2>Control Structure</h2>
+                <h2 id="control-structure">Control Structure</h2>
                 <ul class="hyphen-list">
                     <li>It is the way that specify the flow of program. It basically analyze and
                         choose
@@ -847,7 +870,7 @@ int main() {
                     </li>
                 </ul>
 
-                <h2>Program Design Tools</h2>
+                <h2 id="program-design-tool">Program Design Tools</h2>
                 <ul class="hyphen-list">
                     <li>Program design tools are resources and techniques that are used to develop the
                         computer program. </li>
@@ -1027,7 +1050,7 @@ END</pre>
                     <li>For example, NULL=0, ESC=27, space=32, !=33, #=35, $=36, A=65, Z=90, a=97, z=122,
                         DEL=127. </li>
                 </ul>
-                <h2>C Programming Language</h2>
+                <h2 id="c">C Programming Language</h2>
                 <ul class="hyphen-list">
                     <li>C is high-level general-purpose programming language. Which is developed by
                         Dennis Ritchie in 1970 at AT&T Bell laboratory in USA.</li>
@@ -2464,7 +2487,7 @@ int main() {
         </section>
     </main>
     <footer>
-        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar.Dev</a> | All Rights are Reserved.</p>
+        <p><a href="https://berojgar-liard.vercel.app/">&copy;Berojgar</a> | All Rights are Reserved.</p>
     </footer>
     <button id="scrollToTop">&nbsp;&uarr;&nbsp;</button>
     <a href="#" onclick="history.back()" class="go-back-btn">Back</a>
